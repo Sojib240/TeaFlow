@@ -67,20 +67,18 @@ const Navbar = ({
                             </div>
                             <div
                                 onClick={() => opencloseMenu(true)}
-                                className={`flex flex-col items-center justify-center gap-3 sm:gap-[0.8vw] w-8 sm:w-[2vw] h-8 sm:h-[2vw] cursor-pointer ${
-                                    menuOpenClose == true &&
-                                    "justify-start pt-[2px]"
+                                className={`flex flex-col items-center justify-center w-8 sm:w-[2vw] gap-3 sm:gap-[0.7vw] h-8 sm:h-[2vw] cursor-pointer duration-300 transition-all ${
+                                    menuOpenClose == true && "!gap-0"
                                 }`}
                             >
                                 <span
-                                    className={`block w-8 sm:w-[2vw] duration-300 transition-all h-[1px] bg-black  ${
-                                        menuOpenClose === true &&
-                                        "-rotate-45 translate-y-3 sm:translate-y-[0.85vw]"
+                                    className={`block w-8 sm:w-[2vw] duration-300 transition-all h-[1px] bg-black  origin-center ${
+                                        menuOpenClose === true && "rotate-45"
                                     }`}
                                 ></span>
                                 <span
-                                    className={`block w-8 sm:w-[2vw] h-[1px] duration-300 transition-all bg-black ${
-                                        menuOpenClose === true && "rotate-45"
+                                    className={`block w-8 sm:w-[2vw] h-[1px] duration-300 transition-all bg-black origin-center ${
+                                        menuOpenClose === true && "-rotate-45"
                                     }`}
                                 ></span>
                             </div>
@@ -94,12 +92,13 @@ const Navbar = ({
                     setCartOpenClose={setCartOpenClose}
                 />
             )}
-            {menuOpenClose === true && (
-                <Menu
-                    menuOpenClose={menuOpenClose}
-                    setmenuOpenClose={setmenuOpenClose}
-                />
-            )}
+            {/* {menuOpenClose === true && (
+
+            )} */}
+            <Menu
+                menuOpenClose={menuOpenClose}
+                setmenuOpenClose={setmenuOpenClose}
+            />
         </>
     );
 };
