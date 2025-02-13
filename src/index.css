@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+    --Casper: "Casper", "sans-serif";
+    --GolosTextRegular: "GolosTextRegular", "sans-serif";
+    --GolosTextMedium: "GolosTextMedium", "sans-serif";
+    --GolosTextSemiBold: "GolosTextSemiBold", "sans-serif";
+    --GolosTextBold: "GolosTextBold", "sans-serif";
+}
+
+
+
+@font-face {
+    font-family: "Casper";
+    src: url("/Fonts/Casper.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "GolosTextRegular";
+    src: url("/Fonts/Golos-Text_Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "GolosTextMedium";
+    src: url("/Fonts/Golos-Text_Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "GolosTextSemiBold";
+    src: url("/Fonts/Golos-Text_SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "GolosTextBold";
+    src: url("/Fonts/Golos-Text_Bold.woff2") format("woff2");
+}
+.philosophy{
+    background-image: url('/Images/philosophy-min.jpeg');
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
