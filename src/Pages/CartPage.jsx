@@ -4,7 +4,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
     return (
         <div
             className={`w-full h-screen bg-[#000000d0] fixed top-0 flex justify-center items-center z-0 transition-all duration-1000 opacity-0 p-0 sm:px-[5.15vw] md:px-[16.44vw] ${
-                CartOpenClose == true && "opacity-100 z-50"
+                CartOpenClose == true && "opacity-100 z-[999]"
             }`}
         >
             <div className="container w-full h-full sm:h-auto bg-white p-10 sm:px-20 sm:py-24 rounded-4xl sm:rounded-[3vw] mx-auto flex flex-col items-start">
