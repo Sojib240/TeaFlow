@@ -15,12 +15,17 @@ import CursorFollower from "./Components/CursorFollower";
 
 const App = () => {
     const [CartOpenClose, setCartOpenClose] = useState(false);
+    const [menuOpenClose, setmenuOpenClose] = useState(false);
     return (
         <>
+            <div className="pb-28 sm:pb-[8vw]">
             <Navbar
                 CartOpenClose={CartOpenClose}
                 setCartOpenClose={setCartOpenClose}
+                menuOpenClose={menuOpenClose}
+                setmenuOpenClose={setmenuOpenClose}
             />
+            </div>
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/shop" element={<Shop />} />

@@ -1,25 +1,41 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CartPage from "../Pages/CartPage";
+import Menu from "../Components/Menu";
 
-const Navbar = ({ CartOpenClose, setCartOpenClose }) => {
+const Navbar = ({
+    CartOpenClose,
+    setCartOpenClose,
+    menuOpenClose,
+    setmenuOpenClose,
+}) => {
+    const opencloseMenu = (val) => {
+        setmenuOpenClose(val);
+        if (menuOpenClose === true) {
+            setmenuOpenClose(false);
+        }
+    };
     return (
         <>
-            <div className="px-5 sm:px-[5.15vw] py-7 sm:py-[3vw]">
+            <div className="px-5 sm:px-[5.15vw] py-7 sm:py-[3vw] z-[999] fixed top-0 w-full">
                 <nav className="grid grid-cols-2 items-center">
                     <div className="col-span-1">
-                        <Link to={"/"}>
-                            <div className="logo w-32 sm:w-[8.5vw]">
+                        <div className="logo w-32 sm:w-[8.5vw]">
+                            <Link to={"/"}>
                                 <img
                                     className="w-full"
                                     src="/Images/TeaFlow_logo_black.svg"
                                     alt=""
                                 />
-                            </div>
-                        </Link>
+                            </Link>
+                        </div>
                     </div>
                     <div className="col-span-1 flex justify-end sm:justify-between gap-[2vw]">
-                        <div className="hidden sm:flex items-center gap-[3vw]">
+                        <div
+                            className={`hidden ${
+                                menuOpenClose == true && "opacity-0 invisible"
+                            } sm:flex items-center gap-[3vw]`}
+                        >
                             <Link to={"/shop"} className="text-[1.1vw]">
                                 shop
                             </Link>
@@ -49,9 +65,24 @@ const Navbar = ({ CartOpenClose, setCartOpenClose }) => {
                                     0
                                 </span>
                             </div>
-                            <div className="flex flex-col gap-3 sm:gap-[0.8vw]">
-                                <span className="block w-8 sm:w-[2vw] h-[1px] bg-black"></span>
-                                <span className="block w-8 sm:w-[2vw] h-[1px] bg-black"></span>
+                            <div
+                                onClick={() => opencloseMenu(true)}
+                                className={`flex flex-col items-center justify-center gap-3 sm:gap-[0.8vw] w-8 sm:w-[2vw] h-8 sm:h-[2vw] cursor-pointer ${
+                                    menuOpenClose == true &&
+                                    "justify-start pt-[2px]"
+                                }`}
+                            >
+                                <span
+                                    className={`block w-8 sm:w-[2vw] duration-300 transition-all h-[1px] bg-black  ${
+                                        menuOpenClose === true &&
+                                        "-rotate-45 translate-y-3 sm:translate-y-[0.85vw]"
+                                    }`}
+                                ></span>
+                                <span
+                                    className={`block w-8 sm:w-[2vw] h-[1px] duration-300 transition-all bg-black ${
+                                        menuOpenClose === true && "rotate-45"
+                                    }`}
+                                ></span>
                             </div>
                         </div>
                     </div>
@@ -61,6 +92,12 @@ const Navbar = ({ CartOpenClose, setCartOpenClose }) => {
                 <CartPage
                     CartOpenClose={CartOpenClose}
                     setCartOpenClose={setCartOpenClose}
+                />
+            )}
+            {menuOpenClose === true && (
+                <Menu
+                    menuOpenClose={menuOpenClose}
+                    setmenuOpenClose={setmenuOpenClose}
                 />
             )}
         </>
