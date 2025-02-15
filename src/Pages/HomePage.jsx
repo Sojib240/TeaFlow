@@ -1,37 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import Discount from "../Common/Discount";
 import FollowUs from "../Common/FollowUs";
-import Footer from "../Common/Footer";
-import axios from "axios";
 import Philosophy from "../Common/Philosophy";
 import TopSales from "../Components/TopSales";
 import Marquess from "../Components/Marquess";
-import TermsAndConditions from "./TermsAndConditions";
-import Returns from "./Returns";
-import Contact from "./Contact";
-import PrivacyPolicy from "./PrivacyPolicy";
-import AboutUs from "./AboutUs";
-// import app from "../firebaseConfig";
-// import {getDatabase,ref,set,push} from "firebase/database"
+import { productContext } from "../Utils/Context";
 
 const HomePage = () => {
-    const [productsdata, setproductsdata] = useState([]);
-    const callProducts = () => {
-        const api =
-            "https://teaflows-eed2e-default-rtdb.firebaseio.com/productsData.json";
-        axios
-            .get(api)
-            .then((res) => {
-                const formatedValue = Object.values(res.data);
-                console.log(formatedValue[0]);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
-    };
+    const [productsApiData, setproductsApiData] = useContext(productContext);
     useEffect(() => {
-        callProducts();
-    }, []);
+        console.log(productsApiData);
+    });
 
     return (
         <>
@@ -50,12 +29,7 @@ const HomePage = () => {
             <div className="pt-[16vw]">
                 <FollowUs />
             </div>
-            {/* <TermsAndConditions /> */}
-            {/* <Returns /> */}
-            {/* <Contact /> */}
-            {/* <PrivacyPolicy /> */}
-            {/* <AboutUs /> */}
-            
+            <div className="w-5 h-5 bg-red-300 follower"></div>
         </>
     );
 };

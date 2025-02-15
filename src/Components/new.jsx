@@ -2,33 +2,10 @@ import React from "react";
 
 const Context = () => {
     const productsData = {
-        teaType: [
-            {
-                id: 1,
-                teaTypeName: "Oolong tea",
-            },
-            {
-                id: 2,
-                teaTypeName: "Red tea",
-            },
-            {
-                id: 3,
-                teaTypeName: "Green tea",
-            },
-            {
-                id: 4,
-                teaTypeName: "White tea",
-            },
-            {
-                id: 5,
-                teaTypeName: "Black tea",
-            },
-        ],
         categories: [
             {
                 id: 1,
                 categoryName: "tea type",
-                subcategory: "",
             },
             {
                 id: 2,
@@ -86,7 +63,7 @@ const Context = () => {
                 price: 14,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 4,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806876_%D0%96%D0%B5%D0%BD%D1%8C%D1%88%D0%B5%D0%BD%D1%8C%20%D0%A3%D0%BB%D1%83%D0%BD%2C%20%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC%2C%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B8%CC%86%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -109,7 +86,7 @@ const Context = () => {
                 price: 27,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 2,
                 minImg1:
                     " https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806751_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%C2%AB%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%20%D0%B2%20%D0%91%D0%B0%D0%BC%D0%B1%D1%83%D0%BA%D0%B5%C2%BB%2C%202021%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -132,7 +109,7 @@ const Context = () => {
                 price: 14,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 4,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80672e_%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%A7%D0%B5%CC%88%D1%80%D0%BD%D1%8B%D0%B8%CC%86%20%D0%96%D0%B5%D0%BC%D1%87%D1%83%D0%B3%2C%202018%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -155,7 +132,7 @@ const Context = () => {
                 price: 12,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 4,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d7_%D0%A1%D1%8F%D0%BE%20%D0%A7%D0%B6%D1%83%D0%BD%20%D0%A5%D1%83%D0%B0%20%D0%A1%D1%8F%D0%BD%20%C2%AB%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20%D0%B0%D1%80%D0%BE%D0%BC%D0%B0%D1%82%C2%BB%2C%202021%20%D0%B3-min.jpg",
                 minImg2:
@@ -178,7 +155,7 @@ const Context = () => {
                 price: 12,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: "",
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ef_%D0%9B%D1%8E%D0%B0%D0%BD%D1%8C%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%20%D0%B2%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%BA%D0%B5%2C%202021%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -199,7 +176,7 @@ const Context = () => {
                 price: 26,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 5,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806987_%D0%9C%D1%8D%D0%BD%D1%85%D0%B0%D0%B8%CC%86%20%D0%92%D1%8D%D0%B8%CC%86%20%C2%AB%D0%A7%D0%B8%D1%81%D1%82%D1%8B%D0%B8%CC%86%20%D0%92%D0%BA%D1%83%D1%81%20%D0%9C%D1%8D%D0%BD%D1%85%D0%B0%D1%8F%C2%BB%2C%202021%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -222,7 +199,7 @@ const Context = () => {
                 price: 21,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 2,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806784_%20%D0%98%20%D0%A3%20%2522%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D0%BE%D0%B5%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%2522%2C%202008%20%D0%B3(4)-min.jpg",
                 minImg2:
@@ -244,7 +221,7 @@ const Context = () => {
                 price: 21,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: "",
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c2_%D0%A6%D0%B7%D0%B8%D0%BD%D1%8C%20%D0%A6%D0%B7%D1%8E%D0%BD%D1%8C%20%D0%9C%D1%8D%D0%B8%CC%86%20%C2%AB%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5%20%D0%91%D1%80%D0%BE%D0%B2%D0%B8%C2%BB%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -267,7 +244,7 @@ const Context = () => {
                 price: 27,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 2,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c8_%D0%94%D0%B0%20%D0%A6%D0%B7%D0%B8%D0%BD%D1%8C%20%D0%A7%D0%B6%D1%8D%D0%BD%D1%8C%20%D0%92%D0%B0%D0%BD%20%C2%AB%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5%20%D0%98%D0%B3%D0%BB%D1%8B%C2%BB%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -290,7 +267,7 @@ const Context = () => {
                 price: 14,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: "",
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d4_%D0%91%D0%B0%D0%B8%CC%86%20%D0%A5%D0%B0%D0%BE%20%D0%98%D0%BD%D1%8C%20%D0%A7%D0%B6%D1%8D%D0%BD%D1%8C%2C%20%D0%AE%D0%BD%D1%8C%D0%BD%D0%B0%D0%BD%D1%8C%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -313,7 +290,7 @@ const Context = () => {
                 price: 35,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 4,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068af_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%93%D0%B0%D0%B1%D0%B0%20%D0%9D%D0%B0%D0%BD%D1%8C%D1%82%D0%BE%D1%83-min.jpg",
                 minImg2:
@@ -336,7 +313,7 @@ const Context = () => {
                 price: 57,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 2,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ad_%D0%93%D0%B0%D0%B1%D0%B0%20%D0%90%D0%BB%D0%B8%20%D0%A8%D0%B0%D0%BD%D1%8C%2C%20%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC-min.jpg",
                 minImg2:
@@ -359,7 +336,7 @@ const Context = () => {
                 price: 21,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: "",
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068da_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B02-min.jpg",
                 minImg2:
@@ -382,7 +359,7 @@ const Context = () => {
                 price: 65,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: [2, 4],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ae_%D0%93%D0%B0%D0%B1%D0%B0%20%D0%A0%D1%83%D0%B1%D0%B8%D0%BD%20%D0%A2%D0%B5%CC%88%D0%BC%D0%BD%D0%B0%D1%8F-min.jpg",
                 minImg2:
@@ -405,7 +382,7 @@ const Context = () => {
                 price: 12,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 4,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80664a_%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%20%D0%AE%D0%B8%CC%86%20%D0%98%D0%BD%D1%8C%2C%202013%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -428,7 +405,7 @@ const Context = () => {
                 price: 12,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: "",
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806787_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D0%91%D0%B8%D0%BB%D0%BE%D1%87%D1%83%D0%BD%D1%8C%20%C2%AB%D0%98%D0%B7%D1%83%D0%BC%D1%80%D1%83%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%A1%D0%BF%D0%B8%D1%80%D0%B0%D0%BB%D0%B8%20%D0%92%D0%B5%D1%81%D0%BD%D1%8B%C2%BB%2C%20%D0%AE%D0%BD%D1%8C%D0%BD%D0%B0%D0%BD%D1%8C%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -452,7 +429,7 @@ const Context = () => {
                 price: 45,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 2,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b1_%D0%A3%D0%BB%D1%83%D0%BD%20%D1%81%20%D0%BE%D1%81%D0%BC%D0%B0%D0%BD%D1%82%D1%83%D1%81%D0%BE%D0%BC%20%D1%81%20%D0%BE.%20%D0%A2%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%2C%20%D0%BD%D0%B0%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86-min.jpg",
                 minImg2:
@@ -475,7 +452,7 @@ const Context = () => {
                 price: 15,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 2,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ba_%D0%A8%D1%83%D0%B8%CC%86%20%D0%A1%D1%8F%D0%BD%D1%8C%20%D0%93%D0%B0%D0%BE%20%D0%A8%D0%B0%D0%BD%D1%8C%20%D0%A2%D0%B0%D0%BD%20%D0%91%D1%8D%D0%B8%CC%86%20%C2%AB%E2%80%8E%D0%92%D1%8B%D1%81%D0%BE%D0%BA%D0%BE%D0%B3%D0%BE%D1%80%D0%BD%D1%8B%D0%B8%CC%86%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%C2%BB-min.jpg",
                 minImg2:
@@ -498,7 +475,7 @@ const Context = () => {
                 price: 50,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: "",
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b5_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%94%D1%83%D0%BD%20%D0%94%D0%B8%D0%BD%20%D0%9B%D0%B0%D0%BE%20%D0%A8%D0%B8%2C%20%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-min.jpg",
                 minImg2:
@@ -520,7 +497,7 @@ const Context = () => {
                 price: 15,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 2,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068be_%D0%9C%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B6%D0%B0%D0%BD%D1%8C%20%C2%AB%D0%94%D0%B8%D0%BA%D0%B0%D1%8F%20%D0%A1%D0%BB%D0%B8%D0%B2%D0%B0%C2%BB-min.jpg",
                 minImg2:
@@ -543,7 +520,7 @@ const Context = () => {
                 price: 15,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: "",
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8067cc_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%A2%D0%B5%D0%B3%D1%83%D0%B0%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C%20%D0%B2%20%D0%9A%D1%83%D0%B3%D1%83%D0%B0%2C%20%D0%BF%D1%80%D0%BE%D0%B6%D0%B0%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8%CC%86%20%D0%B8%20%D0%B2%D1%8B%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%BD%D1%8B%D0%B8%CC%86%2C%202019%20%D0%B3-min.jpg",
                 minImg2:
@@ -566,7 +543,7 @@ const Context = () => {
                 price: 18,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: "",
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806899_%D0%9C%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20%D0%A3%D0%BB%D1%83%D0%BD%20%C2%AB%D0%9D%D0%B0%D0%B8%CC%86%20%D0%A1%D1%8F%D0%BD%C2%BB%2C%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B8%CC%86%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -589,7 +566,7 @@ const Context = () => {
                 price: 15,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: "",
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ef_%D0%9B%D1%8E%D0%B0%D0%BD%D1%8C%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%20%D0%B2%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%BA%D0%B5%2C%202021%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -611,7 +588,7 @@ const Context = () => {
                 price: 50,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 2,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068cb_%D0%9B%D1%83%20%D0%93%D1%83%20%D0%9B%D0%B0%D0%BE%20%D0%A7%D0%B0%20%D0%92%D0%B0%D0%BD%2012-%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D0%B8%CC%86-min.jpg",
                 minImg2:
@@ -634,7 +611,7 @@ const Context = () => {
                 price: 14,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 4,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80678c_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%A2%D0%B5%D0%B3%D1%83%D0%B0%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -657,7 +634,7 @@ const Context = () => {
                 price: 33,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 2,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c1_%D0%9C%D0%B8%20%D0%9B%D0%B0%D0%BD%D1%8C%20%D0%A1%D1%8F%D0%BD%20%D0%93%D0%B0%D0%BE%D1%88%D0%B0%D0%BD%D1%8C%20%D0%94%D0%B0%D0%BD%D1%8C%20%D0%A6%D1%83%D0%BD%20%C2%AB%D0%9C%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D1%85%D0%B8%D0%B4%D0%B5%D1%8F%C2%BB%20-min.jpg",
                 minImg2:
@@ -680,7 +657,7 @@ const Context = () => {
                 price: 15,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 4,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806752_%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%20%D0%92%D0%B0%D0%BD%2C%202012%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -703,7 +680,7 @@ const Context = () => {
                 price: 27,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: "",
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806788_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D0%A1%D0%B8%20%D0%A5%D1%83%20%D0%9B%D1%83%D0%BD%D1%86%D0%B7%D0%B8%D0%BD%20%C2%AB%D0%9A%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D1%86%20%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0%C2%BB%2C%20%D0%B2%D1%8B%D1%81%D1%88%D0%B8%D0%B8%CC%86%20%D1%81%D0%BE%D1%80%D1%82%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -726,7 +703,7 @@ const Context = () => {
                 price: 50,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 3,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b9_green%20flow%20combo-min.jpg",
                 minImg2: "",
@@ -746,7 +723,7 @@ const Context = () => {
                 price: 55,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 3,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b8_pu-erh%20flow%20combo-min.jpg",
                 minImg2: "",
@@ -766,7 +743,7 @@ const Context = () => {
                 price: 72,
                 productArrival: true,
                 amount: 1,
-                category: 1,
+                category: 3,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806924_Slide7-min.jpg",
                 minImg2: "",
@@ -782,15 +759,18 @@ const Context = () => {
             },
             {
                 id: 33,
-                title: "",
-                image: "",
-                price: "",
+                title: "Teapot #1",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ec_teapot-1-min.jpg",
+                price: 85,
                 productArrival: true,
                 amount: 1,
-                category: 1,
-                minImg1: "",
-                minImg2: "",
-                minImg3: "",
+                category: 6,
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690f_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%203-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806905_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%204-min.jpeg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690c_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%205-min.jpeg",
                 availability: "in stock",
                 TastingNotes: "",
                 aboutProduct: "",
@@ -799,15 +779,18 @@ const Context = () => {
             },
             {
                 id: 34,
-                title: "",
-                image: "",
-                price: "",
+                title: "Teapot #2",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e9_teapot-2-min.jpg",
+                price: 70,
                 productArrival: true,
                 amount: 1,
-                category: 1,
-                minImg1: "",
-                minImg2: "",
-                minImg3: "",
+                category: [4, 6],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691c_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%203-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806919_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%204-min.jpeg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691b_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%205-min.jpeg",
                 availability: "in stock",
                 TastingNotes: "",
                 aboutProduct: "",
@@ -816,15 +799,18 @@ const Context = () => {
             },
             {
                 id: 35,
-                title: "",
-                image: "",
-                price: "",
+                title: "Teapot #5",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ed_teapot-5-min.jpg",
+                price: 100,
                 productArrival: true,
                 amount: 1,
-                category: 1,
-                minImg1: "",
-                minImg2: "",
-                minImg3: "",
+                category: [5, 6],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80692e_img_9146-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806931_img_9148-1000x1000-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806936_img_9149-1000x1000-min.jpg",
                 availability: "in stock",
                 TastingNotes: "",
                 aboutProduct: "",
@@ -833,14 +819,16 @@ const Context = () => {
             },
             {
                 id: 36,
-                title: "",
-                image: "",
-                price: "",
+                title: "Gaiwan #1",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d5_gaiwan-1-new-1-min.jpg",
+                price: 18,
                 productArrival: true,
                 amount: 1,
-                category: 1,
-                minImg1: "",
-                minImg2: "",
+                category: [4, 6],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ea_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%20%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D1%81%202-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068f0_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%20%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D1%81%203-min.jpg",
                 minImg3: "",
                 availability: "in stock",
                 TastingNotes: "",
@@ -850,14 +838,16 @@ const Context = () => {
             },
             {
                 id: 37,
-                title: "",
-                image: "",
-                price: "",
+                title: "Teacup #7",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069df_teacup-7-new-min.jpg",
+                price: 5,
                 productArrival: true,
                 amount: 1,
-                category: 1,
-                minImg1: "",
-                minImg2: "",
+                category: 6,
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806948_img_5224-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694c_img_5223-1000x1000-min.jpg",
                 minImg3: "",
                 availability: "in stock",
                 TastingNotes: "",
@@ -867,14 +857,16 @@ const Context = () => {
             },
             {
                 id: 38,
-                title: "",
-                image: "",
-                price: "",
+                title: "Teacup #1",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d9_tea-cup-1-new-1-min.jpg",
+                price: 8,
                 productArrival: true,
                 amount: 1,
-                category: 1,
-                minImg1: "",
-                minImg2: "",
+                category: [4, 6],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ff_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%20%D0%A1%D0%B0%D0%BA%D1%83%D1%80%D0%B0%203-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068fd_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%20%D0%A1%D0%B0%D0%BA%D1%83%D1%80%D0%B0%202-min.jpeg",
                 minImg3: "",
                 availability: "in stock",
                 TastingNotes: "",
@@ -884,15 +876,153 @@ const Context = () => {
             },
             {
                 id: 39,
-                title: "",
-                image: "",
-                price: "",
+                title: "Teacup #2",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069da_tea-cup-2-new-1-min.jpg",
+                price: 5,
                 productArrival: true,
                 amount: 1,
-                category: 1,
-                minImg1: "",
-                minImg2: "",
+                category: 6,
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806911_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%202-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806912_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%203-min.jpeg",
                 minImg3: "",
+                availability: "in stock",
+                TastingNotes: "",
+                aboutProduct: "",
+                SteepingInstructions: "",
+                Ingredients: "",
+            },
+            {
+                id: 40,
+                title: "Gaiwan #4",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d7_gaiwan-4-new-1-min.jpeg",
+                price: 36,
+                productArrival: true,
+                amount: 1,
+                category: 6,
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806937_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80693c_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%202-min.jpeg",
+                minImg3: "",
+                availability: "in stock",
+                TastingNotes: "",
+                aboutProduct: "",
+                SteepingInstructions: "",
+                Ingredients: "",
+            },
+            {
+                id: 41,
+                title: "Teapot #4",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069eb_teapot-4-min.jpg",
+                price: 70,
+                productArrival: true,
+                amount: 1,
+                category: [5, 6],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806932_img_8523-1000x1000.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806930_img_8525-1000x1000.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80692d_img_8526-1000x1000.jpg",
+                availability: "in stock",
+                TastingNotes: "",
+                aboutProduct: "",
+                SteepingInstructions: "",
+                Ingredients: "",
+            },
+            {
+                id: 42,
+                title: "Teapot #3",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ea_teapot-3-min.jpg",
+                price: 80,
+                productArrival: true,
+                amount: 1,
+                category: 6,
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806929_img_8464-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80692f_img_8460-1000x1000-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806927_img_8463-1000x1000-min.jpg",
+                availability: "in stock",
+                TastingNotes: "",
+                aboutProduct: "",
+                SteepingInstructions: "",
+                Ingredients: "",
+            },
+            {
+                id: 43,
+                title: "Gaiwan #5",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d8_gaiwan-5-new-min.jpeg",
+                price: 30,
+                productArrival: true,
+                amount: 1,
+                category: "",
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806941_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806940_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%202-min.jpeg",
+                minImg3: "",
+                availability: "in stock",
+                TastingNotes: "",
+                aboutProduct: "",
+                SteepingInstructions: "",
+                Ingredients: "",
+            },
+            {
+                id: 44,
+                title: "Teacup #5",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069dd_Teacup%20%235-new-1-min.jpg",
+                price: 18,
+                productArrival: true,
+                amount: 1,
+                category: 6,
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806943_img_8186-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806946_img_8185-1000x1000-min.jpg",
+                minImg3: "",
+                availability: "in stock",
+                TastingNotes: "",
+                aboutProduct: "",
+                SteepingInstructions: "",
+                Ingredients: "",
+            },
+            {
+                id: 45,
+                title: "Teacup #8",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e0_Teacup%20%238-new-1-min.jpg",
+                price: 18,
+                productArrival: true,
+                amount: 1,
+                category: 6,
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694d_dsc07420-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806956_dsc07419-1000x1000-min.jpg",
+                minImg3: "",
+                availability: "in stock",
+                TastingNotes: "",
+                aboutProduct: "",
+                SteepingInstructions: "",
+                Ingredients: "",
+            },
+            {
+                id: 46,
+                title: "Gaiwan #2",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d4_gaiwan-2-new-1-min.jpeg",
+                price: 26,
+                productArrival: true,
+                amount: 1,
+                category: [4, 6],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806935_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%202-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80693a_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%204-min.jpeg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806939_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%205-min.jpeg",
                 availability: "in stock",
                 TastingNotes: "",
                 aboutProduct: "",

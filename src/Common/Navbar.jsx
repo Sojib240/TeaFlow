@@ -17,7 +17,7 @@ const Navbar = ({
     };
     return (
         <>
-            <div className="px-5 sm:px-[5.15vw] py-7 sm:py-[3vw] z-[999] fixed top-0 w-full">
+            <div className="px-5 sm:px-[5.15vw] py-6 sm:py-[3vw] z-[999] fixed top-0 w-full bg-white">
                 <nav className="grid grid-cols-2 items-center">
                     <div className="col-span-1">
                         <div className="logo w-32 sm:w-[8.5vw]">
