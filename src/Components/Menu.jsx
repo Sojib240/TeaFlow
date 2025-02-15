@@ -15,15 +15,24 @@ const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
                 >
                     home
                 </Link>
-                <h2 className="text-5xl sm:text-[3.5vw] font-bold uppercase">
+                <Link
+                    to={"/shop"}
+                    className="text-5xl sm:text-[3.5vw] font-bold uppercase"
+                >
                     products
-                </h2>
-                <h2 className="text-5xl sm:text-[3.5vw] font-bold uppercase">
+                </Link>
+                <Link
+                    to={""}
+                    className="text-5xl sm:text-[3.5vw] font-bold uppercase"
+                >
                     flows
-                </h2>
-                <h2 className="text-5xl sm:text-[3.5vw] font-bold uppercase">
+                </Link>
+                <Link
+                    to={""}
+                    className="text-5xl sm:text-[3.5vw] font-bold uppercase"
+                >
                     top sales
-                </h2>
+                </Link>
                 <Link
                     to={"/journal"}
                     className="text-5xl sm:text-[3.5vw] font-bold uppercase"
