@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
 import CartPage from "../Pages/CartPage";
 import Menu from "../Components/Menu";
+import gsap from "gsap";
 
 const Navbar = ({
     CartOpenClose,
@@ -9,6 +11,37 @@ const Navbar = ({
     menuOpenClose,
     setmenuOpenClose,
 }) => {
+    //
+    const navTopRef = useRef();
+    useGSAP(() => {
+        var prevScroll = window.scrollY;
+
+        window.addEventListener("scroll", (e) => {
+            const currentScroll = window.scrollY;
+            if (prevScroll > currentScroll) {
+                gsap.to(navTopRef.current, {
+                    // ease: "power4",
+                    ease: "power4.out",
+                    top: "0",
+                });
+            } else {
+                gsap.to(navTopRef.current, {
+                    // ease: "power4",
+                    ease: "power4.out",
+                    top: "-15%",
+                });
+            }
+            prevScroll = currentScroll;
+        });
+    });
+    const menuImgRef = useRef();
+    const menuOpen = () => {
+        gsap.to(menuImgRef.current, {
+            rotate: 45,
+            scale: 1.2,
+        });
+    };
+    //
     const opencloseMenu = (val) => {
         setmenuOpenClose(val);
         if (menuOpenClose === true) {
@@ -17,7 +50,10 @@ const Navbar = ({
     };
     return (
         <>
-            <div className="px-5 sm:px-[5.15vw] py-6 sm:py-[2vw] z-[999] fixed top-0 w-full bg-white">
+            <div
+                ref={navTopRef}
+                className="px-5 sm:px-[5.15vw] py-6 sm:py-[2vw] z-[999] fixed top-0 w-full bg-white"
+            >
                 <nav className="grid grid-cols-2 items-center">
                     <div className="col-span-1">
                         <div className="logo w-32 sm:w-[8.5vw]">
