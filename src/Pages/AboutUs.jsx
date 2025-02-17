@@ -1,17 +1,14 @@
 import React from "react";
 import FollowUs from "../Common/FollowUs";
 import Discount from "../Common/Discount";
+import Title from "../Common/Title";
 
 const AboutUs = () => {
     document.title = "ABOUT US － TEAFLOW";
     return (
         <>
-            <div className="px-5 sm:px-[5.15vw] mx-auto">
-                <div className="pt-[6vw] pb-[14vw]">
-                    <h2 className="text-[14vw] font-bold">ABOUT US</h2>
-                </div>
-            </div>
-            <div className="px-5 sm:px-[5.15vw] mx-auto bg-[#222020]">
+            <Title text={"about us"} />
+            <div className="px-5 sm:px-[5.15vw] mx-auto bg-[#222020] mt-24 sm:mt-[14vw]">
                 <div className="flex gap-[4vw] flex-col sm:flex-row items-end">
                     <div className="overflow-hidden rounded-[50px] w-full sm:w-[65%] mt-[-8vw]">
                         <img

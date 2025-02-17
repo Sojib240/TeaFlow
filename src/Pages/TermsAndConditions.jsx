@@ -1,5 +1,6 @@
 import React from "react";
 import Discount from "../Common/Discount";
+import Title from "../Common/Title";
 
 const TermsAndConditions = () => {
     document.title = "TERMS AND CONDITIONS OF SALE － TEAFLOW";
@@ -98,11 +99,7 @@ const TermsAndConditions = () => {
     ];
     return (
         <>
-            <div className="px-5 sm:px-[5.15vw] mx-auto">
-                <h2 className="text-5xl sm:text-[8vw] font-bold uppercase leading-[100%] mt-16 sm:mt-[7vw]">
-                    TERMS AND CONDITIONS OF SALE
-                </h2>
-            </div>
+            <Title text={"terms and conditions of sale"} />
             <div className="px-5 sm:pl-[14.44vw] sm:pr-[32vw] mx-auto">
                 <div className="mt-[7vw]">
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] uppercase">

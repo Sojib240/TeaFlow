@@ -1,15 +1,12 @@
 import React from "react";
 import Discount from "../Common/Discount";
+import Title from "../Common/Title";
 
 const Returns = () => {
     document.title = "RETURNS AND EXCHANGES － TEAFLOW";
     return (
         <>
-            <div className="px-5 sm:px-[5.15vw] mx-auto">
-                <h2 className="text-5xl sm:text-[8vw] font-bold uppercase leading-[100%] mt-16 sm:mt-[7vw]">
-                    Returns AND Exchanges
-                </h2>
-            </div>
+            <Title text={"returns and exchanges"} />
             <div className="px-5 sm:pl-[14.44vw] sm:pr-[32vw] mx-auto mt-16 sm:mt-[7vw]">
                 <div className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
                     <span>

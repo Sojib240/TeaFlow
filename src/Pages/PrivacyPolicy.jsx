@@ -1,16 +1,12 @@
 import React from "react";
 import Discount from "../Common/Discount";
+import Title from "../Common/Title";
 
 const PrivacyPolicy = () => {
     document.title = "PRIVACY POLICY － TEAFLOW";
     return (
         <div>
-            <div className="px-5 sm:px-[5.15vw] mx-auto">
-                <h2 className="text-5xl sm:text-[8vw] font-bold uppercase leading-[100%] mt-16 sm:mt-[7vw]">
-                    Privacy Policy
-                </h2>
-            </div>
-            {/*  */}
+            <Title text={"returns and exchanges"} />
             <div className="px-5 sm:pl-[14.44vw] sm:pr-[32vw] mx-auto">
                 <div className="mt-[7vw]">
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mb-16 sm:mb-[4vw]">
@@ -259,61 +255,67 @@ const PrivacyPolicy = () => {
                             <li type="1">
                                 To comply with the law <span></span> Retention
                                 of Data <br />
-                                
-                                <span className="block mt-3 sm:mt-[1.1vw]">P.B CORP will retain your Personal Data only for
-                                as long as is necessary for the purposes set out
-                                in this Privacy Policy. We will retain and use
-                                your Personal Data to the extent necessary to
-                                comply with our legal obligations (for example,
-                                if we are required to retain your data to comply
-                                with applicable laws), resolve disputes, and
-                                enforce our legal agreements and policies.{" "}
-                                <br />
-                                P.B CORP will also retain Usage Data for
-                                internal analysis purposes. Usage Data is
-                                generally retained for a shorter period of time,
-                                except when this data is used to strengthen the
-                                security or to improve the functionality of our
-                                Service, or we are legally obligated to retain
-                                this data for longer time periods. <br />
-                                Transfer of Data <br />
-                                Your information, including Personal Data, may
-                                be transferred to -- and maintained on --
-                                computers located outside of your state,
-                                province, country or other governmental
-                                jurisdiction where the data protection laws may
-                                differ from those from your jurisdiction. <br />
-                                If you are located outside the United States and
-                                choose to provide information to us, please note
-                                that we transfer the data, including Personal
-                                Data, to the United States and process it there.{" "}
-                                <br />
-                                Your consent to this Privacy Policy followed by
-                                your submission of such information represents
-                                your agreement to that transfer. <br />
-                                P.B CORP will take all steps reasonably
-                                necessary to ensure that your data is treated
-                                securely and in accordance with this Privacy
-                                Policy and no transfer of your Personal Data
-                                will take place to an organization or a country
-                                unless there are adequate controls in place
-                                including the security of your data and other
-                                personal information. <br />
-                                Disclosure of Data <br />
-                                Disclosure for Law Enforcement <br />
-                                Under certain circumstances, P.B CORP may be
-                                required to disclose your Personal Data if
-                                required to do so by law or in response to valid
-                                requests by public authorities (e.g. a court or
-                                a government agency). <br />
-                                Legal Requirements <br />
-                                P.B CORP may disclose your Personal Data in the
-                                good faith belief that such action <br /> is
-                                necessary to:</span>
+                                <span className="block mt-3 sm:mt-[1.1vw]">
+                                    P.B CORP will retain your Personal Data only
+                                    for as long as is necessary for the purposes
+                                    set out in this Privacy Policy. We will
+                                    retain and use your Personal Data to the
+                                    extent necessary to comply with our legal
+                                    obligations (for example, if we are required
+                                    to retain your data to comply with
+                                    applicable laws), resolve disputes, and
+                                    enforce our legal agreements and policies.{" "}
+                                    <br />
+                                    P.B CORP will also retain Usage Data for
+                                    internal analysis purposes. Usage Data is
+                                    generally retained for a shorter period of
+                                    time, except when this data is used to
+                                    strengthen the security or to improve the
+                                    functionality of our Service, or we are
+                                    legally obligated to retain this data for
+                                    longer time periods. <br />
+                                    Transfer of Data <br />
+                                    Your information, including Personal Data,
+                                    may be transferred to -- and maintained on
+                                    -- computers located outside of your state,
+                                    province, country or other governmental
+                                    jurisdiction where the data protection laws
+                                    may differ from those from your
+                                    jurisdiction. <br />
+                                    If you are located outside the United States
+                                    and choose to provide information to us,
+                                    please note that we transfer the data,
+                                    including Personal Data, to the United
+                                    States and process it there. <br />
+                                    Your consent to this Privacy Policy followed
+                                    by your submission of such information
+                                    represents your agreement to that transfer.{" "}
+                                    <br />
+                                    P.B CORP will take all steps reasonably
+                                    necessary to ensure that your data is
+                                    treated securely and in accordance with this
+                                    Privacy Policy and no transfer of your
+                                    Personal Data will take place to an
+                                    organization or a country unless there are
+                                    adequate controls in place including the
+                                    security of your data and other personal
+                                    information. <br />
+                                    Disclosure of Data <br />
+                                    Disclosure for Law Enforcement <br />
+                                    Under certain circumstances, P.B CORP may be
+                                    required to disclose your Personal Data if
+                                    required to do so by law or in response to
+                                    valid requests by public authorities (e.g. a
+                                    court or a government agency). <br />
+                                    Legal Requirements <br />
+                                    P.B CORP may disclose your Personal Data in
+                                    the good faith belief that such action{" "}
+                                    <br /> is necessary to:
+                                </span>
                             </li>
                             <br />
                             <li type="1">To comply with a legal obligation</li>
-                            <li  type="1">
+                            <li type="1">
                                 To protect and defend the rights or property of
                                 P.B CORP
                             </li>
@@ -395,25 +397,28 @@ const PrivacyPolicy = () => {
                                 Please note that we may ask you to verify your
                                 identity before responding to such requests.{" "}
                                 <br />
-                                <span className="mt-3 sm:mt-[1.1vw] block">You have the right to complain to a Data
-                                Protection Authority about our collection and
-                                use of your Personal Data. For more information,
-                                please contact your local data protection
-                                authority in the European Economic Area (EEA).
-                                Service Providers <br />
-                                We may employ third party companies and
-                                individuals to facilitate our Service ("Service
-                                Providers"), to provide the Service on our
-                                behalf, to perform Service-related services or
-                                to assist us in analyzing how our Service is
-                                used. <br />
-                                These third parties have access to your Personal
-                                Data only to perform these tasks on our behalf
-                                and are obligated not to disclose or use it for
-                                any other purpose. Analytics <br />
-                                We may use third-party Service Providers to
-                                monitor and analyze the use of our Service.{" "}</span>
-                                
+                                <span className="mt-3 sm:mt-[1.1vw] block">
+                                    You have the right to complain to a Data
+                                    Protection Authority about our collection
+                                    and use of your Personal Data. For more
+                                    information, please contact your local data
+                                    protection authority in the European
+                                    Economic Area (EEA). Service Providers{" "}
+                                    <br />
+                                    We may employ third party companies and
+                                    individuals to facilitate our Service
+                                    ("Service Providers"), to provide the
+                                    Service on our behalf, to perform
+                                    Service-related services or to assist us in
+                                    analyzing how our Service is used. <br />
+                                    These third parties have access to your
+                                    Personal Data only to perform these tasks on
+                                    our behalf and are obligated not to disclose
+                                    or use it for any other purpose. Analytics{" "}
+                                    <br />
+                                    We may use third-party Service Providers to
+                                    monitor and analyze the use of our Service.{" "}
+                                </span>
                             </li>
                             <li type="1">
                                 <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
@@ -535,54 +540,60 @@ const PrivacyPolicy = () => {
                                 payment information. <br />
                             </li>
                             <div className="mt-24 sm:mt-[5vw]">
-                            <li type="1">
-                                <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
-                                    Links to Other Sites
-                                </span>
-                                Our Service may contain links to other sites
-                                that are not operated by us. If you click on a
-                                third party link, you will be directed to that
-                                third party's site. We strongly advise you to
-                                review the Privacy Policy of every site you
-                                visit. <br />
-                                We have no control over and assume no
-                                responsibility for the content, privacy policies
-                                or practices of any third party sites or
-                                services. <br />
-                                Children's Privacy <br />
-                                Our Service does not address anyone under the
-                                age of 18 ("Children"). <br />
-                                We do not knowingly collect personally
-                                identifiable information from anyone under the
-                                age of 18. If you are a parent or guardian and
-                                you are aware that your child has provided us
-                                with Personal Data, please contact us. If we
-                                become aware that we have collected Personal
-                                Data from children without verification of
-                                parental consent, we take steps to remove that
-                                information from our servers. <br />
-                                Changes to This Privacy Policy <br />
-                                We may update our Privacy Policy from time to
-                                time. We will notify you of any changes by
-                                posting the new Privacy Policy on this page.{" "}
-                                <br />
-                                We will let you know via email and/or a
-                                prominent notice on our Service, prior to the
-                                change becoming effective and update the
-                                "effective date" at the top of this Privacy
-                                Policy. <br />
-                                You are advised to review this Privacy Policy
-                                periodically for any changes. Changes to this
-                                Privacy Policy are effective when they are
-                                posted on this page. <br />
-                                Contact Us <br />
-                                If you have any questions about this Privacy
-                                Policy, please contact us:
-                            </li>
+                                <li type="1">
+                                    <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                                        Links to Other Sites
+                                    </span>
+                                    Our Service may contain links to other sites
+                                    that are not operated by us. If you click on
+                                    a third party link, you will be directed to
+                                    that third party's site. We strongly advise
+                                    you to review the Privacy Policy of every
+                                    site you visit. <br />
+                                    We have no control over and assume no
+                                    responsibility for the content, privacy
+                                    policies or practices of any third party
+                                    sites or services. <br />
+                                    Children's Privacy <br />
+                                    Our Service does not address anyone under
+                                    the age of 18 ("Children"). <br />
+                                    We do not knowingly collect personally
+                                    identifiable information from anyone under
+                                    the age of 18. If you are a parent or
+                                    guardian and you are aware that your child
+                                    has provided us with Personal Data, please
+                                    contact us. If we become aware that we have
+                                    collected Personal Data from children
+                                    without verification of parental consent, we
+                                    take steps to remove that information from
+                                    our servers. <br />
+                                    Changes to This Privacy Policy <br />
+                                    We may update our Privacy Policy from time
+                                    to time. We will notify you of any changes
+                                    by posting the new Privacy Policy on this
+                                    page. <br />
+                                    We will let you know via email and/or a
+                                    prominent notice on our Service, prior to
+                                    the change becoming effective and update the
+                                    "effective date" at the top of this Privacy
+                                    Policy. <br />
+                                    You are advised to review this Privacy
+                                    Policy periodically for any changes. Changes
+                                    to this Privacy Policy are effective when
+                                    they are posted on this page. <br />
+                                    Contact Us <br />
+                                    If you have any questions about this Privacy
+                                    Policy, please contact us:
+                                </li>
                             </div>
                             <li type="1">
                                 By email: hello at www.tea-flow.com or use our
-                                <a className="underline text-blue-700 ml-2" href="">contact form here</a>
+                                <a
+                                    className="underline text-blue-700 ml-2"
+                                    href=""
+                                >
+                                    contact form here
+                                </a>
                             </li>
                         </ol>
                     </div>

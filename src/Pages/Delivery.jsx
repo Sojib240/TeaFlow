@@ -1,15 +1,12 @@
 import React from "react";
 import Discount from "../Common/Discount";
+import Title from "../Common/Title";
 
 const Delivery = () => {
     document.title = "DELIVERY － TEAFLOW";
     return (
         <>
-            <div className="px-5 sm:px-[5.15vw] mx-auto">
-                <h2 className="text-5xl sm:text-[8vw] font-bold uppercase leading-[100%] mt-16 sm:mt-[7vw]">
-                    delivery
-                </h2>
-            </div>
+            <Title text={'delivery'}/>
             <div className="px-5 sm:pl-[14.44vw] sm:pr-[32vw] mx-auto mt-16 sm:mt-[7vw]">
                 <div className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2.3vw]">
                     <span>
@@ -92,11 +89,11 @@ const Delivery = () => {
                             <a className="underline text-blue-700" href="">
                                 contact us via our contact form
                             </a>
-                            . A member of our team will reach out within
-                            1-2 business days.
+                            . A member of our team will reach out within 1-2
+                            business days.
                         </span>
                         <span className="flex mt-5 sm:mt-[1vw]">
-                            Questions? Contact us {" "}
+                            Questions? Contact us{" "}
                             <a
                                 className="underline text-blue-700 ml-1 sm:ml-[0.2vw]"
                                 href=""

@@ -14,12 +14,36 @@ import TermsAndConditions from "./Pages/TermsAndConditions";
 import CursorFollower from "./Components/CursorFollower";
 import Delivery from "./Pages/Delivery";
 import ProductsDetails from "./Pages/ProductsDetails";
+import gsap from "gsap";
 
 const App = () => {
     const [CartOpenClose, setCartOpenClose] = useState(false);
     const [menuOpenClose, setmenuOpenClose] = useState(false);
+
+    const handleMouseMove = (event) => {
+        // f
+        const { clientX, clientY } = event;
+        let mm = gsap.matchMedia();
+        mm.add(
+            {
+                isMobile: "(min-width:640px)",
+            },
+            (Context) => {
+                let { isMobile } = Context.conditions;
+
+                gsap.to("#mouse", {
+                    ease: "power2.out",
+                    x: isMobile ? clientX - 24 / 2 : "",
+                    y: isMobile ? clientY - 24 / 2 : "",
+                    opacity: isMobile ? 1 : 0,
+                });
+            }
+        );
+        // f
+    };
+
     return (
-        <>
+        <div onMouseMove={(e) => handleMouseMove(e)}>
             <div className="pb-28 sm:pb-[8vw]">
                 <Navbar
                     CartOpenClose={CartOpenClose}
@@ -44,8 +68,8 @@ const App = () => {
                 />
             </Routes>
             <Footer />
-            {/* <CursorFollower /> */}
-        </>
+            <CursorFollower />
+        </div>
     );
 };
 

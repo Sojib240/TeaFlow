@@ -53,7 +53,7 @@ const Navbar = ({
                             <div className="flex items-center gap-1 sm:gap-[0.2vw]">
                                 <div
                                     onClick={() => setCartOpenClose(true)}
-                                    className="w-5 sm:w-[1.3vw] mx-auto cursor-pointer"
+                                    className="w-4 sm:w-[1.3vw] mx-auto cursor-pointer"
                                 >
                                     <img
                                         className="w-full"
