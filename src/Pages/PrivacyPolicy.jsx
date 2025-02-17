@@ -2,6 +2,7 @@ import React from "react";
 import Discount from "../Common/Discount";
 
 const PrivacyPolicy = () => {
+    document.title = "PRIVACY POLICY － TEAFLOW";
     return (
         <div>
             <div className="px-5 sm:px-[5.15vw] mx-auto">

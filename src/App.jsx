@@ -12,6 +12,8 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import Returns from "./Pages/Returns";
 import TermsAndConditions from "./Pages/TermsAndConditions";
 import CursorFollower from "./Components/CursorFollower";
+import Delivery from "./Pages/Delivery";
+import ProductsDetails from "./Pages/ProductsDetails";
 
 const App = () => {
     const [CartOpenClose, setCartOpenClose] = useState(false);
@@ -19,12 +21,12 @@ const App = () => {
     return (
         <>
             <div className="pb-28 sm:pb-[8vw]">
-            <Navbar
-                CartOpenClose={CartOpenClose}
-                setCartOpenClose={setCartOpenClose}
-                menuOpenClose={menuOpenClose}
-                setmenuOpenClose={setmenuOpenClose}
-            />
+                <Navbar
+                    CartOpenClose={CartOpenClose}
+                    setCartOpenClose={setCartOpenClose}
+                    menuOpenClose={menuOpenClose}
+                    setmenuOpenClose={setmenuOpenClose}
+                />
             </div>
             <Routes>
                 <Route path="/" element={<HomePage />} />
@@ -32,8 +34,10 @@ const App = () => {
                 <Route path="/aboutUs" element={<AboutUs />} />
                 <Route path="/journal" element={<Journal />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+                <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
                 <Route path="/returns" element={<Returns />} />
+                <Route path="/delivery" element={<Delivery />} />
+                <Route path="/productsDetails" element={<ProductsDetails />} />
                 <Route
                     path="/TermsAndConditions"
                     element={<TermsAndConditions />}

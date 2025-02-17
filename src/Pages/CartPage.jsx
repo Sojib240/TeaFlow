@@ -1,6 +1,7 @@
 import React from "react";
 
 const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
+    document.title = "PRODUCTS CART － TEAFLOW";
     return (
         <div
             className={`w-full h-screen bg-[#000000d0] fixed top-0 flex justify-center items-center z-0 transition-all duration-1000 opacity-0 p-0 sm:px-[5.15vw] md:px-[16.44vw] ${

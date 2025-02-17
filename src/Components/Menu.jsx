@@ -22,7 +22,7 @@ const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
                     products
                 </Link>
                 <Link
-                    to={""}
+                    to={"/productsDetails"}
                     className="text-5xl sm:text-[3.5vw] font-bold uppercase"
                 >
                     flows
@@ -42,14 +42,14 @@ const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
             </div>
             <div className="flex gap-10 sm:gap-[6vw] mt-16 sm:mt-[5vw]">
                 <div className="flex flex-col gap-2 sm:gap-[0.5vw]">
-                    <Link to={"/"} className="text-lg sm:text-[1.1vw]">
+                    <Link to={"/delivery"} className="text-lg sm:text-[1.1vw]">
                         delivery
                     </Link>
                     <Link to={"/returns"} className="text-lg sm:text-[1.1vw]">
                         returns and exchanges
                     </Link>
                     <Link
-                        to={"/PrivacyPolicy"}
+                        to={"/privacyPolicy"}
                         className="text-lg sm:text-[1.1vw]"
                     >
                         privacy policy

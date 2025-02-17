@@ -40,7 +40,7 @@ const Footer = () => {
                             </h2>
                         </div>
                         <div className="flex flex-col gap-[1.3vw]">
-                            <Link className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
+                            <Link to={'/delivery'} className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
                                 delivery
                             </Link>
                             <Link
@@ -137,11 +137,11 @@ const Footer = () => {
                             alt=""
                         />
                     </div>
-                    <h2 className="text-[15px] sm:text-[0.9vw]">
+                    <p className="text-[15px] sm:text-[0.9vw]">
                         © 2024 Tea flow
-                    </h2>
+                    </p>
                 </div>
-                <h2 className="flex items-center gap-3 text-[15px] sm:text-[0.9vw]">
+                <h2 className="flex items-center gap-3 text-[15px] sm:text-[1vw]">
                     design and development by{" "}
                     <span className="sm:w-[2.3vw]">
                         <img

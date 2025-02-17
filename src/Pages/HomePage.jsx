@@ -5,12 +5,15 @@ import Philosophy from "../Common/Philosophy";
 import TopSales from "../Components/TopSales";
 import Marquess from "../Components/Marquess";
 import { productContext } from "../Utils/Context";
+import Delivery from "./Delivery";
+import ProductsDetails from "./ProductsDetails";
 
 const HomePage = () => {
-    const [productsApiData, setproductsApiData] = useContext(productContext);
-    useEffect(() => {
-        console.log(productsApiData);
-    });
+    document.title = "TEAFLOW － PREMIUM TEAS & ACCESSORIES";
+    // const [productsApiData, setproductsApiData] = useContext(productContext);
+    // useEffect(() => {
+    //     console.log(productsApiData);
+    // });
 
     return (
         <>
@@ -29,7 +32,6 @@ const HomePage = () => {
             <div className="pt-[16vw]">
                 <FollowUs />
             </div>
-            <div className="w-5 h-5 bg-red-300 follower"></div>
         </>
     );
 };

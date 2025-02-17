@@ -4,6 +4,7 @@ import Discount from "../Common/Discount";
 import FollowUs from "../Common/FollowUs";
 
 const Contact = () => {
+    document.title = "CONTACT US － TEAFLOW";
     return (
         <div>
             <div className="my-16 sm:my-[7vw]">

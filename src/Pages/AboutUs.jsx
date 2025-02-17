@@ -3,6 +3,7 @@ import FollowUs from "../Common/FollowUs";
 import Discount from "../Common/Discount";
 
 const AboutUs = () => {
+    document.title = "ABOUT US － TEAFLOW";
     return (
         <>
             <div className="px-5 sm:px-[5.15vw] mx-auto">

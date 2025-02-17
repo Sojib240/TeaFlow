@@ -17,7 +17,7 @@ const Navbar = ({
     };
     return (
         <>
-            <div className="px-5 sm:px-[5.15vw] py-6 sm:py-[3vw] z-[999] fixed top-0 w-full bg-white">
+            <div className="px-5 sm:px-[5.15vw] py-6 sm:py-[2vw] z-[999] fixed top-0 w-full bg-white">
                 <nav className="grid grid-cols-2 items-center">
                     <div className="col-span-1">
                         <div className="logo w-32 sm:w-[8.5vw]">
@@ -53,11 +53,11 @@ const Navbar = ({
                             <div className="flex items-center gap-1 sm:gap-[0.2vw]">
                                 <div
                                     onClick={() => setCartOpenClose(true)}
-                                    className="w-6 sm:w-[1.7vw] mx-auto cursor-pointer"
+                                    className="w-5 sm:w-[1.3vw] mx-auto cursor-pointer"
                                 >
                                     <img
                                         className="w-full"
-                                        src="/Images/shopping-bag.png"
+                                        src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806619_icon-free-delivery.svg"
                                         alt=""
                                     />
                                 </div>
