@@ -8,7 +8,6 @@ const ProductsDetails = () => {
     );
     const handleSlider = (src) => {
         setimageSlider(src);
-        // console.log(first);
     };
     return (
         <>
@@ -89,7 +88,7 @@ const ProductsDetails = () => {
                             </div>
                         </div>
                         <div className="flex flex-col sm:flex-row sm:items-center gap-[2vw] mt-6 sm:mt-[3vw]">
-                            <div className="flex items-center justify-between gap-[0.5vw] bg-[#222020] p-10 sm:p-[2.2vw] rounded-full sm:w-[70%]">
+                            <div className="flex items-center justify-between gap-[0.5vw] bg-[#222020] px-8 py-6 sm:p-[2.2vw] rounded-full sm:w-[70%]">
                                 <div className="flex gap-3 sm:gap-[1vw]">
                                     <img
                                         className="w-4"
@@ -233,7 +232,7 @@ const ProductsDetails = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="flex items-center gap-[2vw] mt-[3vw]">
+                    <div className="flex items-center gap-[2vw] mt-[1.8vw]">
                         <Link className="flex items-center justify-between gap-[0.5vw] bg-[#222020] p-[2.2vw] rounded-full w-[70%]">
                             <div className="flex items-center gap-[1vw]">
                                 <img
