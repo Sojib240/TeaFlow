@@ -34,11 +34,26 @@
     font-family: "GolosTextBold";
     src: url("/Fonts/Golos-Text_Bold.woff2") format("woff2");
 }
-.philosophy{
+
+.philosophy {
     background-image: url('/Images/philosophy-min.jpeg');
     width: 100%;
     height: auto;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.cart-main::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.cart-main::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.cart-main::-webkit-scrollbar-thumb {
+    background: #000000;
 }
