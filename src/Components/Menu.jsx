@@ -29,30 +29,35 @@ const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
         >
             <div className="flex flex-col gap-4 sm:gap-[1.1vw]">
                 <Link
+                    onClick={() => setmenuOpenClose(false)}
                     to={"/"}
                     className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
                 >
                     home
                 </Link>
                 <Link
+                    onClick={() => setmenuOpenClose(false)}
                     to={"/shop"}
                     className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
                 >
                     products
                 </Link>
                 <Link
-                    to={"/productsDetails"}
+                    onClick={() => setmenuOpenClose(false)}
+                    to={""}
                     className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
                 >
                     flows
                 </Link>
                 <Link
+                    onClick={() => setmenuOpenClose(false)}
                     to={""}
                     className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
                 >
                     top sales
                 </Link>
                 <Link
+                    onClick={() => setmenuOpenClose(false)}
                     to={"/journal"}
                     className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
                 >
@@ -62,24 +67,28 @@ const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
             <div className="flex gap-10 sm:gap-[6vw] mt-16 sm:mt-[5vw]">
                 <div className="flex flex-col gap-2 sm:gap-[0.5vw]">
                     <Link
+                        onClick={() => setmenuOpenClose(false)}
                         to={"/delivery"}
                         className="navMenuText3 text-lg sm:text-[1.1vw]"
                     >
                         delivery
                     </Link>
                     <Link
+                        onClick={() => setmenuOpenClose(false)}
                         to={"/returns"}
                         className="navMenuText3 text-lg sm:text-[1.1vw]"
                     >
                         returns and exchanges
                     </Link>
                     <Link
+                        onClick={() => setmenuOpenClose(false)}
                         to={"/privacyPolicy"}
                         className="navMenuText3 text-lg sm:text-[1.1vw]"
                     >
                         privacy policy
                     </Link>
                     <Link
+                        onClick={() => setmenuOpenClose(false)}
                         to={"/TermsAndConditions"}
                         className="navMenuText3 text-lg sm:text-[1.1vw]"
                     >
@@ -87,21 +96,28 @@ const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
                     </Link>
                 </div>
                 <div className="navMenuText flex flex-col gap-2 sm:gap-[0.5vw]">
-                    <Link to={"/aboutUs"} className="text-lg sm:text-[1.1vw]">
+                    <Link
+                        onClick={() => setmenuOpenClose(false)}
+                        to={"/aboutUs"}
+                        className="text-lg sm:text-[1.1vw]"
+                    >
                         about us
                     </Link>
                     <Link
+                        onClick={() => setmenuOpenClose(false)}
                         to={"/contact"}
                         className="navMenuText text-lg sm:text-[1.1vw]"
                     >
                         contacts
                     </Link>
-                    <Link
+                    <a
+                        href="https://www.instagram.com/accounts/login/?next=%2Ftea_flow_usa%2F&source=omni_redirect"
+                        target="blank"
                         to={"/"}
                         className="navMenuText text-lg sm:text-[1.1vw]"
                     >
                         instagram
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>

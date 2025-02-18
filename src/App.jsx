@@ -7,7 +7,6 @@ import Contact from "./Pages/Contact";
 import Shop from "./Pages/Shop";
 import Journal from "./Pages/Journal";
 import AboutUs from "./Pages/AboutUs";
-import CartPage from "./Pages/CartPage";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import Returns from "./Pages/Returns";
 import TermsAndConditions from "./Pages/TermsAndConditions";
@@ -15,6 +14,7 @@ import CursorFollower from "./Components/CursorFollower";
 import Delivery from "./Pages/Delivery";
 import ProductsDetails from "./Pages/ProductsDetails";
 import gsap from "gsap";
+import ScrollToTop from "./Common/ScrollToTop";
 
 const App = () => {
     const [CartOpenClose, setCartOpenClose] = useState(false);
@@ -45,6 +45,7 @@ const App = () => {
     return (
         <div onMouseMove={(e) => handleMouseMove(e)}>
             <div className="pb-28 sm:pb-[8vw]">
+                <ScrollToTop />
                 <Navbar
                     CartOpenClose={CartOpenClose}
                     setCartOpenClose={setCartOpenClose}
@@ -61,7 +62,10 @@ const App = () => {
                 <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
                 <Route path="/returns" element={<Returns />} />
                 <Route path="/delivery" element={<Delivery />} />
-                <Route path="/productsDetails" element={<ProductsDetails />} />
+                <Route
+                    path="/productsDetails/:id"
+                    element={<ProductsDetails />}
+                />
                 <Route
                     path="/TermsAndConditions"
                     element={<TermsAndConditions />}

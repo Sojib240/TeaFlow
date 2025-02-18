@@ -128,9 +128,6 @@ const Navbar = ({
                     setCartOpenClose={setCartOpenClose}
                 />
             )}
-            {/* {menuOpenClose === true && (
-
-            )} */}
             <Menu
                 menuOpenClose={menuOpenClose}
                 setmenuOpenClose={setmenuOpenClose}
