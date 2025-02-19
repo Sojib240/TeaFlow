@@ -15,6 +15,7 @@ import Delivery from "./Pages/Delivery";
 import ProductsDetails from "./Pages/ProductsDetails";
 import gsap from "gsap";
 import ScrollToTop from "./Common/ScrollToTop";
+import SingleJournal from "./Components/SingleJournal";
 
 const App = () => {
     const [CartOpenClose, setCartOpenClose] = useState(false);
@@ -62,6 +63,7 @@ const App = () => {
                 <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
                 <Route path="/returns" element={<Returns />} />
                 <Route path="/delivery" element={<Delivery />} />
+                <Route path="/singleJournal/:id" element={<SingleJournal />} />
                 <Route
                     path="/productsDetails/:id"
                     element={<ProductsDetails />}

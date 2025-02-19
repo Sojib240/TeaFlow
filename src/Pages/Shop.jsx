@@ -46,7 +46,7 @@ const Shop = () => {
                                             key={id}
                                             className="col-span-1 mt-[-2.5vw] group"
                                         >
-                                            <div className="relative overflow-hidden">
+                                            <div className="card-image relative overflow-hidden rounded-[4vw]">
                                                 <Link to={""}>
                                                     <img
                                                         className="group-hover:scale-125 duration-1200 transition-all"
@@ -55,7 +55,7 @@ const Shop = () => {
                                                     />
                                                 </Link>
                                                 <div className="w-full h-full absolute top-0 left-0 z-10 px-[2vw]">
-                                                    <div className="px-[2vw] py-[2vw] bg-[#222020] rounded-full flex justify-center items-center absolute left-0 bottom-[-15%] right-0 opacity-0 group-hover:bottom-[1vw] group-hover:opacity-100 transition-all duration-[0.4s] w-[90%] mx-auto cursor-pointer">
+                                                    <div className="px-[2vw] py-[2vw] bg-[#111111] rounded-full flex justify-center items-center absolute left-0 bottom-[-15%] right-0 opacity-0 group-hover:bottom-[1vw] group-hover:opacity-100 transition-all duration-[0.4s] w-[90%] mx-auto cursor-pointer hover:bg-[#222020]">
                                                         <p className="text-[1vw] tracking-[0.1vw] text-white font-medium">
                                                             ADD TO CART
                                                         </p>

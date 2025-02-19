@@ -56,10 +56,10 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                         </div>
                                         <div className="flex flex-col items-center gap-1 sm:gap-[0.15vw] h-12 sm:h-[2.5vw]">
                                             <button className="bg-[#F1F1F1] w-8 sm:w-[1.5vw] h-1/2 rounded-[0.2vw] overflow-hidden text-base sm:text-[0.8vw] font-bold">
-                                                -
+                                                +
                                             </button>
                                             <button className="bg-[#F1F1F1] w-8 sm:w-[1.5vw] h-1/2 rounded-[0.2vw] overflow-hidden text-base sm:text-[0.8vw] font-bold">
-                                                +
+                                                -
                                             </button>
                                         </div>
                                     </div>
@@ -102,10 +102,10 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                         </div>
                                         <div className="flex flex-col items-center gap-1 sm:gap-[0.15vw] h-12 sm:h-[2.5vw]">
                                             <button className="bg-[#F1F1F1] w-8 sm:w-[1.5vw] h-1/2 rounded-[0.2vw] overflow-hidden text-base sm:text-[0.8vw] font-bold">
-                                                -
+                                                +
                                             </button>
                                             <button className="bg-[#F1F1F1] w-8 sm:w-[1.5vw] h-1/2 rounded-[0.2vw] overflow-hidden text-base sm:text-[0.8vw] font-bold">
-                                                +
+                                                -
                                             </button>
                                         </div>
                                     </div>
@@ -148,10 +148,10 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                         </div>
                                         <div className="flex flex-col items-center gap-1 sm:gap-[0.15vw] h-12 sm:h-[2.5vw]">
                                             <button className="bg-[#F1F1F1] w-8 sm:w-[1.5vw] h-1/2 rounded-[0.2vw] overflow-hidden text-base sm:text-[0.8vw] font-bold">
-                                                -
+                                                +
                                             </button>
                                             <button className="bg-[#F1F1F1] w-8 sm:w-[1.5vw] h-1/2 rounded-[0.2vw] overflow-hidden text-base sm:text-[0.8vw] font-bold">
-                                                +
+                                                -
                                             </button>
                                         </div>
                                     </div>
@@ -194,10 +194,10 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                         </div>
                                         <div className="flex flex-col items-center gap-1 sm:gap-[0.15vw] h-12 sm:h-[2.5vw]">
                                             <button className="bg-[#F1F1F1] w-8 sm:w-[1.5vw] h-1/2 rounded-[0.2vw] overflow-hidden text-base sm:text-[0.8vw] font-bold">
-                                                -
+                                                +
                                             </button>
                                             <button className="bg-[#F1F1F1] w-8 sm:w-[1.5vw] h-1/2 rounded-[0.2vw] overflow-hidden text-base sm:text-[0.8vw] font-bold">
-                                                +
+                                                -
                                             </button>
                                         </div>
                                     </div>
@@ -240,10 +240,10 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                         </div>
                                         <div className="flex flex-col items-center gap-1 sm:gap-[0.15vw] h-12 sm:h-[2.5vw]">
                                             <button className="bg-[#F1F1F1] w-8 sm:w-[1.5vw] h-1/2 rounded-[0.2vw] overflow-hidden text-base sm:text-[0.8vw] font-bold">
-                                                -
+                                                +
                                             </button>
                                             <button className="bg-[#F1F1F1] w-8 sm:w-[1.5vw] h-1/2 rounded-[0.2vw] overflow-hidden text-base sm:text-[0.8vw] font-bold">
-                                                +
+                                                -
                                             </button>
                                         </div>
                                     </div>
@@ -256,7 +256,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                     </div>
                 </div>
                 <div className="w-full px-5 sm:px-0">
-                    <div className="flex justify-between items-center mt-8 sm:mt-[2vw] px-5 sm:px-[0.5vw]">
+                    <div className="flex justify-between items-center mt-8 sm:mt-[2vw] px-1 sm:px-[0.5vw]">
                         <h4 className="text-xl sm:text-[1.5vw] font-semibold">
                             Subtotal
                         </h4>
@@ -264,7 +264,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                             $ 67
                         </h4>
                     </div>
-                    <button className="border-[#222020] border p-5 sm:p-[1.5vw] rounded-full w-full mt-8 sm:mt-[2vw] text-sm sm:text-[0.9vw] font-bold uppercase tracking-[0.1vw] text-center">
+                    <button className="hover:bg-[#222020] border-[#222020] border p-5 sm:p-[1.5vw] rounded-full w-full mt-8 sm:mt-[2vw] text-sm sm:text-[0.9vw] font-bold uppercase tracking-[0.1vw] text-center transition-all duration-200 hover:text-white">
                         Continue to Checkout
                     </button>
                 </div>

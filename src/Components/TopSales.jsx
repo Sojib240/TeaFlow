@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TopSales = () => {
     return (
@@ -25,10 +26,10 @@ const TopSales = () => {
                             aroma and rich taste. In the manufacture of thin and
                             flat leaves are obtained.
                         </p>
-                        <button className="flex gap-2 sm:gap-[1vw] mt-6 sm:mt-[1.2vw] items-center cursor-pointer group">
+                        <Link to={'/shop'} className="flex gap-2 sm:gap-[1vw] mt-6 sm:mt-[1.2vw] items-center cursor-pointer group">
                             <span className="text-[12px] sm:text-[0.9vw] font-semibold uppercase tracking-[0.2vw]">Shop now</span>
                             <span className="block w-10 sm:w-[4vw] group-hover:translate-x-[1.2vw] transition-all duration-300"><img className="w-full" src="/Images/Btn-icon.svg" alt="" /></span>
-                        </button>
+                        </Link>
                         </div>
                     </div>
                 </div>

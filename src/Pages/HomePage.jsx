@@ -7,6 +7,8 @@ import Marquess from "../Components/Marquess";
 import { productContext } from "../Utils/Context";
 import Delivery from "./Delivery";
 import ProductsDetails from "./ProductsDetails";
+import SingleJournal from "../Components/SingleJournal";
+import Journal from "./Journal";
 
 const HomePage = () => {
     document.title = "TEAFLOW － PREMIUM TEAS & ACCESSORIES";
