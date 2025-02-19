@@ -2,6 +2,7 @@ import React from "react";
 import FollowUs from "../Common/FollowUs";
 import Discount from "../Common/Discount";
 import Title from "../Common/Title";
+import JournalComponent from "../Common/JournalComponent";
 
 const AboutUs = () => {
     document.title = "ABOUT US － TEAFLOW";
@@ -128,6 +129,9 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="mt-8 sm:mt-[3vw]">
+                <JournalComponent />
             </div>
             <div className="mt-[13vw]">
                 <Discount />

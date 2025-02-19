@@ -94,10 +94,9 @@ const PrivacyPolicy = () => {
                         Personal Data.
                     </h4>
                     <ol
-                        start="1"
-                        className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] pl-5 sm:pl-[1.1vw]"
+                        className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] pl-0 sm:pl-[1.1vw]"
                     >
-                        <li type="1">
+                        <li >
                             Your Data Protection Rights Under the California
                             Consumer Privacy Act (CCPA) If you are a California
                             Consumer please see our CCPA Privacy Appendix for
@@ -109,7 +108,7 @@ const PrivacyPolicy = () => {
                             for various purposes to provide <br /> and improve
                             our Service to you. <br />
                             Types of Data Collected <br />
-                            <span className="block font-bold my-10 sm:my-[0.5vw]">
+                            <span className="block font-bold my-5 sm:my-[0.5vw]">
                                 Personal Data
                             </span>
                             While using our Service, we may ask you to provide
@@ -118,22 +117,18 @@ const PrivacyPolicy = () => {
                             ("Personal Data"). Personally identifiable
                             information may include, but is not limited to:
                         </li>
-                        <li className="mt-2 sm:mt-[0.5vw]" type="1">
-                            Email address
-                        </li>
-                        <li className="mt-2 sm:mt-[0.5vw]" type="1">
+                        <li className="mt-3 sm:mt-[0.5vw]">Email address</li>
+                        <li className="mt-3 sm:mt-[0.5vw]">
                             First name and last name
                         </li>
-                        <li className="mt-2 sm:mt-[0.5vw]" type="1">
-                            Phone number
-                        </li>
-                        <li className="mt-2 sm:mt-[0.5vw]" type="1">
+                        <li className="mt-3 sm:mt-[0.5vw]">Phone number</li>
+                        <li className="mt-3 sm:mt-[0.5vw]">
                             Address, State, Province, ZIP/Postal code, City
                         </li>
-                        <li type="1">Cookies and Usage Data</li>
+                        <li className="mt-3 sm:mt-[0.5vw]">Cookies and Usage Data</li>
                     </ol>
                 </div>
-                <div className="mt-24 sm:mt-[5vw]">
+                <div className="mt-14 sm:mt-[4vw]">
                     <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                         Usage Data
                     </h4>
@@ -169,25 +164,24 @@ const PrivacyPolicy = () => {
                     </h4>
                 </div>
                 {/*  */}
-                <div className="mt-12 sm:mt-[5vw] pl-4 sm:pl-[1.1vw]">
+                <div className="mt-8 sm:mt-[5vw]">
                     <ol
-                        start="1"
-                        className="text-lg sm:text-[1.2vw] leading-[150%] sm:leading-[2.3vw] pl-[1.1vw]"
+                        className="text-lg sm:text-[1.2vw] leading-[150%] sm:leading-[2.3vw] pl-0 sm:pl-[1.1vw]"
                     >
-                        <li type="1" className="mt-2 sm:mt-[0.5vw]">
+                        <li className="mt-3 sm:mt-[0.5vw]">
                             <span className="font-medium inline">
                                 Session Cookies.
                             </span>{" "}
                             We use Session Cookies to operate our Service.
                         </li>
-                        <li type="1" className="mt-2 sm:mt-[0.5vw]">
+                        <li className="mt-3 sm:mt-[0.5vw]">
                             <span className="font-medium inline">
                                 Preference Cookies.
                             </span>
                             We use Preference Cookies to remember your
                             preferences and various settings.
                         </li>
-                        <li type="1" className="mt-2 sm:mt-[0.5vw]">
+                        <li className="mt-3 sm:mt-[0.5vw]">
                             <span className="font-medium inline">
                                 Security Cookies.
                             </span>{" "}
@@ -195,37 +189,31 @@ const PrivacyPolicy = () => {
                         </li>
                     </ol>
                 </div>
-                <div className="mt-12 sm:mt-[5vw]">
-                    <h5 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
+                <div className="mt-8 sm:mt-[5vw]">
+                    <h5 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mb-3 sm:mb-[0.5vw]">
                         Use of Data
                     </h5>
                     <h5 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mb-5 sm:mb-[1.1vw]">
                         P.B CORP uses the collected data for various purposes:
                     </h5>
-                    <div className="pl-4 sm:pl-[1.1vw]">
+                    <div className="pl-0 sm:pl-[1.1vw]">
                         <ol
-                            start="1"
+
                             className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] pl-[1.1vw] flex flex-col gap-2 sm:gap-[1.1vw]"
                         >
-                            <li type="1">
-                                To provide and maintain our Service
-                            </li>
-                            <li type="1">
-                                To notify you about changes to our Service
-                            </li>
-                            <li type="1">
+                            <li className="mb-3 sm:mb-[0.5vw]">To provide and maintain our Service</li>
+                            <li className="mb-3 sm:mb-[0.5vw]">To notify you about changes to our Service</li>
+                            <li className="mb-3 sm:mb-[0.5vw]">
                                 To allow you to participate in interactive
                                 features of our Service when you choose to do so
                             </li>
-                            <li type="1">To provide customer support</li>
-                            <li type="1">
+                            <li className="mb-3 sm:mb-[0.5vw]">To provide customer support</li>
+                            <li className="mb-3 sm:mb-[0.5vw]">
                                 To gather analysis or valuable information so
                                 that we can improve our Service
                             </li>
-                            <li type="1">
-                                To monitor the usage of our Service
-                            </li>
-                            <li type="1">
+                            <li className="mb-3 sm:mb-[0.5vw]">To monitor the usage of our Service</li>
+                            <li className="mb-3 sm:mb-[0.5vw]">
                                 To detect, prevent and address technical issues{" "}
                                 <br />{" "}
                                 <span>
@@ -241,18 +229,14 @@ const PrivacyPolicy = () => {
                                     process your Personal Data because:
                                 </span>
                             </li>
-                            <li type="1">
-                                We need to perform a contract with you
-                            </li>
-                            <li type="1">
-                                You have given us permission to do so
-                            </li>
-                            <li type="1">
+                            <li>We need to perform a contract with you</li>
+                            <li>You have given us permission to do so</li>
+                            <li>
                                 The processing is in our legitimate interests
                                 and it's not overridden by your rights
                             </li>
-                            <li type="1">For payment processing purposes</li>
-                            <li type="1">
+                            <li>For payment processing purposes</li>
+                            <li>
                                 To comply with the law <span></span> Retention
                                 of Data <br />
                                 <span className="block mt-3 sm:mt-[1.1vw]">
@@ -314,21 +298,21 @@ const PrivacyPolicy = () => {
                                 </span>
                             </li>
                             <br />
-                            <li type="1">To comply with a legal obligation</li>
-                            <li type="1">
+                            <li>To comply with a legal obligation</li>
+                            <li>
                                 To protect and defend the rights or property of
                                 P.B CORP
                             </li>
-                            <li type="1">
+                            <li>
                                 To prevent or investigate possible wrongdoing in
                                 connection with the Service
                             </li>
-                            <li type="1">
+                            <li>
                                 To protect the personal safety of users of the
                                 Service or the public
                             </li>
-                            <li type="1">To protect against legal liability</li>
-                            <li type="1">
+                            <li>To protect against legal liability</li>
+                            <li>
                                 <span>Security of Data</span>
                                 <span className="mt-3 sm:mt-[1.1vw] block">
                                     The security of your data is important to
@@ -362,7 +346,7 @@ const PrivacyPolicy = () => {
                                     following data protection rights: <br />
                                 </span>
                             </li>
-                            <li type="1">
+                            <li>
                                 <span>
                                     The right to access, update or to delete the
                                     information we have on you.
@@ -393,7 +377,7 @@ const PrivacyPolicy = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li type="1">
+                            <li>
                                 Please note that we may ask you to verify your
                                 identity before responding to such requests.{" "}
                                 <br />
@@ -420,7 +404,7 @@ const PrivacyPolicy = () => {
                                     monitor and analyze the use of our Service.{" "}
                                 </span>
                             </li>
-                            <li type="1">
+                            <li>
                                 <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                                     Google Analytics
                                 </span>
@@ -442,12 +426,15 @@ const PrivacyPolicy = () => {
                                 For more information on the privacy practices of
                                 Google, please visit the Google Privacy Terms
                                 web page:{" "}
-                                <a className="underline text-blue-700" href="">
+                                <a
+                                    className="underline text-sm sm:text-[1.2vw] text-blue-700"
+                                    href=""
+                                >
                                     https://policies.google.com/privacy?hl=en
                                 </a>
                             </li>
-                            <div className="my-24 sm:my-[5vw]">
-                                <li type="1">
+                            <div className="my-10 sm:my-[4vw]">
+                                <li>
                                     <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                                         RightMessage
                                     </span>
@@ -458,14 +445,14 @@ const PrivacyPolicy = () => {
                                     practices of RightMessage, please visit the
                                     RightMessage Privacy Terms web page:
                                     <a
-                                        className="underline text-blue-700"
+                                        className="underline text-sm sm:text-[1.2vw] text-blue-700"
                                         href=""
                                     >
                                         https://rightmessage.com/privacy
                                     </a>
                                 </li>
                             </div>
-                            <li type="1">
+                            <li>
                                 <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                                     Mailchimp.
                                 </span>
@@ -477,11 +464,14 @@ const PrivacyPolicy = () => {
                                 For more information on the privacy practices of
                                 Mailchimp, please visit the Mailchimp Privacy
                                 Terms web page:
-                                <a className="underline text-blue-700" href="">
+                                <a
+                                    className="underline text-sm sm:text-[1.2vw] text-blue-700"
+                                    href=""
+                                >
                                     https://mailchimp.com/legal/privacy/
                                 </a>
                             </li>
-                            <li type="1">
+                            <li>
                                 <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                                     Behavioral Remarketing
                                 </span>
@@ -491,7 +481,7 @@ const PrivacyPolicy = () => {
                                 cookies to inform, optimize and serve ads based
                                 on your past visits to our Service.
                             </li>
-                            <li type="1">
+                            <li>
                                 <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                                     Google AdWords
                                 </span>
@@ -500,12 +490,18 @@ const PrivacyPolicy = () => {
                                 Analytics for Display Advertising and customize
                                 the Google Display Network ads by visiting the
                                 Google Ads Settings page:
-                                <a className="underline text-blue-700" href="">
+                                <a
+                                    className="underline text-sm sm:text-[1.2vw] text-blue-700"
+                                    href=""
+                                >
                                     http://www.google.com/settings/ads{" "}
                                 </a>
                                 Google also recommends installing the Google
                                 Analytics Opt-out Browser Add-on -
-                                <a className="underline text-blue-700" href="">
+                                <a
+                                    className="underline text-sm sm:text-[1.2vw] text-blue-700"
+                                    href=""
+                                >
                                     https://tools.google.com/dlpage/gaoptout{" "}
                                 </a>
                                 - for your web browser. Google Analytics Opt-out
@@ -515,11 +511,14 @@ const PrivacyPolicy = () => {
                                 For more information on the privacy practices of
                                 Google, please visit the Google Privacy Terms
                                 web page:
-                                <a className="underline text-blue-700" href="">
+                                <a
+                                    className="underline text-sm sm:text-[1.2vw] text-blue-700"
+                                    href=""
+                                >
                                     https://policies.google.com/privacy?hl=en{" "}
                                 </a>
                             </li>
-                            <li type="1">
+                            <li>
                                 <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                                     Payments{" "}
                                 </span>
@@ -539,8 +538,8 @@ const PrivacyPolicy = () => {
                                 requirements help ensure the secure handling of
                                 payment information. <br />
                             </li>
-                            <div className="mt-24 sm:mt-[5vw]">
-                                <li type="1">
+                            <div className="mt-10 sm:mt-[4vw]">
+                                <li>
                                     <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                                         Links to Other Sites
                                     </span>
@@ -586,10 +585,10 @@ const PrivacyPolicy = () => {
                                     Policy, please contact us:
                                 </li>
                             </div>
-                            <li type="1">
+                            <li>
                                 By email: hello at www.tea-flow.com or use our
                                 <a
-                                    className="underline text-blue-700 ml-2"
+                                    className="underline text-sm sm:text-[1.2vw] text-blue-700 ml-2"
                                     href=""
                                 >
                                     contact form here

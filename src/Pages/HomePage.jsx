@@ -9,6 +9,7 @@ import Delivery from "./Delivery";
 import ProductsDetails from "./ProductsDetails";
 import SingleJournal from "../Components/SingleJournal";
 import Journal from "./Journal";
+import JournalComponent from "../Common/JournalComponent";
 
 const HomePage = () => {
     document.title = "TEAFLOW － PREMIUM TEAS & ACCESSORIES";
@@ -27,6 +28,9 @@ const HomePage = () => {
             </div>
             <div>
                 <Philosophy />
+            </div>
+            <div className="">
+                <JournalComponent />
             </div>
             <div className="mt-[15vw]">
                 <Discount />

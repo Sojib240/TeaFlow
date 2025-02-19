@@ -672,7 +672,7 @@ const New2 = () => {
                 date: "Jan 16, 2023",
                 title: "How to brew Shu (ripe) Pu-erh tea correctly",
                 mainImgSrc:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a06_Chaban%20%231-new-1.jpeg",
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a0b_pu-erh%20flow%20combo.jpg",
                 artiest: "Paul White",
 
                 pageContent: `<div className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] p-0 sm:pl-[10vw] mt-8 sm:mt-[4vw]">
@@ -871,7 +871,7 @@ const New2 = () => {
                 date: "Feb 6, 2023",
                 title: "How to brew Sheng (raw) Pu-erh tea correctly",
                 mainImgSrc:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a06_Chaban%20%231-new-1.jpeg",
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80671c_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
                 artiest: "Paul White",
 
                 pageContent: `<div className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] p-0 sm:pl-[10vw] mt-8 sm:mt-[4vw]">
@@ -1062,7 +1062,7 @@ const New2 = () => {
                 date: "Feb 14, 2023",
                 title: "Types and varieties of Chinese tea",
                 mainImgSrc:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a06_Chaban%20%231-new-1.jpeg",
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a10_combo-min.jpg",
                 artiest: "Paul White",
 
                 pageContent: `<div className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] p-0 sm:pl-[10vw] mt-8 sm:mt-[4vw]">
@@ -1284,7 +1284,7 @@ const New2 = () => {
                 date: "Feb 20, 2023",
                 title: "Gaiwan: instructions for use",
                 mainImgSrc:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a06_Chaban%20%231-new-1.jpeg",
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ea_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%20%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D1%81%202-min.jpg",
                 artiest: "Paul White",
 
                 pageContent: `<div className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] p-0 sm:pl-[10vw] mt-8 sm:mt-[4vw]">
@@ -1508,7 +1508,7 @@ const New2 = () => {
                 date: "Feb 27, 2023",
                 title: "Cha Hai (Gong Dao Bei): instructions for use",
                 mainImgSrc:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a06_Chaban%20%231-new-1.jpeg",
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d0_cha-hai-1-new-min.jpeg",
                 artiest: "Paul White",
 
                 pageContent: `<div className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] p-0 sm:pl-[10vw] mt-8 sm:mt-[4vw]">

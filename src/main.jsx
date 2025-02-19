@@ -4,11 +4,14 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import Context from "./Utils/Context.jsx";
+import JournalContext from "./Utils/JournalContext.jsx";
 
 createRoot(document.getElementById("root")).render(
     <Context>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
+        <JournalContext>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+        </JournalContext>
     </Context>
 );
