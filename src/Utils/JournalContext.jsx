@@ -11,8 +11,8 @@ const JournalContext = (props) => {
             "https://tea-flows-journal-default-rtdb.firebaseio.com/journalData.json";
         axios
             .get(journalapi)
-            .then((res) => {
-                const formatedValueOfJournal = Object.values(res.data);
+            .then((response) => {
+                const formatedValueOfJournal = Object.values(response.data);
                 setjournalApiData(formatedValueOfJournal[0]);
             })
             .catch((err) => {

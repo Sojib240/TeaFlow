@@ -16,13 +16,14 @@ import ProductsDetails from "./Pages/ProductsDetails";
 import gsap from "gsap";
 import ScrollToTop from "./Common/ScrollToTop";
 import SingleJournal from "./Components/SingleJournal";
+import Flow from "./Pages/Flow";
 
 const App = () => {
+    // app states
     const [CartOpenClose, setCartOpenClose] = useState(false);
     const [menuOpenClose, setmenuOpenClose] = useState(false);
-
+    // mouse-follower
     const handleMouseMove = (event) => {
-        // f
         const { clientX, clientY } = event;
         let mm = gsap.matchMedia();
         mm.add(
@@ -34,13 +35,12 @@ const App = () => {
 
                 gsap.to("#mouse", {
                     ease: "power2.out",
-                    x: isMobile ? clientX - 24 / 2 : "",
-                    y: isMobile ? clientY - 24 / 2 : "",
+                    x: isMobile ? clientX - 24 / 2 : null,
+                    y: isMobile ? clientY - 24 / 2 : null,
                     opacity: isMobile ? 1 : 0,
                 });
             }
         );
-        // f
     };
 
     return (
@@ -63,6 +63,7 @@ const App = () => {
                 <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
                 <Route path="/returns" element={<Returns />} />
                 <Route path="/delivery" element={<Delivery />} />
+                <Route path="/flows" element={<Flow />} />
                 <Route path="/singleJournal/:id" element={<SingleJournal />} />
                 <Route
                     path="/productsDetails/:id"

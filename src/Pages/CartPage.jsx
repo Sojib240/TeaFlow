@@ -10,7 +10,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
         >
             <div className="container w-full h-full sm:h-auto bg-white py-6 sm:p-[3.5vw] rounded-4xl sm:rounded-[3vw] mx-auto flex flex-col items-start">
                 <div className="flex justify-between items-center gap-[2vw] w-full mb-8 sm:mb-[2vw] px-5 sm:px-0">
-                    <h2 className="uppercase text-xl sm:text-[1.6vw] font-semibold">
+                    <h2 className="uppercase text-2xl sm:text-[1.6vw] font-semibold">
                         my Cart
                     </h2>
                     <div
@@ -257,10 +257,10 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                 </div>
                 <div className="w-full px-5 sm:px-0">
                     <div className="flex justify-between items-center mt-8 sm:mt-[2vw] px-1 sm:px-[0.5vw]">
-                        <h4 className="text-xl sm:text-[1.5vw] font-semibold">
+                        <h4 className="text-lg sm:text-[1.5vw] font-semibold">
                             Subtotal
                         </h4>
-                        <h4 className="font-bold text-xl sm:text-[1.5vw]">
+                        <h4 className="font-bold text-lg sm:text-[1.5vw]">
                             $ 67
                         </h4>
                     </div>

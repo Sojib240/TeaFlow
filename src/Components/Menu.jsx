@@ -44,7 +44,7 @@ const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
                 </Link>
                 <Link
                     onClick={() => setmenuOpenClose(false)}
-                    to={""}
+                    to={"/flows"}
                     className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
                 >
                     flows
