@@ -3,10 +3,10 @@ import React from "react";
 const FollowUs = () => {
     return (
         <div className="pl-5 sm:pl-[14.44vw] w-full">
-            <h2 className="uppercase text-4xl sm:text-[8vw] pb-[6vw] font-bold">
+            <h2 className="uppercase text-4xl sm:text-[8vw] pb-[6vw] font-GolosBold">
                 Follow us
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-[1.2vw] w-full">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-[1.2vw] w-full font-GolosRegular">
                 <div className="rounded-[4vw] overflow-hidden group relative flex col-span-1">
                     <img
                         className="w-full"

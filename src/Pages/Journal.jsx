@@ -11,7 +11,7 @@ const Journal = () => {
     return (
         <>
             <Title text={"Journal"} />
-            <div className="px-5 sm:px-[5.15vw] mx-auto mt-20 sm:mt-[8vw]">
+            <div className="px-5 sm:px-[5.15vw] mx-auto mt-20 sm:mt-[8vw] font-GolosRegular">
                 {journalApiData.journals &&
                     journalApiData.journals.map(
                         ({ date, id, mainImgSrc, title }) => {
@@ -22,14 +22,14 @@ const Journal = () => {
                                         key={id}
                                         className={`w-full ${
                                             id === 8 && "border-b"
-                                        } flex flex-col sm:flex-row justify-between items-start sm:items-start border-t border-[#DEDADA] py-8 sm:py-[3vw]`}
+                                        } flex flex-col gap-5 sm:gap-[2vw] sm:flex-row justify-between items-start sm:items-start border-t border-[#DEDADA] py-8 sm:py-[3vw]`}
                                     >
                                         <div className="w-full sm:w-[65%] flex flex-col justify-between h-full">
                                             <div className="mb-5 sm:mb-0">
                                                 <h4 className="block sm:hidden text-lg">
                                                     {date}
                                                 </h4>
-                                                <h4 className="text-3xl sm:text-[3.8vw] uppercase font-medium mb-3 sm:mb-[1vw]">
+                                                <h4 className="text-3xl sm:text-[3.8vw] uppercase font-GolosDemiBold mb-3 sm:mb-[1vw]">
                                                     {title}
                                                 </h4>
                                                 <h4 className="hidden sm:block w-full sm:w-[16%] text-[1.2vw]">

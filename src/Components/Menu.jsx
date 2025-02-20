@@ -10,24 +10,24 @@ const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
             y: "3vw",
             stagger: 0.05,
         });
-        gsap.from(".navMenuText2", {
-            opacity: 0,
-            y: "3vw",
-            stagger: 0.1,
-        });
         gsap.from(".navMenuText3", {
             opacity: 0,
             y: "3.5vw",
             stagger: 0.1,
         });
+        gsap.from(".navMenuText2", {
+            opacity: 0,
+            y: "3vw",
+            stagger: 0.1,
+        });
     }
     return (
         <div
-            className={`w-full h-screen fixed top-0 left-0 bg-white duration-200 transition-all z-[99] -translate-y-[100%] pl-5 sm:pl-[59.25%] pr-5 sm:pr-0 flex flex-col pt-32 sm:pt-[15vw] md:pt-[15vw] lg:pt-[12vw] xl:pt-[9vw] ${
+            className={`w-full h-screen fixed top-0 left-0 bg-white duration-200 transition-all z-[99] -translate-y-[100%] pl-5 sm:pl-[59.25%] pr-5 sm:pr-0 flex flex-col pt-32 sm:pt-[15vw] md:pt-[15vw] lg:pt-[12vw] xl:pt-[9vw] font-GolosRegular ${
                 menuOpenClose === true && "translate-y-0"
             }`}
         >
-            <div className="flex flex-col gap-4 sm:gap-[1.1vw]">
+            <div className="flex flex-col gap-4 sm:gap-[1.1vw] font-GolosDemiBold">
                 <Link
                     onClick={() => setmenuOpenClose(false)}
                     to={"/"}

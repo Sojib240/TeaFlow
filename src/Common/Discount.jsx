@@ -5,10 +5,10 @@ const Discount = () => {
         <div className="w-full rounded-4xl sm:rounded-[6vw] mx-auto bg-[#f7f7f7]">
             <div className="px-8 sm:px-[14.44vw] py-16 sm:py-[11vw] flex flex-col  items-center gap-14 sm:flex-row sm:items-end">
                 <div className="w-full sm:w-[65%] text-center sm:text-left">
-                    <h2 className="text-4xl sm:text-[3.5vw] uppercase  text-Casper font-Casper Casper font-semibold">
+                    <h2 className="text-4xl sm:text-[3.5vw] uppercase  text-Casper Casper font-GolosDemiBold">
                         Get 20% off
                     </h2>
-                    <p className="text-base sm:text-[1.2vw] pt-[4vw] leading-[30px] sm:leading-[2vw]">
+                    <p className="text-base sm:text-[1.2vw] pt-[4vw] leading-[30px] sm:leading-[2vw] font-GolosRegular">
                         Your first order + future sales updates. <br />
                         You can safely unsubscribe anytime from any email <br />
                         footer. Here is our{" "}
@@ -17,7 +17,7 @@ const Discount = () => {
                         </a>
                     </p>
                 </div>
-                <div className="w-full sm:w-[35%] border-b border-[#ded9d9] flex justify-between pb-3">
+                <div className="w-full sm:w-[35%] border-b border-[#ded9d9] flex justify-between pb-3 font-GolosRegular">
                     <input
                         className="w-[83%] outline-none text-lg sm:text-[1.3vw]"
                         type="email"

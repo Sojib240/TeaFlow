@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
     return (
         <div>
             <Title text={"returns and exchanges"} />
-            <div className="px-5 sm:pl-[14.44vw] sm:pr-[32vw] mx-auto">
+            <div className="px-5 sm:pl-[14.44vw] sm:pr-[32vw] mx-auto font-GolosRegular">
                 <div className="mt-[7vw]">
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mb-16 sm:mb-[4vw]">
                         Effective date: January 1, 2023 P.B CORP ("us", "we", or
@@ -28,14 +28,14 @@ const PrivacyPolicy = () => {
                     <h6 className="text-[12px] sm:text-[0.7vw] leading-[130%] sm:leading-[2.1vw] uppercase font-medium mt-5">
                         Definitions
                     </h6>
-                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                         Service
                     </h4>
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
                         Service is the www.tea-flow.com website operated by P.B
                         corp
                     </p>
-                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                         Personal Data
                     </h4>
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
@@ -44,7 +44,7 @@ const PrivacyPolicy = () => {
                         other information either in our possession or likely to
                         come into our possession).
                     </p>
-                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                         Usage Data
                     </h4>
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
@@ -53,14 +53,14 @@ const PrivacyPolicy = () => {
                         infrastructure itself (for example, the duration of a
                         page visit).
                     </p>
-                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                         Cookies
                     </h4>
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
                         Cookies are small pieces of data stored on your device
                         (computer or mobile device).
                     </p>
-                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                         Data Controller
                     </h4>
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
@@ -71,7 +71,7 @@ const PrivacyPolicy = () => {
                         be, processed. For the purpose of this Privacy Policy,
                         we are a Data Controller of your Personal Data.
                     </p>
-                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                         Data Processors (or Service Providers)
                     </h4>
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
@@ -81,7 +81,7 @@ const PrivacyPolicy = () => {
                         Service Providers in order to process your data more
                         effectively.
                     </p>
-                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                         Data Subject (or User)
                     </h4>
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
@@ -90,7 +90,7 @@ const PrivacyPolicy = () => {
                     </p>
                 </div>
                 <div className="">
-                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                         Personal Data.
                     </h4>
                     <ol
@@ -108,7 +108,7 @@ const PrivacyPolicy = () => {
                             for various purposes to provide <br /> and improve
                             our Service to you. <br />
                             Types of Data Collected <br />
-                            <span className="block font-bold my-5 sm:my-[0.5vw]">
+                            <span className="block font-GolosBold my-5 sm:my-[0.5vw]">
                                 Personal Data
                             </span>
                             While using our Service, we may ask you to provide
@@ -129,7 +129,7 @@ const PrivacyPolicy = () => {
                     </ol>
                 </div>
                 <div className="mt-14 sm:mt-[4vw]">
-                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                         Usage Data
                     </h4>
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
@@ -142,7 +142,7 @@ const PrivacyPolicy = () => {
                         on those pages, unique device identifiers and other
                         diagnostic data.
                     </p>
-                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                         Tracking Cookies Data
                     </h4>
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
@@ -159,7 +159,7 @@ const PrivacyPolicy = () => {
                         not accept cookies, you may not be able to use some
                         portions of our Service.
                     </p>
-                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                    <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                         Examples of Cookies we use:
                     </h4>
                 </div>
@@ -405,7 +405,7 @@ const PrivacyPolicy = () => {
                                 </span>
                             </li>
                             <li>
-                                <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                                <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                                     Google Analytics
                                 </span>
                                 Google Analytics is a web analytics service
@@ -435,7 +435,7 @@ const PrivacyPolicy = () => {
                             </li>
                             <div className="my-10 sm:my-[4vw]">
                                 <li>
-                                    <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                                    <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                                         RightMessage
                                     </span>
                                     We use RightMessage to recommend products
@@ -453,7 +453,7 @@ const PrivacyPolicy = () => {
                                 </li>
                             </div>
                             <li>
-                                <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                                <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                                     Mailchimp.
                                 </span>
                                 Mailchimp remarketing services are provided by
@@ -472,7 +472,7 @@ const PrivacyPolicy = () => {
                                 </a>
                             </li>
                             <li>
-                                <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                                <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                                     Behavioral Remarketing
                                 </span>
                                 P.B CORP uses remarketing services to advertise
@@ -482,7 +482,7 @@ const PrivacyPolicy = () => {
                                 on your past visits to our Service.
                             </li>
                             <li>
-                                <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                                <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                                     Google AdWords
                                 </span>
                                 Google AdWords remarketing service is provided
@@ -519,7 +519,7 @@ const PrivacyPolicy = () => {
                                 </a>
                             </li>
                             <li>
-                                <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                                <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                                     Payments{" "}
                                 </span>
                                 We may provide paid products and/or services
@@ -540,7 +540,7 @@ const PrivacyPolicy = () => {
                             </li>
                             <div className="mt-10 sm:mt-[4vw]">
                                 <li>
-                                    <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-bold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
+                                    <span className="block text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                                         Links to Other Sites
                                     </span>
                                     Our Service may contain links to other sites

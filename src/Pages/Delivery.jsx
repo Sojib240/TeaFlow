@@ -7,7 +7,7 @@ const Delivery = () => {
     return (
         <>
             <Title text={'delivery'}/>
-            <div className="px-5 sm:pl-[14.44vw] sm:pr-[32vw] mx-auto mt-16 sm:mt-[7vw]">
+            <div className="px-5 sm:pl-[14.44vw] sm:pr-[32vw] mx-auto mt-16 sm:mt-[7vw] font-GolosRegular">
                 <div className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2.3vw]">
                     <span>
                         For questions or comments please call us toll free at

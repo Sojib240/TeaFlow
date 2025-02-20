@@ -2,11 +2,13 @@ import React, { useContext, useEffect, useState } from "react";
 import Discount from "../Common/Discount";
 import { Link, useParams } from "react-router-dom";
 import { productContext } from "../Utils/Context";
+import { cartContextData } from "../Utils/CartContext";
 
 const ProductsDetails = () => {
     const { id } = useParams();
     const [productsApiData, setproductsApiData] = useContext(productContext);
     const [singleProduct, setsingleProduct] = useState();
+    const [cart, setcart] = useContext(cartContextData);
     let productPageTitle;
 
     const [imageSlider, setimageSlider] = useState();
@@ -18,9 +20,23 @@ const ProductsDetails = () => {
         const product = productsApiData.products[id - 1];
         setsingleProduct(product);
         setimageSlider(product.image);
-        console.log(product);
         productPageTitle = document.title = `TEAFLOW － ${product.title}`;
     };
+    // handle cart
+    const handleCart = (product) => {
+        var isTrue = false;
+        cart.map((prod) => {
+            if (prod.id === product.id) {
+                isTrue = true;
+            }
+        });
+        if (isTrue) {
+            return;
+        }
+        setcart([...cart, product]);
+    };
+
+    //
     useEffect(() => {
         singleProductId();
     }, []);
@@ -28,7 +44,7 @@ const ProductsDetails = () => {
     return (
         <>
             {singleProduct && (
-                <div className="px-5 sm:px-[5.15vw] w-full flex gap-[6vw] relative mt-[3vw]">
+                <div className="px-5 sm:px-[5.15vw] w-full flex gap-[6vw] relative mt-[3vw] font-GolosRegular">
                     <div className="w-full sm:w-[58%]">
                         <div className="flex gap-4 sm:gap-[0.6vw] flex-col sm:flex-row w-full">
                             <div className="order-2 sm:order-1 w-full sm:w-[22.85%] flex flex-row sm:flex-col gap-[0.6vw]">
@@ -84,7 +100,7 @@ const ProductsDetails = () => {
 
                         <div className="w-full block sm:hidden mt-10 sm:mt-0">
                             <div className="">
-                                <h2 className="text-4xl sm:text-[3.5vw] uppercase font-bold mb-4 sm:mb-[7vw]">
+                                <h2 className="text-4xl sm:text-[3.5vw] uppercase font-GolosBold mb-4 sm:mb-[7vw]">
                                     {singleProduct.title}
                                 </h2>
                                 <div className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col">
@@ -93,7 +109,10 @@ const ProductsDetails = () => {
                                 </div>
                             </div>
                             <div className="flex flex-col sm:flex-row sm:items-center gap-[2vw] mt-6 sm:mt-[3vw]">
-                                <div className="flex items-center justify-between gap-[0.5vw] bg-[#222020] px-8 py-6 sm:p-[2.2vw] rounded-full sm:w-[70%]">
+                                <button
+                                    onClick={() => handleCart(singleProduct)}
+                                    className="flex items-center justify-between gap-[0.5vw] bg-[#222020] px-8 py-6 sm:p-[2.2vw] rounded-full sm:w-[70%]"
+                                >
                                     <div className="flex gap-3 sm:gap-[1vw]">
                                         <img
                                             className="w-4"
@@ -105,9 +124,9 @@ const ProductsDetails = () => {
                                         </h4>
                                     </div>
                                     <p className="text-white text-base sm:text-[1vw] font-medium">
-                                        {singleProduct.price}
+                                        $ {singleProduct.price}
                                     </p>
-                                </div>
+                                </button>
                                 <h4 className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] text-[#989292] flex items-center gap-[1vw] w-full sm:w-[30%] mt-3 mb-2 sm:my-0">
                                     <img
                                         src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806603_in-stock.svg"
@@ -116,14 +135,14 @@ const ProductsDetails = () => {
                                     in stock
                                 </h4>
                             </div>
-                            <div className="flex items-start  gap-[1vw] mt-5 font-semibold">
+                            <div className="flex items-start  gap-[1vw] mt-5 font-GolosDemiBold">
                                 <span className="block w-5 mt-1">
                                     <img
                                         src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806639_hand-notification.svg"
                                         alt=""
                                     />
                                 </span>{" "}
-                                <h4 className="text-base sm:text-[1vw] leading-[144%] sm:leading-[2vw]">
+                                <h4 className="text-base sm:text-[1vw] leading-[144%] sm:leading-[2vw] font-GolosDemiBold">
                                     Every time you buy our premium tea, you help
                                     clean the ocean of plastic!
                                 </h4>
@@ -131,7 +150,7 @@ const ProductsDetails = () => {
                         </div>
                         <div className="mt-36 sm:mt-[5vw]">
                             <div className="">
-                                <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-bold mb-[1vw]">
+                                <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-[1vw]">
                                     About product
                                 </h4>
                                 <p className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] mb-[4vw]">
@@ -139,7 +158,7 @@ const ProductsDetails = () => {
                                 </p>
                             </div>
                             <div className="mb-[4vw]">
-                                <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-bold mb-[1vw]">
+                                <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-[1vw]">
                                     Steeping Instructions
                                 </h4>
                                 <p className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw]">
@@ -147,7 +166,7 @@ const ProductsDetails = () => {
                                 </p>
                             </div>
                             <div className="">
-                                <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-bold mb-[1vw]">
+                                <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-[1vw]">
                                     Ingredients
                                 </h4>
                                 <p className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw]">
@@ -197,35 +216,34 @@ const ProductsDetails = () => {
                     </div>
                     <div className="w-[42%] hidden sm:block sticky top-0 right-0">
                         <div className="">
-                            <h2 className="text-[3.5vw] uppercase font-bold mb-[7vw]">
-                                RED TEA #6
+                            <h2 className="text-[3.5vw] uppercase font-GolosBold mb-[7vw]">
+                                {singleProduct.title}
                             </h2>
                             <div className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col">
                                 Tasting notes:{" "}
-                                <span>
-                                    juicy, sweet and strong. Velvety,
-                                    fruity-berry aftertaste. Impact: refreshes
-                                    and warms, gives strength and energy.
-                                </span>
+                                <span>{singleProduct.TastingNotes}</span>
                             </div>
                         </div>
                         <div className="flex items-center gap-[2vw] mt-[1.8vw]">
-                            <Link className="flex items-center justify-between gap-[0.5vw] bg-[#222020] p-[2.2vw] rounded-full w-[70%]">
+                            <button
+                                onClick={() => handleCart(singleProduct)}
+                                className="flex items-center justify-between gap-[0.5vw] bg-[#222020] p-[2.2vw] rounded-full w-full sm:w-[70%]"
+                            >
                                 <div className="flex items-center gap-[1vw]">
                                     <img
                                         className="w-[1vw]"
                                         src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806607_card-white.svg"
                                         alt=""
                                     />
-                                    <h4 className="text-white text-lg sm:text-[1vw] font-medium">
+                                    <span className="text-white block text-lg sm:text-[1vw] font-medium">
                                         ADD TO CART
-                                    </h4>
+                                    </span>
                                 </div>
                                 <p className="text-white text-base sm:text-[1vw] font-medium">
-                                    $ 27
+                                    $ {singleProduct.price}
                                 </p>
-                            </Link>
-                            <h4 className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] text-[#989292] flex items-center gap-[1vw] w-[30%]">
+                            </button>
+                            <h4 className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] text-[#989292] flex items-center gap-2 sm:gap-[1vw] w-[30%]">
                                 <img
                                     src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806603_in-stock.svg"
                                     alt=""
@@ -233,7 +251,7 @@ const ProductsDetails = () => {
                                 in stock
                             </h4>
                         </div>
-                        <div className="flex items-start gap-[1vw] mt-[1.5vw] font-semibold">
+                        <div className="flex items-start gap-[1vw] mt-[1.5vw] font-GolosDemiBold">
                             <span className="block mt-[0.7vw]">
                                 <img
                                     className="w-[1vw]"

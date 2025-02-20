@@ -11,7 +11,7 @@ const Flow = () => {
     return (
         <>
             <Title text={"choose your flow"} />
-            <div className="px-5 sm:px-[14.44vw] mx-auto mt-18 sm:mt-[9vw]">
+            <div className="px-5 sm:px-[14.44vw] mx-auto mt-18 sm:mt-[9vw] font-GolosRegular">
                 <h4 className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2.3vw] pr-0 sm:pr-[20vw]">
                     Welcome to Choose Your Flow, where we offer a selection of
                     teas to cater to your needs and help you find your ideal
@@ -33,10 +33,10 @@ const Flow = () => {
                                             />
                                         </Link>
                                     </div>
-                                    <h4 className="text-xl sm:text-[2.4vw] md:text-[3vw] mt-2 sm:mt-[1vw] font-semibold text-[#222020] uppercase">
+                                    <h4 className="text-xl sm:text-[2.4vw] md:text-[3vw] mt-2 sm:mt-[1vw] font-GolosDemiBold text-[#222020] uppercase">
                                         {title}
                                     </h4>
-                                    <p className="text-base font-semibold sm:text-[2.2vw] md:text-[1.2vw] text-[#979191] mt-2 sm:mt-[1vw]">
+                                    <p className="text-base font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191] mt-2 sm:mt-[1vw]">
                                         {desc}
                                     </p>
                                 </Link>

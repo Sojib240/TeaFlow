@@ -7,10 +7,10 @@ const Contact = () => {
     document.title = "CONTACT US － TEAFLOW";
     return (
         <div>
-            <div className="my-16 sm:my-[7vw]">
+            <div className="my-16 sm:my-[7vw] font-GolosRegular">
                 <Marquee speed={280} direction="right" pauseOnClick>
                     <div className="overflow-hidden">
-                        <span className="block text-[14vw] uppercase font-bold whitespace-nowrap leading-[12.5vw]">
+                        <span className="block text-[14vw] uppercase font-GolosBold whitespace-nowrap leading-[12.5vw]">
                             Contact Us Contact Us&#160;
                         </span>
                     </div>

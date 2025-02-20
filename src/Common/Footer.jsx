@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className="px-5 sm:pl-[14.44vw] sm:pr-[16vw] pt-20 sm:pt-[23vw]">
+        <div className="px-5 sm:pl-[14.44vw] sm:pr-[16vw] pt-20 sm:pt-[23vw] font-GolosRegular">
             <div className="flex justify-between">
                 <div className="hidden sm:flex gap-[12vw]">
                     <div className="">
                         <div className="mb-[2.8vw]">
-                            <h2 className="text-[1.5vw] uppercase font-bold">
+                            <h2 className="text-[1.5vw] uppercase font-GolosDemiBold">
                                 Shop
                             </h2>
                         </div>
-                        <div className="flex flex-col gap-[1.3vw]">
+                        <div className="flex flex-col gap-[1.1vw]">
                             <Link
                                 to={"/"}
                                 className="text-[1.1vw] hover:opacity-70 duration-100 transition-all"
@@ -35,7 +35,7 @@ const Footer = () => {
                     </div>
                     <div className="">
                         <div className="mb-[2.8vw]">
-                            <h2 className="text-[1.5vw] uppercase font-bold">
+                            <h2 className="text-[1.5vw] uppercase font-GolosDemiBold">
                                 Help
                             </h2>
                         </div>
@@ -74,7 +74,7 @@ const Footer = () => {
                 <div className="flex justify-end gap-[12vw] ">
                     <div className="hidden sm:block">
                         <div className="mb-[2.8vw]">
-                            <h2 className="text-[1.5vw] uppercase font-bold">
+                            <h2 className="text-[1.5vw] uppercase font-GolosDemiBold">
                                 about us
                             </h2>
                         </div>

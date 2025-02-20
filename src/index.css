@@ -1,38 +1,24 @@
+@font-face {
+    font-family: "Golos_Regular";
+    src: url("/public/Fonts/Golos-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Golos_DemiBold";
+    src: url("/public/Fonts/Golos-DemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Golos_Bold";
+    src: url("/public/Fonts/Golos-Bold.woff2") format("woff2");
+}
+
 @import "tailwindcss";
 
 @theme {
-    --Casper: "Casper", "sans-serif";
-    --GolosTextRegular: "GolosTextRegular", "sans-serif";
-    --GolosTextMedium: "GolosTextMedium", "sans-serif";
-    --GolosTextSemiBold: "GolosTextSemiBold", "sans-serif";
-    --GolosTextBold: "GolosTextBold", "sans-serif";
-}
-
-
-
-@font-face {
-    font-family: "Casper";
-    src: url("/Fonts/Casper.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "GolosTextRegular";
-    src: url("/Fonts/Golos-Text_Regular.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "GolosTextMedium";
-    src: url("/Fonts/Golos-Text_Medium.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "GolosTextSemiBold";
-    src: url("/Fonts/Golos-Text_SemiBold.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "GolosTextBold";
-    src: url("/Fonts/Golos-Text_Bold.woff2") format("woff2");
+    --font-GolosRegular: "Golos_Regular", "sans-serif";
+    --font-GolosDemiBold: "Golos_DemiBold", "sans-serif";
+    --font-GolosBold: "Golos_Bold", "sans-serif";
 }
 
 .philosophy {

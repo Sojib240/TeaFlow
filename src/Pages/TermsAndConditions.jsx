@@ -100,7 +100,7 @@ const TermsAndConditions = () => {
     return (
         <>
             <Title text={"terms and conditions of sale"} />
-            <div className="px-5 sm:pl-[14.44vw] sm:pr-[32vw] mx-auto">
+            <div className="px-5 sm:pl-[14.44vw] sm:pr-[32vw] mx-auto font-GolosRegular">
                 <div className="mt-[7vw]">
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] uppercase">
                         ALL ORDERS (“ORDERS”) FOR THE PURCHASE OF PRODUCTS AND
@@ -135,7 +135,7 @@ const TermsAndConditions = () => {
                                         {desc2}
                                     </p>
                                     <p
-                                        className={`text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mt-5 sm:mt-[1vw] ${
+                                        className={`text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mt-5 sm:mt-[1vw] font-GolosBold ${
                                             id == 10 && "font-bold"
                                         }`}
                                     >

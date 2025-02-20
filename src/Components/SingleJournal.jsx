@@ -19,10 +19,10 @@ const SingleJournal = () => {
     }, []);
 
     return (
-        <div className="sm:pl-[5.15vw] px-5 sm:pr-[20vw]">
+        <div className="sm:pl-[5.15vw] px-5 sm:pr-[20vw] font-GolosRegular">
             {singleJournal && (
                 <>
-                    <h2 className="text-3xl sm:text-[3.6vw] uppercase font-semibold pb-7 sm:pb-[2vw] border-b border-[#DEDADA] pr-[24vw]">
+                    <h2 className="text-3xl sm:text-[3.6vw] uppercase font-GolosDemiBold pb-7 sm:pb-[2vw] border-b border-[#DEDADA] pr-[24vw]">
                         {singleJournal.title}
                     </h2>
                     <div className="mt-8 sm:mt-[2vw]">
@@ -55,7 +55,7 @@ const SingleJournal = () => {
                                     A rare specimen of gaiwan without a saucer.
                                 </h4>
                             </div>
-                            <h4 className="mb-5 sm:mb-[1vw] font-bold">
+                            <h4 className="mb-5 sm:mb-[1vw] font-GolosBold">
                                 History
                             </h4>
                             <h4 className="mb-5 sm:mb-[1vw]">
@@ -82,7 +82,7 @@ const SingleJournal = () => {
                                     alt=""
                                 />
                             </div>
-                            <h4 className="mt-10 mb-5 sm:mt-[3.5vw] sm:mb-[1vw] font-bold">
+                            <h4 className="mt-10 mb-5 sm:mt-[3.5vw] sm:mb-[1vw] font-GolosBold">
                                 Types of gaiwan
                             </h4>
                             <h4 className="mb-5 sm:mb-[1vw]">
@@ -132,7 +132,7 @@ const SingleJournal = () => {
                                 more slowly, and the gaiwan itself eventually
                                 develops, like the Yixing teapot.
                             </h4>
-                            <h4 className="mb-5 sm:mb-[1vw] font-bold">
+                            <h4 className="mb-5 sm:mb-[1vw] font-GolosBold">
                                 Which is better: a gaiwan or a teapot?
                             </h4>
                             <h4 className="mb-5 sm:mb-[1vw]">
@@ -170,7 +170,7 @@ const SingleJournal = () => {
                                     alt=""
                                 />
                             </div>
-                            <h4 className="mb-5 sm:mb-[1vw] font-bold">
+                            <h4 className="mb-5 sm:mb-[1vw] font-GolosBold">
                                 Brew tea in a gaiwan
                             </h4>
                             <h4 className="mb-5 sm:mb-[1vw]">
@@ -217,7 +217,7 @@ const SingleJournal = () => {
                                     Such brewing in gaiwan is called Fujian.
                                 </h4>
                             </div>
-                            <h4 className="mb-5 sm:mb-[1vw] font-bold">
+                            <h4 className="mb-5 sm:mb-[1vw] font-GolosBold">
                                 If we want to drink Sichuan method straight from
                                 the cup
                             </h4>

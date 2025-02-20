@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
 import CartPage from "../Pages/CartPage";
 import Menu from "../Components/Menu";
 import gsap from "gsap";
+import { cartContextData } from "../Utils/CartContext";
 
 const Navbar = ({
     CartOpenClose,
@@ -12,6 +13,7 @@ const Navbar = ({
     setmenuOpenClose,
 }) => {
     //
+    const [cart, setcart] = useContext(cartContextData);
     const navTopRef = useRef();
     useGSAP(() => {
         var prevScroll = window.scrollY;
@@ -68,7 +70,7 @@ const Navbar = ({
                     </div>
                     <div className="col-span-1 flex justify-end sm:justify-between gap-[2vw]">
                         <div
-                            className={`hidden ${
+                            className={`hidden font-GolosRegular ${
                                 menuOpenClose == true && "opacity-0 invisible"
                             } sm:flex items-center gap-[3vw]`}
                         >
@@ -97,8 +99,8 @@ const Navbar = ({
                                         alt=""
                                     />
                                 </div>
-                                <span className="font-light block text-lg sm:text-[1vw]">
-                                    0
+                                <span className="text-[11px] flex justify-center items-center sm:text-[0.6vw] bg-[#000000] text-white rounded-full w-3 h-3 sm:w-[0.9vw] sm:h-[0.9vw] pointer-events-none ml-[-10px] sm:ml-[-0.7vw] mt-[-5px] font-GolosRegular sm:mt-[-0.5vw]">
+                                    {cart.length}
                                 </span>
                             </div>
                             <div

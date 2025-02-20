@@ -9,7 +9,7 @@ const AboutUs = () => {
     return (
         <>
             <Title text={"about us"} />
-            <div className="px-5 sm:px-[5.15vw] mx-auto bg-[#222020] mt-24 sm:mt-[14vw]">
+            <div className="px-5 sm:px-[5.15vw] mx-auto bg-[#222020] mt-24 sm:mt-[14vw] font-GolosRegular">
                 <div className="flex gap-[4vw] flex-col sm:flex-row items-end">
                     <div className="overflow-hidden rounded-[50px] w-full sm:w-[65%] mt-[-8vw]">
                         <img
@@ -28,7 +28,7 @@ const AboutUs = () => {
                             ensuring that every cup you enjoy supports healthy,
                             vibrant communities.
                         </h4>
-                        <h2 className="text-2xl leading-[150%] sm:text-[2vw] uppercase sm:leading-[2.4vw] mt-[5vw] font-medium text-white">
+                        <h2 className="text-2xl leading-[150%] sm:text-[2vw] uppercase sm:leading-[2.6vw] mt-[5vw] text-white">
                             tea is more than just a beverage - it's an
                             experience that connects us to ourselves, each
                             other, and the world around us.
@@ -81,7 +81,7 @@ const AboutUs = () => {
                             />
                         </div>
                         <div className="w-full sm:w-[58%]">
-                            <h2 className="text-2xl leading-[150%] sm:text-[2vw] uppercase sm:leading-[2.4vw] mt-[5vw] font-medium mb-6 sm:mb-[3vw]">
+                            <h2 className="text-2xl leading-[150%] sm:text-[2vw] uppercase sm:leading-[2.4vw] mt-[5vw] mb-6 sm:mb-[3vw]">
                                 Another mission of our brand is to make the
                                 world a cleaner place!
                             </h2>
@@ -114,7 +114,7 @@ const AboutUs = () => {
                                     positive impact - one cup of tea at a time!
                                 </span>
                                 <button className="flex gap-2 sm:gap-[1vw] mt-6 sm:mt-[1.2vw] items-center cursor-pointer group">
-                                    <span className="text-[12px] sm:text-[0.9vw] font-semibold uppercase tracking-[0.2vw]">
+                                    <span className="text-[12px] sm:text-[0.9vw] uppercase font-GolosDemiBold tracking-[0.2vw]">
                                         watch catalog
                                     </span>
                                     <span className="block w-10 sm:w-[4vw] group-hover:translate-x-[1.2vw] transition-all duration-300">
