@@ -5,7 +5,7 @@ import Title from "../Common/Title";
 import JournalComponent from "../Common/JournalComponent";
 
 const AboutUs = () => {
-    document.title = "ABOUT US － TEAFLOW";
+    document.title = "About Us － TEAFLOW";
     return (
         <>
             <Title text={"about us"} />

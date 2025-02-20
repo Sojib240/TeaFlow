@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { cartContextData } from "../Utils/CartContext";
 
 const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
-    document.title = "PRODUCTS CART － TEAFLOW";
+    document.title = "Products Cart － TEAFLOW";
         const [cart, setcart] = useContext(cartContextData);
     return (
         <div

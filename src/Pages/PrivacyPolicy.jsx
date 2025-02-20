@@ -3,7 +3,7 @@ import Discount from "../Common/Discount";
 import Title from "../Common/Title";
 
 const PrivacyPolicy = () => {
-    document.title = "PRIVACY POLICY － TEAFLOW";
+    document.title = "Privacy Policy － TEAFLOW";
     return (
         <div>
             <Title text={"returns and exchanges"} />

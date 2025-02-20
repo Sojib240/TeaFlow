@@ -148,8 +148,8 @@ const ProductsDetails = () => {
                                 </h4>
                             </div>
                         </div>
-                        <div className="mt-36 sm:mt-[5vw]">
-                            <div className="">
+                        <div className="mt-12 sm:mt-[5vw] mb-6 sm:mb-[4vw]">
+                            <div className="mb-6 sm:mb-[4vw]">
                                 <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-[1vw]">
                                     About product
                                 </h4>
@@ -157,7 +157,7 @@ const ProductsDetails = () => {
                                     {singleProduct.aboutProduct}
                                 </p>
                             </div>
-                            <div className="mb-[4vw]">
+                            <div className="mb-6 sm:mb-[4vw]">
                                 <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-[1vw]">
                                     Steeping Instructions
                                 </h4>
