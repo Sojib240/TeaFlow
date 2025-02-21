@@ -19,7 +19,7 @@ const SingleJournal = () => {
     }, []);
 
     return (
-        <div className="sm:pl-[5.15vw] px-5 sm:pr-[20vw] font-GolosRegular">
+        <div className="sm:pl-[5.15vw] px-5 sm:pr-[20vw] mt-12 sm:mt-[6vw] font-GolosRegular">
             {singleJournal && (
                 <>
                     <h2 className="text-3xl sm:text-[3.6vw] uppercase font-GolosDemiBold pb-7 sm:pb-[2vw] border-b border-[#DEDADA] pr-[24vw]">
@@ -45,7 +45,7 @@ const SingleJournal = () => {
                                 The volume of the gaiwan varies from 80 to 300
                                 ml.
                             </h4>
-                            <div className="w-[80%] mt-10 sm:mt-[3.5vw]">
+                            <div className="w-full mt-10 sm:mt-[3.5vw]">
                                 <img
                                     className="rounded-[5vw] w-full"
                                     src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806907_00.jpeg"
@@ -75,7 +75,7 @@ const SingleJournal = () => {
                                 need for an additional convenient object for
                                 brewing.
                             </h4>
-                            <div className="w-[80%]">
+                            <div className="w-full">
                                 <img
                                     className="rounded-[5vw] w-full"
                                     src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690d_01.jpeg"
@@ -110,7 +110,7 @@ const SingleJournal = () => {
                                 </a>
                                 . A modest price for excellent quality.
                             </h4>
-                            <div className="w-[80%] mt-10 sm:mt-[3.5vw]">
+                            <div className="w-full mt-10 sm:mt-[3.5vw]">
                                 <img
                                     className="rounded-[5vw] w-full"
                                     src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690b_02.jpeg"
@@ -163,7 +163,7 @@ const SingleJournal = () => {
                                 Therefore, if you choose the first item for
                                 brewing, we advise you to start with it.
                             </h4>
-                            <div className="w-[80%] mb-10 sm:mb-[3.5vw]">
+                            <div className="w-full mb-10 sm:mb-[3.5vw]">
                                 <img
                                     className="rounded-[5vw] w-full"
                                     src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806908_003.jpeg"
@@ -207,7 +207,7 @@ const SingleJournal = () => {
                                 Repeat the brewing several times, gradually
                                 increasing the infusion time.
                             </h4>
-                            <div className="w-[80%] mt-10 sm:mt-[3.5vw]">
+                            <div className="w-full mt-10 sm:mt-[3.5vw]">
                                 <img
                                     className="rounded-[5vw] w-full"
                                     src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e4_04.jpeg"
@@ -245,7 +245,7 @@ const SingleJournal = () => {
                                 not confused by the leaves that are trying to
                                 swim away from the bottom.
                             </h4>
-                            <div className="w-[80%] mt-10 sm:mt-[3.5vw]">
+                            <div className="w-full mt-10 sm:mt-[3.5vw]">
                                 <img
                                     className="rounded-[5vw] w-full"
                                     src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806904_05.jpeg"

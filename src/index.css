@@ -29,17 +29,50 @@
     background-size: cover;
     background-attachment: fixed;
 }
-
+/* cart scrollbar */
 .cart-main::-webkit-scrollbar {
-    width: 3px;
+    width: 2px;
     border-radius: 100px;
     overflow: hidden;
 }
-
 .cart-main::-webkit-scrollbar-track {
     background: transparent;
 }
 
 .cart-main::-webkit-scrollbar-thumb {
     background: #a1a1a1;
+}
+/* swiper */
+.swiper.swiper-initialized {
+    height: 45.5vw !important;
+}
+
+.swiper-button-next {
+    color: black !important;
+    margin-right: 3vw;
+    padding: 2vw;
+    transition: all ease-in-out 0.3s;
+}
+.swiper-button-next:hover {
+    margin-right: 2vw !important;
+}
+
+
+.swiper-button-prev {
+    display: none !important;
+}
+:root {
+    --swiper-navigation-size: 2.6vw !important;
+}
+
+@media (max-width: 640px) {
+    .swiper.swiper-initialized {
+        height: 100vw !important;
+    }
+    :root {
+        --swiper-navigation-size: 28px !important;
+    }
+    .swiper-button-next:hover {
+        margin-right: 0 !important;
+    }
 }

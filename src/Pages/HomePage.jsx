@@ -5,12 +5,16 @@ import Philosophy from "../Common/Philosophy";
 import TopSales from "../Components/TopSales";
 import Marquess from "../Components/Marquess";
 import JournalComponent from "../Common/JournalComponent";
+import HomeSlider from "../Components/HomeSlider";
 
 const HomePage = () => {
     document.title = "TEAFLOW － PREMIUM TEAS & ACCESSORIES";
 
     return (
         <>
+            <div className="">
+                <HomeSlider />
+            </div>
             <div className="">
                 <TopSales />
             </div>

@@ -48,7 +48,7 @@ const Shop = () => {
                     } left-0 bg-[#000000d0] h-screen w-full z-[9999]`}
                 ></div>
                 <div
-                    className={`sm:block w-full h-[92vh] sm:h-auto bg-white sm:bg-transparent sm:w-[20%] mt-[-2.5vw] fixed sm:static bottom-0 left-0 z-[9999999] sm:z-auto p-6 sm:p-0 rounded-tl-4xl rounded-tr-4xl translate-y-[0%] sm:translate-y-0 ${
+                    className={`sm:block w-full h-[85vh] sm:h-auto bg-white sm:bg-transparent sm:w-[20%] mt-[-2.5vw] fixed sm:static bottom-0 left-0 z-[9999999] sm:z-auto p-6 sm:p-0 rounded-tl-4xl rounded-tr-4xl translate-y-[0%] sm:translate-y-0 ${
                         filterOpenClose === true
                             ? "translate-y-[0%]"
                             : "translate-y-[105%]"

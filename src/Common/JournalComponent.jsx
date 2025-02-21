@@ -11,7 +11,10 @@ const JournalComponent = () => {
                 <h2 className="text-[33px] sm:text-[4vw] uppercase font-GolosDemiBold">
                     Journal
                 </h2>
-                <Link to={'/journal'} className="text-base sm:text-[1vw] flex gap-2 sm:gap-[0.4vw] border-b font-GolosRegular">
+                <Link
+                    to={"/journal"}
+                    className="text-base sm:text-[1vw] flex gap-2 sm:gap-[0.4vw] border-b font-GolosRegular"
+                >
                     Read all stories{" "}
                     <span className="mt-[-0.5vw] block">8</span>
                 </Link>
@@ -19,14 +22,14 @@ const JournalComponent = () => {
             {journalApiData.journals &&
                 journalApiData.journals.map(({ date, title, id }) => {
                     return (
-                        <>
-                            <Link to={`/singleJournal/${id}`} key={id}>
-                                <div className="font-GolosRegular border-b border-[#DEDADA] py-5 sm:py-[1vw] mb-8 sm:mb-[4vw] flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-[8vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
-                                    <h4 className="">{date}</h4>
-                                    <h4 className="text-2xl sm:text-[1.2vw]">{title}</h4>
-                                </div>
-                            </Link>
-                        </>
+                        <Link to={`/singleJournal/${id}`} key={id}>
+                            <div className="font-GolosRegular border-b border-[#DEDADA] py-5 sm:py-[1vw] mb-8 sm:mb-[4vw] flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-[8vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
+                                <h4 className="">{date}</h4>
+                                <h4 className="text-2xl sm:text-[1.2vw]">
+                                    {title}
+                                </h4>
+                            </div>
+                        </Link>
                     );
                 })}
         </div>

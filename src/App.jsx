@@ -45,7 +45,7 @@ const App = () => {
 
     return (
         <div onMouseMove={(e) => handleMouseMove(e)}>
-            <div className="pb-28 sm:pb-[8vw]">
+            <div className="pb-20 sm:pb-[6vw]">
                 <ScrollToTop />
                 <Navbar
                     CartOpenClose={CartOpenClose}
