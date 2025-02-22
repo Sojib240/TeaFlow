@@ -21,7 +21,7 @@ const HomeSlider = () => {
             }
         });
     };
-    console.log(SliderTitleData);
+    // console.log(SliderTitleData);
     return (
         <div className="HomeSlider w-full flex-col-reverse sm:flex-row flex px-0 sm:px-[5.14vw]">
             <div className="w-full sm:w-[50%] px-5 sm:px-0 flex items-center">

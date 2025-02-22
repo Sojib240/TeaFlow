@@ -21,7 +21,6 @@ const Shop = () => {
         }
         setcart([...cart, product]);
     };
-    console.log(cart);
 
     return (
         <div className="px-[5.15vw] mx-auto">
@@ -73,7 +72,7 @@ const Shop = () => {
                             productsApiData.categories.map(
                                 ({ id, categoryName }) => {
                                     return (
-                                        <>
+                                        <div className="">
                                             <Link
                                                 key={id}
                                                 to={""}
@@ -81,7 +80,7 @@ const Shop = () => {
                                             >
                                                 {categoryName}
                                             </Link>
-                                        </>
+                                        </div>
                                     );
                                 }
                             )}
@@ -91,45 +90,43 @@ const Shop = () => {
                     {productsApiData.products &&
                         productsApiData.products.map((product) => {
                             return (
-                                <>
-                                    <div
-                                        key={product.id}
-                                        className="col-span-1 mt-[-2.5vw] group"
-                                    >
-                                        <div className="card-image relative overflow-hidden rounded-[4vw]">
-                                            <Link
-                                                to={`/productsDetails/${product.id}`}
-                                                className="relative z-30"
-                                            >
-                                                <img
-                                                    className="group-hover:scale-125 duration-1200 transition-all"
-                                                    src={product.image}
-                                                    alt=""
-                                                />
-                                            </Link>
-                                            {/* cart button */}
-                                            <button
-                                                onClick={() =>
-                                                    handleCart(product)
-                                                }
-                                                className="px-[2vw] py-[2vw] bg-[#111111] rounded-full flex justify-center items-center absolute left-0 bottom-[-15%] right-0 opacity-0 group-hover:bottom-[1vw] group-hover:opacity-100 transition-all duration-[0.4s] w-[90%] mx-auto cursor-pointer hover:bg-[#222020] z-50"
-                                            >
-                                                <span className="text-[1vw] tracking-[0.1vw] text-white font-GolosRegular block">
-                                                    ADD TO CART
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <h4 className="text-2xl sm:text-[2.4vw] md:text-[1.3vw] mt-5 sm:mt-[1vw] font-GolosDemiBold text-[#222020] uppercase">
-                                            {product.title}
-                                        </h4>
-                                        <p className="text-lg sm:text-[1.7vw] md:text-[0.9vw] py-[0.4vw] text-[#413F3F] font-GolosRegular">
-                                            {product.cartDetails}
-                                        </p>
-                                        <p className="text-xl font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191]">
-                                            $ {product.price}
-                                        </p>
+                                <div
+                                    key={product.id}
+                                    className="col-span-1 mt-[-2.5vw] group card"
+                                >
+                                    <div className="card-image relative overflow-hidden">
+                                        <Link
+                                            to={`/productsDetails/${product.id}`}
+                                            className="relative z-30"
+                                        >
+                                            <img
+                                                className="group-hover:scale-100 lg:group-hover:scale-125 duration-1200 transition-all"
+                                                src={product.image}
+                                                alt=""
+                                            />
+                                        </Link>
+                                        {/* cart button */}
+                                        <button
+                                            onClick={() => handleCart(product)}
+                                            className="px-[2vw] py-[2vw] bg-[#111111] rounded-full flex justify-center items-center absolute left-0 bottom-[-15%] right-0 opacity-0 group-hover:bottom-[-15vw]
+                                            group-hover:opacity-0 
+                                            lg:group-hover:bottom-[1vw] lg:group-hover:opacity-100 transition-all duration-[0.4s] w-[90%] mx-auto cursor-pointer hover:bg-[#222020] z-50"
+                                        >
+                                            <span className="text-[1vw] tracking-[0.1vw] text-white font-GolosRegular block">
+                                                ADD TO CART
+                                            </span>
+                                        </button>
                                     </div>
-                                </>
+                                    <h4 className="text-2xl sm:text-[2.4vw] md:text-[1.3vw] mt-5 sm:mt-[1vw] font-GolosDemiBold text-[#222020] uppercase">
+                                        {product.title}
+                                    </h4>
+                                    <p className="text-lg sm:text-[1.7vw] md:text-[0.9vw] py-[0.4vw] text-[#413F3F] font-GolosRegular">
+                                        {product.cartDetails}
+                                    </p>
+                                    <p className="text-xl font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191]">
+                                        $ {product.price}
+                                    </p>
+                                </div>
                             );
                         })}
                 </div>

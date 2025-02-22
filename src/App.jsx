@@ -17,6 +17,7 @@ import gsap from "gsap";
 import ScrollToTop from "./Common/ScrollToTop";
 import SingleJournal from "./Components/SingleJournal";
 import Flow from "./Pages/Flow";
+import CartPage from "./Pages/CartPage";
 
 const App = () => {
     // app states

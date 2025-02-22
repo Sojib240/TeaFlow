@@ -6,6 +6,7 @@ import TopSales from "../Components/TopSales";
 import Marquess from "../Components/Marquess";
 import JournalComponent from "../Common/JournalComponent";
 import HomeSlider from "../Components/HomeSlider";
+import FlowComponent from "../Components/FlowComponent";
 
 const HomePage = () => {
     document.title = "TEAFLOW － PREMIUM TEAS & ACCESSORIES";
@@ -14,6 +15,9 @@ const HomePage = () => {
         <>
             <div className="">
                 <HomeSlider />
+            </div>
+            <div className="">
+                <FlowComponent />
             </div>
             <div className="">
                 <TopSales />
