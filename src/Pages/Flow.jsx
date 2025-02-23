@@ -8,7 +8,7 @@ import Discount from "../Common/Discount";
 import FollowUs from "../Common/FollowUs";
 
 const Flow = () => {
-    document.title = "Flows － TEAFLOW";
+    document.title = "TeaFlow － Flows";
     return (
         <>
             <Title text={"choose your flow"} />

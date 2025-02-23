@@ -12,7 +12,6 @@ const SingleJournal = () => {
         const journal = journalApiData.journals[id - 1];
         setsingleJournal(journal);
         journalPageTitle = document.title = `TEAFLOW － ${journal.title}`;
-        console.log(journal);
     };
     useEffect(() => {
         singleJournalId();

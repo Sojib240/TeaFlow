@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
     // page title
-    document.title = "Products Cart － TEAFLOW";
+    document.title = "TeaFlow － Products Cart";
     // cart data coming from context
     const [cart, setcart] = useContext(cartContextData);
     // handle price
@@ -35,9 +35,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
             if (temArr[index].amount >= 10) {
                 temArr[index].amount = 10;
             }
-            // console.log("temp", tempArr);
             setcart([...temArr]);
-            // console.log("cart", cart);
         });
     };
     // handle remove

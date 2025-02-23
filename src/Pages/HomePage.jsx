@@ -7,30 +7,22 @@ import Marquess from "../Components/Marquess";
 import JournalComponent from "../Common/JournalComponent";
 import HomeSlider from "../Components/HomeSlider";
 import FlowComponent from "../Components/FlowComponent";
+import AllTopSales from "../Components/AllTopSales";
 
 const HomePage = () => {
-    document.title = "TEAFLOW － PREMIUM TEAS & ACCESSORIES";
+    document.title = "TeaFlow － Premium Teas & Accessories";
 
     return (
         <>
-            <div className="">
-                <HomeSlider />
-            </div>
-            <div className="">
-                <FlowComponent />
-            </div>
-            <div className="">
-                <TopSales />
-            </div>
+            <HomeSlider />
+            <FlowComponent />
+            <TopSales />
+            <AllTopSales />
             <div className="pb-[21vw] pt-[18vw]">
                 <Marquess />
             </div>
-            <div>
-                <Philosophy />
-            </div>
-            <div className="">
-                <JournalComponent />
-            </div>
+            <Philosophy />
+            <JournalComponent />
             <div className="mt-[15vw]">
                 <Discount />
             </div>

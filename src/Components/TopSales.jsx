@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const TopSales = () => {
     return (
-        <div className="px-5 sm:px-[5.15vw] pt-32 sm:pt-[12vw] mx-auto w-full">
+        <div className="px-0 sm:px-[5.15vw] pt-32 sm:pt-[12vw] mx-auto w-full">
             <div className="">
                 <h2 className="text-[13.2vw] text-center font-GolosBold">TOP SALES</h2>
                 <div className="flex flex-col sm:flex-row gap-[5vw] my-[5vw]">
@@ -13,7 +13,7 @@ const TopSales = () => {
                             alt=""
                         />
                     </div>
-                    <div className="w-full sm:w-[40%] flex flex-col justify-between pt-[6vw] pb-[3vw]">
+                    <div className="w-full sm:w-[40%] flex flex-col justify-between pt-[6vw] pb-[3vw] px-5 sm:px-0">
                         <div className="">
                         <h4 className="text-2xl sm:text-[2vw] uppercase mb-5 sm:mb-[1vw] font-GolosDemiBold">Green tea #2</h4>
                         <h5 className="font-GolosRegular text-xl sm:text-[1.3vw]">$ 17</h5>

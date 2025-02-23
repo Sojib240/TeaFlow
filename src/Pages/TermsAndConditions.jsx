@@ -3,7 +3,7 @@ import Discount from "../Common/Discount";
 import Title from "../Common/Title";
 
 const TermsAndConditions = () => {
-    document.title = "Terms And Conditions Of Sale － TEAFLOW";
+    document.title = "TeaFlow － Terms And Conditions Of Sale";
     const tearmsData = [
         {
             id: 1,

@@ -3,7 +3,7 @@ import Discount from "../Common/Discount";
 import Title from "../Common/Title";
 
 const Returns = () => {
-    document.title = "Returns And Exchanges － TEAFLOW";
+    document.title = "TeaFlow － Returns And Exchanges";
     return (
         <>
             <Title text={"returns and exchanges"} />

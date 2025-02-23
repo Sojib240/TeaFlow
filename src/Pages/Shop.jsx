@@ -5,7 +5,7 @@ import { cartContextData } from "../Utils/CartContext";
 import { CiFilter } from "react-icons/ci";
 
 const Shop = () => {
-    document.title = "Products － TEAFLOW";
+    document.title = "TeaFlow － Products";
     const [productsApiData, setproductsApiData] = useContext(productContext);
     const [cart, setcart] = useContext(cartContextData);
     const [filterOpenClose, setfilterOpenClose] = useState(false);

@@ -5,7 +5,7 @@ import { journalsContext } from "../Utils/JournalContext";
 import { Link } from "react-router-dom";
 
 const Journal = () => {
-    document.title = "Journal － TEAFLOW";
+    document.title = "TeaFlow － Journal";
     const [journalApiData, setjournalApiData] = useContext(journalsContext);
 
     return (

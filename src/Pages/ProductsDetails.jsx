@@ -20,7 +20,7 @@ const ProductsDetails = () => {
         const product = productsApiData.products[id - 1];
         setsingleProduct(product);
         setimageSlider(product.image);
-        productPageTitle = document.title = `TEAFLOW － ${product.title}`;
+        productPageTitle = document.title = `TeaFlow － ${product.title}`;
     };
     // handle cart
     const handleCart = (product) => {
