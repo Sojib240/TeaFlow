@@ -27,7 +27,7 @@ const Shop = () => {
             <h2 className="text-5xl sm:text-[8vw] font-GolosBold uppercase leading-[100%] mt-10 sm:mt-[8vw] md:mt-[5vw]">
                 products
             </h2>
-            <div className="flex flex-col sm:flex-row justify-between gap-10 sm:gap-[2.5vw] mt-16 sm:mt-[10vw] md:mt-[8vw]">
+            <div className="flex flex-col sm:flex-row justify-between gap-10 sm:gap-[2.5vw] mt-14">
                 <div className="mb-6 block sm:hidden">
                     <button
                         onClick={() => setfilterOpenClose(true)}
@@ -47,13 +47,13 @@ const Shop = () => {
                     } left-0 bg-[#000000d0] h-screen w-full z-[9999]`}
                 ></div>
                 <div
-                    className={`sm:block w-full h-[85vh] sm:h-auto bg-white sm:bg-transparent sm:w-[20%] mt-[-2.5vw] fixed sm:static bottom-0 left-0 z-[9999999] sm:z-auto p-6 sm:p-0 rounded-tl-4xl rounded-tr-4xl translate-y-[0%] sm:translate-y-0 ${
+                    className={`sm:block w-full h-[85vh] sm:h-full min-h-auto sm:min-h-auto bg-white sm:bg-transparent sm:w-[20%] fixed sm:sticky sm:top-0 bottom-0 left-0 z-[9999999] sm:z-auto pl-6 pr-6 pb-6 pt-6 rounded-tl-4xl rounded-tr-4xl translate-y-[0%] sm:translate-y-0 sm:pt-[7vw] sm:pb-0 sm:pl-0 sm:pr-0 ${
                         filterOpenClose === true
                             ? "translate-y-[0%]"
                             : "translate-y-[105%]"
                     } duration-200 transition-all`}
                 >
-                    <div className="flex flex-col gap-4 sm:gap-[0.75vw]">
+                    <div className="flex flex-col gap-4 sm:gap-[0.75vw] leading-[144%] sm:leading-[1.8vw]">
                         <div className="flex sm:hidden justify-between items-center gap-[2vw] w-full mb-8 sm:mb-[2vw] pt-5">
                             <h2 className="uppercase text-[17px] sm:text-[1.6vw] font-GolosRegular text-[#747373]">
                                 Filters
@@ -86,13 +86,13 @@ const Shop = () => {
                             )}
                     </div>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 w-[90%] sm:w-[80%] gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[4.5vw]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 w-[90%] sm:w-[80%] gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[3vw] sm:pt-[7vw]">
                     {productsApiData.products &&
                         productsApiData.products.map((product) => {
                             return (
                                 <div
                                     key={product.id}
-                                    className="col-span-1 mt-[-2.5vw] group card"
+                                    className="col-span-1 group card"
                                 >
                                     <div className="card-image relative overflow-hidden">
                                         <Link
@@ -117,11 +117,11 @@ const Shop = () => {
                                             </span>
                                         </button>
                                     </div>
-                                    <h4 className="text-2xl sm:text-[2.4vw] md:text-[1.3vw] mt-5 sm:mt-[1vw] font-GolosDemiBold text-[#222020] uppercase">
+                                    <h4 className="text-2xl sm:text-[2.4vw] md:text-[1.3vw] mt-5 sm:mt-[1vw] font-GolosRegular font-semibold text-[#222020] uppercase">
                                         {product.title}
                                     </h4>
                                     <p className="text-lg sm:text-[1.7vw] md:text-[0.9vw] py-[0.4vw] text-[#413F3F] font-GolosRegular">
-                                        {product.cartDetails}
+                                        {product.flavor}
                                     </p>
                                     <p className="text-xl font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191]">
                                         $ {product.price}

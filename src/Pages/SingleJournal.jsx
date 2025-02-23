@@ -31,7 +31,7 @@ const SingleJournal = () => {
                                 {singleJournal.date}
                             </h4>
                         </div>
-                        <div className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] p-0 sm:pl-[10vw] mt-8 sm:mt-[4vw]">
+                        {/* <div className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] p-0 sm:pl-[10vw] mt-8 sm:mt-[4vw]">
                             <h4 className="mb-5 sm:mb-[1vw]">
                                 Gaiwan is a traditional dish for brewing Chinese
                                 tea. It consists of a bowl, a lid, and sometimes
@@ -262,11 +262,12 @@ const SingleJournal = () => {
                                 Choose the gaiwan that suits you best, drink
                                 delicious tea, and stay good people!
                             </h4>
-                        </div>
-                        {/* <div className="">
-                            dangerouslySetInnerHTML=
-                            {{ __html: singleJournal.pageContent }}
                         </div> */}
+                        <div className="pl-[10.7vw]"
+                            dangerouslySetInnerHTML={{
+                                __html: singleJournal.pageContent,
+                            }}
+                        />
                     </div>
                 </>
             )}

@@ -1,16 +1,16 @@
 @font-face {
     font-family: "Golos_Regular";
-    src: url("/public/Fonts/Golos-Regular.woff2") format("woff2");
+    src: url("/Fonts/Golos-Regular.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Golos_DemiBold";
-    src: url("/public/Fonts/Golos-DemiBold.woff2") format("woff2");
+    src: url("/Fonts/Golos-DemiBold.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Golos_Bold";
-    src: url("/public/Fonts/Golos-Bold.woff2") format("woff2");
+    src: url("/Fonts/Golos-Bold.woff2") format("woff2");
 }
 
 @import "tailwindcss";
@@ -47,7 +47,7 @@
 
 /* swiper */
 .HomeSlider .swiper.swiper-initialized {
-    height: 45.5vw !important;
+    height: 44vw !important;
 }
 
 .swiper-button-next {
@@ -70,10 +70,9 @@
     --swiper-navigation-size: 2.6vw !important;
 }
 
-.card:nth-child(3n+2) {
-    margin-top: 0vw;
-    /* background: red; */
-}
+/* .card:nth-child(3n+2) {
+    margin-top: 2vw;
+} */
 
 .cart-card:nth-child(2n+2) .cart-image {
     border-radius: 1.5vw;
@@ -84,8 +83,8 @@
 }
 
 @media (max-width: 640px) {
-    .swiper.swiper-initialized {
-        height: 100vw !important;
+    .HomeSlider .swiper.swiper-initialized {
+        height: 80vw !important;
     }
 
     :root {
@@ -96,8 +95,10 @@
         margin-right: 0 !important;
     }
 
-    .card:nth-child(3n+2) {
-        margin-top: none;
+    .card:nth-child(3n+1),
+    .card:nth-child(3n+2),
+    .card:nth-child(3n+3) {
+        margin-top: 0vw;
     }
 
     .cart-card:nth-child(2n+2) .cart-image {

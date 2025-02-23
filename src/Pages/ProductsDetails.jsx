@@ -44,17 +44,17 @@ const ProductsDetails = () => {
     return (
         <>
             {singleProduct && (
-                <div className="px-5 sm:px-[5.15vw] w-full flex gap-[6vw] relative mt-[3vw] font-GolosRegular">
-                    <div className="w-full sm:w-[58%]">
+                <div className="px-0 sm:px-[5.15vw] w-full flex gap-[6vw] font-GolosRegular relative">
+                    <div className="w-full sm:w-[58%] pt-[6vw] bg-[#FFFFFF]">
                         <div className="flex gap-4 sm:gap-[0.6vw] flex-col sm:flex-row w-full">
-                            <div className="order-2 sm:order-1 w-full sm:w-[22.85%] flex flex-row sm:flex-col gap-[0.6vw]">
+                            <div className="order-2 sm:order-1 w-full sm:w-[22.85%] flex flex-row sm:flex-col gap-[0.6vw] px-5 sm:px-0">
                                 <div className="">
                                     <img
                                         onMouseEnter={() =>
                                             handleSlider(singleProduct.image)
                                         }
                                         className="border border-[#ddd] w-full h-full object-cover"
-                                        src={singleProduct.image}
+                                        src={singleProduct.image && singleProduct.image}
                                         alt=""
                                     />
                                 </div>
@@ -64,7 +64,7 @@ const ProductsDetails = () => {
                                             handleSlider(singleProduct.minImg1)
                                         }
                                         className="border border-[#ddd] w-full h-full object-cover"
-                                        src={singleProduct.minImg1}
+                                        src={singleProduct.minImg1 && singleProduct.minImg1}
                                         alt=""
                                     />
                                 </div>
@@ -74,7 +74,7 @@ const ProductsDetails = () => {
                                             handleSlider(singleProduct.minImg2)
                                         }
                                         className="border border-[#ddd] w-full h-full object-cover"
-                                        src={singleProduct.minImg2}
+                                        src={singleProduct.minImg2 && singleProduct.minImg2}
                                         alt=""
                                     />
                                 </div>
@@ -84,7 +84,7 @@ const ProductsDetails = () => {
                                             handleSlider(singleProduct.minImg3)
                                         }
                                         className="border border-[#ddd] w-full h-full object-cover"
-                                        src={singleProduct.minImg3}
+                                        src={singleProduct.minImg3 && singleProduct.minImg3}
                                         alt=""
                                     />
                                 </div>
@@ -92,20 +92,23 @@ const ProductsDetails = () => {
                             <div className="order-1 sm:order-2 w-full rounded-[5vw] sm:h-[37vw] overflow-hidden flex">
                                 <img
                                     className="object-cover flex w-full"
-                                    src={imageSlider}
+                                    src={imageSlider && imageSlider}
                                     alt=""
                                 />
                             </div>
                         </div>
 
-                        <div className="w-full block sm:hidden mt-10 sm:mt-0">
+                        <div className="w-full block sm:hidden mt-10 sm:mt-0 px-5 sm:px-0">
                             <div className="">
                                 <h2 className="text-4xl sm:text-[3.5vw] uppercase font-GolosBold mb-4 sm:mb-[7vw]">
-                                    {singleProduct.title}
+                                    {singleProduct.title && singleProduct.title}
                                 </h2>
                                 <div className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col">
                                     Tasting notes:{" "}
-                                    <span>{singleProduct.TastingNotes}</span>
+                                    <span>
+                                        {singleProduct.TastingNotes &&
+                                            singleProduct.TastingNotes}
+                                    </span>
                                 </div>
                             </div>
                             <div className="flex flex-col sm:flex-row sm:items-center gap-[2vw] mt-6 sm:mt-[3vw]">
@@ -124,7 +127,7 @@ const ProductsDetails = () => {
                                         </h4>
                                     </div>
                                     <p className="text-white text-base sm:text-[1vw] font-medium">
-                                        $ {singleProduct.price}
+                                        $ {singleProduct.price &&  singleProduct.price}
                                     </p>
                                 </button>
                                 <h4 className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] text-[#989292] flex items-center gap-[1vw] w-full sm:w-[30%] mt-3 mb-2 sm:my-0">
@@ -148,80 +151,92 @@ const ProductsDetails = () => {
                                 </h4>
                             </div>
                         </div>
-                        <div className="mt-12 sm:mt-[5vw] mb-6 sm:mb-[4vw]">
+                        <div className="mt-12 sm:mt-[5vw] mb-6 sm:mb-[4vw] px-5 sm:px-0">
                             <div className="mb-6 sm:mb-[4vw]">
-                                <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-[1vw]">
+                                <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-5 sm:mb-[1vw]">
                                     About product
                                 </h4>
-                                <p className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] mb-[4vw]">
-                                    {singleProduct.aboutProduct}
-                                </p>
+                                <div
+                                    className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] mb-[4vw] flex flex-col gap-5 sm:gap-[1.5vw]"
+                                    dangerouslySetInnerHTML={{
+                                        __html:
+                                            singleProduct.aboutProduct &&
+                                            singleProduct.aboutProduct,
+                                    }}
+                                />
                             </div>
                             <div className="mb-6 sm:mb-[4vw]">
-                                <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-[1vw]">
+                                <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-5 sm:mb-[1vw]">
                                     Steeping Instructions
                                 </h4>
-                                <p className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw]">
-                                    {singleProduct.SteepingInstructions}
-                                </p>
+                                <div
+                                    className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] flex flex-col gap-5 sm:gap-[1.5vw]"
+                                    dangerouslySetInnerHTML={{
+                                        __html: singleProduct.SteepingInstructions && singleProduct.SteepingInstructions,
+                                    }}
+                                />
                             </div>
                             <div className="">
                                 <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-[1vw]">
                                     Ingredients
                                 </h4>
                                 <p className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw]">
-                                    {singleProduct.Ingredients}
+                                    {singleProduct.Ingredients && singleProduct.Ingredients}
                                 </p>
                             </div>
                         </div>
-                        <div className="rounded-[5vw] mt-[5vw] bg-[#F7F7F7] px-[7vw] py-[4.5vw] flex flex-col gap-4 sm:gap-[1vw] text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw]">
-                            <div className="flex gap-4 sm:gap-[1vw] items-center ">
-                                <img
-                                    className="w-6 sm:w-[1.8vw]"
-                                    src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806633_%20icon-credit%20card%20payment-1.svg"
-                                    alt=""
-                                />
-                                secure credit card payment
-                            </div>
-                            <div className="flex gap-4 sm:gap-[1vw] items-center">
-                                <img
-                                    className="w-5 sm:w-[1.6vw]"
-                                    src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806619_icon-free-delivery.svg"
-                                    alt=""
-                                />
-                                free delivery from $49
-                            </div>
-                            <div className="flex gap-4 sm:gap-[1vw] items-center">
-                                <img
-                                    className="w-6 sm:w-[1.8vw]"
-                                    src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806615_icon-free-returns.svg"
-                                    alt=""
-                                />
-                                making the world cleaner
-                            </div>
-                            <div className="flex gap-4 sm:gap-[1vw] items-start sm:items-center">
-                                <img
-                                    className="w-6 sm:w-[1.8vw]"
-                                    src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806604_icon-any-question.svg"
-                                    alt=""
-                                />
-                                <div className="">
-                                    do you have a question? write us on{" "}
-                                    <a className="underline" href="">
-                                        whatsapp
-                                    </a>
+                        <div className="w-full px-5 sm:px-0">
+                            <div className="rounded-[5vw] mt-[5vw] bg-[#F7F7F7] px-[7vw] py-[4.5vw] flex flex-col gap-4 sm:gap-[1vw] text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw]">
+                                <div className="flex gap-4 sm:gap-[1vw] items-center ">
+                                    <img
+                                        className="w-6 sm:w-[1.8vw]"
+                                        src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806633_%20icon-credit%20card%20payment-1.svg"
+                                        alt=""
+                                    />
+                                    secure credit card payment
+                                </div>
+                                <div className="flex gap-4 sm:gap-[1vw] items-center">
+                                    <img
+                                        className="w-5 sm:w-[1.6vw]"
+                                        src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806619_icon-free-delivery.svg"
+                                        alt=""
+                                    />
+                                    free delivery from $49
+                                </div>
+                                <div className="flex gap-4 sm:gap-[1vw] items-center">
+                                    <img
+                                        className="w-6 sm:w-[1.8vw]"
+                                        src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806615_icon-free-returns.svg"
+                                        alt=""
+                                    />
+                                    making the world cleaner
+                                </div>
+                                <div className="flex gap-4 sm:gap-[1vw] items-start sm:items-center">
+                                    <img
+                                        className="w-6 sm:w-[1.8vw]"
+                                        src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806604_icon-any-question.svg"
+                                        alt=""
+                                    />
+                                    <div className="">
+                                        do you have a question? write us on{" "}
+                                        <a className="underline" href="">
+                                            whatsapp
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="w-[42%] hidden sm:block sticky top-0 right-0">
+                    <div
+                        className={`w-[42%] hidden sm:block static sm:sticky top-0 right-0 min-h-[42vw] h-full pt-[6vw]`}
+                    >
                         <div className="">
                             <h2 className="text-[3.5vw] uppercase font-GolosBold mb-[7vw]">
-                                {singleProduct.title}
+                                {singleProduct.title && singleProduct.title}
                             </h2>
                             <div className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col">
                                 Tasting notes:{" "}
-                                <span>{singleProduct.TastingNotes}</span>
+                                <span>{singleProduct.TastingNotes && singleProduct.TastingNotes}</span>
                             </div>
                         </div>
                         <div className="flex items-center gap-[2vw] mt-[1.8vw]">
@@ -240,7 +255,7 @@ const ProductsDetails = () => {
                                     </span>
                                 </div>
                                 <p className="text-white text-base sm:text-[1vw] font-medium">
-                                    $ {singleProduct.price}
+                                    $ {singleProduct.price && singleProduct.price}
                                 </p>
                             </button>
                             <h4 className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] text-[#989292] flex items-center gap-2 sm:gap-[1vw] w-[30%]">

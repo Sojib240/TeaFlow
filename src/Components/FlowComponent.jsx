@@ -52,11 +52,13 @@ const FlowComponent = () => {
                                 <SwiperSlide key={id} className="select-none">
                                     <div
                                         className={`${
-                                            id === 3 && "rounded-[4vw]"
-                                        } overflow-hidden group`}
+                                            id === 2 && "rounded-[4vw]"
+                                        } overflow-hidden ${
+                                            id === 4 && "rounded-[4vw]"
+                                        } group h-auto sm:h-[25vw]`}
                                     >
                                         <img
-                                            className=" w-full group-hover:scale-100 lg:group-hover:scale-125 duration-1200 transition-all"
+                                            className=" w-full group-hover:scale-100 lg:group-hover:scale-125 duration-1200 transition-all object-cover flex h-full"
                                             src={image}
                                             alt=""
                                         />

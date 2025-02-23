@@ -20,12 +20,12 @@ const Flow = () => {
                     promote wellness and balance, reconnect with yourself, or
                     boost your energy, we've got you covered.
                 </h4>
-                <div className="grid grid-cols-2 gap-x-5 gap-y-8 sm:gap-[3vw] mt-8 sm:mt-[5vw]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-14 sm:gap-[3vw] mt-8 sm:mt-[5vw]">
                     {flowData.map(({ id, title, image, desc }) => {
                         return (
                             <>
                                 <Link key={id} className="col-span-1 group">
-                                    <div className="card-image overflow-hidden max-h-[29.51vw] h-full">
+                                    <div className={`${id === 2 && 'rounded-[10vw] sm:rounded-[4vw]'} card-image overflow-hidden ${id === 3 && 'rounded-[8vw] sm:rounded-[4vw]'} max-h-[75vw] sm:max-h-[29.51vw] h-full`}>
                                         <Link to={""}>
                                             <img
                                                 className="group-hover:scale-125 duration-1200 transition-all h-full w-full object-cover"
@@ -34,7 +34,7 @@ const Flow = () => {
                                             />
                                         </Link>
                                     </div>
-                                    <h4 className="text-xl sm:text-[2.4vw] md:text-[3vw] mt-2 sm:mt-[1vw] font-GolosDemiBold text-[#222020] uppercase">
+                                    <h4 className="text-xl sm:text-[2.4vw] md:text-[3vw] mt-4 sm:mt-[1vw] font-GolosDemiBold text-[#222020] uppercase">
                                         {title}
                                     </h4>
                                     <p className="text-base font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191] mt-2 sm:mt-[1vw]">

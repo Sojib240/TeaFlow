@@ -15,9 +15,8 @@ import Delivery from "./Pages/Delivery";
 import ProductsDetails from "./Pages/ProductsDetails";
 import gsap from "gsap";
 import ScrollToTop from "./Common/ScrollToTop";
-import SingleJournal from "./Components/SingleJournal";
+import SingleJournal from "./Pages/SingleJournal";
 import Flow from "./Pages/Flow";
-import CartPage from "./Pages/CartPage";
 
 const App = () => {
     // app states

@@ -85,7 +85,7 @@ export const flowComponentsData = [
         id: 3,
         title: "Awareness Flow",
         desc: "Teas that will help you slow down for a moment and reconnect with yourself",
-        image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b1_black-1-min.jpg",
+        image: "/Images/6765d66f89f7f0b8ec806682_shu-2.jpg",
     },
     {
         id: 4,

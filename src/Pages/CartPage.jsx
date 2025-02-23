@@ -68,7 +68,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                 <div
                     className={`cart-main w-full overflow-x-auto border border-[#F1F1F1] rounded-3xl sm:rounded-[3vw] ${
                         cart.length == 0
-                            ? "h-[70vh] sm:h-[20vh]"
+                            ? "h-[81.5vh] sm:h-[20vh]"
                             : "h-[70vh] sm:h-[55vh] relative"
                     }`}
                 >
@@ -82,7 +82,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                 image,
                                 price,
                                 amount,
-                                cartDetails,
+                                flavor,
                             }) => {
                                 return (
                                     <div
@@ -94,7 +94,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                             className="w-40 sm:w-[10vw] overflow-hidden cart-image"
                                         >
                                             <img
-                                                className="w-full object-cover flex h-full sm:h-auto"
+                                                className="w-full object-cover flex h-full"
                                                 src={image}
                                                 alt=""
                                             />
@@ -103,11 +103,11 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                             <div className="flex justify-between flex-col sm:flex-row gap-5 sm:gap-0 w-full">
                                                 <div className="flex flex-col items-start gap-[2vw] w-full">
                                                     <div className="">
-                                                        <h4 className="text-lg sm:text-[1.4vw] font-GolosDemiBold">
+                                                        <h4 className="text-lg sm:text-[1.3vw] font-GolosDemiBold">
                                                             {title}
                                                         </h4>
-                                                        <p className="text-sm sm:text-[1.1vw] font-GolosRegular">
-                                                            {cartDetails}
+                                                        <p className="text-sm sm:text-[0.9vw] font-GolosRegular">
+                                                            {flavor}
                                                         </p>
                                                     </div>
                                                     <button
@@ -122,7 +122,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                                 <div className="flex sm:flex-col items-end w-full justify-between flex-row gap-[2.5vw]">
                                                     <div className=" flex gap-1 sm:gap-[0.15vw]">
                                                         <div className=" bg-[#F1F1F1] w-16 h-12 sm:w-[4.2vw] sm:h-[2.5vw] rounded-[0.3vw] flex items-center justify-center">
-                                                            <p className="text-base sm:text-[1.1vw] font-GolosRegular">
+                                                            <p className="text-base sm:text-[1vw] font-GolosRegular">
                                                                 {amount}
                                                             </p>
                                                         </div>
@@ -151,7 +151,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                                             </button>
                                                         </div>
                                                     </div>
-                                                    <p className="font-GolosRegular text-lg sm:text-[1.3vw]">
+                                                    <p className="font-GolosRegular text-lg sm:text-[1.1vw]">
                                                         $ {price}
                                                     </p>
                                                 </div>
@@ -169,7 +169,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                             <h4 className="font-GolosRegular text-lg sm:text-[1.5vw]">
                                 Subtotal:
                             </h4>
-                            <h4 className="font-GolosDemiBold text-lg sm:text-[1.5vw] tracking-[1px]">
+                            <h4 className="font-GolosRegular text-lg sm:text-[1.5vw] tracking-[1px]">
                                 $ {Price}
                             </h4>
                         </div>
