@@ -5,7 +5,7 @@ const Context = () => {
         categories: [
             {
                 id: 1,
-                categoryName: "tea type",
+                categoryName:'Tea Type',
                 subCategoryName: [
                     { id: 1, SubTitle: "Oolong tea" },
                     { id: 2, SubTitle: "Red tea" },

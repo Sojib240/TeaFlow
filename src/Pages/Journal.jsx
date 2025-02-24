@@ -22,7 +22,7 @@ const Journal = () => {
                                         to={`/singleJournal/${id}`}
                                         className={`w-full ${
                                             id === 8 && "border-b"
-                                        } flex flex-col gap-5 sm:gap-[8vw] sm:flex-row justify-between items-start sm:items-start border-t border-[#DEDADA] py-5 sm:py-[2vw]`}
+                                        } flex flex-col gap-5 sm:gap-[8vw] sm:flex-row justify-between items-start sm:items-center border-t border-[#DEDADA] py-5 sm:py-[2vw]`}
                                     >
                                         <div className="w-full sm:w-[72%] flex flex-col justify-between h-full">
                                             <div className="mb-5 sm:mb-0">

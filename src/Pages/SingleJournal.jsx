@@ -22,13 +22,13 @@ const SingleJournal = () => {
             {singleJournal && (
                 <>
                     <h2 className="text-3xl sm:text-[3.6vw] uppercase font-GolosDemiBold pb-7 sm:pb-[2vw] border-b border-[#DEDADA] pr-[24vw]">
-                        {singleJournal.title}
+                        {singleJournal.title && singleJournal.title}
                     </h2>
                     <div className="mt-8 sm:mt-[2vw]">
                         <div className="text-xl sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] flex sm:items-center flex-col sm:flex-row gap-1 sm:gap-[4.4vw]">
                             <h4 className="capitalize">Paul White</h4>
                             <h4 className="text-base sm:text-[0.9vw]">
-                                {singleJournal.date}
+                                {singleJournal.date && singleJournal.date}
                             </h4>
                         </div>
                         {/* <div className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] p-0 sm:pl-[10vw] mt-8 sm:mt-[4vw]">
@@ -263,7 +263,8 @@ const SingleJournal = () => {
                                 delicious tea, and stay good people!
                             </h4>
                         </div> */}
-                        <div className="pl-[10.7vw]"
+                        <div
+                            className="pl-[10.7vw]"
                             dangerouslySetInnerHTML={{
                                 __html: singleJournal.pageContent,
                             }}

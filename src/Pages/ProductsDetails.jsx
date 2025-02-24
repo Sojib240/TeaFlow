@@ -54,7 +54,7 @@ const ProductsDetails = () => {
                                             handleSlider(singleProduct.image)
                                         }
                                         className="border border-[#ddd] w-full h-full object-cover"
-                                        src={singleProduct.image && singleProduct.image}
+                                        src={singleProduct && singleProduct.image}
                                         alt=""
                                     />
                                 </div>
@@ -64,7 +64,7 @@ const ProductsDetails = () => {
                                             handleSlider(singleProduct.minImg1)
                                         }
                                         className="border border-[#ddd] w-full h-full object-cover"
-                                        src={singleProduct.minImg1 && singleProduct.minImg1}
+                                        src={singleProduct && singleProduct.minImg1}
                                         alt=""
                                     />
                                 </div>
@@ -74,7 +74,7 @@ const ProductsDetails = () => {
                                             handleSlider(singleProduct.minImg2)
                                         }
                                         className="border border-[#ddd] w-full h-full object-cover"
-                                        src={singleProduct.minImg2 && singleProduct.minImg2}
+                                        src={singleProduct && singleProduct.minImg2}
                                         alt=""
                                     />
                                 </div>
@@ -84,7 +84,7 @@ const ProductsDetails = () => {
                                             handleSlider(singleProduct.minImg3)
                                         }
                                         className="border border-[#ddd] w-full h-full object-cover"
-                                        src={singleProduct.minImg3 && singleProduct.minImg3}
+                                        src={singleProduct && singleProduct.minImg3}
                                         alt=""
                                     />
                                 </div>
@@ -101,12 +101,12 @@ const ProductsDetails = () => {
                         <div className="w-full block sm:hidden mt-10 sm:mt-0 px-5 sm:px-0">
                             <div className="">
                                 <h2 className="text-4xl sm:text-[3.5vw] uppercase font-GolosBold mb-4 sm:mb-[7vw]">
-                                    {singleProduct.title && singleProduct.title}
+                                    {singleProduct && singleProduct.title}
                                 </h2>
                                 <div className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col">
                                     Tasting notes:{" "}
                                     <span>
-                                        {singleProduct.TastingNotes &&
+                                        {singleProduct &&
                                             singleProduct.TastingNotes}
                                     </span>
                                 </div>
@@ -127,7 +127,7 @@ const ProductsDetails = () => {
                                         </h4>
                                     </div>
                                     <p className="text-white text-base sm:text-[1vw] font-medium">
-                                        $ {singleProduct.price &&  singleProduct.price}
+                                        $ {singleProduct &&  singleProduct.price}
                                     </p>
                                 </button>
                                 <h4 className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] text-[#989292] flex items-center gap-[1vw] w-full sm:w-[30%] mt-3 mb-2 sm:my-0">
@@ -160,7 +160,7 @@ const ProductsDetails = () => {
                                     className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] mb-[4vw] flex flex-col gap-5 sm:gap-[1.5vw]"
                                     dangerouslySetInnerHTML={{
                                         __html:
-                                            singleProduct.aboutProduct &&
+                                            singleProduct &&
                                             singleProduct.aboutProduct,
                                     }}
                                 />
@@ -172,7 +172,7 @@ const ProductsDetails = () => {
                                 <div
                                     className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] flex flex-col gap-5 sm:gap-[1.5vw]"
                                     dangerouslySetInnerHTML={{
-                                        __html: singleProduct.SteepingInstructions && singleProduct.SteepingInstructions,
+                                        __html: singleProduct && singleProduct.SteepingInstructions,
                                     }}
                                 />
                             </div>
@@ -181,7 +181,7 @@ const ProductsDetails = () => {
                                     Ingredients
                                 </h4>
                                 <p className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw]">
-                                    {singleProduct.Ingredients && singleProduct.Ingredients}
+                                    {singleProduct && singleProduct.Ingredients}
                                 </p>
                             </div>
                         </div>
@@ -232,11 +232,11 @@ const ProductsDetails = () => {
                     >
                         <div className="">
                             <h2 className="text-[3.5vw] uppercase font-GolosBold mb-[7vw]">
-                                {singleProduct.title && singleProduct.title}
+                                {singleProduct && singleProduct.title}
                             </h2>
                             <div className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col">
                                 Tasting notes:{" "}
-                                <span>{singleProduct.TastingNotes && singleProduct.TastingNotes}</span>
+                                <span>{singleProduct && singleProduct.TastingNotes}</span>
                             </div>
                         </div>
                         <div className="flex items-center gap-[2vw] mt-[1.8vw]">
@@ -255,7 +255,7 @@ const ProductsDetails = () => {
                                     </span>
                                 </div>
                                 <p className="text-white text-base sm:text-[1vw] font-medium">
-                                    $ {singleProduct.price && singleProduct.price}
+                                    $ {singleProduct && singleProduct.price}
                                 </p>
                             </button>
                             <h4 className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] text-[#989292] flex items-center gap-2 sm:gap-[1vw] w-[30%]">

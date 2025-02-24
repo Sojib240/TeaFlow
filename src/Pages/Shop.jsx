@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import { productContext } from "../Utils/Context";
 import { cartContextData } from "../Utils/CartContext";
 import { CiFilter } from "react-icons/ci";
+import { RiArrowLeftSLine } from "react-icons/ri";
 
 const Shop = () => {
     document.title = "TeaFlow － Products";
+    const [DropDown, setDropDown] = useState(false);
     const [productsApiData, setproductsApiData] = useContext(productContext);
     const [cart, setcart] = useContext(cartContextData);
     const [filterOpenClose, setfilterOpenClose] = useState(false);
@@ -21,13 +23,18 @@ const Shop = () => {
         }
         setcart([...cart, product]);
     };
+    //
+    const handleDropDown = () => {
+        setDropDown(!DropDown);
+    };
+    //
 
     return (
         <div className="px-[5.15vw] mx-auto">
             <h2 className="text-5xl sm:text-[8vw] font-GolosBold uppercase leading-[100%] mt-10 sm:mt-[8vw] md:mt-[5vw]">
                 products
             </h2>
-            <div className="flex flex-col sm:flex-row justify-between gap-10 sm:gap-[2.5vw] mt-14">
+            <div className="flex flex-col sm:flex-row justify-between gap-10 sm:gap-[5vw] mt-14">
                 <div className="mb-6 block sm:hidden">
                     <button
                         onClick={() => setfilterOpenClose(true)}
@@ -47,13 +54,13 @@ const Shop = () => {
                     } left-0 bg-[#000000d0] h-screen w-full z-[9999]`}
                 ></div>
                 <div
-                    className={`sm:block w-full h-[85vh] sm:h-full min-h-auto sm:min-h-auto bg-white sm:bg-transparent sm:w-[20%] fixed sm:sticky sm:top-0 bottom-0 left-0 z-[9999999] sm:z-auto pl-6 pr-6 pb-6 pt-6 rounded-tl-4xl rounded-tr-4xl translate-y-[0%] sm:translate-y-0 sm:pt-[7vw] sm:pb-0 sm:pl-0 sm:pr-0 ${
+                    className={`sm:block w-full h-[85vh] sm:h-full min-h-auto sm:min-h-auto bg-white sm:bg-transparent sm:w-[20%] fixed sm:sticky sm:top-0 bottom-0 left-0 z-[9999999] sm:z-auto pl-6 pr-6 pb-6 pt-6 rounded-tl-4xl rounded-tr-4xl translate-y-[0%] sm:translate-y-0 sm:pt-[6vw] sm:pb-0 sm:pl-0 sm:pr-0 ${
                         filterOpenClose === true
                             ? "translate-y-[0%]"
                             : "translate-y-[105%]"
-                    } duration-200 transition-all`}
+                    } duration-300 transition-all`}
                 >
-                    <div className="flex flex-col gap-4 sm:gap-[0.75vw] leading-[144%] sm:leading-[1.8vw]">
+                    <div className="flex flex-col gap-7 sm:gap-[1.2vw] leading-[144%] sm:leading-[1.8vw]">
                         <div className="flex sm:hidden justify-between items-center gap-[2vw] w-full mb-8 sm:mb-[2vw] pt-5">
                             <h2 className="uppercase text-[17px] sm:text-[1.6vw] font-GolosRegular text-[#747373]">
                                 Filters
@@ -70,23 +77,56 @@ const Shop = () => {
                         </div>
                         {productsApiData.categories &&
                             productsApiData.categories.map(
-                                ({ id, categoryName }) => {
+                                ({ id, categoryName, subCategoryName }) => {
                                     return (
                                         <div className="">
-                                            <Link
-                                                key={id}
-                                                to={""}
-                                                className="text-[22px] sm:text-[1.2vw] uppercase font-GolosDemiBold"
+                                            <div
+                                                onClick={() =>
+                                                    id === 1 && handleDropDown()
+                                                }
+                                                className="flex items-center text-[22px] sm:text-[1.2vw] uppercase font-GolosDemiBold w-full justify-between cursor-pointer"
                                             >
-                                                {categoryName}
-                                            </Link>
+                                                <span>{categoryName}</span>
+                                                {subCategoryName && (
+                                                    <span
+                                                        className={` duration-300 transition-all ${
+                                                            DropDown === true
+                                                                ? "rotate-90"
+                                                                : "-rotate-90"
+                                                        } block`}
+                                                    >
+                                                        <RiArrowLeftSLine />
+                                                    </span>
+                                                )}
+                                            </div>
+                                            {subCategoryName && (
+                                                <div
+                                                    className={`text-lg sm:text-[1.1vw] font-GolosRegular leading-[180%] sm:leading-[1.8vw] mt-5 sm:mt-[0.6vw] pl-4 sm:pl-[0.6vw] lowercase ${
+                                                        DropDown === true
+                                                            ? "block"
+                                                            : "hidden"
+                                                    }`}
+                                                >
+                                                    {id === 1 && productsApiData &&
+                                                        productsApiData.categories[0].subCategoryName.map(
+                                                            ({SubTitle}) => {
+                                                                <h4 className="cursor-pointer">{SubTitle}</h4>
+                                                            }
+                                                        )}
+                                                        <h4 className="cursor-pointer">green tea</h4>
+                                                        <h4 className="cursor-pointer">red tea</h4>
+                                                        <h4 className="cursor-pointer">black tea</h4>
+                                                        <h4 className="cursor-pointer">Oolong tea</h4>
+                                                        <h4 className="cursor-pointer">White tea</h4>
+                                                </div>
+                                            )}
                                         </div>
                                     );
                                 }
                             )}
                     </div>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 w-[90%] sm:w-[80%] gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[3vw] sm:pt-[7vw]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 w-[90%] sm:w-[80%] gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[3vw] sm:pt-[6vw]">
                     {productsApiData.products &&
                         productsApiData.products.map((product) => {
                             return (
