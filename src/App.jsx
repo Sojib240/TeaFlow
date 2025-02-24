@@ -17,6 +17,7 @@ import gsap from "gsap";
 import ScrollToTop from "./Common/ScrollToTop";
 import SingleJournal from "./Pages/SingleJournal";
 import Flow from "./Pages/Flow";
+import CheckOut from "./Pages/CheckOut";
 
 const App = () => {
     // app states
@@ -65,6 +66,7 @@ const App = () => {
                 <Route path="/delivery" element={<Delivery />} />
                 <Route path="/flows" element={<Flow />} />
                 <Route path="/singleJournal/:id" element={<SingleJournal />} />
+                <Route path="/checkout" element={<CheckOut />} />
                 <Route
                     path="/productsDetails/:id"
                     element={<ProductsDetails />}

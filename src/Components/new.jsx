@@ -6,6 +6,13 @@ const Context = () => {
             {
                 id: 1,
                 categoryName: "tea type",
+                subCategoryName: [
+                    { id: 1, SubTitle: "Oolong tea" },
+                    { id: 2, SubTitle: "Red tea" },
+                    { id: 3, SubTitle: "Green tea" },
+                    { id: 4, SubTitle: "White tea" },
+                    { id: 5, SubTitle: "Black tea" },
+                ],
             },
             {
                 id: 2,

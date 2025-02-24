@@ -3,7 +3,6 @@ import { cartContextData } from "../Utils/CartContext";
 import Empty from "../Components/Empty";
 import { Link } from "react-router-dom";
 
-
 const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
     // page title
     document.title = "TeaFlow － Products Cart";
@@ -76,14 +75,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                         <Empty />
                     ) : (
                         cart.map(
-                            ({
-                                id,
-                                title,
-                                image,
-                                price,
-                                amount,
-                                flavor,
-                            }) => {
+                            ({ id, title, image, price, amount, flavor }) => {
                                 return (
                                     <div
                                         key={id}
@@ -173,9 +165,14 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                 $ {Price}
                             </h4>
                         </div>
-                        <button className="hover:bg-[#222020] border-[#222020] border p-5 sm:p-[1.5vw] rounded-full w-full mt-8 sm:mt-[2vw] text-sm sm:text-[0.9vw] font-bold uppercase tracking-[0.2vw] text-center transition-all duration-200 hover:text-white font-GolosRegular cursor-pointer">
-                            Continue to Checkout
-                        </button>
+                        <Link
+                            onClick={() => setCartOpenClose(false)}
+                            to={"/checkout"}
+                        >
+                            <button className="hover:bg-[#222020] border-[#222020] border p-5 sm:p-[1.5vw] rounded-full w-full mt-8 sm:mt-[2vw] text-sm sm:text-[0.9vw] font-bold uppercase tracking-[0.2vw] text-center transition-all duration-200 hover:text-white font-GolosRegular cursor-pointer">
+                                Continue to Checkout
+                            </button>
+                        </Link>
                     </div>
                 )}
             </div>
