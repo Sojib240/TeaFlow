@@ -5,7 +5,7 @@ const Context = () => {
         categories: [
             {
                 id: 1,
-                categoryName:'Tea Type',
+                categoryName: "Tea Type",
                 subCategoryName: [
                     { id: 1, SubTitle: "Oolong tea" },
                     { id: 2, SubTitle: "Red tea" },
@@ -74,7 +74,7 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f5_ginseng-1200-min.jpg",
                 price: 14,
                 amount: 1,
-                category: 4,
+                category: [4, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806876_%D0%96%D0%B5%D0%BD%D1%8C%D1%88%D0%B5%D0%BD%D1%8C%20%D0%A3%D0%BB%D1%83%D0%BD%2C%20%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC%2C%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B8%CC%86%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -102,7 +102,7 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806697_%D0%94%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
                 price: 27,
                 amount: 1,
-                category: 2,
+                category: [2, 8],
                 minImg1:
                     " https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806751_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%C2%AB%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%20%D0%B2%20%D0%91%D0%B0%D0%BC%D0%B1%D1%83%D0%BA%D0%B5%C2%BB%2C%202021%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -152,7 +152,7 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b5_shu-14-min.jpg",
                 price: 14,
                 amount: 1,
-                category: 4,
+                category: [4, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80672e_%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%A7%D0%B5%CC%88%D1%80%D0%BD%D1%8B%D0%B8%CC%86%20%D0%96%D0%B5%D0%BC%D1%87%D1%83%D0%B3%2C%202018%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -223,7 +223,7 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a1c_red-4-1-min.jpg",
                 price: 12,
                 amount: 1,
-                category: 4,
+                category: [4, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d7_%D0%A1%D1%8F%D0%BE%20%D0%A7%D0%B6%D1%83%D0%BD%20%D0%A5%D1%83%D0%B0%20%D0%A1%D1%8F%D0%BD%20%C2%AB%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20%D0%B0%D1%80%D0%BE%D0%BC%D0%B0%D1%82%C2%BB%2C%202021%20%D0%B3-min.jpg",
                 minImg2:
@@ -289,7 +289,7 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b2_black-3-min.jpg",
                 price: 12,
                 amount: 1,
-                category: "",
+                category: 8,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ef_%D0%9B%D1%8E%D0%B0%D0%BD%D1%8C%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%20%D0%B2%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%BA%D0%B5%2C%202021%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -337,7 +337,7 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c0_shu-27-1-min.jpg",
                 price: 26,
                 amount: 1,
-                category: 5,
+                category: [5, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806987_%D0%9C%D1%8D%D0%BD%D1%85%D0%B0%D0%B8%CC%86%20%D0%92%D1%8D%D0%B8%CC%86%20%C2%AB%D0%A7%D0%B8%D1%81%D1%82%D1%8B%D0%B8%CC%86%20%D0%92%D0%BA%D1%83%D1%81%20%D0%9C%D1%8D%D0%BD%D1%85%D0%B0%D1%8F%C2%BB%2C%202021%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -401,7 +401,7 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80671c_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
                 price: 21,
                 amount: 1,
-                category: 2,
+                category: [2, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806784_%20%D0%98%20%D0%A3%20%2522%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D0%BE%D0%B5%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%2522%2C%202008%20%D0%B3(4)-min.jpg",
                 minImg2:
@@ -472,7 +472,7 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069af_red-3-min.jpg",
                 price: 21,
                 amount: 1,
-                category: "",
+                category: 8,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c2_%D0%A6%D0%B7%D0%B8%D0%BD%D1%8C%20%D0%A6%D0%B7%D1%8E%D0%BD%D1%8C%20%D0%9C%D1%8D%D0%B8%CC%86%20%C2%AB%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5%20%D0%91%D1%80%D0%BE%D0%B2%D0%B8%C2%BB%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -543,7 +543,7 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ef_red-1200-min.jpg",
                 price: 27,
                 amount: 1,
-                category: 2,
+                category: [2, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c8_%D0%94%D0%B0%20%D0%A6%D0%B7%D0%B8%D0%BD%D1%8C%20%D0%A7%D0%B6%D1%8D%D0%BD%D1%8C%20%D0%92%D0%B0%D0%BD%20%C2%AB%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5%20%D0%98%D0%B3%D0%BB%D1%8B%C2%BB%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -566,7 +566,7 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bd_white-min.jpg",
                 price: 14,
                 amount: 1,
-                category: "",
+                category: 8,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d4_%D0%91%D0%B0%D0%B8%CC%86%20%D0%A5%D0%B0%D0%BE%20%D0%98%D0%BD%D1%8C%20%D0%A7%D0%B6%D1%8D%D0%BD%D1%8C%2C%20%D0%AE%D0%BD%D1%8C%D0%BD%D0%B0%D0%BD%D1%8C%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -631,7 +631,7 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f4_gaba-oolong1-1200-min.jpg",
                 price: 35,
                 amount: 1,
-                category: 4,
+                category: [4, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068af_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%93%D0%B0%D0%B1%D0%B0%20%D0%9D%D0%B0%D0%BD%D1%8C%D1%82%D0%BE%D1%83-min.jpg",
                 minImg2:
@@ -688,7 +688,7 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f1_gaba5-1200-min.jpg",
                 price: 57,
                 amount: 1,
-                category: 2,
+                category: [2, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ad_%D0%93%D0%B0%D0%B1%D0%B0%20%D0%90%D0%BB%D0%B8%20%D0%A8%D0%B0%D0%BD%D1%8C%2C%20%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC-min.jpg",
                 minImg2:
@@ -752,7 +752,7 @@ Repeat several times until the flavor and aroma of the tea dissipates. As the br
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b1_black-1-min.jpg",
                 price: 21,
                 amount: 1,
-                category: "",
+                category: 8,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068da_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B02-min.jpg",
                 minImg2:
@@ -832,7 +832,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f0_gaba4-1200-min.jpg",
                 price: 65,
                 amount: 1,
-                category: [2, 4],
+                category: [2, 4, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ae_%D0%93%D0%B0%D0%B1%D0%B0%20%D0%A0%D1%83%D0%B1%D0%B8%D0%BD%20%D0%A2%D0%B5%CC%88%D0%BC%D0%BD%D0%B0%D1%8F-min.jpg",
                 minImg2:
@@ -910,7 +910,7 @@ Repeat several times until the flavor and aroma of the tea dissipates. As the br
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b4_shu-9-min.jpg",
                 price: 12,
                 amount: 1,
-                category: 4,
+                category: [4, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80664a_%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%20%D0%AE%D0%B8%CC%86%20%D0%98%D0%BD%D1%8C%2C%202013%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -996,7 +996,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bc_green-1-min.jpg",
                 price: 12,
                 amount: 1,
-                category: "",
+                category: 8,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806787_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D0%91%D0%B8%D0%BB%D0%BE%D1%87%D1%83%D0%BD%D1%8C%20%C2%AB%D0%98%D0%B7%D1%83%D0%BC%D1%80%D1%83%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%A1%D0%BF%D0%B8%D1%80%D0%B0%D0%BB%D0%B8%20%D0%92%D0%B5%D1%81%D0%BD%D1%8B%C2%BB%2C%20%D0%AE%D0%BD%D1%8C%D0%BD%D0%B0%D0%BD%D1%8C%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -1025,7 +1025,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fe_Osman-Thus%20Oolong-1200-1-min.jpg",
                 price: 45,
                 amount: 1,
-                category: 2,
+                category: [2, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b1_%D0%A3%D0%BB%D1%83%D0%BD%20%D1%81%20%D0%BE%D1%81%D0%BC%D0%B0%D0%BD%D1%82%D1%83%D1%81%D0%BE%D0%BC%20%D1%81%20%D0%BE.%20%D0%A2%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%2C%20%D0%BD%D0%B0%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86-min.jpg",
                 minImg2:
@@ -1090,7 +1090,7 @@ Infuse the brew for 2-3 minutes.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fa_Wishan-2-1200-min.jpg",
                 price: 15,
                 amount: 1,
-                category: 2,
+                category: [2, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ba_%D0%A8%D1%83%D0%B8%CC%86%20%D0%A1%D1%8F%D0%BD%D1%8C%20%D0%93%D0%B0%D0%BE%20%D0%A8%D0%B0%D0%BD%D1%8C%20%D0%A2%D0%B0%D0%BD%20%D0%91%D1%8D%D0%B8%CC%86%20%C2%AB%E2%80%8E%D0%92%D1%8B%D1%81%D0%BE%D0%BA%D0%BE%D0%B3%D0%BE%D1%80%D0%BD%D1%8B%D0%B8%CC%86%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%C2%BB-min.jpg",
                 minImg2:
@@ -1268,7 +1268,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fb_wishan-1200-min.jpg",
                 price: 15,
                 amount: 1,
-                category: 2,
+                category: [2, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068be_%D0%9C%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B6%D0%B0%D0%BD%D1%8C%20%C2%AB%D0%94%D0%B8%D0%BA%D0%B0%D1%8F%20%D0%A1%D0%BB%D0%B8%D0%B2%D0%B0%C2%BB-min.jpg",
                 minImg2:
@@ -1354,7 +1354,7 @@ Infuse 2nd and subsequent brews for 5-15 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a1b_Tie-Guan%203%201200%20copy-min.jpg",
                 price: 15,
                 amount: 1,
-                category: "",
+                category: 8,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8067cc_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%A2%D0%B5%D0%B3%D1%83%D0%B0%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C%20%D0%B2%20%D0%9A%D1%83%D0%B3%D1%83%D0%B0%2C%20%D0%BF%D1%80%D0%BE%D0%B6%D0%B0%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8%CC%86%20%D0%B8%20%D0%B2%D1%8B%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%BD%D1%8B%D0%B8%CC%86%2C%202019%20%D0%B3-min.jpg",
                 minImg2:
@@ -1430,7 +1430,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f2_milk-oolong-1200-min.jpg",
                 price: 18,
                 amount: 1,
-                category: "",
+                category: 8,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806899_%D0%9C%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20%D0%A3%D0%BB%D1%83%D0%BD%20%C2%AB%D0%9D%D0%B0%D0%B8%CC%86%20%D0%A1%D1%8F%D0%BD%C2%BB%2C%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B8%CC%86%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -1566,7 +1566,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f9_Aged%20Oolong-1200-min.jpg",
                 price: 50,
                 amount: 1,
-                category: 2,
+                category: [2, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068cb_%D0%9B%D1%83%20%D0%93%D1%83%20%D0%9B%D0%B0%D0%BE%20%D0%A7%D0%B0%20%D0%92%D0%B0%D0%BD%2012-%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D0%B8%CC%86-min.jpg",
                 minImg2:
@@ -1657,7 +1657,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f3_1200-Tie-Guan%20Yin%201-min.jpg",
                 price: 14,
                 amount: 1,
-                category: 4,
+                category: [4, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80678c_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%A2%D0%B5%D0%B3%D1%83%D0%B0%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -1718,7 +1718,7 @@ Infuse the brew for 2-3 minutes.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ee_dan-1200-min.jpg",
                 price: 33,
                 amount: 1,
-                category: 2,
+                category: [2, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c1_%D0%9C%D0%B8%20%D0%9B%D0%B0%D0%BD%D1%8C%20%D0%A1%D1%8F%D0%BD%20%D0%93%D0%B0%D0%BE%D1%88%D0%B0%D0%BD%D1%8C%20%D0%94%D0%B0%D0%BD%D1%8C%20%D0%A6%D1%83%D0%BD%20%C2%AB%D0%9C%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D1%85%D0%B8%D0%B4%D0%B5%D1%8F%C2%BB%20-min.jpg",
                 minImg2:
@@ -1789,7 +1789,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b6_shu-18-min.jpg",
                 price: 15,
                 amount: 1,
-                category: 4,
+                category: [4, 8],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806752_%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%20%D0%92%D0%B0%D0%BD%2C%202012%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -1851,7 +1851,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bb_green-2-min.jpg",
                 price: 27,
                 amount: 1,
-                category: "",
+                category: 8,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806788_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D0%A1%D0%B8%20%D0%A5%D1%83%20%D0%9B%D1%83%D0%BD%D1%86%D0%B7%D0%B8%D0%BD%20%C2%AB%D0%9A%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D1%86%20%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0%C2%BB%2C%20%D0%B2%D1%8B%D1%81%D1%88%D0%B8%D0%B8%CC%86%20%D1%81%D0%BE%D1%80%D1%82%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -1918,9 +1918,8 @@ Infuse the brew for 2.5 minutes.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b9_green%20flow%20combo-min.jpg",
                 price: 50,
                 amount: 1,
-                category: 3,
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b9_green%20flow%20combo-min.jpg",
+                category: [3, 8],
+                minImg1: null,
                 minImg2: null,
                 minImg3: null,
                 availability: "in stock",
@@ -1977,9 +1976,8 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b8_pu-erh%20flow%20combo-min.jpg",
                 price: 55,
                 amount: 1,
-                category: 3,
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b8_pu-erh%20flow%20combo-min.jpg",
+                category: [3, 8],
+                minImg1: null,
                 minImg2: null,
                 minImg3: null,
                 availability: "in stock",
@@ -2024,9 +2022,8 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806924_Slide7-min.jpg",
                 price: 72,
                 amount: 1,
-                category: 3,
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806924_Slide7-min.jpg",
+                category: [3, 8],
+                minImg1: null,
                 minImg2: null,
                 minImg3: null,
                 availability: "in stock",
@@ -2429,6 +2426,851 @@ Have a nice tea party.
                 aboutProduct: null,
                 SteepingInstructions: null,
                 flavor: "Tweezers tea, bamboo",
+                Ingredients: null,
+            },
+            {
+                id: 52,
+                title: "BLACK TEA #2",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e8_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
+                price: 27,
+                amount: 1,
+                category: [2, 8],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068de_%D0%9B%D1%8E%20%D0%91%D0%B0%D0%BE%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%208005%2C%202018%20%D0%B3(2)-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068dc_%D0%9B%D1%8E%20%D0%91%D0%B0%D0%BE%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%208005%2C%202018%20%D0%B3(3)-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e3_%D0%9B%D1%8E%20%D0%91%D0%B0%D0%BE%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%208005%2C%202018%20%D0%B3(4)-min.jpg",
+                availability: "in stock",
+                TastingNotes:
+                    "soft, woody-chocolate, with vegetable shades. Impact: leveling, concentrating. This is tea for attentive work and cheerful morning.",
+                aboutProduct: `
+                <p>Black-aged Hei Cha tea from Guangxi in a stylish package. Produced by the Zhong Cha factory, which is also the author of the famous "Seals". Black tea has its own specifics of raw materials and processing technology, so it turns out to be very diverse in taste and aroma</p>
+                <p>Aroma: dried fruits, fallen leaves, light tobacco notes, honey.
+
+</p>
+                <p>Taste: soft, woody-chocolate, with vegetable shades. 
+
+</p>
+                <p>Impact: leveling, concentrating. This is tea for attentive work and a cheerful morning.
+
+</p>
+                <p>Production: collection, fermentation, and the beginning of primary aging - 2018, packing and packaging - 2020.
+
+</p>
+                `,
+                SteepingInstructions: `
+                <p>Traditional Preparation
+
+</p>
+                <p>Add 10-12 grams to a Gaiwan or Gongfu Teapot (150ml-200ml). 
+
+</p>
+                <p>Use 212°F boiling water.
+
+</p>
+                <p>Briefly rinse the leaves. Decant and discard this infusion.
+
+</p>
+                <p>Infuse the first brew for 10 seconds.  
+
+</p>
+                <p>Infuse 2nd and subsequent brews for 10-30 seconds. 
+
+</p>
+                <p>Repeat several times until the flavor and aroma of the tea dissipates. As the brewing session ensues, increase infusion time to coax out the body and strength of the final infusions.
+
+</p>
+                `,
+                flavor: "Flavor: soft, woody-chocolate, vegetable",
+                Ingredients: "Organic black tea",
+            },
+            {
+                id: 53,
+                title: "RED TEA #15",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f6_red-15-1200-min.jpg",
+                price: 33,
+                amount: 1,
+                category: [2, 8],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d0_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B02-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d5_%D0%A8%D0%B0%D0%B8%CC%86%D1%85%D1%83%D0%BD%20%D1%81%D0%BE%20%D1%81%D1%82%D0%B0%D1%80%D1%8B%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%20%D0%B8%D0%B7%20%D0%A6%D0%B7%D0%B8%D0%BD%D0%BE%D1%88%D0%B0%D0%BD%D1%8C-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d2_%D0%A8%D0%B0%D0%B8%CC%86%D1%85%D1%83%D0%BD%20%D1%81%D0%BE%20%D1%81%D1%82%D0%B0%D1%80%D1%8B%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%20%D0%B8%D0%B7%20%D0%A6%D0%B7%D0%B8%D0%BD%D0%BE%D1%88%D0%B0%D0%BD%D1%8C(3)-min.jpg",
+                availability: "in stock",
+                TastingNotes:
+                    "sweet, balanced, and dense. Notes of baked fruits and chocolate. The aftertaste is enveloping, and fresh. Impact: warming, gently toning, concentrating.",
+                aboutProduct: `
+                <p>
+                Red tea from big old tea trees (Gu Shu), dried in the sun (kit.
+                晒红乔木古树). The tea is harvested from trees about 150 years
+                old in a high-altitude tea garden on the slope of Mount
+                Jinoshan. The developed root system of old trees makes the
+                leaves richer in trace elements, and the high-altitude
+                collection area is characterized by ecological purity and a
+                climate favorale for tea cultivation.
+            </p>
+            <p>
+                Jinoshan Mountain, also known as Yule Shan, belongs to the group
+                of 6 Famous Tea Mountains. It is located near the city of
+                Jinghong, the administrative center of Xishuangbanna County.
+            </p>
+            <p>
+                Shaikhuns are a special category of red teas, where the final
+                drying of the tea leaf is carried out in the sun, and not in a
+                drying cabinet (oven), as in the "classic" dianthus. In this
+                tea, the leaf has a characteristic fragrant berry aroma and
+                retains more moisture and enzymes. And most importantly,
+                shaikhun, like sheng puer, has a high potential for further
+                changes in the aging process - the taste will add roundness,
+                honey, and depth, and the effect is smoothness and strength.
+            </p>
+            <p>Aroma: delicate, fruity, floral with confectionery notes</p>
+            <p>
+                Taste: sweet, balanced, dense. Notes of baked fruits and
+                chocolate. The aftertaste is enveloping and fresh. Over time,
+                shaikhun will gain flavor and aroma, and become softer and
+                thicker.
+            </p>
+            <p>Impact: warming, gently toning, concentrating.</p>
+            <p>
+                Collection: First collection in spring 2022, Jinoshan Mountain
+                (Yule), Xishuangbanna County, Yunnan Province, China.
+            </p>
+                `,
+                SteepingInstructions: `
+                <p>Traditional Preparation</p>
+            <p>Add 7-10 grams to a Gaiwan or Gongfu Teapot (150ml-200ml).</p>
+            <p>Use 212°F boiling water.</p>
+            <p>Briefly rinse the leaves. Decant and discard this infusion.</p>
+            <p>Infuse the first brew for 3 seconds.</p>
+            <p>Infuse 2nd and subsequent brews for 5-15 seconds.</p>
+            <p>
+                Repeat several times until the flavor and aroma of the tea
+                dissipates. As the brewing session ensues, increase infusion
+                time to coax out the body and strength of the final infusions.
+            </p>
+                `,
+                flavor: "Flavor: sweet, balanced, dense",
+                Ingredients: "Organic red tea",
+            },
+            {
+                id: 54,
+                title: "RED TEA #10",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f7_red-10-min.jpg",
+                price: 38,
+                amount: 1,
+                category: [2, 8],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068dd_%D0%95%20%D0%A8%D0%B5%D0%BD%20%D0%A5%D1%83%D0%BD%20%D0%A7%D0%B0%20%D1%81%20%D0%B4%D0%B8%D0%BA%D0%B8%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d1_%D0%95%20%D0%A8%D0%B5%D0%BD%20%D0%A5%D1%83%D0%BD%20%D0%A7%D0%B0%20%D1%81%20%D0%B4%D0%B8%D0%BA%D0%B8%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(2)-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e5_%D0%95%20%D0%A8%D0%B5%D0%BD%20%D0%A5%D1%83%D0%BD%20%D0%A7%D0%B0%20%D1%81%20%D0%B4%D0%B8%D0%BA%D0%B8%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(3)-min.jpg",
+                availability: "in stock",
+                TastingNotes:
+                    'refined, bright, sweet, with fruit and berry sourness, "festive". Impact: powerful, warming, intoxicating, meditative.',
+                aboutProduct: `
+                            <p>
+                Red tea from wild tea trees from the mountainous region of
+                Ulyanshan. The first spring training camp.
+            </p>
+            <p>
+                A special type of wild tea tree defines a unique aromatic and
+                flavor palette. The tea is completely different from the classic
+                Yunnan reds. It has the potential to change over time — it will
+                gain softness and depth of taste.
+            </p>
+            <p>
+                Aroma: heady, fragrant, with hints of wild berries, flowers, and
+                tropical fruits (passion fruit).
+            </p>
+            <p>
+                Taste: refined, bright, sweet, with fruit and berry sourness,
+                "festive".
+            </p>
+            <p>Effects: powerful, warming, intoxicating, meditative.</p>
+            <p>
+                Collection: Spring 2022, Ulyanshan Mountains, Pu'er County,
+                prov. Yunnan, China.
+            </p>
+                `,
+                SteepingInstructions: `
+                <p>Traditional Preparation</p>
+            <p>Add 7-10 grams to a Gaiwan or Gongfu Teapot (150ml-200ml).</p>
+            <p>Use 212°F boiling water.</p>
+            <p>Briefly rinse the leaves. Decant and discard this infusion.</p>
+            <p>Infuse the first brew for 5 seconds.</p>
+            <p>Infuse 2nd and subsequent brews for 5-15 seconds.</p>
+            <p>
+                Repeat several times until the flavor and aroma of the tea
+                dissipates. As the brewing session ensues, increase infusion
+                time to coax out the body and strength of the final infusions.
+            </p>
+                `,
+                flavor: "Flavor: refined, bright, sweet",
+                Ingredients: "Organic red tea",
+            },
+            {
+                id: 55,
+                title: "SHU PU-ERH #16",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fd_shu-16-1200-min.jpg",
+                price: 30,
+                amount: 1,
+                category: [2, 8],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80674f_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%D1%81%D0%BE%20%D1%81%D1%82%D0%B0%D1%80%D1%8B%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%202021%20%D0%B3-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8066aa_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%D1%81%D0%BE%20%D1%81%D1%82%D0%B0%D1%80%D1%8B%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%202021%20%D0%B3(2)-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806864_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%D1%81%D0%BE%20%D1%81%D1%82%D0%B0%D1%80%D1%8B%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%202021%20%D0%B3(3)-min.jpg",
+                availability: "in stock",
+                TastingNotes:
+                    "soft, balanced, enveloping. The profile is woody, with notes of nuts, cream and caramel. Impact:delicately invigorating, concentrating.",
+                aboutProduct: `
+                <p>
+                For the production of this Shu Pu-erh, raw materials from old
+                tea trees from the Manku region were used. The harvest is spring
+                2020, which is especially valuable since cheaper summer or
+                autumn raw materials are more often taken for Shu Pu-erh.
+            </p>
+            <p>
+                WoodySingle raw materials (not blended) from old trees from 150
+                to 250 years old from one tea garden. The trees grow on a
+                mountain slope at an altitude of 1800m and reach 2-3 meters in
+                height.
+            </p>
+            <p>
+                Fermentation was carried out in the Menghai region by an
+                experienced technologist using a special technology of low-run
+                fermentation in bamboo baskets. This technology allows you to
+                preserve as much as possible in the finished tea the full depth
+                of taste and aroma of the original first-class raw materials.
+            </p>
+            <p>Aroma: woody, fruity, and creamy.</p>
+            <p>
+                Taste: soft, balanced, enveloping. The profile is woody, with
+                notes of nuts, cream, and caramel. Over time, it will actively
+                change and become more rounded and noble.
+            </p>
+            <p>Effect: delicately invigorating, concentrating.</p>
+            <p>
+                Production: harvest - Spring 2020, Mengku Region, Lincang
+                County, fermentation - May-June 2020, Menghai County,
+                Xishuangbanna County, Yunnan Province, China.
+            </p>
+                `,
+                SteepingInstructions: `
+                <p>Traditional Preparation</p>
+            <p>Add 7-10 grams to a Gaiwan or Gongfu Teapot (150ml-200ml).</p>
+            <p>Use 212°F boiling water.</p>
+            <p>Briefly rinse the leaves. Decant and discard this infusion.</p>
+            <p>Infuse the first brew for 10 seconds.</p>
+            <p>Infuse 2nd and subsequent brews for 10-30 seconds.</p>
+            <p>
+                Repeat several times until the flavor and aroma of the tea
+                dissipates. As the brewing session ensues, increase infusion
+                time to coax out the body and strength of the final infusions.
+            </p>
+                `,
+                flavor: "Flavor: juicy, sweet and strong",
+                Ingredients: "Organic Shu Pu-erh",
+            },
+            {
+                id: 56,
+                title: `DONG DING LAO SHI`,
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fc_dong-1200-min.jpg",
+                price: 50,
+                amount: 1,
+                category: [2, 8],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b5_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%94%D1%83%D0%BD%20%D0%94%D0%B8%D0%BD%20%D0%9B%D0%B0%D0%BE%20%D0%A8%D0%B8%2C%20%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b3_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%94%D1%83%D0%BD%20%D0%94%D0%B8%D0%BD%20%D0%9B%D0%B0%D0%BE%20%D0%A8%D0%B8%2C%20%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B8%CC%86(2)-min.jpg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: `soft, sweet, multi-faceted, spicy-caramel, nutty and
+woody-dried fruit, with smoky coffee notes in the
+aftertaste and menthol freshness. Impact:
+intoxicating, relaxing, meditative.`,
+                aboutProduct: `<p>
+                Medium-fermented highly roasted hemispherical twisted oolong. It
+                is grown and made on the tea farm of the Lu Gu region.
+            </p>
+            <p>
+                This tea is the ancestor of almost the entire tradition of
+                Taiwanese oolongs, originally produced on a mountain peak in the
+                area of Nantou. For this, he received the name "Oolong from
+                Frosty Peak". The technology of its manufacture came to the
+                island together with refugees from Fujian Province (China) in
+                the mid-1960s. Some features of the technology have become
+                leading in the tradition of Taiwanese teas. Now tea called "Dong
+                Ding" is made all over Taiwan and this name has become more of
+                an indication of the processing technology (special roasting)
+                than the terrain.
+            </p>
+            <p>
+                Lao Shi Dong Ding (traditional Dong Ding) has preserved the
+                taste of that era through the centuries, it differs from its
+                modern counterparts. The tea is made from the Qing Xing variety,
+                and has a dark color and a sweet-caramel taste, which is due to
+                technological features. The brightest and most important is
+                roasting. It occurs in two stages, first, they are fried
+                according to the modern method in a drying cabinet, but then
+                they are brought on charcoal. Solid wood is used for coals, for
+                expensive representatives - coals of the Lunyan tree.
+            </p>
+            <p>
+                This tea only improves over time. It is better not to drink it
+                immediately after production, after the fire settles down, the
+                residual bitterness in the taste passes, and only sweetness
+                remains. This tea is perfect for long-term storage, it is from
+                him that the famous Lao Cha Wangs originate.
+            </p>
+            <p>
+                Aroma: caramel, honey, with nuances of flowers, fruits, and
+                spices.
+            </p>
+            <p>
+                Taste: soft, sweet, multi-faceted, spicy caramel, nutty and
+                woody-dried fruit, with smoky coffee notes in the aftertaste and
+                menthol freshness.
+            </p>
+            <p>Effects: intoxicating, relaxing, meditative.</p>`,
+                SteepingInstructions: `<p>Traditional Preparation</p>
+            <p>Add 7-10 grams to a Gaiwan or Gongfu Teapot (150ml-200ml).</p>
+            <p>Use 212°F boiling water.</p>
+            <p>Briefly rinse the leaves. Decant and discard this infusion.</p>
+            <p>Infuse the first brew for 10 seconds.</p>
+            <p>Infuse 2nd and subsequent brews for 10-30 seconds.</p>
+            <p>
+                Repeat several times until the flavor and aroma of the tea
+                dissipates. As the brewing session ensues, increase infusion
+                time to coax out the body and strength of the final infusions.
+            </p>`,
+                flavor: "Flavor: spicy caramel, nutty, woody, fruit",
+                Ingredients: "Organic oolong tea",
+            },
+            {
+                id: 57,
+                title: "RED TEA #5",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f8_red-5-min.jpg",
+                price: 37,
+                amount: 1,
+                category: [2, 4, 8],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e2_%D0%93%D1%83%D0%BD%D1%84%D1%83%20%D0%A5%D1%83%D0%BD%20%D0%B8%D0%B7%20%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%20%D0%A2%D1%83%D0%BD%20%D0%9C%D1%83-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c9_%D0%93%D1%83%D0%BD%D1%84%D1%83%20%D0%A5%D1%83%D0%BD%20%D0%B8%D0%B7%20%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%20%D0%A2%D1%83%D0%BD%20%D0%9C%D1%83(2)-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068cd_%D0%93%D1%83%D0%BD%D1%84%D1%83%20%D0%A5%D1%83%D0%BD%20%D0%B8%D0%B7%20%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%20%D0%A2%D1%83%D0%BD%20%D0%9C%D1%83(3)-min.jpg",
+                availability: "in stock",
+                TastingNotes: `balanced, thick, and rich with light Assamese and spicy-caramel
+notes in the aftertaste. Impact: tonic, warming and slightly
+relaxing.`,
+                aboutProduct: `
+                            <p>
+                Gongfu Hong from the Tong Mu Reserve (桐木工夫红, "Red tea of
+                the highest quality from Tong Mu") is a rare Chinese red tea of
+                the highest category from the Wishan Nature Reserve in the north
+                of Fujian Province. Made in spring from raw materials from wild
+                bushes.
+            </p>
+            <p>
+                Aroma: bright, deep, and fragrant. There are notes of flowers,
+                caramel, bread, and chocolate.
+            </p>
+            <p>
+                Taste: rich, balanced, thick, and rich with light Assamese and
+                spicy-caramel notes in the aftertaste. In terms of the richness
+                of the taste palette and the quality of raw materials, this tea
+                can rightfully compare with the best Taiwanese red teas and even
+                surpass them.
+            </p>
+            <p>Impact: tonic, warming, and slightly relaxing.</p>
+                `,
+                SteepingInstructions: `            <p>Traditional Preparation</p>
+            <p>Add 7-10 grams to a Gaiwan or Gongfu Teapot (150ml-200ml).</p>
+            <p>Use 212°F boiling water.</p>
+            <p>Briefly rinse the leaves. Decant and discard this infusion.</p>
+            <p>Infuse the first brew for 2 seconds.</p>
+            <p>Infuse 2nd and subsequent brews for 5-15 seconds.</p>
+            <p>
+                Repeat several times until the flavor and aroma of the tea
+                dissipates. As the brewing session ensues, increase infusion
+                time to coax out the body and strength of the final infusions.
+            </p>`,
+                flavor: "Flavor:balanced, thick, rich, spicy caramel",
+                Ingredients: "Organic red tea",
+            },
+            {
+                id: 58,
+                title: "GREEN TEA #3",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ba_green-3-min.jpg",
+                price: 14,
+                amount: 1,
+                category: [4, 8],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806759_%D0%9C%D0%B0%D0%BE%D1%86%D0%B7%D1%8F%D0%BD%D1%8C%20%D0%95%20%D0%A8%D1%8D%D0%BD%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806758_%D0%9C%D0%B0%D0%BE%D1%86%D0%B7%D1%8F%D0%BD%D1%8C%20%D0%95%20%D0%A8%D1%8D%D0%BD%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(2)-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80675a_%D0%9C%D0%B0%D0%BE%D1%86%D0%B7%D1%8F%D0%BD%D1%8C%20%D0%95%20%D0%A8%D1%8D%D0%BD%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(3)-min.jpg",
+                availability: "in stock",
+                TastingNotes: `sweet, herbaceous, refreshing taste with a smooth transition to
+astringent, slightly minty and spicy aftertaste. The taste of fresh
+grass and flowers. Light sourness of wild berries. Impact:
+invigorating and toning, refreshing.`,
+                aboutProduct: `<p>
+                Green Chinese tea from Fujian province. The name Mao Jian Ye
+                Sheng (Chinese: 毛尖野生, Wild Fleecy Peaks) speaks of the wild
+                origin of this tea. This is clearly felt in the taste and aroma
+                of tea: a bright, rich profile with a subtle acidity. At the
+                same time, only small and tender shoots were selected to
+                preserve the tenderness and delicacy of green tea.
+            </p>
+            <p>
+                The aroma of a dry leaf: bright, fresh, slightly spicy, with a
+                slight flowery. Subtle fruity and vanilla notes with spices.
+            </p>
+            <p>
+                Taste and aftertaste: sweet, herbaceous, refreshing taste with a
+                smooth transition to astringent, slightly minty, and spicy
+                aftertaste. The taste of fresh grass and flowers. The light
+                sourness of wild berries.
+            </p>
+            <p>Impact: invigorating and toning, refreshing.</p>`,
+                SteepingInstructions: `            <p>Tea Preparation</p>
+            <p>Add 6 grams to a Teapot (300 ml).</p>
+            <p>Use 180°F water.</p>
+            <p>Infuse the brew for 2-3 minutes.</p>`,
+                flavor: "Flavor: herbs, flowers, wild berries.",
+                Ingredients: "Organic green tea",
+            },
+            {
+                id: 59,
+                title: "SHU PU-ERH #2",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b3_shu-2-min.jpg",
+                price: 15,
+                amount: 1,
+                category: [4, 8],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806630_%D0%A8%D1%83%20%D0%BF%D1%83%D1%8D%D1%80%20%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%2C%202016%20%D0%B3-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80665e_%D0%A8%D1%83%20%D0%BF%D1%83%D1%8D%D1%80%20%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%2C%202016%20%D0%B3(2)-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80674e_%D0%A8%D1%83%20%D0%BF%D1%83%D1%8D%D1%80%20%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%2C%202016%20%D0%B3(3)-min.jpg",
+                availability: "in stock",
+                TastingNotes: `fruity and nut-chocolate with a pleasant bitterness. Impact:
+invigorates and tones`,
+                aboutProduct: `<p>
+                Invigorating pu-erh from Xin Wen factory. It is known for its
+                combination of price and quality.
+            </p>
+            <p>
+                The word Guntin (kit. 宫廷) in the name of the brick translates
+                as Palace and indicates the category of raw materials. Palace or
+                Imperial Pu-erh are small leaves containing large buds and a
+                complete or almost complete absence of cuttings. This tea
+                invigorates well, it is brewed quickly and deliciously.
+            </p>
+            <p>
+                Aroma: sweet, woody, and nutty with notes of bitter chocolate.
+            </p>
+            <p>
+                Taste: bright, rich, and thick with a pleasant bitterness,
+                fruity, and nutty chocolate shades.
+            </p>
+            <p>
+                Effect: invigorates and tones, a wonderful energizer. Helps on
+                the road. An interesting substitute for coffee; is Pu-erh
+                cheerfulness lasts longer and ends smoothly, unlike coffee, when
+                strength disappears suddenly.
+            </p>
+            <p>
+                Production: 2016, Xin Wen Factory, Yongde County, Lincang
+                County, Yunnan Province, China.
+            </p>`,
+                SteepingInstructions: `<p>Traditional Preparation</p>
+            <p>Add 7-10 grams to a Gaiwan or Gongfu Teapot (150ml-200ml).</p>
+            <p>Use 212°F boiling water.</p>
+            <p>Briefly rinse the leaves. Decant and discard this infusion.</p>
+            <p>Infuse the first brew for 10 seconds.</p>
+            <p>Infuse 2nd and subsequent brews for 10-30 seconds.</p>
+            <p>
+                Repeat several times until the flavor and aroma of the tea
+                dissipates. As the brewing session ensues, increase infusion
+                time to coax out the body and strength of the final infusions.
+            </p>`,
+                flavor: "Flavor: sweet, woody, nutty, chocolate",
+                Ingredients: "Organic Shu Pu’er",
+            },
+            {
+                id: 60,
+                title: "Teacup #9",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e1_teacup-9-new-1-min.jpg",
+                price: 14,
+                amount: 1,
+                category: [5, 6],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806975_img_9992-1000x1000.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80697e_img_9993-1000x1000.jpg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Teacup Cosmos, clay, glaze, 100 ml",
+                Ingredients: null,
+            },
+            {
+                id: 61,
+                title: "TEACUP #10",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e2_teacup-10-new-1-min.jpg",
+                price: 14,
+                amount: 1,
+                category: [5, 6],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80697b_img_9998-1000x1000.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806977_img_9997-1000x1000.jpg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Teacup Cosmos #2, clay, glaze, 100 ml",
+                Ingredients: null,
+            },
+            {
+                id: 62,
+                title: "TEACUP #11",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e3_teacup-11-new-1-min.jpg",
+                price: 10,
+                amount: 1,
+                category: [5, 6],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806978_img_9988-1000x1000.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80697a_img_9987-1000x1000.jpg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Teacup bronze, high-temperature fired, 60 m",
+                Ingredients: null,
+            },
+            {
+                id: 63,
+                title: "Chaban #3",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c4_chaban-3-new-1-min.jpeg",
+                price: 60,
+                amount: 1,
+                category: [4, 7],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806923_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%202-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806921_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%203-min.jpeg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806925_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%204-min.jpeg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: `Chaban (Tea Tray) "With a bird", bamboo`,
+                Ingredients: null,
+            },
+            {
+                id: 64,
+                title: "fireproof Teapot #1",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d1_teapot-is-fireproof-glass-1-new-min.jpeg",
+                price: 25,
+                amount: 1,
+                category: [4, 7],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806913_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%20%D0%B8%D0%B7%20%D0%BE%D0%B3%D0%BD%D0%B5%D1%83%D0%BF%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%81%D1%82%D0%B5%D0%BA%D0%BB%D0%B0%202-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806916_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%20%D0%B8%D0%B7%20%D0%BE%D0%B3%D0%BD%D0%B5%D1%83%D0%BF%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%81%D1%82%D0%B5%D0%BA%D0%BB%D0%B0%203-min.jpeg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806914_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%20%D0%B8%D0%B7%20%D0%BE%D0%B3%D0%BD%D0%B5%D1%83%D0%BF%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%81%D1%82%D0%B5%D0%BA%D0%BB%D0%B0%204-min.jpeg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: `Bamboo fireproof glass teapot, 1000 ml`,
+                Ingredients: null,
+            },
+            {
+                id: 65,
+                title: "Cha He #1",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c9_Cha%20He%20%231%20-%20new-min.jpg",
+                price: 9,
+                amount: 1,
+                category: [4, 7],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068f8_%D0%A7%D0%B0%D1%85%D1%8D%20%D0%93%D0%BE%D1%80%D1%8B%202.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068f7_%D0%A7%D0%B0%D1%85%D1%8D%20%D0%93%D0%BE%D1%80%D1%8B%203.jpeg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: `Cha He, mountains, porcelain`,
+                Ingredients: null,
+            },
+            {
+                id: 66,
+                title: "Cha Hai #1",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d0_cha-hai-1-new-min.jpeg",
+                price: 15,
+                amount: 1,
+                category: 7,
+                minImg1:
+                    "https://cdn.prod.website-files.com/64899c647bc07ddd2ccf0cf5/64899c647bc07ddd2ccf10b6_%D0%A7%D0%B0%D1%85%D0%B0%D0%B8%CC%86%20%D0%A2%D1%80%D0%B0%D0%BF%D0%B5%D1%86%D0%B8%D1%8F%202-min.jpeg",
+                minImg2: null,
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Cha Hai trapeze, glass, 325 ml",
+                Ingredients: null,
+            },
+            {
+                id: 67,
+                title: "Chaban #4",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c3_Chaban%20%234-new-1-min.jpg",
+                price: 190,
+                amount: 1,
+                category: [5, 7],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806953_img_4749-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806955_img_4748-1000x1000-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806954_img_4750-1000x1000-min.jpg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Chaban (Tea Tray) is made of wood, solid",
+                Ingredients: null,
+            },
+            {
+                id: 68,
+                title: "CHA HAI #2",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069cf_cha-hai-2-new-min.jpg",
+                price: 18,
+                amount: 1,
+                category: 7,
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806949_img_3749-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694a_img_3748-1000x1000-min.jpg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Cha hai Trapeze with green handle, 325 ml",
+                Ingredients: null,
+            },
+            {
+                id: 69,
+                title: "CHA HAI #3",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ce_cha-hai-3-new-min.jpg",
+                price: 26,
+                amount: 1,
+                category: 7,
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694b_img_9463-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806952_img_9462-1000x1000-min.jpg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Cha hai with wooden handle, glass 450 ml",
+                Ingredients: null,
+            },
+            {
+                id: 70,
+                title: "FIGURE #1",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e4_figure-1-min.jpg",
+                price: 16,
+                amount: 1,
+                category: 7,
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806951_img_9323-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694f_img_9322-1000x1000-min.jpg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Figure of Happy Hotei, clay, glaze",
+                Ingredients: null,
+            },
+            {
+                id: 71,
+                title: "Teacup #6",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069de_teacup-6-new-min.jpg",
+                price: 9,
+                amount: 1,
+                category: 6,
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806944_img_5336-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806947_img_5337-1000x1000-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806945_dscf7722-1000x1000-min.jpg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Teacup, Ice glass, 50 ml",
+                Ingredients: null,
+            },
+            {
+                id: 72,
+                title: "Teacup #3",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069db_tea-cup-3-new-1-min.jpg",
+                price: 23,
+                amount: 1,
+                category: 6,
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690a_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%202.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806915_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%203.jpeg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Teacup flower, Zhu Yao glaze, 80 ml",
+                Ingredients: null,
+            },
+            {
+                id: 73,
+                title: "Gaiwan #3",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d6_gaiwan-3-new-1-min.jpeg",
+                price: 36,
+                amount: 1,
+                category: 6,
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80693d_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806942_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%202-min.jpeg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Gaiwan Fan Gu, porcelain, 185 ml",
+                Ingredients: null,
+            },
+            {
+                id: 74,
+                title: "FIGURE #3",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d3_figure-3-new-1-min.jpg",
+                price: 23,
+                amount: 1,
+                category: [5, 7],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806968_img_9288-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806969_img_9289-1000x1000-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806967_img_9290-1000x1000-min.jpg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Figure of a pair of piglets, clay",
+                Ingredients: null,
+            },
+            {
+                id: 75,
+                title: "CHA HAI #7",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ca_cha-hai-7-new-min.jpg",
+                price: 23,
+                amount: 1,
+                category: [5, 7],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806963_img_8093-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80695f_img_8092-1000x1000-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80696a_img_8091-1000x1000-min.jpg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Cha hai Square, chop glass, 200 ml",
+                Ingredients: null,
+            },
+            {
+                id: 76,
+                title: "FIGURE #4",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e6_figure-4-min.jpg",
+                price: 17,
+                amount: 1,
+                category: [5, 7],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80696b_img_9340-1000x1000.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80696c_img_9341-1000x1000.jpg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Figure of an old man, clay",
+                Ingredients: null,
+            },
+            {
+                id: 77,
+                title: "FIGURE #6",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e7_figure-6-min.jpg",
+                price: 37,
+                amount: 1,
+                category: [5, 7],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806970_img_9975-1000x1000.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80696d_img_9976-1000x1000.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80697d_img_9973-1000x1000.jpg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Figurine of Green Rhinoceros, clay",
+                Ingredients: null,
+            },
+            {
+                id: 78,
+                title: "FIGURE #7",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e8_figure-7-min.jpg",
+                price: 22,
+                amount: 1,
+                category: [5, 7],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806971_img_9969-1000x1000.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806973_img_9968-1000x1000.jpg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Figurine of a seated monk, clay, glaze",
                 Ingredients: null,
             },
         ],

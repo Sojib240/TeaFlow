@@ -24,13 +24,13 @@ const HomeSlider = () => {
     return (
         <div className="HomeSlider w-full flex-col-reverse sm:flex-row flex px-0 sm:px-[5.14vw]">
             <div className="w-full sm:w-[50%] px-5 sm:px-0 flex items-center">
-                <SliderTitle SliderTitleData={SliderTitleData} />;
+                <SliderTitle SliderTitleData={SliderTitleData} />
             </div>
             {/* swiper */}
             <Swiper
                 className="w-full sm:w-[50%] rounded-[5vw] overflow-hidden ml-auto z-10"
                 onSlideChange={(e) => {
-                    handleSliderContent(e);
+                    handleSliderContent(e)
                 }}
                 loop
                 centeredSlides={true}

@@ -3,6 +3,7 @@ import Discount from "../Common/Discount";
 import { Link, useParams } from "react-router-dom";
 import { productContext } from "../Utils/Context";
 import { cartContextData } from "../Utils/CartContext";
+import SemilarProducts from "../Components/SemilarProducts";
 
 const ProductsDetails = () => {
     const { id } = useParams();
@@ -48,48 +49,85 @@ const ProductsDetails = () => {
                     <div className="w-full sm:w-[58%] pt-[6vw] bg-[#FFFFFF]">
                         <div className="flex gap-4 sm:gap-[0.6vw] flex-col sm:flex-row w-full">
                             <div className="order-2 sm:order-1 w-full sm:w-[22.85%] flex flex-row sm:flex-col gap-[0.6vw] px-5 sm:px-0">
-                                <div className="">
+                                <div
+                                    className={`${
+                                        singleProduct.image == null
+                                            ? "hidden"
+                                            : "block"
+                                    }`}
+                                >
                                     <img
                                         onMouseEnter={() =>
                                             handleSlider(singleProduct.image)
                                         }
-                                        className="border border-[#ddd] w-full h-full object-cover"
-                                        src={singleProduct && singleProduct.image}
+                                        className="border border-[#f1f1f1] w-full h-full object-cover"
+                                        src={
+                                            singleProduct && singleProduct.image
+                                        }
                                         alt=""
                                     />
                                 </div>
-                                <div className="">
+                                <div
+                                    className={`${
+                                        singleProduct.minImg1 == null
+                                            ? "hidden"
+                                            : "block"
+                                    }`}
+                                >
                                     <img
                                         onMouseEnter={() =>
                                             handleSlider(singleProduct.minImg1)
                                         }
-                                        className="border border-[#ddd] w-full h-full object-cover"
-                                        src={singleProduct && singleProduct.minImg1}
+                                        className="border border-[#f1f1f1] w-full h-full object-cover"
+                                        src={
+                                            singleProduct &&
+                                            singleProduct.minImg1
+                                        }
                                         alt=""
                                     />
                                 </div>
-                                <div className="">
+
+                                <div
+                                    className={`${
+                                        singleProduct.minImg2 == null
+                                            ? "hidden"
+                                            : "block"
+                                    }`}
+                                >
                                     <img
                                         onMouseEnter={() =>
                                             handleSlider(singleProduct.minImg2)
                                         }
-                                        className="border border-[#ddd] w-full h-full object-cover"
-                                        src={singleProduct && singleProduct.minImg2}
+                                        className="border border-[#f1f1f1] w-full h-full object-cover"
+                                        src={
+                                            singleProduct &&
+                                            singleProduct.minImg2
+                                        }
                                         alt=""
                                     />
                                 </div>
-                                <div className="">
+
+                                <div
+                                    className={`${
+                                        singleProduct.minImg3 == null
+                                            ? "hidden"
+                                            : "block"
+                                    }`}
+                                >
                                     <img
                                         onMouseEnter={() =>
                                             handleSlider(singleProduct.minImg3)
                                         }
-                                        className="border border-[#ddd] w-full h-full object-cover"
-                                        src={singleProduct && singleProduct.minImg3}
+                                        className="border border-[#f1f1f1] w-full h-full object-cover"
+                                        src={
+                                            singleProduct &&
+                                            singleProduct.minImg3
+                                        }
                                         alt=""
                                     />
                                 </div>
                             </div>
-                            <div className="order-1 sm:order-2 w-full rounded-[5vw] sm:h-[37vw] overflow-hidden flex">
+                            <div className="order-1 sm:order-2 w-full rounded-[5vw] sm:h-[37vw] overflow-hidden flex border border-[#f1f1f1]">
                                 <img
                                     className="object-cover flex w-full"
                                     src={imageSlider && imageSlider}
@@ -103,7 +141,13 @@ const ProductsDetails = () => {
                                 <h2 className="text-4xl sm:text-[3.5vw] uppercase font-GolosBold mb-4 sm:mb-[7vw]">
                                     {singleProduct && singleProduct.title}
                                 </h2>
-                                <div className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col">
+                                <div
+                                    className={`${
+                                        singleProduct.TastingNotes == null
+                                            ? "hidden"
+                                            : "block"
+                                    } text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col`}
+                                >
                                     Tasting notes:{" "}
                                     <span>
                                         {singleProduct &&
@@ -127,7 +171,7 @@ const ProductsDetails = () => {
                                         </h4>
                                     </div>
                                     <p className="text-white text-base sm:text-[1vw] font-medium">
-                                        $ {singleProduct &&  singleProduct.price}
+                                        $ {singleProduct && singleProduct.price}
                                     </p>
                                 </button>
                                 <h4 className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] text-[#989292] flex items-center gap-[1vw] w-full sm:w-[30%] mt-3 mb-2 sm:my-0">
@@ -152,8 +196,12 @@ const ProductsDetails = () => {
                             </div>
                         </div>
                         <div className="mt-12 sm:mt-[5vw] mb-6 sm:mb-[4vw] px-5 sm:px-0">
-                            <div className="mb-6 sm:mb-[4vw]">
-                                <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-5 sm:mb-[1vw]">
+                            <div className={`mb-6 sm:mb-[4vw]`}>
+                                <h4 className={`${
+                                        singleProduct.aboutProduct == null
+                                            ? "hidden"
+                                            : "block"
+                                    } text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-5 sm:mb-[1vw]`}>
                                     About product
                                 </h4>
                                 <div
@@ -165,19 +213,29 @@ const ProductsDetails = () => {
                                     }}
                                 />
                             </div>
-                            <div className="mb-6 sm:mb-[4vw]">
-                                <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-5 sm:mb-[1vw]">
+                            <div className={`mb-6 sm:mb-[4vw]`}>
+                                <h4 className={`${
+                                        singleProduct.SteepingInstructions == null
+                                            ? "hidden"
+                                            : "block"
+                                    } text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-5 sm:mb-[1vw]`}>
                                     Steeping Instructions
                                 </h4>
                                 <div
                                     className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] flex flex-col gap-5 sm:gap-[1.5vw]"
                                     dangerouslySetInnerHTML={{
-                                        __html: singleProduct && singleProduct.SteepingInstructions,
+                                        __html:
+                                            singleProduct &&
+                                            singleProduct.SteepingInstructions,
                                     }}
                                 />
                             </div>
                             <div className="">
-                                <h4 className="text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-[1vw]">
+                                <h4 className={`text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-[1vw] ${
+                                        singleProduct.Ingredients == null
+                                            ? "hidden"
+                                            : "block"
+                                    }`}>
                                     Ingredients
                                 </h4>
                                 <p className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw]">
@@ -228,15 +286,24 @@ const ProductsDetails = () => {
                         </div>
                     </div>
                     <div
-                        className={`w-[42%] hidden sm:block static sm:sticky top-0 right-0 min-h-[42vw] h-full pt-[6vw]`}
+                        className={`w-[42%] hidden sm:block static sm:sticky top-0 right-0 ${singleProduct.TastingNotes == null
+                            ? "min-h-[32vw]"
+                            : 'min-h-[42vw]'} h-full pt-[6vw]`}
                     >
                         <div className="">
                             <h2 className="text-[3.5vw] uppercase font-GolosBold mb-[7vw]">
                                 {singleProduct && singleProduct.title}
                             </h2>
-                            <div className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col">
+                            <div className={`${
+                                        singleProduct.TastingNotes == null
+                                            ? "hidden"
+                                            : "block"
+                                    } text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col`}>
                                 Tasting notes:{" "}
-                                <span>{singleProduct && singleProduct.TastingNotes}</span>
+                                <span>
+                                    {singleProduct &&
+                                        singleProduct.TastingNotes}
+                                </span>
                             </div>
                         </div>
                         <div className="flex items-center gap-[2vw] mt-[1.8vw]">
@@ -282,6 +349,9 @@ const ProductsDetails = () => {
                     </div>
                 </div>
             )}
+            <div className="">
+                <SemilarProducts />
+            </div>
             <div className="mt-[15vw]">
                 <Discount />
             </div>

@@ -3,13 +3,10 @@ import { Link } from "react-router-dom";
 import { productContext } from "../Utils/Context";
 import { cartContextData } from "../Utils/CartContext";
 
-const AllTopSales = (
-    // {handleTopSales}
-    { handleCategoriesFilter }
-) => {
-    // data coming from context api
+const SemilarProducts = () => {
+    // main data coming from firebase by api
     const [productsApiData, setproductsApiData] = useContext(productContext);
-    // filtered data for top sale
+    // filtered data for top sale component
     const [filterProduct, setfilterProduct] = useState();
     const topSaleFilter = () => {
         productsApiData.products &&
@@ -23,7 +20,7 @@ const AllTopSales = (
     useEffect(() => {
         topSaleFilter();
     }, [productsApiData]);
-    //
+    // add to cart punction
     const [cart, setcart] = useContext(cartContextData);
     const handleCart = (product) => {
         var isTrue = false;
@@ -37,18 +34,12 @@ const AllTopSales = (
         }
         setcart([...cart, product]);
     };
-
     return (
-        <div className="w-full px-5 sm:pl-[14.44vw] pr-[5.14vw] pt-10 sm:pt-[3vw]">
+        <div className="w-full px-5 sm:pl-[14.44vw] pr-[5.14vw] pt-14 sm:pt-[15vw]">
             <div className="inline-block">
-                <Link
-                    to={"/shop"}
-                    onClick={() => handleCategoriesFilter(4, "Top Sales")}
-                    className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw]  font-GolosRegular"
-                >
-                    <span className="block border-b">all top sales</span>
-                    <span className="mt-[-0.5vw] block">10+</span>
-                </Link>
+                <h4 className="text-2xl sm:text-[3.5vw] uppercase mb-3 sm:mb-[1vw] font-semibold">
+                    you may also like
+                </h4>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[4.5vw] pt-12 sm:pt-[7.5vw] pl-12 sm:pl-0">
                 {filterProduct &&
@@ -72,8 +63,8 @@ const AllTopSales = (
                                     <button
                                         onClick={() => handleCart(product)}
                                         className="px-[2vw] py-[2vw] bg-[#111111] rounded-full flex justify-center items-center absolute left-0 bottom-[-15%] right-0 opacity-0 group-hover:bottom-[-15vw]
-                                            group-hover:opacity-0 
-                                            lg:group-hover:bottom-[1vw] lg:group-hover:opacity-100 transition-all duration-[0.4s] w-[90%] mx-auto cursor-pointer hover:bg-[#222020] z-50"
+                                    group-hover:opacity-0 
+                                    lg:group-hover:bottom-[1vw] lg:group-hover:opacity-100 transition-all duration-[0.4s] w-[90%] mx-auto cursor-pointer hover:bg-[#222020] z-50"
                                     >
                                         <span className="text-[1vw] tracking-[0.1vw] text-white font-GolosRegular block">
                                             ADD TO CART
@@ -97,4 +88,4 @@ const AllTopSales = (
     );
 };
 
-export default AllTopSales;
+export default SemilarProducts;

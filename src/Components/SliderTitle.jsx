@@ -13,9 +13,9 @@ const SliderTitle = (SliderTitleData) => {
                     <span className="block">Rich Red</span>
                     <span>Tea #3</span>
                 </div>
-                <div className="pl-[9vw] w-full">
+                <div className="sm:pl-[9vw] w-full">
                     <div className="">
-                        <p className="text-[1.1vw] font-GolosRegular w-[70%] mt-[5vw]">
+                        <p className="text-sm sm:text-[1.1vw] font-GolosRegular w-[70%] mt-[5vw]">
                             Discover the complex aroma and sweet jam taste of
                             Golden Eyebrows - a deservedly popular red tea!
                         </p>

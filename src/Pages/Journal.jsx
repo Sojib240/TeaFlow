@@ -9,7 +9,7 @@ const Journal = () => {
     const [journalApiData, setjournalApiData] = useContext(journalsContext);
 
     return (
-        <>
+        <div className="pt-12 sm:pt-[5vw]">
             <Title text={"Journal"} />
             <div className="px-5 sm:px-[5.15vw] mx-auto mt-20 sm:mt-[8vw] font-GolosRegular">
                 {journalApiData.journals &&
@@ -59,7 +59,7 @@ const Journal = () => {
             <div className="mt-[18vw]">
                 <Discount />
             </div>
-        </>
+        </div>
     );
 };
 

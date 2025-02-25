@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import HomePage from "./Pages/HomePage";
 import Footer from "./Common/Footer";
 import Navbar from "./Common/Navbar";
@@ -18,11 +18,39 @@ import ScrollToTop from "./Common/ScrollToTop";
 import SingleJournal from "./Pages/SingleJournal";
 import Flow from "./Pages/Flow";
 import CheckOut from "./Pages/CheckOut";
+import { productContext } from "./Utils/Context";
 
 const App = () => {
+    const [productsApiData, setproductsApiData] = useContext(productContext);
     // app states
     const [CartOpenClose, setCartOpenClose] = useState(false);
     const [menuOpenClose, setmenuOpenClose] = useState(false);
+    // filter to top sales
+    const { products } = productsApiData;
+    const [newCategoriesData, setnewCategoriesData] = useState();
+    const [titleChange, settitleChange] = useState("Products");
+    // handleCategoriesFilter
+    const handleCategoriesFilter = (id, categoryName) => {
+        settitleChange(categoryName);
+        const filter = products.filter((p) => {
+            if (Array.isArray(p.category)) {
+                return p.category.includes(id);
+            }
+            return p.category === id;
+        });
+        setnewCategoriesData(filter);
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        }); // You can remove this line if you prefer an instant scroll
+
+        //
+    };
+    console.log(newCategoriesData);
+
+    //
+    const cursor = useRef(null);
     // mouse-follower
     const handleMouseMove = (event) => {
         const { clientX, clientY } = event;
@@ -34,7 +62,7 @@ const App = () => {
             (Context) => {
                 let { isMobile } = Context.conditions;
 
-                gsap.to("#mouse", {
+                gsap.to(cursor.current, {
                     ease: "power2.out",
                     x: isMobile ? clientX - 24 / 2 : null,
                     y: isMobile ? clientY - 24 / 2 : null,
@@ -53,11 +81,30 @@ const App = () => {
                     setCartOpenClose={setCartOpenClose}
                     menuOpenClose={menuOpenClose}
                     setmenuOpenClose={setmenuOpenClose}
+                    handleCategoriesFilter={handleCategoriesFilter}
                 />
             </div>
             <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/shop" element={<Shop />} />
+                <Route
+                    path="/"
+                    element={
+                        <HomePage
+                            handleCategoriesFilter={handleCategoriesFilter}
+                        />
+                    }
+                />
+                <Route
+                    path="/shop"
+                    element={
+                        <Shop
+                            newCategoriesData={newCategoriesData}
+                            setnewCategoriesData={setnewCategoriesData}
+                            handleCategoriesFilter={handleCategoriesFilter}
+                            titleChange={titleChange}
+                            settitleChange={settitleChange}
+                        />
+                    }
+                />
                 <Route path="/aboutUs" element={<AboutUs />} />
                 <Route path="/journal" element={<Journal />} />
                 <Route path="/contact" element={<Contact />} />
@@ -76,8 +123,8 @@ const App = () => {
                     element={<TermsAndConditions />}
                 />
             </Routes>
-            <Footer />
-            <CursorFollower />
+            <Footer handleCategoriesFilter={handleCategoriesFilter} />
+            <CursorFollower cursor={cursor} />
         </div>
     );
 };

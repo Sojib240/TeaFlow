@@ -83,7 +83,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                     >
                                         <Link
                                             to={`/productsDetails/${id}`}
-                                            className="w-40 sm:w-[10vw] overflow-hidden cart-image"
+                                            className="w-40 sm:w-[10vw] overflow-hidden cart-image border border-[#F1F1F1]"
                                         >
                                             <img
                                                 className="w-full object-cover flex h-full"

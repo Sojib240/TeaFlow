@@ -7,7 +7,7 @@ const JournalComponent = () => {
     const [journalNewData, setjournalNewData] = useState([]);
     const journalDataFiltered = () => {
         const slicedData =
-            journalApiData.journals && journalApiData.journals.slice(0, 4);
+            journalApiData.journals && journalApiData.journals.slice(0, 5);
         setjournalNewData(slicedData);
     };
     useEffect(() => {

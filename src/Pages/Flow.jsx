@@ -25,7 +25,7 @@ const Flow = () => {
                         return (
                             <>
                                 <Link key={id} className="col-span-1 group">
-                                    <div className={`${id === 2 && 'rounded-[10vw] sm:rounded-[4vw]'} card-image overflow-hidden ${id === 3 && 'rounded-[8vw] sm:rounded-[4vw]'} max-h-[75vw] sm:max-h-[29.51vw] h-full`}>
+                                    <div className={`card-image overflow-hidden max-h-[75vw] sm:max-h-[29.51vw] h-full`}>
                                         <Link to={""}>
                                             <img
                                                 className="group-hover:scale-125 duration-1200 transition-all h-full w-full object-cover"

@@ -26,7 +26,6 @@ const FlowComponent = () => {
                     <span className="mt-[-0.5vw] block">4</span>
                 </Link>
             </div>
-            {/*  */}
             {/* swiper */}
             <div className="pl-12 sm:pl-[14.44vw]">
                 <Swiper
@@ -40,7 +39,7 @@ const FlowComponent = () => {
                             slidesPerView: 3,
                         },
                     }}
-                    // slidesPerView={1}
+
                     spaceBetween={15}
                     centeredSlides={true}
                     navigation={true}

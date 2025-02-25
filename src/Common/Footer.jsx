@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({handleCategoriesFilter}) => {
     return (
         <div className="px-5 sm:pl-[14.44vw] sm:pr-[16vw] pt-20 sm:pt-[23vw] font-GolosRegular">
             <div className="flex justify-between">
@@ -19,16 +19,16 @@ const Footer = () => {
                             >
                                 home
                             </Link>
-                            <Link className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
+                            <Link onClick={()=>handleCategoriesFilter(8,'products')} to={'/shop'} className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
                                 products
                             </Link>
-                            <Link className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
+                            <Link onClick={()=>handleCategoriesFilter(4,"top sales")} to={'/shop'} className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
                                 top sales
                             </Link>
-                            <Link className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
+                            <Link onClick={()=>handleCategoriesFilter(2,"premium tea")} to={'/shop'}  className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
                                 premium tea
                             </Link>
-                            <Link className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
+                            <Link onClick={()=>handleCategoriesFilter(3,"sets")} to={'/shop'} className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
                                 set
                             </Link>
                         </div>
@@ -141,7 +141,7 @@ const Footer = () => {
                         © 2024 Tea flow
                     </p>
                 </div>
-                <h2 className="flex items-center gap-3 text-[15px] sm:text-[1vw]">
+                <a href="https://gladkov.company/?r=teaflow" target="_blank" className="flex items-center gap-3 text-[15px] sm:text-[1vw]">
                     design and development by{" "}
                     <span className="sm:w-[2.3vw]">
                         <img
@@ -150,7 +150,7 @@ const Footer = () => {
                             alt=""
                         />
                     </span>
-                </h2>
+                </a>
             </div>
         </div>
     );

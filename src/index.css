@@ -70,9 +70,10 @@
     --swiper-navigation-size: 2.6vw !important;
 }
 
-/* .card:nth-child(3n+2) {
-    margin-top: 2vw;
-} */
+.card:nth-child(3n+2) {
+    margin-top: 1.6vw;
+    /* background-color: red; */
+}
 
 .cart-card:nth-child(2n+2) .cart-image {
     border-radius: 1.5vw;
@@ -84,7 +85,7 @@
 
 @media (max-width: 640px) {
     .HomeSlider .swiper.swiper-initialized {
-        height: 80vw !important;
+        height: 90vw !important;
     }
 
     :root {

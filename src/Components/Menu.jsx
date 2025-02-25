@@ -1,9 +1,8 @@
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
+const Menu = ({ menuOpenClose, setmenuOpenClose ,handleCategoriesFilter}) => {
     if (menuOpenClose === true) {
         gsap.from(".navMenuText", {
             opacity: 0,
@@ -51,7 +50,7 @@ const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
                 </Link>
                 <Link
                     onClick={() => setmenuOpenClose(false)}
-                    to={""}
+                    to={'/shop'}
                     className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
                 >
                     top sales

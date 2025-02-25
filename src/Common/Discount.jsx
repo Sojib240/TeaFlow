@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Discount = () => {
     return (
@@ -12,9 +13,9 @@ const Discount = () => {
                         Your first order + future sales updates. <br />
                         You can safely unsubscribe anytime from any email <br />
                         footer. Here is our{" "}
-                        <a className="border-b border-[#ded9d9] pb-1" href="#">
+                        <Link to={'/privacyPolicy'} className="border-b border-[#ded9d9] pb-1" href="#">
                             privacy policy
-                        </a>
+                        </Link>
                     </p>
                 </div>
                 <div className="w-full sm:w-[35%] border-b border-[#ded9d9] flex justify-between pb-3 font-GolosRegular">

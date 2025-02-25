@@ -7,7 +7,7 @@ import JournalComponent from "../Common/JournalComponent";
 const AboutUs = () => {
     document.title = "TeaFlow － About Us";
     return (
-        <>
+        <div className="pt-12 sm:pt-[5vw]">
             <Title text={"about us"} />
             <div className="px-5 sm:px-[5.15vw] mx-auto bg-[#222020] mt-24 sm:mt-[14vw] font-GolosRegular">
                 <div className="flex gap-[4vw] flex-col sm:flex-row items-end">
@@ -139,7 +139,7 @@ const AboutUs = () => {
             <div className="mt-[18vw]">
                 <FollowUs />
             </div>
-        </>
+        </div>
     );
 };
 

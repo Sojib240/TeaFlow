@@ -26,7 +26,7 @@ const TopSales = () => {
                             aroma and rich taste. In the manufacture of thin and
                             flat leaves are obtained.
                         </p>
-                        <Link to={'/shop'} className="flex gap-2 sm:gap-[1vw] mt-6 sm:mt-[1.2vw] items-center cursor-pointer group font-GolosRegular">
+                        <Link to={`/productsDetails/${29}`} className="flex gap-2 sm:gap-[1vw] mt-6 sm:mt-[1.2vw] items-center cursor-pointer group font-GolosRegular">
                             <span className="text-[12px] sm:text-[0.9vw] font-semibold uppercase tracking-[0.2vw]">Shop now</span>
                             <span className="block w-10 sm:w-[4vw] group-hover:translate-x-[1.2vw] transition-all duration-300"><img className="w-full" src="/Images/Btn-icon.svg" alt="" /></span>
                         </Link>
