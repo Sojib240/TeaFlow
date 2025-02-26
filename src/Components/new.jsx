@@ -5,39 +5,41 @@ const Context = () => {
         categories: [
             {
                 id: 1,
-                categoryName: "Tea Type",
-                subCategoryName: [
-                    { id: 1, SubTitle: "Oolong tea" },
-                    { id: 2, SubTitle: "Red tea" },
-                    { id: 3, SubTitle: "Green tea" },
-                    { id: 4, SubTitle: "White tea" },
-                    { id: 5, SubTitle: "Black tea" },
-                ],
-            },
-            {
-                id: 2,
                 categoryName: "Premium tea",
             },
             {
-                id: 3,
+                id: 2,
                 categoryName: "sets",
             },
             {
-                id: 4,
+                id: 3,
                 categoryName: "top sales",
             },
             {
-                id: 5,
+                id: 4,
                 categoryName: "New Arrivals",
             },
             {
-                id: 6,
+                id: 5,
                 categoryName: "Teaware",
             },
             {
-                id: 7,
+                id: 6,
                 categoryName: "Accessories",
             },
+        ],
+        subCategories: [
+            { id: 1, SubTitle: "Oolong tea" },
+            { id: 2, SubTitle: "Red tea" },
+            { id: 3, SubTitle: "Green tea" },
+            { id: 4, SubTitle: "White tea" },
+            { id: 5, SubTitle: "Black tea" },
+        ],
+        flows: [
+            { id: 1, flowTitle: "Relax flow" },
+            { id: 2, flowTitle: "Life flow" },
+            { id: 3, flowTitle: "Awareness flow" },
+            { id: 4, flowTitle: "Energy flow" },
         ],
         products: [
             {
@@ -46,7 +48,9 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f7_red-10-min.jpg",
                 price: 38,
                 amount: 1,
-                category: 1,
+                flow: null,
+                subCategory: 2,
+                category: 4,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068dd_%D0%95%20%D0%A8%D0%B5%D0%BD%20%D0%A5%D1%83%D0%BD%20%D0%A7%D0%B0%20%D1%81%20%D0%B4%D0%B8%D0%BA%D0%B8%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -74,7 +78,9 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f5_ginseng-1200-min.jpg",
                 price: 14,
                 amount: 1,
-                category: [4, 8],
+                flow: 4,
+                subCategory: 1,
+                category: [3, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806876_%D0%96%D0%B5%D0%BD%D1%8C%D1%88%D0%B5%D0%BD%D1%8C%20%D0%A3%D0%BB%D1%83%D0%BD%2C%20%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC%2C%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B8%CC%86%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -102,7 +108,9 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806697_%D0%94%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
                 price: 27,
                 amount: 1,
-                category: [2, 8],
+                flow: 4,
+                subCategory: 5,
+                category: [1, 7],
                 minImg1:
                     " https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806751_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%C2%AB%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%20%D0%B2%20%D0%91%D0%B0%D0%BC%D0%B1%D1%83%D0%BA%D0%B5%C2%BB%2C%202021%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -152,7 +160,9 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b5_shu-14-min.jpg",
                 price: 14,
                 amount: 1,
-                category: [4, 8],
+                flow: 4,
+                subCategory: 5,
+                category: [3, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80672e_%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%A7%D0%B5%CC%88%D1%80%D0%BD%D1%8B%D0%B8%CC%86%20%D0%96%D0%B5%D0%BC%D1%87%D1%83%D0%B3%2C%202018%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -223,7 +233,9 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a1c_red-4-1-min.jpg",
                 price: 12,
                 amount: 1,
-                category: [4, 8],
+                flow: 3,
+                subCategory: 1,
+                category: [3, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d7_%D0%A1%D1%8F%D0%BE%20%D0%A7%D0%B6%D1%83%D0%BD%20%D0%A5%D1%83%D0%B0%20%D0%A1%D1%8F%D0%BD%20%C2%AB%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20%D0%B0%D1%80%D0%BE%D0%BC%D0%B0%D1%82%C2%BB%2C%202021%20%D0%B3-min.jpg",
                 minImg2:
@@ -289,7 +301,9 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b2_black-3-min.jpg",
                 price: 12,
                 amount: 1,
-                category: 8,
+                flow: null,
+                subCategory: 5,
+                category: 7,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ef_%D0%9B%D1%8E%D0%B0%D0%BD%D1%8C%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%20%D0%B2%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%BA%D0%B5%2C%202021%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -337,7 +351,9 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c0_shu-27-1-min.jpg",
                 price: 26,
                 amount: 1,
-                category: [5, 8],
+                flow: null,
+                subCategory: 5,
+                category: [4, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806987_%D0%9C%D1%8D%D0%BD%D1%85%D0%B0%D0%B8%CC%86%20%D0%92%D1%8D%D0%B8%CC%86%20%C2%AB%D0%A7%D0%B8%D1%81%D1%82%D1%8B%D0%B8%CC%86%20%D0%92%D0%BA%D1%83%D1%81%20%D0%9C%D1%8D%D0%BD%D1%85%D0%B0%D1%8F%C2%BB%2C%202021%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -401,7 +417,9 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80671c_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
                 price: 21,
                 amount: 1,
-                category: [2, 8],
+                flow: 3,
+                subCategory: 3,
+                category: [1, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806784_%20%D0%98%20%D0%A3%20%2522%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D0%BE%D0%B5%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%2522%2C%202008%20%D0%B3(4)-min.jpg",
                 minImg2:
@@ -472,7 +490,9 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069af_red-3-min.jpg",
                 price: 21,
                 amount: 1,
-                category: 8,
+                flow: 3,
+                subCategory: 2,
+                category: 7,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c2_%D0%A6%D0%B7%D0%B8%D0%BD%D1%8C%20%D0%A6%D0%B7%D1%8E%D0%BD%D1%8C%20%D0%9C%D1%8D%D0%B8%CC%86%20%C2%AB%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5%20%D0%91%D1%80%D0%BE%D0%B2%D0%B8%C2%BB%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -543,7 +563,9 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ef_red-1200-min.jpg",
                 price: 27,
                 amount: 1,
-                category: [2, 8],
+                flow: 4,
+                subCategory: 2,
+                category: [1, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c8_%D0%94%D0%B0%20%D0%A6%D0%B7%D0%B8%D0%BD%D1%8C%20%D0%A7%D0%B6%D1%8D%D0%BD%D1%8C%20%D0%92%D0%B0%D0%BD%20%C2%AB%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5%20%D0%98%D0%B3%D0%BB%D1%8B%C2%BB%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -566,7 +588,9 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bd_white-min.jpg",
                 price: 14,
                 amount: 1,
-                category: 8,
+                flow: 1,
+                subCategory: 4,
+                category: 7,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d4_%D0%91%D0%B0%D0%B8%CC%86%20%D0%A5%D0%B0%D0%BE%20%D0%98%D0%BD%D1%8C%20%D0%A7%D0%B6%D1%8D%D0%BD%D1%8C%2C%20%D0%AE%D0%BD%D1%8C%D0%BD%D0%B0%D0%BD%D1%8C%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -631,7 +655,9 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f4_gaba-oolong1-1200-min.jpg",
                 price: 35,
                 amount: 1,
-                category: [4, 8],
+                flow: 2,
+                subCategory: 1,
+                category: [3, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068af_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%93%D0%B0%D0%B1%D0%B0%20%D0%9D%D0%B0%D0%BD%D1%8C%D1%82%D0%BE%D1%83-min.jpg",
                 minImg2:
@@ -688,7 +714,9 @@ const Context = () => {
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f1_gaba5-1200-min.jpg",
                 price: 57,
                 amount: 1,
-                category: [2, 8],
+                flow: 2,
+                subCategory: 1,
+                category: [1, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ad_%D0%93%D0%B0%D0%B1%D0%B0%20%D0%90%D0%BB%D0%B8%20%D0%A8%D0%B0%D0%BD%D1%8C%2C%20%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC-min.jpg",
                 minImg2:
@@ -752,7 +780,9 @@ Repeat several times until the flavor and aroma of the tea dissipates. As the br
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b1_black-1-min.jpg",
                 price: 21,
                 amount: 1,
-                category: 8,
+                flow: 2,
+                subCategory: 5,
+                category: 7,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068da_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B02-min.jpg",
                 minImg2:
@@ -832,7 +862,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f0_gaba4-1200-min.jpg",
                 price: 65,
                 amount: 1,
-                category: [2, 4, 8],
+                flow: 1,
+                subCategory: 1,
+                category: [1, 3, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ae_%D0%93%D0%B0%D0%B1%D0%B0%20%D0%A0%D1%83%D0%B1%D0%B8%D0%BD%20%D0%A2%D0%B5%CC%88%D0%BC%D0%BD%D0%B0%D1%8F-min.jpg",
                 minImg2:
@@ -910,7 +942,9 @@ Repeat several times until the flavor and aroma of the tea dissipates. As the br
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b4_shu-9-min.jpg",
                 price: 12,
                 amount: 1,
-                category: [4, 8],
+                flow: 4,
+                subCategory: 5,
+                category: [3, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80664a_%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%20%D0%AE%D0%B8%CC%86%20%D0%98%D0%BD%D1%8C%2C%202013%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -996,7 +1030,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bc_green-1-min.jpg",
                 price: 12,
                 amount: 1,
-                category: 8,
+                flow: 2,
+                subCategory: 3,
+                category: 7,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806787_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D0%91%D0%B8%D0%BB%D0%BE%D1%87%D1%83%D0%BD%D1%8C%20%C2%AB%D0%98%D0%B7%D1%83%D0%BC%D1%80%D1%83%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%A1%D0%BF%D0%B8%D1%80%D0%B0%D0%BB%D0%B8%20%D0%92%D0%B5%D1%81%D0%BD%D1%8B%C2%BB%2C%20%D0%AE%D0%BD%D1%8C%D0%BD%D0%B0%D0%BD%D1%8C%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -1025,7 +1061,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fe_Osman-Thus%20Oolong-1200-1-min.jpg",
                 price: 45,
                 amount: 1,
-                category: [2, 8],
+                flow: 1,
+                subCategory: 1,
+                category: [1, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b1_%D0%A3%D0%BB%D1%83%D0%BD%20%D1%81%20%D0%BE%D1%81%D0%BC%D0%B0%D0%BD%D1%82%D1%83%D1%81%D0%BE%D0%BC%20%D1%81%20%D0%BE.%20%D0%A2%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%2C%20%D0%BD%D0%B0%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86-min.jpg",
                 minImg2:
@@ -1090,7 +1128,9 @@ Infuse the brew for 2-3 minutes.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fa_Wishan-2-1200-min.jpg",
                 price: 15,
                 amount: 1,
-                category: [2, 8],
+                flow: 2,
+                subCategory: 1,
+                category: [1, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ba_%D0%A8%D1%83%D0%B8%CC%86%20%D0%A1%D1%8F%D0%BD%D1%8C%20%D0%93%D0%B0%D0%BE%20%D0%A8%D0%B0%D0%BD%D1%8C%20%D0%A2%D0%B0%D0%BD%20%D0%91%D1%8D%D0%B8%CC%86%20%C2%AB%E2%80%8E%D0%92%D1%8B%D1%81%D0%BE%D0%BA%D0%BE%D0%B3%D0%BE%D1%80%D0%BD%D1%8B%D0%B8%CC%86%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%C2%BB-min.jpg",
                 minImg2:
@@ -1177,7 +1217,9 @@ Infuse 2nd and subsequent brews for 5-15 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fc_dong-1200-min.jpg",
                 price: 50,
                 amount: 1,
-                category: "",
+                flow: 1,
+                subCategory: 1,
+                category: 4,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b5_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%94%D1%83%D0%BD%20%D0%94%D0%B8%D0%BD%20%D0%9B%D0%B0%D0%BE%20%D0%A8%D0%B8%2C%20%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-min.jpg",
                 minImg2:
@@ -1268,7 +1310,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fb_wishan-1200-min.jpg",
                 price: 15,
                 amount: 1,
-                category: [2, 8],
+                flow: 1,
+                subCategory: 1,
+                category: [1, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068be_%D0%9C%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B6%D0%B0%D0%BD%D1%8C%20%C2%AB%D0%94%D0%B8%D0%BA%D0%B0%D1%8F%20%D0%A1%D0%BB%D0%B8%D0%B2%D0%B0%C2%BB-min.jpg",
                 minImg2:
@@ -1354,7 +1398,9 @@ Infuse 2nd and subsequent brews for 5-15 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a1b_Tie-Guan%203%201200%20copy-min.jpg",
                 price: 15,
                 amount: 1,
-                category: 8,
+                flow: 3,
+                subCategory: 1,
+                category: 7,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8067cc_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%A2%D0%B5%D0%B3%D1%83%D0%B0%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C%20%D0%B2%20%D0%9A%D1%83%D0%B3%D1%83%D0%B0%2C%20%D0%BF%D1%80%D0%BE%D0%B6%D0%B0%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8%CC%86%20%D0%B8%20%D0%B2%D1%8B%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%BD%D1%8B%D0%B8%CC%86%2C%202019%20%D0%B3-min.jpg",
                 minImg2:
@@ -1430,6 +1476,8 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f2_milk-oolong-1200-min.jpg",
                 price: 18,
                 amount: 1,
+                flow: 1,
+                subCategory: 1,
                 category: 8,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806899_%D0%9C%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20%D0%A3%D0%BB%D1%83%D0%BD%20%C2%AB%D0%9D%D0%B0%D0%B8%CC%86%20%D0%A1%D1%8F%D0%BD%C2%BB%2C%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B8%CC%86%2C%202022%20%D0%B3-min.jpg",
@@ -1491,7 +1539,9 @@ Infuse the brew for 3 minutes.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b2_black-3-min.jpg",
                 price: 15,
                 amount: 1,
-                category: "",
+                flow: 3,
+                subCategory: 5,
+                category: 1,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ef_%D0%9B%D1%8E%D0%B0%D0%BD%D1%8C%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%20%D0%B2%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%BA%D0%B5%2C%202021%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -1566,7 +1616,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f9_Aged%20Oolong-1200-min.jpg",
                 price: 50,
                 amount: 1,
-                category: [2, 8],
+                flow: 1,
+                subCategory: 1,
+                category: [1, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068cb_%D0%9B%D1%83%20%D0%93%D1%83%20%D0%9B%D0%B0%D0%BE%20%D0%A7%D0%B0%20%D0%92%D0%B0%D0%BD%2012-%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D0%B8%CC%86-min.jpg",
                 minImg2:
@@ -1657,7 +1709,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f3_1200-Tie-Guan%20Yin%201-min.jpg",
                 price: 14,
                 amount: 1,
-                category: [4, 8],
+                flow: 1,
+                subCategory: 1,
+                category: [3, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80678c_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%A2%D0%B5%D0%B3%D1%83%D0%B0%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -1718,7 +1772,9 @@ Infuse the brew for 2-3 minutes.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ee_dan-1200-min.jpg",
                 price: 33,
                 amount: 1,
-                category: [2, 8],
+                flow: 4,
+                subCategory: 1,
+                category: [1, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c1_%D0%9C%D0%B8%20%D0%9B%D0%B0%D0%BD%D1%8C%20%D0%A1%D1%8F%D0%BD%20%D0%93%D0%B0%D0%BE%D1%88%D0%B0%D0%BD%D1%8C%20%D0%94%D0%B0%D0%BD%D1%8C%20%D0%A6%D1%83%D0%BD%20%C2%AB%D0%9C%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D1%85%D0%B8%D0%B4%D0%B5%D1%8F%C2%BB%20-min.jpg",
                 minImg2:
@@ -1789,7 +1845,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b6_shu-18-min.jpg",
                 price: 15,
                 amount: 1,
-                category: [4, 8],
+                flow: 4,
+                subCategory: 5,
+                category: [3, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806752_%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%20%D0%92%D0%B0%D0%BD%2C%202012%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -1851,7 +1909,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bb_green-2-min.jpg",
                 price: 27,
                 amount: 1,
-                category: 8,
+                flow: 2,
+                subCategory: 3,
+                category: 7,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806788_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D0%A1%D0%B8%20%D0%A5%D1%83%20%D0%9B%D1%83%D0%BD%D1%86%D0%B7%D0%B8%D0%BD%20%C2%AB%D0%9A%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D1%86%20%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0%C2%BB%2C%20%D0%B2%D1%8B%D1%81%D1%88%D0%B8%D0%B8%CC%86%20%D1%81%D0%BE%D1%80%D1%82%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -1918,7 +1978,9 @@ Infuse the brew for 2.5 minutes.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b9_green%20flow%20combo-min.jpg",
                 price: 50,
                 amount: 1,
-                category: [3, 8],
+                flow: null,
+                subCategory: null,
+                category: [2, 7],
                 minImg1: null,
                 minImg2: null,
                 minImg3: null,
@@ -1976,7 +2038,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b8_pu-erh%20flow%20combo-min.jpg",
                 price: 55,
                 amount: 1,
-                category: [3, 8],
+                flow: null,
+                subCategory: null,
+                category: [2, 7],
                 minImg1: null,
                 minImg2: null,
                 minImg3: null,
@@ -2022,7 +2086,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806924_Slide7-min.jpg",
                 price: 72,
                 amount: 1,
-                category: [3, 8],
+                flow: null,
+                subCategory: null,
+                category: [2, 7],
                 minImg1: null,
                 minImg2: null,
                 minImg3: null,
@@ -2066,7 +2132,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ec_teapot-1-min.jpg",
                 price: 85,
                 amount: 1,
-                category: 6,
+                flow: null,
+                subCategory: null,
+                category: 5,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690f_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%203-min.jpeg",
                 minImg2:
@@ -2086,7 +2154,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e9_teapot-2-min.jpg",
                 price: 70,
                 amount: 1,
-                category: [4, 6],
+                flow: null,
+                subCategory: null,
+                category: [3, 5],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691c_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%203-min.jpeg",
                 minImg2:
@@ -2106,7 +2176,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ed_teapot-5-min.jpg",
                 price: 100,
                 amount: 1,
-                category: [5, 6],
+                flow: null,
+                subCategory: null,
+                category: [4, 5],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80692e_img_9146-1000x1000-min.jpg",
                 minImg2:
@@ -2126,7 +2198,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d5_gaiwan-1-new-1-min.jpg",
                 price: 18,
                 amount: 1,
-                category: [4, 6],
+                flow: null,
+                subCategory: null,
+                category: [3, 5],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ea_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%20%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D1%81%202-min.jpg",
                 minImg2:
@@ -2145,7 +2219,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069df_teacup-7-new-min.jpg",
                 price: 5,
                 amount: 1,
-                category: 6,
+                flow: null,
+                subCategory: null,
+                category: 5,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806948_img_5224-1000x1000-min.jpg",
                 minImg2:
@@ -2164,7 +2240,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d9_tea-cup-1-new-1-min.jpg",
                 price: 8,
                 amount: 1,
-                category: [4, 6],
+                flow: null,
+                subCategory: null,
+                category: [3, 5],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ff_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%20%D0%A1%D0%B0%D0%BA%D1%83%D1%80%D0%B0%203-min.jpeg",
                 minImg2:
@@ -2183,7 +2261,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069da_tea-cup-2-new-1-min.jpg",
                 price: 5,
                 amount: 1,
-                category: 6,
+                flow: null,
+                subCategory: null,
+                category: 5,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806911_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%202-min.jpeg",
                 minImg2:
@@ -2202,7 +2282,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d7_gaiwan-4-new-1-min.jpeg",
                 price: 36,
                 amount: 1,
-                category: 6,
+                flow: null,
+                subCategory: null,
+                category: 5,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806937_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
                 minImg2:
@@ -2221,7 +2303,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069eb_teapot-4-min.jpg",
                 price: 70,
                 amount: 1,
-                category: [5, 6],
+                flow: null,
+                subCategory: null,
+                category: [4, 5],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806932_img_8523-1000x1000.jpg",
                 minImg2:
@@ -2241,7 +2325,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ea_teapot-3-min.jpg",
                 price: 80,
                 amount: 1,
-                category: 6,
+                flow: null,
+                subCategory: null,
+                category: 5,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806929_img_8464-1000x1000-min.jpg",
                 minImg2:
@@ -2261,7 +2347,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d8_gaiwan-5-new-min.jpeg",
                 price: 30,
                 amount: 1,
-                category: "",
+                flow: null,
+                subCategory: null,
+                category: [5, 6],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806941_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
                 minImg2:
@@ -2280,7 +2368,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069dd_Teacup%20%235-new-1-min.jpg",
                 price: 18,
                 amount: 1,
-                category: 6,
+                flow: null,
+                subCategory: null,
+                category: 5,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806943_img_8186-1000x1000-min.jpg",
                 minImg2:
@@ -2299,7 +2389,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e0_Teacup%20%238-new-1-min.jpg",
                 price: 18,
                 amount: 1,
-                category: 6,
+                flow: null,
+                subCategory: null,
+                category: 5,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694d_dsc07420-1000x1000-min.jpg",
                 minImg2:
@@ -2318,7 +2410,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d4_gaiwan-2-new-1-min.jpeg",
                 price: 26,
                 amount: 1,
-                category: [4, 6],
+                flow: null,
+                subCategory: null,
+                category: [3, 5],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806935_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%202-min.jpeg",
                 minImg2:
@@ -2338,7 +2432,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c5_chaban-2-new-1-min.jpeg",
                 price: 150,
                 amount: 1,
-                category: 7,
+                flow: null,
+                subCategory: null,
+                category: 6,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691f_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%202-min.jpeg",
                 minImg2:
@@ -2358,7 +2454,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c8_pu-erh-tea-knife-new-1-min.jpeg",
                 price: 9,
                 amount: 1,
-                category: 7,
+                flow: null,
+                subCategory: null,
+                category: 6,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ee_%D0%A8%D0%B8%D0%BB%D0%BE%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%83%D1%8D%D1%80%D0%B0%20.jpeg",
                 minImg2: null,
@@ -2376,7 +2474,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c6_Chaban%20%231-new-1-min.jpeg",
                 price: 110,
                 amount: 1,
-                category: 7,
+                flow: null,
+                subCategory: null,
+                category: 6,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068f3_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%20StoneLeaf%202.jpeg",
                 minImg2:
@@ -2396,7 +2496,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c4_chaban-3-new-1-min.jpeg",
                 price: 60,
                 amount: 1,
-                category: 7,
+                flow: null,
+                subCategory: null,
+                category: 6,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806923_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%202-min.jpeg",
                 minImg2:
@@ -2416,7 +2518,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c7_tweezers-tea-1-new-1-min.jpeg",
                 price: 5,
                 amount: 1,
-                category: 7,
+                flow: null,
+                subCategory: null,
+                category: 6,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ed_%D0%9F%D0%B8%D0%BD%D1%86%D0%B5%D1%82%20%D1%81%20%D0%BE%D0%B1%D0%BC%D0%BE%D1%82%D0%BA%D0%BE%D0%B8%CC%86%20-min.jpeg",
                 minImg2: null,
@@ -2434,7 +2538,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e8_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
                 price: 27,
                 amount: 1,
-                category: [2, 8],
+                flow: 2,
+                subCategory: 5,
+                category: [1, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068de_%D0%9B%D1%8E%20%D0%91%D0%B0%D0%BE%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%208005%2C%202018%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -2491,7 +2597,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f6_red-15-1200-min.jpg",
                 price: 33,
                 amount: 1,
-                category: [2, 8],
+                flow: 3,
+                subCategory: 2,
+                category: [1, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d0_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B02-min.jpg",
                 minImg2:
@@ -2561,7 +2669,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f7_red-10-min.jpg",
                 price: 38,
                 amount: 1,
-                category: [2, 8],
+                flow: 1,
+                subCategory: 2,
+                category: [1, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068dd_%D0%95%20%D0%A8%D0%B5%D0%BD%20%D0%A5%D1%83%D0%BD%20%D0%A7%D0%B0%20%D1%81%20%D0%B4%D0%B8%D0%BA%D0%B8%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -2618,7 +2728,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fd_shu-16-1200-min.jpg",
                 price: 30,
                 amount: 1,
-                category: [2, 8],
+                flow: 4,
+                subCategory: 5,
+                category: [1, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80674f_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%D1%81%D0%BE%20%D1%81%D1%82%D0%B0%D1%80%D1%8B%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%202021%20%D0%B3-min.jpg",
                 minImg2:
@@ -2683,7 +2795,9 @@ Have a nice tea party.
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fc_dong-1200-min.jpg",
                 price: 50,
                 amount: 1,
-                category: [2, 8],
+                flow: null,
+                subCategory: 1,
+                category: [1, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b5_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%94%D1%83%D0%BD%20%D0%94%D0%B8%D0%BD%20%D0%9B%D0%B0%D0%BE%20%D0%A8%D0%B8%2C%20%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-min.jpg",
                 minImg2:
@@ -2758,7 +2872,9 @@ intoxicating, relaxing, meditative.`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f8_red-5-min.jpg",
                 price: 37,
                 amount: 1,
-                category: [2, 4, 8],
+                flow: 3,
+                subCategory: 2,
+                category: [1, 3, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e2_%D0%93%D1%83%D0%BD%D1%84%D1%83%20%D0%A5%D1%83%D0%BD%20%D0%B8%D0%B7%20%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%20%D0%A2%D1%83%D0%BD%20%D0%9C%D1%83-min.jpg",
                 minImg2:
@@ -2810,7 +2926,9 @@ relaxing.`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ba_green-3-min.jpg",
                 price: 14,
                 amount: 1,
-                category: [4, 8],
+                flow: 2,
+                subCategory: 3,
+                category: [3, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806759_%D0%9C%D0%B0%D0%BE%D1%86%D0%B7%D1%8F%D0%BD%D1%8C%20%D0%95%20%D0%A8%D1%8D%D0%BD%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -2854,7 +2972,9 @@ invigorating and toning, refreshing.`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b3_shu-2-min.jpg",
                 price: 15,
                 amount: 1,
-                category: [4, 8],
+                flow: 4,
+                subCategory: 5,
+                category: [3, 7],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806630_%D0%A8%D1%83%20%D0%BF%D1%83%D1%8D%D1%80%20%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%2C%202016%20%D0%B3-min.jpg",
                 minImg2:
@@ -2912,7 +3032,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e1_teacup-9-new-1-min.jpg",
                 price: 14,
                 amount: 1,
-                category: [5, 6],
+                flow: null,
+                subCategory: null,
+                category: [4, 5],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806975_img_9992-1000x1000.jpg",
                 minImg2:
@@ -2931,7 +3053,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e2_teacup-10-new-1-min.jpg",
                 price: 14,
                 amount: 1,
-                category: [5, 6],
+                flow: null,
+                subCategory: null,
+                category: [4, 5],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80697b_img_9998-1000x1000.jpg",
                 minImg2:
@@ -2950,7 +3074,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e3_teacup-11-new-1-min.jpg",
                 price: 10,
                 amount: 1,
-                category: [5, 6],
+                flow: null,
+                subCategory: null,
+                category: [4, 5],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806978_img_9988-1000x1000.jpg",
                 minImg2:
@@ -2969,7 +3095,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c4_chaban-3-new-1-min.jpeg",
                 price: 60,
                 amount: 1,
-                category: [4, 7],
+                flow: null,
+                subCategory: null,
+                category: [3, 6],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806923_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%202-min.jpeg",
                 minImg2:
@@ -2989,7 +3117,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d1_teapot-is-fireproof-glass-1-new-min.jpeg",
                 price: 25,
                 amount: 1,
-                category: [4, 7],
+                flow: null,
+                subCategory: null,
+                category: [3, 6],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806913_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%20%D0%B8%D0%B7%20%D0%BE%D0%B3%D0%BD%D0%B5%D1%83%D0%BF%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%81%D1%82%D0%B5%D0%BA%D0%BB%D0%B0%202-min.jpeg",
                 minImg2:
@@ -3009,7 +3139,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c9_Cha%20He%20%231%20-%20new-min.jpg",
                 price: 9,
                 amount: 1,
-                category: [4, 7],
+                flow: null,
+                subCategory: null,
+                category: [3, 6],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068f8_%D0%A7%D0%B0%D1%85%D1%8D%20%D0%93%D0%BE%D1%80%D1%8B%202.jpeg",
                 minImg2:
@@ -3028,7 +3160,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d0_cha-hai-1-new-min.jpeg",
                 price: 15,
                 amount: 1,
-                category: 7,
+                flow: null,
+                subCategory: null,
+                category: 6,
                 minImg1:
                     "https://cdn.prod.website-files.com/64899c647bc07ddd2ccf0cf5/64899c647bc07ddd2ccf10b6_%D0%A7%D0%B0%D1%85%D0%B0%D0%B8%CC%86%20%D0%A2%D1%80%D0%B0%D0%BF%D0%B5%D1%86%D0%B8%D1%8F%202-min.jpeg",
                 minImg2: null,
@@ -3046,7 +3180,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c3_Chaban%20%234-new-1-min.jpg",
                 price: 190,
                 amount: 1,
-                category: [5, 7],
+                flow: null,
+                subCategory: null,
+                category: [4, 6],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806953_img_4749-1000x1000-min.jpg",
                 minImg2:
@@ -3066,7 +3202,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069cf_cha-hai-2-new-min.jpg",
                 price: 18,
                 amount: 1,
-                category: 7,
+                flow: null,
+                subCategory: null,
+                category: 6,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806949_img_3749-1000x1000-min.jpg",
                 minImg2:
@@ -3085,7 +3223,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ce_cha-hai-3-new-min.jpg",
                 price: 26,
                 amount: 1,
-                category: 7,
+                flow: null,
+                subCategory: null,
+                category: 6,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694b_img_9463-1000x1000-min.jpg",
                 minImg2:
@@ -3104,7 +3244,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e4_figure-1-min.jpg",
                 price: 16,
                 amount: 1,
-                category: 7,
+                flow: null,
+                subCategory: null,
+                category: 6,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806951_img_9323-1000x1000-min.jpg",
                 minImg2:
@@ -3123,7 +3265,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069de_teacup-6-new-min.jpg",
                 price: 9,
                 amount: 1,
-                category: 6,
+                flow: null,
+                subCategory: null,
+                category: 5,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806944_img_5336-1000x1000-min.jpg",
                 minImg2:
@@ -3143,7 +3287,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069db_tea-cup-3-new-1-min.jpg",
                 price: 23,
                 amount: 1,
-                category: 6,
+                flow: null,
+                subCategory: null,
+                category: 5,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690a_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%202.jpeg",
                 minImg2:
@@ -3162,7 +3308,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d6_gaiwan-3-new-1-min.jpeg",
                 price: 36,
                 amount: 1,
-                category: 6,
+                flow: null,
+                subCategory: null,
+                category: 5,
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80693d_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
                 minImg2:
@@ -3181,7 +3329,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d3_figure-3-new-1-min.jpg",
                 price: 23,
                 amount: 1,
-                category: [5, 7],
+                flow: null,
+                subCategory: null,
+                category: [4, 6],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806968_img_9288-1000x1000-min.jpg",
                 minImg2:
@@ -3201,7 +3351,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ca_cha-hai-7-new-min.jpg",
                 price: 23,
                 amount: 1,
-                category: [5, 7],
+                flow: null,
+                subCategory: null,
+                category: [4, 6],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806963_img_8093-1000x1000-min.jpg",
                 minImg2:
@@ -3221,7 +3373,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e6_figure-4-min.jpg",
                 price: 17,
                 amount: 1,
-                category: [5, 7],
+                flow: null,
+                subCategory: null,
+                category: [4, 6],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80696b_img_9340-1000x1000.jpg",
                 minImg2:
@@ -3240,7 +3394,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e7_figure-6-min.jpg",
                 price: 37,
                 amount: 1,
-                category: [5, 7],
+                flow: null,
+                subCategory: null,
+                category: [4, 6],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806970_img_9975-1000x1000.jpg",
                 minImg2:
@@ -3260,7 +3416,9 @@ invigorates and tones`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e8_figure-7-min.jpg",
                 price: 22,
                 amount: 1,
-                category: [5, 7],
+                flow: null,
+                subCategory: null,
+                category: [4, 6],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806971_img_9969-1000x1000.jpg",
                 minImg2:

@@ -14,7 +14,7 @@ import { flowComponentsData } from "../Utils/AditionalData";
 const FlowComponent = () => {
     return (
         <>
-            <div className="flex w-full justify-between px-5 sm:px-[14.44vw] items-center mb-10 sm:mb-[5vw] pt-32 sm:pt-[20vw] flex-wrap gap-5 sm:gap-[2vw]">
+            <div className="flex w-full justify-between px-5 sm:px-[14.44vw] items-center mb-10 sm:mb-[5vw] pt-20  sm:pt-[20vw] flex-wrap gap-5 sm:gap-[2vw]">
                 <h2 className="text-3xl sm:text-[3.5vw] uppercase font-GolosRegular font-semibold">
                     choose your flow
                 </h2>
@@ -27,7 +27,7 @@ const FlowComponent = () => {
                 </Link>
             </div>
             {/* swiper */}
-            <div className="pl-12 sm:pl-[14.44vw]">
+            <div className="pl-5 sm:pl-[14.44vw]">
                 <Swiper
                     className="z-10"
                     loop

@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Philosophy = () => {
     return (
-        <div className="w-full philosophy flex items-end pb-28 sm:pb-[8vw] ">
-            <div className="px-5 pt-40 sm:pl-[14.44vw] sm:pt-[28vw] sm:pr-[5vw] flex flex-col sm:flex-row items-start gap-10 sm:gap-0">
+        <div className="w-full philosophy flex items-end pb-24 sm:pb-[8vw] ">
+            <div className="px-5 pt-32 sm:pl-[14.44vw] sm:pt-[28vw] sm:pr-[5vw] flex flex-col sm:flex-row items-start gap-10 sm:gap-0">
                 <h2 className="uppercase text-[12vw] sm:text-[7vw] text-white w-[65%] sm:leading-none font-GolosRegular">
                     philosophy
                 </h2>

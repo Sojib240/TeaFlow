@@ -34,15 +34,18 @@ const Shop = ({
     const handleDropDown = () => {
         setDropDown(!DropDown);
     };
-
-    // on load render products
+    //
+    //
     const { products } = productsApiData;
-    const handleproductFilteronLoad = () => {
-        settitleChange("products");
+    const handleproductFilteronLoad = (id, categoryName) => {
+        settitleChange(categoryName);
         const filter =
             products &&
             products.filter((p) => {
-                return p.category === 8;
+                if (Array.isArray(p.category)) {
+                    return p.category.includes(id);
+                }
+                return p.category === id;
             });
         setnewCategoriesData(filter);
 
@@ -53,15 +56,15 @@ const Shop = ({
 
         //
     };
+    //
+
     useEffect(() => {
-        // if (titleChange == "products") {
-        // }
-        handleproductFilteronLoad();
+        handleproductFilteronLoad(8, "products");
     }, [products]);
 
     return (
         <>
-            <div className="px-[5.15vw] pt-8 sm:pt-[3vw] text-[#9C9797] font-GolosRegular text-[13px] sm:text-[1vw] flex gap-5 sm:gap-[1.5vw] uppercase">
+            <div className="px-[5.15vw] pt-8 sm:pt-[3vw] text-[#9C9797] font-GolosRegular text-[13px] sm:text-[1vw] flex gap-5 sm:gap-[1.5vw] capitalize">
                 <span>Home</span>
                 <span>/</span>
                 <span>{titleChange}</span>
@@ -109,16 +112,49 @@ const Shop = ({
                                     />
                                 </div>
                             </div>
+                            <div>
+                                <div
+                                    onClick={() => handleDropDown()}
+                                    className="flex items-center text-[22px] sm:text-[1.2vw] uppercase font-GolosDemiBold w-full justify-between cursor-pointer"
+                                >
+                                    <span>Tea Type</span>
+                                    <span
+                                        className={` duration-300 transition-all ${
+                                            DropDown === true
+                                                ? "rotate-90"
+                                                : "-rotate-90"
+                                        } block`}
+                                    >
+                                        <RiArrowLeftSLine />
+                                    </span>
+                                </div>
+
+                                <div
+                                    className={`text-lg sm:text-[1.1vw] font-GolosRegular leading-[180%] sm:leading-[1.8vw] mt-5 sm:mt-[0.6vw] pl-4 sm:pl-[0.6vw] lowercase ${
+                                        DropDown === true ? "block" : "hidden"
+                                    }`}
+                                >
+                                    {productsApiData.subCategories &&
+                                        productsApiData.subCategories.map(
+                                            ({ SubTitle, id }) => {
+                                                return (
+                                                    <h4
+                                                        key={id}
+                                                        className="cursor-pointer"
+                                                    >
+                                                        {SubTitle}
+                                                    </h4>
+                                                );
+                                            }
+                                        )}
+                                </div>
+                            </div>
                             {productsApiData.categories &&
                                 productsApiData.categories.map(
-                                    ({ id, categoryName, subCategoryName }) => {
+                                    ({ id, categoryName }) => {
                                         return (
                                             <div key={id}>
                                                 <div
-                                                    onClick={() =>
-                                                        id === 1 &&
-                                                        handleDropDown()
-                                                    }
                                                     className="flex items-center text-[22px] sm:text-[1.2vw] uppercase font-GolosDemiBold w-full justify-between cursor-pointer"
                                                 >
                                                     <span
@@ -131,57 +167,7 @@ const Shop = ({
                                                     >
                                                         {categoryName}
                                                     </span>
-                                                    {subCategoryName && (
-                                                        <span
-                                                            className={` duration-300 transition-all ${
-                                                                DropDown ===
-                                                                true
-                                                                    ? "rotate-90"
-                                                                    : "-rotate-90"
-                                                            } block`}
-                                                        >
-                                                            <RiArrowLeftSLine />
-                                                        </span>
-                                                    )}
                                                 </div>
-                                                {subCategoryName && (
-                                                    <div
-                                                        className={`text-lg sm:text-[1.1vw] font-GolosRegular leading-[180%] sm:leading-[1.8vw] mt-5 sm:mt-[0.6vw] pl-4 sm:pl-[0.6vw] lowercase ${
-                                                            DropDown === true
-                                                                ? "block"
-                                                                : "hidden"
-                                                        }`}
-                                                    >
-                                                        {id === 1 &&
-                                                            productsApiData &&
-                                                            productsApiData.categories[0].subCategoryName.map(
-                                                                ({
-                                                                    SubTitle,
-                                                                }) => {
-                                                                    <h4 className="cursor-pointer">
-                                                                        {
-                                                                            SubTitle
-                                                                        }
-                                                                    </h4>;
-                                                                }
-                                                            )}
-                                                        <h4 className="cursor-pointer">
-                                                            green tea
-                                                        </h4>
-                                                        <h4 className="cursor-pointer">
-                                                            red tea
-                                                        </h4>
-                                                        <h4 className="cursor-pointer">
-                                                            black tea
-                                                        </h4>
-                                                        <h4 className="cursor-pointer">
-                                                            Oolong tea
-                                                        </h4>
-                                                        <h4 className="cursor-pointer">
-                                                            White tea
-                                                        </h4>
-                                                    </div>
-                                                )}
                                             </div>
                                         );
                                     }

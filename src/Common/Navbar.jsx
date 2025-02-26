@@ -75,7 +75,7 @@ const Navbar = ({
                                 menuOpenClose == true && "opacity-0 invisible"
                             } sm:flex items-center gap-[3vw]`}
                         >
-                            <Link onClick={()=>handleCategoriesFilter(8,"Products")} to={"/shop"} className="text-[1.1vw]">
+                            <Link onClick={()=>handleCategoriesFilter(7,"Products")} to={"/shop"} className="text-[1.1vw]">
                                 shop
                             </Link>
                             <Link to={"/aboutUs"} className="text-[1.1vw]">
@@ -100,7 +100,7 @@ const Navbar = ({
                                         alt=""
                                     />
                                 </div>
-                                <span className="text-[11px] flex justify-center items-center sm:text-[0.6vw] bg-[#000000] text-white rounded-full w-3 h-3 sm:w-[0.9vw] sm:h-[0.9vw] pointer-events-none ml-[-10px] sm:ml-[-0.7vw] mt-[-5px] font-GolosRegular sm:mt-[-0.5vw]">
+                                <span className="text-[11px] flex justify-center items-center sm:text-[0.6vw] bg-[#000000] text-white rounded-full w-3 h-3 sm:w-[0.9vw] sm:h-[0.9vw] pointer-events-none ml-[-10px] sm:ml-[-0.7vw] mt-[-5px] sm:mt-[-0.5vw] font-GolosRegular">
                                     {cart.length}
                                 </span>
                             </div>

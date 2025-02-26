@@ -6,16 +6,16 @@ const CheckOut = () => {
     return (
         <>
             <Title text={"checkout"} />
-            <div className="px-5 sm:px-[5.14vw] lg:px-[14.44vw] mt-[6vw]">
-                <div className="flex items-start gap-5 sm:gap-[2vw] flex-col sm:flex-row">
-                    <div className="py-5 sm:py-[1.5vw] w-full sm:w-[60%] bg-[#F1F1F1] px-5 sm:px-[1.5vw] rounded-2xl sm:rounded-[1vw]">
+            <div className="px-0 mt-10 sm:px-[5.14vw] lg:px-[14.44vw] sm:mt-[6vw]">
+                <div className="flex items-start gap-0 sm:gap-[2vw] flex-col sm:flex-row">
+                    <div className="py-5 sm:py-[1.5vw] w-full sm:w-[60%] bg-[#F1F1F1] px-5 sm:px-[1.5vw] rounded-bl-0 rounded-br-0 sm:rounded-[1vw]">
                         <div className="mb-[1vw]">
                             <h4 className="text-2xl sm:text-[1.6vw] uppercase font-semibold font-GolosRegular mb-5 sm:mb-[1.5vw]">
                                 Contact
                             </h4>
                             <div className="">
                                 <input
-                                    className="w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-3 sm:py-[0.8vw] pl-5 sm:pl-[0.8vw] bg-white"
+                                    className="w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-3 sm:py-[1vw] pl-5 sm:pl-[0.8vw] bg-white"
                                     type="text"
                                     placeholder="Your Email Address"
                                 />
@@ -31,7 +31,7 @@ const CheckOut = () => {
                                         First Name*
                                     </label>
                                     <input
-                                        className="w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-3 sm:py-[0.8vw] pl-5 sm:pl-[0.8vw] bg-white"
+                                        className="w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-3 sm:py-[1vw] pl-5 sm:pl-[0.8vw] bg-white"
                                         type="text"
                                     />
                                 </div>
@@ -40,7 +40,7 @@ const CheckOut = () => {
                                         Last Name*
                                     </label>
                                     <input
-                                        className="w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-3 sm:py-[0.8vw] pl-5 sm:pl-[0.8vw] bg-white"
+                                        className="w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-3 sm:py-[1vw] pl-5 sm:pl-[0.8vw] bg-white"
                                         type="text"
                                     />
                                 </div>
@@ -49,7 +49,7 @@ const CheckOut = () => {
                                         Country*
                                     </label>
                                     <input
-                                        className="w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-3 sm:py-[0.8vw] pl-5 sm:pl-[0.8vw] bg-white"
+                                        className="w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-3 sm:py-[1vw] pl-5 sm:pl-[0.8vw] bg-white"
                                         type="text"
                                     />
                                 </div>
@@ -58,7 +58,7 @@ const CheckOut = () => {
                                         Address*
                                     </label>
                                     <input
-                                        className="w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-3 sm:py-[0.8vw] pl-5 sm:pl-[0.8vw] bg-white"
+                                        className="w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-3 sm:py-[1vw] pl-5 sm:pl-[0.8vw] bg-white"
                                         type="text"
                                     />
                                 </div>
@@ -69,7 +69,7 @@ const CheckOut = () => {
                                         Mobile No*
                                     </label>
                                     <input
-                                        className="w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-3 sm:py-[0.8vw] px-5 sm:px-[0.8vw] bg-white"
+                                        className="w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-3 sm:py-[1vw] px-5 sm:px-[0.8vw] bg-white"
                                         type="number"
                                     />
                                 </div>
@@ -78,7 +78,7 @@ const CheckOut = () => {
                                         Post Code*
                                     </label>
                                     <input
-                                        className="w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-3 sm:py-[0.8vw] px-5 sm:px-[0.8vw] bg-white"
+                                        className="w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-3 sm:py-[1vw] px-5 sm:px-[0.8vw] bg-white"
                                         type="number"
                                     />
                                 </div>
@@ -93,7 +93,7 @@ const CheckOut = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-[#F1F1F1] py-5 sm:py-[1.5vw] w-full sm:w-[40%] rounded-2xl sm:rounded-[1vw]">
+                    <div className="bg-[#F1F1F1] pt-10 pb-5 sm:py-[1.5vw] w-full sm:w-[40%] rounded-bl-2xl rounded-br-2xl sm:rounded-[1vw]">
                         <div className="px-5 sm:px-[1.5vw]">
                             <h4 className="text-2xl sm:text-[1.6vw] uppercase font-semibold font-GolosRegular mb-7 sm:mb-[1.5vw]">
                                 detail product
@@ -218,12 +218,12 @@ const CheckOut = () => {
                                         $279.00
                                     </span>
                                 </div>
-                                <div className="flex justify-between w-full font-GolosRegular font-semibold text-base sm:text-[1vw]">
-                                    <span className="block tracking-[0.05vw] uppercase w-1/2">
+                                <div className="flex gap-5 sm:gap-[1.6vw] justify-between w-full font-GolosRegular font-semibold text-base sm:text-[1vw]">
+                                    <span className="block tracking-[0.05vw] uppercase w-auto">
                                         shipping
                                     </span>
                                     <textarea
-                                        className="resize-x-none h-16 sm:h-[3.5vw] rounded-[0.5vw] bg-white w-1/2 font-GolosRegular font-normal outline-none px-2 sm:px-[0.5vw] pt-1 sm:pt-[0.5vw] text-[12px] sm:text-[0.8vw]"
+                                        className="resize-x-none h-12 sm:h-[3vw] rounded-[0.5vw] bg-white w-full font-GolosRegular font-normal outline-none px-2 sm:px-[0.5vw] pt-1 sm:pt-[0.5vw] text-[12px] sm:text-[0.8vw]"
                                         name=""
                                         id=""
                                     ></textarea>

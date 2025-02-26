@@ -15,7 +15,7 @@ const JournalComponent = () => {
     }, [journalApiData]);
 
     return (
-        <div className="px-5 sm:px-[14.44vw] pt-34 sm:pt-[15vw] pb-6  sm:pb-0">
+        <div className="px-5 sm:px-[14.44vw] pt-16 sm:pt-[16vw] pb-0  sm:pb-0">
             <div className="flex w-full justify-between items-center mb-16 sm:mb-[10vw] flex-wrap gap-5 sm:gap-[2vw]">
                 <h2 className="text-3xl sm:text-[3.5vw] uppercase font-GolosRegular font-semibold">
                     Journal

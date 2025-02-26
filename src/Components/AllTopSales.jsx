@@ -39,18 +39,18 @@ const AllTopSales = (
     };
 
     return (
-        <div className="w-full px-5 sm:pl-[14.44vw] pr-[5.14vw] pt-10 sm:pt-[3vw]">
+        <div className="w-full px-5 sm:pl-[14.44vw] pr-[5.14vw] pt-16 sm:pt-[16vw]">
             <div className="inline-block">
                 <Link
                     to={"/shop"}
-                    onClick={() => handleCategoriesFilter(4, "Top Sales")}
+                    onClick={() => handleCategoriesFilter(3, "Top Sales")}
                     className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw]  font-GolosRegular"
                 >
                     <span className="block border-b">all top sales</span>
                     <span className="mt-[-0.5vw] block">10+</span>
                 </Link>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[4.5vw] pt-12 sm:pt-[7.5vw] pl-12 sm:pl-0">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[4.5vw] pt-12 sm:pt-[7.5vw]">
                 {filterProduct &&
                     filterProduct.map((product) => {
                         return (

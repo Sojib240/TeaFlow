@@ -9,7 +9,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
     // cart data coming from context
     const [cart, setcart] = useContext(cartContextData);
     // handle price
-    const [Price, setPrice] = useState(0);
+    const [Price, setPrice] = useState();
     const handlePrice = () => {
         var priceing = 0;
         cart.map((product) => {
@@ -20,6 +20,8 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
     useEffect(() => {
         handlePrice();
     });
+    console.log(Price);
+    
     // handle amount
     // const [tempArr, settempArr] = useState(cart);
     const handleAmount = (p, inDe) => {
@@ -68,7 +70,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                     className={`cart-main w-full overflow-x-auto border border-[#F1F1F1] rounded-3xl sm:rounded-[3vw] ${
                         cart.length == 0
                             ? "h-[81.5vh] sm:h-[20vh]"
-                            : "h-[70vh] sm:h-[55vh] relative"
+                            : "h-[65vh] sm:h-[50vh] relative"
                     }`}
                 >
                     {cart.length == 0 ? (
@@ -158,13 +160,28 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                 {cart.length == 0 ? null : (
                     <div className="w-full px-5 sm:px-0">
                         <div className="flex justify-between items-center mt-8 sm:mt-[2vw] px-1 sm:px-[0.5vw]">
-                            <h4 className="font-GolosRegular text-lg sm:text-[1.5vw]">
+                            <h4 className="font-GolosRegular font-semibold text-lg sm:text-[1.5vw]">
                                 Subtotal:
                             </h4>
-                            <h4 className="font-GolosRegular text-lg sm:text-[1.5vw] tracking-[1px]">
+                            <h4 className="font-GolosBold text-lg sm:text-[1.5vw] tracking-[1px]">
                                 $ {Price}
                             </h4>
                         </div>
+                        {Price && Price <= 49 && (
+                            <div className="flex items-center gap-3 sm:gap-[0.6vw] text-sm sm:text-[0.9vw] font-GolosRegular py-5 sm:py-[1vw]">
+                                <span>
+                                    <img
+                                        src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec80661a_icon-add-free-shipping.svg"
+                                        alt=""
+                                    />
+                                </span>
+                                <span>
+                                    Receive Free Shipping when your cart total
+                                    $49
+                                </span>
+                            </div>
+                        )}
+
                         <Link
                             onClick={() => setCartOpenClose(false)}
                             to={"/checkout"}

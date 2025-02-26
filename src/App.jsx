@@ -44,8 +44,6 @@ const App = () => {
             top: 0,
             behavior: "smooth",
         }); // You can remove this line if you prefer an instant scroll
-
-        //
     };
     console.log(newCategoriesData);
 

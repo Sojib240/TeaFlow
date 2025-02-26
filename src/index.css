@@ -82,6 +82,10 @@
 .card:nth-child(2n+2) .card-image {
     border-radius: 4vw;
 }
+.journal-content img{
+    width: 80%;
+    border-radius: 4vw;
+}
 
 @media (max-width: 640px) {
     .HomeSlider .swiper.swiper-initialized {
