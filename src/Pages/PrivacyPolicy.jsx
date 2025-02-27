@@ -5,10 +5,12 @@ import Title from "../Common/Title";
 const PrivacyPolicy = () => {
     document.title = "TeaFlow － Privacy Policy";
     return (
-        <div>
-            <Title text={"returns and exchanges"} />
+        <>
+            <div className="pt-10 sm:pt-[4vw]">
+                <Title text={"Privacy Policy"} />
+            </div>
             <div className="px-5 sm:pl-[14.44vw] sm:pr-[32vw] mx-auto font-GolosRegular">
-                <div className="mt-[7vw]">
+                <div className="mt-16 sm:mt-[7vw]">
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mb-16 sm:mb-[4vw]">
                         Effective date: January 1, 2023 P.B CORP ("us", "we", or
                         "our") operates the www.tea-flow.com website (the
@@ -93,10 +95,8 @@ const PrivacyPolicy = () => {
                     <h4 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] font-GolosBold my-5 sm:mb-[0.2vw] sm:mt-[1vw]">
                         Personal Data.
                     </h4>
-                    <ol
-                        className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] pl-0 sm:pl-[1.1vw]"
-                    >
-                        <li >
+                    <ol className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] pl-0 sm:pl-[1.1vw]">
+                        <li>
                             Your Data Protection Rights Under the California
                             Consumer Privacy Act (CCPA) If you are a California
                             Consumer please see our CCPA Privacy Appendix for
@@ -125,7 +125,9 @@ const PrivacyPolicy = () => {
                         <li className="mt-3 sm:mt-[0.5vw]">
                             Address, State, Province, ZIP/Postal code, City
                         </li>
-                        <li className="mt-3 sm:mt-[0.5vw]">Cookies and Usage Data</li>
+                        <li className="mt-3 sm:mt-[0.5vw]">
+                            Cookies and Usage Data
+                        </li>
                     </ol>
                 </div>
                 <div className="mt-14 sm:mt-[4vw]">
@@ -165,9 +167,7 @@ const PrivacyPolicy = () => {
                 </div>
                 {/*  */}
                 <div className="mt-8 sm:mt-[5vw]">
-                    <ol
-                        className="text-lg sm:text-[1.2vw] leading-[150%] sm:leading-[2.3vw] pl-0 sm:pl-[1.1vw]"
-                    >
+                    <ol className="text-lg sm:text-[1.2vw] leading-[150%] sm:leading-[2.3vw] pl-0 sm:pl-[1.1vw]">
                         <li className="mt-3 sm:mt-[0.5vw]">
                             <span className="font-medium inline">
                                 Session Cookies.
@@ -197,22 +197,27 @@ const PrivacyPolicy = () => {
                         P.B CORP uses the collected data for various purposes:
                     </h5>
                     <div className="pl-0 sm:pl-[1.1vw]">
-                        <ol
-
-                            className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] pl-[1.1vw] flex flex-col gap-2 sm:gap-[1.1vw]"
-                        >
-                            <li className="mb-3 sm:mb-[0.5vw]">To provide and maintain our Service</li>
-                            <li className="mb-3 sm:mb-[0.5vw]">To notify you about changes to our Service</li>
+                        <ol className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] pl-[1.1vw] flex flex-col gap-2 sm:gap-[1.1vw]">
+                            <li className="mb-3 sm:mb-[0.5vw]">
+                                To provide and maintain our Service
+                            </li>
+                            <li className="mb-3 sm:mb-[0.5vw]">
+                                To notify you about changes to our Service
+                            </li>
                             <li className="mb-3 sm:mb-[0.5vw]">
                                 To allow you to participate in interactive
                                 features of our Service when you choose to do so
                             </li>
-                            <li className="mb-3 sm:mb-[0.5vw]">To provide customer support</li>
+                            <li className="mb-3 sm:mb-[0.5vw]">
+                                To provide customer support
+                            </li>
                             <li className="mb-3 sm:mb-[0.5vw]">
                                 To gather analysis or valuable information so
                                 that we can improve our Service
                             </li>
-                            <li className="mb-3 sm:mb-[0.5vw]">To monitor the usage of our Service</li>
+                            <li className="mb-3 sm:mb-[0.5vw]">
+                                To monitor the usage of our Service
+                            </li>
                             <li className="mb-3 sm:mb-[0.5vw]">
                                 To detect, prevent and address technical issues{" "}
                                 <br />{" "}
@@ -603,7 +608,7 @@ const PrivacyPolicy = () => {
                 <Discount />
             </div>
             {/*  */}
-        </div>
+        </>
     );
 };
 

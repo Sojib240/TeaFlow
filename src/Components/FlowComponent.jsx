@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -9,13 +9,14 @@ import "swiper/css";
 // import required modules
 import { FreeMode, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
-import { flowComponentsData } from "../Utils/AditionalData";
+import { productContext } from "../Utils/Context";
 
-const FlowComponent = () => {
+const FlowComponent = ({ handleFlowsCategoriesFilter }) => {
+    const [productsApiData, setproductsApiData] = useContext(productContext);
     return (
         <>
             <div className="flex w-full justify-between px-5 sm:px-[14.44vw] items-center mb-10 sm:mb-[5vw] pt-20  sm:pt-[20vw] flex-wrap gap-5 sm:gap-[2vw]">
-                <h2 className="text-3xl sm:text-[3.5vw] uppercase font-GolosRegular font-semibold">
+                <h2 className="text-4xl sm:text-[3.5vw] uppercase font-GolosRegular font-semibold">
                     choose your flow
                 </h2>
                 <Link
@@ -32,46 +33,58 @@ const FlowComponent = () => {
                     className="z-10"
                     loop
                     breakpoints={{
-                        639: {
-                            slidesPerView: 1,
-                        },
                         640: {
                             slidesPerView: 3,
-                        },
+                        }
                     }}
-
+                    slidesPerView={1}
                     spaceBetween={15}
                     centeredSlides={true}
                     navigation={true}
                     modules={[FreeMode, Navigation]}
                 >
-                    {flowComponentsData &&
-                        flowComponentsData.map(({ image, id, title, desc }) => {
-                            return (
-                                <SwiperSlide key={id} className="select-none">
-                                    <div
-                                        className={`${
-                                            id === 2 && "rounded-[4vw]"
-                                        } overflow-hidden ${
-                                            id === 4 && "rounded-[4vw]"
-                                        } group h-auto sm:h-[25vw]`}
+                    {productsApiData.flows &&
+                        productsApiData.flows.map(
+                            ({ image, id, flowTitle, desc }) => {
+                                return (
+                                    <SwiperSlide
+                                        key={id}
+                                        className="select-none"
                                     >
-                                        <img
-                                            className=" w-full group-hover:scale-100 lg:group-hover:scale-125 duration-1200 transition-all object-cover flex h-full"
-                                            src={image}
-                                            alt=""
-                                        />
-                                    </div>
+                                        <div
+                                            className={`${
+                                                id === 2 && "rounded-[4vw]"
+                                            } overflow-hidden ${
+                                                id === 4 && "rounded-[4vw]"
+                                            } group h-auto sm:h-[25vw]`}
+                                        >
+                                            <Link
+                                                onClick={() =>
+                                                    handleFlowsCategoriesFilter(
+                                                        id,
+                                                        flowTitle
+                                                    )
+                                                }
+                                                to={"/shop"}
+                                            >
+                                                <img
+                                                    className=" w-full group-hover:scale-100 lg:group-hover:scale-125 duration-1200 transition-all object-cover flex h-full"
+                                                    src={image}
+                                                    alt=""
+                                                />
+                                            </Link>
+                                        </div>
 
-                                    <h4 className="text-xl sm:text-[1.7vw] mt-3 sm:mt-[1vw] uppercase font-semibold">
-                                        {title}
-                                    </h4>
-                                    <h5 className="text-sm sm:text-[0.9vw] text-[#B1ACAC] font-GolosRegular leading-[144%] sm:leading-[1.5vw] ">
-                                        {desc}
-                                    </h5>
-                                </SwiperSlide>
-                            );
-                        })}
+                                        <h4 className="text-xl sm:text-[1.7vw] mt-3 sm:mt-[1vw] uppercase font-semibold">
+                                            {flowTitle}
+                                        </h4>
+                                        <h5 className="text-sm sm:text-[0.9vw] text-[#B1ACAC] font-GolosRegular leading-[144%] sm:leading-[1.5vw] ">
+                                            {desc}
+                                        </h5>
+                                    </SwiperSlide>
+                                );
+                            }
+                        )}
                 </Swiper>
             </div>
             {/*  */}

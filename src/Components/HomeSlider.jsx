@@ -30,7 +30,7 @@ const HomeSlider = () => {
             <Swiper
                 className="w-full sm:w-[50%] rounded-[5vw] overflow-hidden ml-auto z-10"
                 onSlideChange={(e) => {
-                    handleSliderContent(e)
+                    handleSliderContent(e);
                 }}
                 loop
                 centeredSlides={true}

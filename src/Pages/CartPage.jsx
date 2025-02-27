@@ -70,7 +70,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                     className={`cart-main w-full overflow-x-auto border border-[#F1F1F1] rounded-3xl sm:rounded-[3vw] ${
                         cart.length == 0
                             ? "h-[81.5vh] sm:h-[20vh]"
-                            : "h-[65vh] sm:h-[50vh] relative"
+                            : "h-full sm:min-h-20vh sm:max-h-[50vh] relative"
                     }`}
                 >
                     {cart.length == 0 ? (

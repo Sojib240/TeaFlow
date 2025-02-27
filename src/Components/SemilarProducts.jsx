@@ -41,7 +41,7 @@ const SemilarProducts = () => {
                     you may also like
                 </h4>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[4.5vw] pt-12 sm:pt-[7.5vw] pl-12 sm:pl-0">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[4.5vw] pt-12 sm:pt-[7.5vw]">
                 {filterProduct &&
                     filterProduct.map((product) => {
                         return (
@@ -74,7 +74,7 @@ const SemilarProducts = () => {
                                 <h4 className="text-2xl sm:text-[2.4vw] md:text-[1.3vw] mt-5 sm:mt-[1vw] font-GolosDemiBold text-[#222020] uppercase">
                                     {product.title}
                                 </h4>
-                                <p className="text-lg sm:text-[1.7vw] md:text-[0.9vw] py-[0.4vw] text-[#413F3F] font-GolosRegular">
+                                <p className="text-base sm:text-[1.7vw] md:text-[0.9vw] py-2 sm:py-[0.4vw] text-[#413F3F] font-GolosRegular">
                                     {product.flavor}
                                 </p>
                                 <p className="text-xl font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191]">

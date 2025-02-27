@@ -3,15 +3,17 @@ import { Link } from "react-router-dom";
 import { productContext } from "../Utils/Context";
 import { cartContextData } from "../Utils/CartContext";
 import { CiFilter } from "react-icons/ci";
-import { RiArrowLeftSLine } from "react-icons/ri";
+import { MdArrowBackIosNew } from "react-icons/md";
 import Title from "../Common/Title";
+import Discount from "../Common/Discount";
 
 const Shop = ({
     newCategoriesData,
     setnewCategoriesData,
-    handleCategoriesFilter,
     titleChange,
     settitleChange,
+    handleCategoriesFilter,
+    handleSubCategoriesFilter,
 }) => {
     document.title = "TeaFlow － Products";
     const [DropDown, setDropDown] = useState(false);
@@ -36,43 +38,43 @@ const Shop = ({
     };
     //
     //
-    const { products } = productsApiData;
-    const handleproductFilteronLoad = (id, categoryName) => {
-        settitleChange(categoryName);
-        const filter =
-            products &&
-            products.filter((p) => {
-                if (Array.isArray(p.category)) {
-                    return p.category.includes(id);
-                }
-                return p.category === id;
-            });
-        setnewCategoriesData(filter);
+    // const { products } = productsApiData;
+    // const handleproductFilteronLoad = (id, categoryName) => {
+    //     settitleChange(categoryName);
+    //     const filter =
+    //         products &&
+    //         products.filter((p) => {
+    //             if (Array.isArray(p.category)) {
+    //                 return p.category.includes(id);
+    //             }
+    //             return p.category === id;
+    //         });
+    //     setnewCategoriesData(filter);
 
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        }); // You can remove this line if you prefer an instant scroll
-
-        //
-    };
+    //     window.scrollTo({
+    //         top: 0,
+    //         behavior: "smooth",
+    //     });
+    // };
     //
 
-    useEffect(() => {
-        handleproductFilteronLoad(8, "products");
-    }, [products]);
+    // useEffect(() => {
+    //     handleproductFilteronLoad(8, "products");
+    // }, [products]);
 
     return (
         <>
-            <div className="px-[5.15vw] pt-8 sm:pt-[3vw] text-[#9C9797] font-GolosRegular text-[13px] sm:text-[1vw] flex gap-5 sm:gap-[1.5vw] capitalize">
+            <div className="px-[5.15vw] pt-8 sm:pt-[3vw] text-[#9C9797] font-GolosRegular text-[13px] sm:text-[1vw] sm:flex gap-5 sm:gap-[1.5vw] capitalize hidden">
                 <span>Home</span>
                 <span>/</span>
                 <span>{titleChange}</span>
             </div>
-            <Title text={titleChange} />
+            <div className="pt-10 sm:pt-0">
+                <Title text={titleChange} />
+            </div>
             <div className="px-[5.15vw] mx-auto">
                 <div className="flex flex-col sm:flex-row justify-between gap-8 sm:gap-[4vw] mt-14">
-                    <div className="mb-6 block sm:hidden">
+                    <div className="mb-0 block sm:hidden">
                         <button
                             onClick={() => setfilterOpenClose(true)}
                             className="flex items-center gap-4 px-5 py-[6px] border rounded-full uppercase tracking-[1px] font-GolosRegular"
@@ -91,7 +93,7 @@ const Shop = ({
                         } left-0 bg-[#000000d0] h-screen w-full z-[9999]`}
                     ></div>
                     <div
-                        className={`sm:block w-full h-[85vh] sm:h-full min-h-auto sm:min-h-auto bg-white sm:bg-transparent sm:w-[15%] fixed sm:sticky sm:top-0 bottom-0 left-0 z-[9999999] sm:z-auto pl-6 pr-6 pb-6 pt-6 rounded-tl-4xl rounded-tr-4xl translate-y-[0%] sm:translate-y-0 sm:pt-[6vw] sm:pb-0 sm:pl-0 sm:pr-0 ${
+                        className={`sm:block w-full h-[100vh] sm:h-full min-h-auto sm:min-h-auto bg-white sm:bg-transparent sm:w-[15%] fixed sm:sticky sm:top-0 bottom-0 left-0 z-[9999999] sm:z-auto pl-6 pr-6 pb-6 pt-6 rounded-tl-4xl rounded-tr-4xl translate-y-[0%] sm:translate-y-0 sm:pt-[6vw] sm:pb-0 sm:pl-0 sm:pr-0 ${
                             filterOpenClose === true
                                 ? "translate-y-[0%]"
                                 : "translate-y-[105%]"
@@ -123,9 +125,9 @@ const Shop = ({
                                             DropDown === true
                                                 ? "rotate-90"
                                                 : "-rotate-90"
-                                        } block`}
+                                        } block text-lg  sm:text-[0.9vw]`}
                                     >
-                                        <RiArrowLeftSLine />
+                                        <MdArrowBackIosNew />
                                     </span>
                                 </div>
 
@@ -140,6 +142,15 @@ const Shop = ({
                                                 return (
                                                     <h4
                                                         key={id}
+                                                        onClick={() => {
+                                                            handleSubCategoriesFilter(
+                                                                id,
+                                                                SubTitle
+                                                            ),
+                                                                setfilterOpenClose(
+                                                                    false
+                                                                );
+                                                        }}
                                                         className="cursor-pointer"
                                                     >
                                                         {SubTitle}
@@ -154,16 +165,17 @@ const Shop = ({
                                     ({ id, categoryName }) => {
                                         return (
                                             <div key={id}>
-                                                <div
-                                                    className="flex items-center text-[22px] sm:text-[1.2vw] uppercase font-GolosDemiBold w-full justify-between cursor-pointer"
-                                                >
+                                                <div className="flex items-center text-[22px] sm:text-[1.2vw] uppercase font-GolosDemiBold w-full justify-between cursor-pointer">
                                                     <span
-                                                        onClick={() =>
+                                                        onClick={() => {
                                                             handleCategoriesFilter(
                                                                 id,
                                                                 categoryName
-                                                            )
-                                                        }
+                                                            ),
+                                                                setfilterOpenClose(
+                                                                    false
+                                                                );
+                                                        }}
                                                     >
                                                         {categoryName}
                                                     </span>
@@ -174,7 +186,7 @@ const Shop = ({
                                 )}
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 w-[90%] sm:w-[85%] gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[3vw] sm:pt-[6vw]">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 w-full sm:w-[85%] gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[3vw] sm:pt-[6vw]">
                         {newCategoriesData &&
                             newCategoriesData.map((product) => {
                                 return (
@@ -221,6 +233,9 @@ const Shop = ({
                             })}
                     </div>
                 </div>
+            </div>
+            <div className="mt-16 sm:mt-[16vw]">
+                <Discount />
             </div>
         </>
     );

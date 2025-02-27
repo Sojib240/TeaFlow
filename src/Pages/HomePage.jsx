@@ -9,18 +9,18 @@ import HomeSlider from "../Components/HomeSlider";
 import FlowComponent from "../Components/FlowComponent";
 import AllTopSales from "../Components/AllTopSales";
 
-const HomePage = ({ handleCategoriesFilter }) => {
+const HomePage = ({ handleCategoriesFilter,handleFlowsCategoriesFilter }) => {
     document.title = "TeaFlow － Premium Teas & Accessories";
 
     return (
         <>
             <HomeSlider />
-            <FlowComponent />
+            <FlowComponent handleFlowsCategoriesFilter={handleFlowsCategoriesFilter} />
             <TopSales />
             <AllTopSales
                 handleCategoriesFilter={handleCategoriesFilter}
             />
-            <div className="pb-16 sm:pb-[16vw] pt-16 sm:pt-[16vw]">
+            <div className="pb-16 sm:pb-[16vw] pt-24 sm:pt-[16vw]">
                 <Marquess />
             </div>
             <Philosophy />

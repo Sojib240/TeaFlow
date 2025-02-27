@@ -1,8 +1,9 @@
-import React from "react";
-import Title from "../Common/Title";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import Title from "../Utils/CartContext";
+import { cartContextData } from "../Utils/CartContext";
 
 const CheckOut = () => {
+    const [cart, setcart] = useContext(cartContextData);
     return (
         <>
             <Title text={"checkout"} />
@@ -84,7 +85,9 @@ const CheckOut = () => {
                                 </div>
                             </div>
                             <div className="sm:mt-[1vw] mt-5">
-                                <label className="pb-2 sm:pb-[0.5vw] text-sm sm:text-base block font-GolosRegular">Order Notes (optional)*</label>
+                                <label className="pb-2 sm:pb-[0.5vw] text-sm sm:text-base block font-GolosRegular">
+                                    Order Notes (optional)*
+                                </label>
                                 <textarea
                                     className="resize-x-none h-32 sm:h-[10vw] w-full rounded-[0.8vw] outline-none text-[12px] sm:text-[0.8vw] font-GolosRegular py-5 sm:py-[0.8vw] px-5 sm:px-[0.8vw] bg-white"
                                     name=""
@@ -99,115 +102,47 @@ const CheckOut = () => {
                                 detail product
                             </h4>
                             {/*  */}
-                            <div className="flex flex-col gap-4 sm:gap-[0.8vw] h-[60vw] sm:h-[20vw] overflow-x-auto cart-main pr-5 sm:pr-[1vw]">
-                                <div className="flex justify-between gap-5 sm:gap-[1vw] w-full">
-                                    <div className="w-40 sm:w-[10vw] overflow-hidden cart-image rounded-[1vw]">
-                                        <img
-                                            className="w-full object-cover flex h-full"
-                                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f7_red-10-min.jpg"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="flex flex-col items-start gap-5 sm:gap-[1.3vw] w-full">
-                                        <div className="">
-                                            <h4 className="text-base sm:text-[1.1vw] uppercase font-GolosRegular font-semibold">
-                                                Red Tea #4
-                                            </h4>
-                                            <p className="text-[12px] sm:text-[0.8vw] font-GolosRegular">
-                                                Flavor: refined, bright, sweet
-                                            </p>
-                                        </div>
-                                        <div className="flex justify-between items-center w-full">
-                                            <p className="font-GolosRegular text-base sm:text-[1vw]">
-                                                $ 20
-                                            </p>
-                                            <p className="text-[12px] sm:text-[0.8vw] font-GolosRegular">
-                                                X 1
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex justify-between gap-5 sm:gap-[1vw] w-full">
-                                    <div className="w-40 sm:w-[10vw] overflow-hidden cart-image rounded-[1vw]">
-                                        <img
-                                            className="w-full object-cover flex h-full"
-                                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f7_red-10-min.jpg"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="flex flex-col items-start gap-5 sm:gap-[1.3vw] w-full">
-                                        <div className="">
-                                            <h4 className="text-base sm:text-[1.1vw] uppercase font-GolosRegular font-semibold">
-                                                Red Tea #4
-                                            </h4>
-                                            <p className="text-[12px] sm:text-[0.8vw] font-GolosRegular">
-                                                Flavor: refined, bright, sweet
-                                            </p>
-                                        </div>
-                                        <div className="flex justify-between items-center w-full">
-                                            <p className="font-GolosRegular text-base sm:text-[1vw]">
-                                                $ 20
-                                            </p>
-                                            <p className="text-[12px] sm:text-[0.8vw] font-GolosRegular">
-                                                X 1
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex justify-between gap-5 sm:gap-[1vw] w-full">
-                                    <div className="w-40 sm:w-[10vw] overflow-hidden cart-image rounded-[1vw]">
-                                        <img
-                                            className="w-full object-cover flex h-full"
-                                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f7_red-10-min.jpg"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="flex flex-col items-start gap-5 sm:gap-[1.3vw] w-full">
-                                        <div className="">
-                                            <h4 className="text-base sm:text-[1.1vw] uppercase font-GolosRegular font-semibold">
-                                                Red Tea #4
-                                            </h4>
-                                            <p className="text-[12px] sm:text-[0.8vw] font-GolosRegular">
-                                                Flavor: refined, bright, sweet
-                                            </p>
-                                        </div>
-                                        <div className="flex justify-between items-center w-full">
-                                            <p className="font-GolosRegular text-base sm:text-[1vw]">
-                                                $ 20
-                                            </p>
-                                            <p className="text-[12px] sm:text-[0.8vw] font-GolosRegular">
-                                                X 1
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex justify-between gap-5 sm:gap-[1vw] w-full">
-                                    <div className="w-40 sm:w-[10vw] overflow-hidden cart-image rounded-[1vw]">
-                                        <img
-                                            className="w-full object-cover flex h-full"
-                                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f7_red-10-min.jpg"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="flex flex-col items-start gap-5 sm:gap-[1.3vw] w-full">
-                                        <div className="">
-                                            <h4 className="text-base sm:text-[1.1vw] uppercase font-GolosRegular font-semibold">
-                                                Red Tea #4
-                                            </h4>
-                                            <p className="text-[12px] sm:text-[0.8vw] font-GolosRegular">
-                                                Flavor: refined, bright, sweet
-                                            </p>
-                                        </div>
-                                        <div className="flex justify-between items-center w-full">
-                                            <p className="font-GolosRegular text-base sm:text-[1vw]">
-                                                $ 20
-                                            </p>
-                                            <p className="text-[12px] sm:text-[0.8vw] font-GolosRegular">
-                                                X 1
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div className="flex flex-col gap-4 sm:gap-[0.8vw] max-h-[15vw] min-h-[6vw] h-full overflow-x-auto cart-main pr-5 sm:pr-[1vw]">
+                                {cart &&
+                                    cart.map(
+                                        ({
+                                            id,
+                                            title,
+                                            image,
+                                            price,
+                                            flavor,
+                                        }) => {
+                                            return (
+                                                <div key={id} className="flex justify-between gap-5 sm:gap-[1vw] w-full border-b border-[#dadada] pb-5 sm:pb-[0.8vw]">
+                                                    <div className="w-40 sm:w-[10vw] overflow-hidden cart-image rounded-[1vw]">
+                                                        <img
+                                                            className="w-full object-cover flex h-full"
+                                                            src={image}
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div className="flex flex-col items-start gap-5 sm:gap-[1.3vw] w-full">
+                                                        <div className="">
+                                                            <h4 className="text-base sm:text-[1.1vw] uppercase font-GolosRegular font-semibold">
+                                                                {title}
+                                                            </h4>
+                                                            <p className="text-[12px] sm:text-[0.8vw] font-GolosRegular">
+                                                                {flavor}
+                                                            </p>
+                                                        </div>
+                                                        <div className="flex justify-between items-center w-full">
+                                                            <p className="font-GolosRegular text-base sm:text-[1vw]">
+                                                                $ {price}
+                                                            </p>
+                                                            <p className="text-[12px] sm:text-[0.8vw] font-GolosRegular">
+                                                                X 1
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            );
+                                        }
+                                    )}
                             </div>
                             <div className="mt-8 sm:mt-[2.5vw] flex flex-col gap-3 sm:gap-[0.5vw]">
                                 <div className="flex items-center justify-between w-full font-GolosRegular font-semibold text-base sm:text-[1vw]">

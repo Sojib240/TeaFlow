@@ -19,16 +19,16 @@ const Footer = ({handleCategoriesFilter}) => {
                             >
                                 home
                             </Link>
-                            <Link onClick={()=>handleCategoriesFilter(8,'products')} to={'/shop'} className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
+                            <Link onClick={()=>handleCategoriesFilter(7,'products')} to={'/shop'} className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
                                 products
                             </Link>
-                            <Link onClick={()=>handleCategoriesFilter(4,"top sales")} to={'/shop'} className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
+                            <Link onClick={()=>handleCategoriesFilter(3,"top sales")} to={'/shop'} className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
                                 top sales
                             </Link>
-                            <Link onClick={()=>handleCategoriesFilter(2,"premium tea")} to={'/shop'}  className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
+                            <Link onClick={()=>handleCategoriesFilter(1,"premium tea")} to={'/shop'}  className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
                                 premium tea
                             </Link>
-                            <Link onClick={()=>handleCategoriesFilter(3,"sets")} to={'/shop'} className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
+                            <Link onClick={()=>handleCategoriesFilter(2,"sets")} to={'/shop'} className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
                                 set
                             </Link>
                         </div>
@@ -128,7 +128,7 @@ const Footer = ({handleCategoriesFilter}) => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between  pt-6 sm:pt-[7vw] pb-[4.5vw]">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between  pt-6 sm:pt-[7vw] pb-6 sm:pb-[4.5vw]">
                 <div className="flex gap-[9vw]">
                     <div className="w-[9vw] hidden sm:block">
                         <img

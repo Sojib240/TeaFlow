@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const SliderTitle = (SliderTitleData) => {
     return (
         SliderTitleData && (
-            <div className="z-50 relative pt-5">
+            <div className="z-50 relative pt-3">
                 {/* <span className="block pl-[9vw]">{SliderTitleData.title}</span>
                 <span className="block">{SliderTitleData.title2}</span>
                 <span>{SliderTitleData.title3}</span> */}
-                <div className="text-[10vw] sm:text-[6.6vw] uppercase font-GolosBold leading-[120%] sm:leading-[100%] whitespace-nowrap">
+                <div className="text-5xl sm:text-[6.6vw] uppercase font-GolosBold leading-[120%] sm:leading-[100%] whitespace-nowrap">
                     <span className="block pl-0 sm:pl-[9vw]">Relax with</span>
                     <span className="block">Rich Red</span>
                     <span>Tea #3</span>

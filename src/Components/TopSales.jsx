@@ -5,8 +5,8 @@ const TopSales = () => {
     return (
         <div className="px-0 sm:px-[5.15vw] pt-16 sm:pt-[16vw] mx-auto w-full">
             <div className="">
-                <h2 className="text-[13.2vw] text-center font-GolosBold">TOP SALES</h2>
-                <div className="flex flex-col sm:flex-row gap-[5vw] my-[5vw]">
+                <h2 className="text-5xl sm:text-[14vw] text-center font-GolosBold">TOP SALES</h2>
+                <div className="flex flex-col sm:flex-row gap-[5vw] my-8 sm:my-[5vw]">
                     <div className="rounded-[4vw] overflow-hidden w-full sm:w-[60%]">
                         <img className="w-full"
                             src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806669_featured-p-1080.jpeg"

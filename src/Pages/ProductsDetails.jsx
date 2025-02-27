@@ -5,7 +5,7 @@ import { productContext } from "../Utils/Context";
 import { cartContextData } from "../Utils/CartContext";
 import SemilarProducts from "../Components/SemilarProducts";
 
-const ProductsDetails = () => {
+const ProductsDetails = ({ titleChange, settitleChange }) => {
     const { id } = useParams();
     const [productsApiData, setproductsApiData] = useContext(productContext);
     const [singleProduct, setsingleProduct] = useState();
@@ -46,11 +46,23 @@ const ProductsDetails = () => {
         <>
             {singleProduct && (
                 <div className="px-0 sm:px-[5.15vw] w-full flex gap-[6vw] font-GolosRegular relative">
-                    <div className="w-full sm:w-[58%] pt-[6vw] bg-[#FFFFFF]">
-                        <div className="flex gap-4 sm:gap-[0.6vw] flex-col sm:flex-row w-full">
-                            <div className="order-2 sm:order-1 w-full sm:w-[22.85%] flex flex-row sm:flex-col gap-[0.6vw] px-5 sm:px-0">
+                    <div className="w-full sm:w-[58%] pt-0 sm:pt-[5vw] bg-[#FFFFFF]">
+                        <div className="px-0 text-[#9C9797] font-GolosRegular text-[13px] sm:text-[1vw] sm:flex gap-5 sm:gap-[1vw] capitalize mt-0 sm:mt-[-3.5vw] pb-[3vw] hidden ">
+                            <span>Home</span>
+                            <span>/</span>
+                            <span>shop</span>
+                            <span>/</span>
+                            <span>{titleChange}</span>
+                            <span>/</span>
+                            <span className="capitalize">
+                                {singleProduct.title}
+                            </span>
+                        </div>
+                        <div className="flex flex-col sm:flex-row gap-1 sm:gap-[0.6vw] w-full">
+                            {/* flex flex-row sm:flex-col */}
+                            <div className="order-2 sm:order-1 w-full sm:w-[22.85%] grid grid-cols-4 sm:grid-cols-1 sm:grid-rows-4 gap-1 sm:gap-[0.6vw] px-5 sm:px-0">
                                 <div
-                                    className={`${
+                                    className={`col-span-1${
                                         singleProduct.image == null
                                             ? "hidden"
                                             : "block"
@@ -60,7 +72,7 @@ const ProductsDetails = () => {
                                         onMouseEnter={() =>
                                             handleSlider(singleProduct.image)
                                         }
-                                        className="border border-[#f1f1f1] w-full h-full object-cover"
+                                        className=" border border-[#f1f1f1] w-full h-full object-cover"
                                         src={
                                             singleProduct && singleProduct.image
                                         }
@@ -68,7 +80,7 @@ const ProductsDetails = () => {
                                     />
                                 </div>
                                 <div
-                                    className={`${
+                                    className={`col-span-1 ${
                                         singleProduct.minImg1 == null
                                             ? "hidden"
                                             : "block"
@@ -88,7 +100,7 @@ const ProductsDetails = () => {
                                 </div>
 
                                 <div
-                                    className={`${
+                                    className={`col-span-1 ${
                                         singleProduct.minImg2 == null
                                             ? "hidden"
                                             : "block"
@@ -108,7 +120,7 @@ const ProductsDetails = () => {
                                 </div>
 
                                 <div
-                                    className={`${
+                                    className={`col-span-1 ${
                                         singleProduct.minImg3 == null
                                             ? "hidden"
                                             : "block"
@@ -182,8 +194,8 @@ const ProductsDetails = () => {
                                     in stock
                                 </h4>
                             </div>
-                            <div className="flex items-start  gap-[1vw] mt-5 font-GolosDemiBold">
-                                <span className="block w-5 mt-1">
+                            <div className="flex items-center sm:items-start gap-3 sm:gap-[1vw] mt-5 font-GolosDemiBold">
+                                <span className="block w-10 sm:w-auto mt-1">
                                     <img
                                         src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806639_hand-notification.svg"
                                         alt=""
@@ -197,11 +209,13 @@ const ProductsDetails = () => {
                         </div>
                         <div className="mt-12 sm:mt-[5vw] mb-6 sm:mb-[4vw] px-5 sm:px-0">
                             <div className={`mb-6 sm:mb-[4vw]`}>
-                                <h4 className={`${
+                                <h4
+                                    className={`${
                                         singleProduct.aboutProduct == null
                                             ? "hidden"
                                             : "block"
-                                    } text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-5 sm:mb-[1vw]`}>
+                                    } text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-5 sm:mb-[1vw]`}
+                                >
                                     About product
                                 </h4>
                                 <div
@@ -214,11 +228,14 @@ const ProductsDetails = () => {
                                 />
                             </div>
                             <div className={`mb-6 sm:mb-[4vw]`}>
-                                <h4 className={`${
-                                        singleProduct.SteepingInstructions == null
+                                <h4
+                                    className={`${
+                                        singleProduct.SteepingInstructions ==
+                                        null
                                             ? "hidden"
                                             : "block"
-                                    } text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-5 sm:mb-[1vw]`}>
+                                    } text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-5 sm:mb-[1vw]`}
+                                >
                                     Steeping Instructions
                                 </h4>
                                 <div
@@ -231,11 +248,13 @@ const ProductsDetails = () => {
                                 />
                             </div>
                             <div className="">
-                                <h4 className={`text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-[1vw] ${
+                                <h4
+                                    className={`text-xl sm:text-[1.4vw] leading-[144%] sm:leading-[2vw] font-GolosBold mb-[1vw] ${
                                         singleProduct.Ingredients == null
                                             ? "hidden"
                                             : "block"
-                                    }`}>
+                                    }`}
+                                >
                                     Ingredients
                                 </h4>
                                 <p className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw]">
@@ -244,7 +263,7 @@ const ProductsDetails = () => {
                             </div>
                         </div>
                         <div className="w-full px-5 sm:px-0">
-                            <div className="rounded-[5vw] mt-[5vw] bg-[#F7F7F7] px-[7vw] py-[4.5vw] flex flex-col gap-4 sm:gap-[1vw] text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw]">
+                            <div className="rounded-[5vw] mt-[5vw] bg-[#F7F7F7] px-[7vw] py-[4.5vw] flex flex-col gap-4 sm:gap-[1vw] text-base sm:text-[1.1vw] leading-[144%] sm:leading-[2vw]">
                                 <div className="flex gap-4 sm:gap-[1vw] items-center ">
                                     <img
                                         className="w-6 sm:w-[1.8vw]"
@@ -269,7 +288,7 @@ const ProductsDetails = () => {
                                     />
                                     making the world cleaner
                                 </div>
-                                <div className="flex gap-4 sm:gap-[1vw] items-start sm:items-center">
+                                <div className="flex gap-4 sm:gap-[1vw] items-center">
                                     <img
                                         className="w-6 sm:w-[1.8vw]"
                                         src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806604_icon-any-question.svg"
@@ -286,19 +305,23 @@ const ProductsDetails = () => {
                         </div>
                     </div>
                     <div
-                        className={`w-[42%] hidden sm:block static sm:sticky top-0 right-0 ${singleProduct.TastingNotes == null
-                            ? "min-h-[32vw]"
-                            : 'min-h-[42vw]'} h-full pt-[6vw]`}
+                        className={`w-[42%] hidden sm:block static sm:sticky top-0 right-0 ${
+                            singleProduct.TastingNotes == null
+                                ? "min-h-[32vw]"
+                                : "min-h-[38vw]"
+                        } h-full pt-[5vw]`}
                     >
                         <div className="">
                             <h2 className="text-[3.5vw] uppercase font-GolosBold mb-[7vw]">
                                 {singleProduct && singleProduct.title}
                             </h2>
-                            <div className={`${
-                                        singleProduct.TastingNotes == null
-                                            ? "hidden"
-                                            : "block"
-                                    } text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col`}>
+                            <div
+                                className={`${
+                                    singleProduct.TastingNotes == null
+                                        ? "hidden"
+                                        : "block"
+                                } text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col`}
+                            >
                                 Tasting notes:{" "}
                                 <span>
                                     {singleProduct &&

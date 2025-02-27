@@ -11,7 +11,7 @@ const Navbar = ({
     setCartOpenClose,
     menuOpenClose,
     setmenuOpenClose,
-    handleCategoriesFilter
+    handleCategoriesFilter,
 }) => {
     //
     const [cart, setcart] = useContext(cartContextData);
@@ -75,7 +75,13 @@ const Navbar = ({
                                 menuOpenClose == true && "opacity-0 invisible"
                             } sm:flex items-center gap-[3vw]`}
                         >
-                            <Link onClick={()=>handleCategoriesFilter(7,"Products")} to={"/shop"} className="text-[1.1vw]">
+                            <Link
+                                to={"/shop"}
+                                onClick={() =>
+                                    handleCategoriesFilter(7, "Products")
+                                }
+                                className="text-[1.1vw]"
+                            >
                                 shop
                             </Link>
                             <Link to={"/aboutUs"} className="text-[1.1vw]">

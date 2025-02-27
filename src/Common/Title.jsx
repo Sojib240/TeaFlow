@@ -14,7 +14,7 @@ const Title = ({ text }) => {
         <div className="px-5 sm:px-[5.15vw] mx-auto overflow-hidden mt-5 sm:mt-[2.6vw]">
             <h2
                 ref={titelText}
-                className="text-[52px] sm:text-[8vw] font-GolosBold uppercase leading-[100%] text-black"
+                className="text-[48px] sm:text-[8vw] font-GolosBold uppercase leading-[100%] text-black"
             >
                 {text}
             </h2>

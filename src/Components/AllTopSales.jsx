@@ -39,18 +39,18 @@ const AllTopSales = (
     };
 
     return (
-        <div className="w-full px-5 sm:pl-[14.44vw] pr-[5.14vw] pt-16 sm:pt-[16vw]">
+        <div className="w-full px-5 sm:pl-[14.44vw] pr-[5.14vw] pt-16 sm:pt-[5vw]">
             <div className="inline-block">
                 <Link
                     to={"/shop"}
                     onClick={() => handleCategoriesFilter(3, "Top Sales")}
-                    className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw]  font-GolosRegular"
+                    className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw] font-GolosRegular"
                 >
                     <span className="block border-b">all top sales</span>
                     <span className="mt-[-0.5vw] block">10+</span>
                 </Link>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[4.5vw] pt-12 sm:pt-[7.5vw]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[4.5vw] pt-10 sm:pt-[3.5vw]">
                 {filterProduct &&
                     filterProduct.map((product) => {
                         return (
@@ -83,7 +83,7 @@ const AllTopSales = (
                                 <h4 className="text-2xl sm:text-[2.4vw] md:text-[1.3vw] mt-5 sm:mt-[1vw] font-GolosDemiBold text-[#222020] uppercase">
                                     {product.title}
                                 </h4>
-                                <p className="text-lg sm:text-[1.7vw] md:text-[0.9vw] py-[0.4vw] text-[#413F3F] font-GolosRegular">
+                                <p className="text-base sm:text-[1.7vw] md:text-[0.9vw] py-2 sm:py-[0.4vw] text-[#413F3F] font-GolosRegular">
                                     {product.flavor}
                                 </p>
                                 <p className="text-xl font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191]">

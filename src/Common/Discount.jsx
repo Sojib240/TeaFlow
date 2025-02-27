@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Discount = () => {
     return (
         <div className="w-full rounded-4xl sm:rounded-[6vw] mx-auto bg-[#f7f7f7]">
-            <div className="px-8 sm:px-[14.44vw] py-16 sm:py-[11vw] flex flex-col  items-center gap-10 sm:flex-row sm:items-end">
+            <div className="px-5 sm:px-[14.44vw] py-16 sm:py-[11vw] flex flex-col  items-center gap-10 sm:flex-row sm:items-end">
                 <div className="w-full sm:w-[65%] text-left sm:text-left">
                     <h2 className="text-4xl sm:text-[3.5vw] uppercase font-GolosDemiBold">
                         Get 20% off

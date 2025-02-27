@@ -2,7 +2,7 @@ import gsap from "gsap";
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Menu = ({ menuOpenClose, setmenuOpenClose ,handleCategoriesFilter}) => {
+const Menu = ({ menuOpenClose, setmenuOpenClose, handleCategoriesFilter }) => {
     if (menuOpenClose === true) {
         gsap.from(".navMenuText", {
             opacity: 0,
@@ -22,7 +22,7 @@ const Menu = ({ menuOpenClose, setmenuOpenClose ,handleCategoriesFilter}) => {
     }
     return (
         <div
-            className={`w-full h-screen fixed top-0 left-0 bg-white duration-200 transition-all z-[99] -translate-y-[100%] pl-5 sm:pl-[59.25%] pr-5 sm:pr-0 flex flex-col pt-32 sm:pt-[15vw] md:pt-[15vw] lg:pt-[12vw] xl:pt-[9vw] font-GolosRegular ${
+            className={`w-full min-h-screen h-full overflow-x-auto fixed top-0 left-0 bg-white duration-200 transition-all z-[99] -translate-y-[100%] pb-5 sm:pb-0 pl-5 sm:pl-[59.25%] pr-5 sm:pr-0 flex flex-col pt-32 sm:pt-[15vw] md:pt-[15vw] lg:pt-[12vw] xl:pt-[9vw] font-GolosRegular ${
                 menuOpenClose === true && "translate-y-0"
             }`}
         >
@@ -35,7 +35,10 @@ const Menu = ({ menuOpenClose, setmenuOpenClose ,handleCategoriesFilter}) => {
                     home
                 </Link>
                 <Link
-                    onClick={() => setmenuOpenClose(false)}
+                    onClick={() => {
+                        handleCategoriesFilter(7, "products"),
+                            setmenuOpenClose(false);
+                    }}
                     to={"/shop"}
                     className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
                 >
@@ -49,8 +52,11 @@ const Menu = ({ menuOpenClose, setmenuOpenClose ,handleCategoriesFilter}) => {
                     flows
                 </Link>
                 <Link
-                    onClick={() => setmenuOpenClose(false)}
-                    to={'/shop'}
+                    onClick={() => {
+                        handleCategoriesFilter(3, "top sales"),
+                            setmenuOpenClose(false);
+                    }}
+                    to={"/shop"}
                     className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
                 >
                     top sales
@@ -63,7 +69,7 @@ const Menu = ({ menuOpenClose, setmenuOpenClose ,handleCategoriesFilter}) => {
                     journal
                 </Link>
             </div>
-            <div className="flex gap-10 sm:gap-[6vw] mt-16 sm:mt-[5vw]">
+            <div className="flex gap-10 sm:gap-[6vw] mt-16 sm:mt-[5vw] flex-wrap">
                 <div className="flex flex-col gap-2 sm:gap-[0.5vw]">
                     <Link
                         onClick={() => setmenuOpenClose(false)}

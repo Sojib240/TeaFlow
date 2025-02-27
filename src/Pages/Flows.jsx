@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import Title from "../Common/Title";
 import { Link } from "react-router-dom";
-import { flowData } from "../Utils/AditionalData";
 import Philosophy from "../Common/Philosophy";
 import JournalComponent from "../Common/JournalComponent";
 import Discount from "../Common/Discount";
 import FollowUs from "../Common/FollowUs";
+import { productContext } from "../Utils/Context";
 
-const Flow = () => {
+const Flows = ({handleFlowsCategoriesFilter}) => {
+        const [productsApiData, setproductsApiData] = useContext(productContext);
     document.title = "TeaFlow － Flows";
     return (
         <>
@@ -21,12 +22,14 @@ const Flow = () => {
                     boost your energy, we've got you covered.
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-14 sm:gap-[3vw] mt-8 sm:mt-[5vw]">
-                    {flowData.map(({ id, title, image, desc }) => {
+                    {productsApiData.flows && productsApiData.flows.map(({ id, flowTitle, image, desc }) => {
                         return (
                             <>
                                 <Link key={id} className="col-span-1 group">
-                                    <div className={`card-image overflow-hidden max-h-[75vw] sm:max-h-[29.51vw] h-full`}>
-                                        <Link to={""}>
+                                    <div
+                                        className={`card-image overflow-hidden max-h-[75vw] sm:max-h-[29.51vw] h-full`}
+                                    >
+                                        <Link onClick={()=>handleFlowsCategoriesFilter(id,flowTitle)} to={"/shop"}>
                                             <img
                                                 className="group-hover:scale-125 duration-1200 transition-all h-full w-full object-cover"
                                                 src={image}
@@ -35,7 +38,7 @@ const Flow = () => {
                                         </Link>
                                     </div>
                                     <h4 className="text-xl sm:text-[2.4vw] md:text-[3vw] mt-4 sm:mt-[1vw] font-GolosDemiBold text-[#222020] uppercase">
-                                        {title}
+                                        {flowTitle}
                                     </h4>
                                     <p className="text-base font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191] mt-2 sm:mt-[1vw]">
                                         {desc}
@@ -62,4 +65,4 @@ const Flow = () => {
     );
 };
 
-export default Flow;
+export default Flows;

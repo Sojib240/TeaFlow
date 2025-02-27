@@ -45,51 +45,29 @@
     background: #a1a1a1;
 }
 
-/* swiper */
-.HomeSlider .swiper.swiper-initialized {
-    height: 44vw !important;
-}
 
-.swiper-button-next {
-    color: black !important;
-    margin-right: 3vw;
-    padding: 2vw;
-    transition: all ease-in-out 0.3s;
-}
-
-.swiper-button-next:hover {
-    margin-right: 2vw !important;
-}
-
-
-.swiper-button-prev {
-    display: none !important;
-}
-
-:root {
-    --swiper-navigation-size: 2.6vw !important;
-}
-
-.card:nth-child(3n+2) {
-    margin-top: 1.6vw;
-    /* background-color: red; */
-}
-
-.cart-card:nth-child(2n+2) .cart-image {
-    border-radius: 1.5vw;
-}
-
-.card:nth-child(2n+2) .card-image {
-    border-radius: 4vw;
-}
-.journal-content img{
-    width: 80%;
-    border-radius: 4vw;
-}
-
-@media (max-width: 640px) {
+@media (min-width:50px) {
+    .journal-content img{
+        width: 100%;
+        border-radius: 4vw;
+    }
     .HomeSlider .swiper.swiper-initialized {
         height: 90vw !important;
+    }
+    .swiper-button-next {
+        color: #3f3f3f !important;
+        margin-right: 3vw;
+        padding: 2vw;
+        transition: all ease-in-out 0.3s;
+    }
+    
+    .swiper-button-next:hover {
+        margin-right: 0vw !important;
+    }
+    
+    
+    .swiper-button-prev {
+        display: none !important;
     }
 
     :root {
@@ -112,5 +90,43 @@
 
     .card:nth-child(2n+2) .card-image {
         border-radius: 40px;
+    }
+}
+@media (min-width:640px) {
+    .journal-content img{
+        width: 80%;
+        border-radius: 4vw;
+    }
+    .HomeSlider .swiper.swiper-initialized {
+        height: 44vw !important;
+    }
+    :root {
+        --swiper-navigation-size: 2.6vw !important;
+    }
+    .swiper-button-next {
+        color: #353334 !important;
+        margin-right: 3vw;
+        padding: 2vw;
+        transition: all ease-in-out 0.3s;
+    }
+    
+    .swiper-button-next:hover {
+        margin-right: 2vw !important;
+    }
+    
+    
+    .swiper-button-prev {
+        display: none !important;
+    }
+    .card:nth-child(3n+2) {
+        margin-top: 1.6vw;
+    }
+    
+    .cart-card:nth-child(2n+2) .cart-image {
+        border-radius: 1.5vw;
+    }
+    
+    .card:nth-child(2n+2) .card-image {
+        border-radius: 4vw;
     }
 }

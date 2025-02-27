@@ -6,7 +6,9 @@ const Returns = () => {
     document.title = "TeaFlow － Returns And Exchanges";
     return (
         <>
-            <Title text={"returns and exchanges"} />
+            <div className="pt-10 sm:pt-[4vw]">
+                <Title text={"returns and exchanges"} />
+            </div>
             <div className="px-5 sm:pl-[14.44vw] sm:pr-[32vw] mx-auto mt-16 sm:mt-[7vw] font-GolosRegular">
                 <div className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
                     <span>

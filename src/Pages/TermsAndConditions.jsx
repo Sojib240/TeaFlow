@@ -99,9 +99,11 @@ const TermsAndConditions = () => {
     ];
     return (
         <>
-            <Title text={"terms and conditions of sale"} />
+            <div className="pt-10 sm:pt-[4vw]">
+                <Title text={"terms and conditions of sale"} />
+            </div>
             <div className="px-5 sm:pl-[14.44vw] sm:pr-[32vw] mx-auto font-GolosRegular">
-                <div className="mt-[7vw]">
+                <div className="mt-16 sm:mt-[7vw]">
                     <p className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] uppercase">
                         ALL ORDERS (“ORDERS”) FOR THE PURCHASE OF PRODUCTS AND
                         GOODS (“PRODUCTS”) BY A PURCHASER (“BUYER”) FROM P.B

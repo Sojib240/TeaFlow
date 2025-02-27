@@ -16,11 +16,12 @@ import ProductsDetails from "./Pages/ProductsDetails";
 import gsap from "gsap";
 import ScrollToTop from "./Common/ScrollToTop";
 import SingleJournal from "./Pages/SingleJournal";
-import Flow from "./Pages/Flow";
 import CheckOut from "./Pages/CheckOut";
 import { productContext } from "./Utils/Context";
+import Flows from "./Pages/Flows";
 
 const App = () => {
+    // context data coming from api
     const [productsApiData, setproductsApiData] = useContext(productContext);
     // app states
     const [CartOpenClose, setCartOpenClose] = useState(false);
@@ -29,7 +30,7 @@ const App = () => {
     const { products } = productsApiData;
     const [newCategoriesData, setnewCategoriesData] = useState();
     const [titleChange, settitleChange] = useState("Products");
-    // handleCategoriesFilter
+    // main categories filter
     const handleCategoriesFilter = (id, categoryName) => {
         settitleChange(categoryName);
         const filter = products.filter((p) => {
@@ -43,13 +44,42 @@ const App = () => {
         window.scrollTo({
             top: 0,
             behavior: "smooth",
-        }); // You can remove this line if you prefer an instant scroll
+        });
     };
-    console.log(newCategoriesData);
+    // sub-categories Filter
+    const handleSubCategoriesFilter = (id, categoryName) => {
+        settitleChange(categoryName);
+        const filter = products.filter((p) => {
+            if (Array.isArray(p.subCategory)) {
+                return p.subCategory.includes(id);
+            }
+            return p.subCategory === id;
+        });
+        setnewCategoriesData(filter);
 
-    //
-    const cursor = useRef(null);
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+        // flows categories Filter
+        const handleFlowsCategoriesFilter = (id, categoryName) => {
+            settitleChange(categoryName);
+            const filter = products.filter((p) => {
+                if (Array.isArray(p.flow)) {
+                    return p.flow.includes(id);
+                }
+                return p.flow === id;
+            });
+            setnewCategoriesData(filter);
+    
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        };
     // mouse-follower
+    const cursor = useRef(null);
     const handleMouseMove = (event) => {
         const { clientX, clientY } = event;
         let mm = gsap.matchMedia();
@@ -88,6 +118,7 @@ const App = () => {
                     element={
                         <HomePage
                             handleCategoriesFilter={handleCategoriesFilter}
+                            handleFlowsCategoriesFilter={handleFlowsCategoriesFilter}
                         />
                     }
                 />
@@ -97,9 +128,12 @@ const App = () => {
                         <Shop
                             newCategoriesData={newCategoriesData}
                             setnewCategoriesData={setnewCategoriesData}
-                            handleCategoriesFilter={handleCategoriesFilter}
                             titleChange={titleChange}
                             settitleChange={settitleChange}
+                            handleCategoriesFilter={handleCategoriesFilter}
+                            handleSubCategoriesFilter={
+                                handleSubCategoriesFilter
+                            }
                         />
                     }
                 />
@@ -109,12 +143,12 @@ const App = () => {
                 <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
                 <Route path="/returns" element={<Returns />} />
                 <Route path="/delivery" element={<Delivery />} />
-                <Route path="/flows" element={<Flow />} />
+                <Route path="/flows" element={<Flows handleFlowsCategoriesFilter={handleFlowsCategoriesFilter} />} />
                 <Route path="/singleJournal/:id" element={<SingleJournal />} />
                 <Route path="/checkout" element={<CheckOut />} />
                 <Route
                     path="/productsDetails/:id"
-                    element={<ProductsDetails />}
+                    element={<ProductsDetails titleChange={titleChange} settitleChange={settitleChange} />}
                 />
                 <Route
                     path="/TermsAndConditions"
