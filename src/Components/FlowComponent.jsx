@@ -11,7 +11,8 @@ import { FreeMode, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 import { productContext } from "../Utils/Context";
 
-const FlowComponent = ({ handleFlowsCategoriesFilter }) => {
+const FlowComponent = (
+) => {
     const [productsApiData, setproductsApiData] = useContext(productContext);
     return (
         <>
@@ -35,7 +36,7 @@ const FlowComponent = ({ handleFlowsCategoriesFilter }) => {
                     breakpoints={{
                         640: {
                             slidesPerView: 3,
-                        }
+                        },
                     }}
                     slidesPerView={1}
                     spaceBetween={15}
@@ -45,7 +46,7 @@ const FlowComponent = ({ handleFlowsCategoriesFilter }) => {
                 >
                     {productsApiData.flows &&
                         productsApiData.flows.map(
-                            ({ image, id, flowTitle, desc }) => {
+                            ({ image, id, flowTitle, desc, slug }) => {
                                 return (
                                     <SwiperSlide
                                         key={id}
@@ -59,13 +60,8 @@ const FlowComponent = ({ handleFlowsCategoriesFilter }) => {
                                             } group h-auto sm:h-[25vw]`}
                                         >
                                             <Link
-                                                onClick={() =>
-                                                    handleFlowsCategoriesFilter(
-                                                        id,
-                                                        flowTitle
-                                                    )
-                                                }
-                                                to={"/shop"}
+                                               
+                                                to={`/catagory/${slug}`}
                                             >
                                                 <img
                                                     className=" w-full group-hover:scale-100 lg:group-hover:scale-125 duration-1200 transition-all object-cover flex h-full"

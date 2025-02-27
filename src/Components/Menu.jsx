@@ -2,7 +2,7 @@ import gsap from "gsap";
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Menu = ({ menuOpenClose, setmenuOpenClose, handleCategoriesFilter }) => {
+const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
     if (menuOpenClose === true) {
         gsap.from(".navMenuText", {
             opacity: 0,
@@ -35,11 +35,8 @@ const Menu = ({ menuOpenClose, setmenuOpenClose, handleCategoriesFilter }) => {
                     home
                 </Link>
                 <Link
-                    onClick={() => {
-                        handleCategoriesFilter(7, "products"),
-                            setmenuOpenClose(false);
-                    }}
-                    to={"/shop"}
+                    onClick={() => setmenuOpenClose(false)}
+                    to={`/catagory/products`}
                     className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
                 >
                     products
@@ -52,11 +49,8 @@ const Menu = ({ menuOpenClose, setmenuOpenClose, handleCategoriesFilter }) => {
                     flows
                 </Link>
                 <Link
-                    onClick={() => {
-                        handleCategoriesFilter(3, "top sales"),
-                            setmenuOpenClose(false);
-                    }}
-                    to={"/shop"}
+                    onClick={() => setmenuOpenClose(false)}
+                    to={`/catagory/top-sales`}
                     className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
                 >
                     top sales

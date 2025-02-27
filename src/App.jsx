@@ -1,8 +1,8 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import HomePage from "./Pages/HomePage";
 import Footer from "./Common/Footer";
 import Navbar from "./Common/Navbar";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useParams } from "react-router-dom";
 import Contact from "./Pages/Contact";
 import Shop from "./Pages/Shop";
 import Journal from "./Pages/Journal";
@@ -23,6 +23,7 @@ import Flows from "./Pages/Flows";
 const App = () => {
     // context data coming from api
     const [productsApiData, setproductsApiData] = useContext(productContext);
+
     // app states
     const [CartOpenClose, setCartOpenClose] = useState(false);
     const [menuOpenClose, setmenuOpenClose] = useState(false);
@@ -30,54 +31,6 @@ const App = () => {
     const { products } = productsApiData;
     const [newCategoriesData, setnewCategoriesData] = useState();
     const [titleChange, settitleChange] = useState("Products");
-    // main categories filter
-    const handleCategoriesFilter = (id, categoryName) => {
-        settitleChange(categoryName);
-        const filter = products.filter((p) => {
-            if (Array.isArray(p.category)) {
-                return p.category.includes(id);
-            }
-            return p.category === id;
-        });
-        setnewCategoriesData(filter);
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    };
-    // sub-categories Filter
-    const handleSubCategoriesFilter = (id, categoryName) => {
-        settitleChange(categoryName);
-        const filter = products.filter((p) => {
-            if (Array.isArray(p.subCategory)) {
-                return p.subCategory.includes(id);
-            }
-            return p.subCategory === id;
-        });
-        setnewCategoriesData(filter);
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    };
-        // flows categories Filter
-        const handleFlowsCategoriesFilter = (id, categoryName) => {
-            settitleChange(categoryName);
-            const filter = products.filter((p) => {
-                if (Array.isArray(p.flow)) {
-                    return p.flow.includes(id);
-                }
-                return p.flow === id;
-            });
-            setnewCategoriesData(filter);
-    
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-            });
-        };
     // mouse-follower
     const cursor = useRef(null);
     const handleMouseMove = (event) => {
@@ -109,31 +62,18 @@ const App = () => {
                     setCartOpenClose={setCartOpenClose}
                     menuOpenClose={menuOpenClose}
                     setmenuOpenClose={setmenuOpenClose}
-                    handleCategoriesFilter={handleCategoriesFilter}
                 />
             </div>
             <Routes>
+                <Route path="/" element={<HomePage />} />
                 <Route
-                    path="/"
-                    element={
-                        <HomePage
-                            handleCategoriesFilter={handleCategoriesFilter}
-                            handleFlowsCategoriesFilter={handleFlowsCategoriesFilter}
-                        />
-                    }
-                />
-                <Route
-                    path="/shop"
+                    path="/catagory/:slug"
                     element={
                         <Shop
                             newCategoriesData={newCategoriesData}
                             setnewCategoriesData={setnewCategoriesData}
                             titleChange={titleChange}
                             settitleChange={settitleChange}
-                            handleCategoriesFilter={handleCategoriesFilter}
-                            handleSubCategoriesFilter={
-                                handleSubCategoriesFilter
-                            }
                         />
                     }
                 />
@@ -143,19 +83,24 @@ const App = () => {
                 <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
                 <Route path="/returns" element={<Returns />} />
                 <Route path="/delivery" element={<Delivery />} />
-                <Route path="/flows" element={<Flows handleFlowsCategoriesFilter={handleFlowsCategoriesFilter} />} />
+                <Route path="/flows" element={<Flows />} />
                 <Route path="/singleJournal/:id" element={<SingleJournal />} />
                 <Route path="/checkout" element={<CheckOut />} />
                 <Route
                     path="/productsDetails/:id"
-                    element={<ProductsDetails titleChange={titleChange} settitleChange={settitleChange} />}
+                    element={
+                        <ProductsDetails
+                            titleChange={titleChange}
+                            settitleChange={settitleChange}
+                        />
+                    }
                 />
                 <Route
                     path="/TermsAndConditions"
                     element={<TermsAndConditions />}
                 />
             </Routes>
-            <Footer handleCategoriesFilter={handleCategoriesFilter} />
+            <Footer />
             <CursorFollower cursor={cursor} />
         </div>
     );

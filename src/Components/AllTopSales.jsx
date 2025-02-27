@@ -4,8 +4,6 @@ import { productContext } from "../Utils/Context";
 import { cartContextData } from "../Utils/CartContext";
 
 const AllTopSales = (
-    // {handleTopSales}
-    { handleCategoriesFilter }
 ) => {
     // data coming from context api
     const [productsApiData, setproductsApiData] = useContext(productContext);
@@ -42,8 +40,7 @@ const AllTopSales = (
         <div className="w-full px-5 sm:pl-[14.44vw] pr-[5.14vw] pt-16 sm:pt-[5vw]">
             <div className="inline-block">
                 <Link
-                    to={"/shop"}
-                    onClick={() => handleCategoriesFilter(3, "Top Sales")}
+                    to={"/catagory/top-sales"}
                     className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw] font-GolosRegular"
                 >
                     <span className="block border-b">all top sales</span>

@@ -20,10 +20,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
     useEffect(() => {
         handlePrice();
     });
-    console.log(Price);
     
-    // handle amount
-    // const [tempArr, settempArr] = useState(cart);
     const handleAmount = (p, inDe) => {
         var temArr = cart;
         cart.map((cartIt, index) => {

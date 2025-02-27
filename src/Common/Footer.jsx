@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Footer = ({handleCategoriesFilter}) => {
+const Footer = () => {
     return (
         <div className="px-5 sm:pl-[14.44vw] sm:pr-[16vw] pt-20 sm:pt-[23vw] font-GolosRegular">
             <div className="flex justify-between">
@@ -19,17 +19,25 @@ const Footer = ({handleCategoriesFilter}) => {
                             >
                                 home
                             </Link>
-                            <Link onClick={()=>handleCategoriesFilter(7,'products')} to={'/shop'} className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
+                            <Link
+                            to={`/catagory/${'products'}`}
+                            className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
                                 products
                             </Link>
-                            <Link onClick={()=>handleCategoriesFilter(3,"top sales")} to={'/shop'} className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
+                            <Link
+                            to={`/catagory/${'top-sales'}`}
+                            className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
                                 top sales
                             </Link>
-                            <Link onClick={()=>handleCategoriesFilter(1,"premium tea")} to={'/shop'}  className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
+                            <Link
+                            to={`/catagory/${'premium-tea'}`}
+                            className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
                                 premium tea
                             </Link>
-                            <Link onClick={()=>handleCategoriesFilter(2,"sets")} to={'/shop'} className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
-                                set
+                            <Link 
+                            to={`/catagory/${'sets'}`}
+                            className="text-[1.1vw] hover:opacity-70 duration-100 transition-all">
+                                sets
                             </Link>
                         </div>
                     </div>

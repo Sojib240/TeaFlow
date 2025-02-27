@@ -7,7 +7,7 @@ const CheckOut = () => {
     return (
         <>
             <Title text={"checkout"} />
-            <div className="px-0 mt-10 sm:px-[5.14vw] lg:px-[14.44vw] sm:mt-[6vw]">
+            <div className="px-0 mt-0 sm:px-[5.14vw] lg:px-[14.44vw] sm:mt-[6vw]">
                 <div className="flex items-start gap-0 sm:gap-[2vw] flex-col sm:flex-row">
                     <div className="py-5 sm:py-[1.5vw] w-full sm:w-[60%] bg-[#F1F1F1] px-5 sm:px-[1.5vw] rounded-bl-0 rounded-br-0 sm:rounded-[1vw]">
                         <div className="mb-[1vw]">

@@ -11,7 +11,6 @@ const Navbar = ({
     setCartOpenClose,
     menuOpenClose,
     setmenuOpenClose,
-    handleCategoriesFilter,
 }) => {
     //
     const [cart, setcart] = useContext(cartContextData);
@@ -76,10 +75,7 @@ const Navbar = ({
                             } sm:flex items-center gap-[3vw]`}
                         >
                             <Link
-                                to={"/shop"}
-                                onClick={() =>
-                                    handleCategoriesFilter(7, "Products")
-                                }
+                                to={`/catagory/${'products'}`}
                                 className="text-[1.1vw]"
                             >
                                 shop
@@ -140,7 +136,6 @@ const Navbar = ({
             <Menu
                 menuOpenClose={menuOpenClose}
                 setmenuOpenClose={setmenuOpenClose}
-                handleCategoriesFilter={handleCategoriesFilter}
             />
         </>
     );

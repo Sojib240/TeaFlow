@@ -1,23 +1,48 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { productContext } from "../Utils/Context";
 import { cartContextData } from "../Utils/CartContext";
 import { CiFilter } from "react-icons/ci";
 import { MdArrowBackIosNew } from "react-icons/md";
 import Title from "../Common/Title";
 import Discount from "../Common/Discount";
+import { animate, delay, motion } from "framer-motion";
 
 const Shop = ({
     newCategoriesData,
     setnewCategoriesData,
     titleChange,
     settitleChange,
-    handleCategoriesFilter,
-    handleSubCategoriesFilter,
 }) => {
     document.title = "TeaFlow － Products";
-    const [DropDown, setDropDown] = useState(false);
     const [productsApiData, setproductsApiData] = useContext(productContext);
+    const { slug } = useParams();
+    const { products } = productsApiData;
+
+    // filter data
+    useEffect(() => {
+        const handleCategoriesFilter = () => {
+            const cleanedSlug = slug.replace(/-/g, " ");
+            settitleChange(cleanedSlug);
+            const filter =
+                products &&
+                products.filter((p) => {
+                    if (Array.isArray(p.slug)) {
+                        return p.slug.includes(slug);
+                    }
+                    return p.slug === slug;
+                });
+            setnewCategoriesData(filter);
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        };
+        handleCategoriesFilter();
+    }, [slug, products]);
+
+    const [DropDown, setDropDown] = useState(false);
     const [cart, setcart] = useContext(cartContextData);
     const [filterOpenClose, setfilterOpenClose] = useState(false);
     const handleCart = (product) => {
@@ -36,31 +61,18 @@ const Shop = ({
     const handleDropDown = () => {
         setDropDown(!DropDown);
     };
-    //
-    //
-    // const { products } = productsApiData;
-    // const handleproductFilteronLoad = (id, categoryName) => {
-    //     settitleChange(categoryName);
-    //     const filter =
-    //         products &&
-    //         products.filter((p) => {
-    //             if (Array.isArray(p.category)) {
-    //                 return p.category.includes(id);
-    //             }
-    //             return p.category === id;
-    //         });
-    //     setnewCategoriesData(filter);
 
-    //     window.scrollTo({
-    //         top: 0,
-    //         behavior: "smooth",
-    //     });
-    // };
-    //
-
-    // useEffect(() => {
-    //     handleproductFilteronLoad(8, "products");
-    // }, [products]);
+    // framer motions animation
+    const containerVariants = {
+        initial: { opacity: 0, y: 150 },
+        animate: (index) => ({
+            opacity: 1,
+            y: 0,
+            transition: {
+                delay: 0.05 * index,
+            },
+        }),
+    };
 
     return (
         <>
@@ -138,23 +150,24 @@ const Shop = ({
                                 >
                                     {productsApiData.subCategories &&
                                         productsApiData.subCategories.map(
-                                            ({ SubTitle, id }) => {
+                                            ({ SubTitle, id, slug }) => {
                                                 return (
-                                                    <h4
+                                                    <Link
+                                                        to={`/products/${slug}`}
                                                         key={id}
-                                                        onClick={() => {
-                                                            handleSubCategoriesFilter(
-                                                                id,
-                                                                SubTitle
-                                                            ),
-                                                                setfilterOpenClose(
-                                                                    false
-                                                                );
-                                                        }}
+                                                        // onClick={() => {
+                                                        //     handleSubCategoriesFilter(
+                                                        //         id,
+                                                        //         SubTitle
+                                                        //     ),
+                                                        //         setfilterOpenClose(
+                                                        //             false
+                                                        //         );
+                                                        // }}
                                                         className="cursor-pointer"
                                                     >
-                                                        {SubTitle}
-                                                    </h4>
+                                                        <p>{SubTitle}</p>
+                                                    </Link>
                                                 );
                                             }
                                         )}
@@ -162,23 +175,33 @@ const Shop = ({
                             </div>
                             {productsApiData.categories &&
                                 productsApiData.categories.map(
-                                    ({ id, categoryName }) => {
+                                    ({ id, categoryName, slug }) => {
                                         return (
                                             <div key={id}>
                                                 <div className="flex items-center text-[22px] sm:text-[1.2vw] uppercase font-GolosDemiBold w-full justify-between cursor-pointer">
-                                                    <span
-                                                        onClick={() => {
-                                                            handleCategoriesFilter(
-                                                                id,
-                                                                categoryName
-                                                            ),
-                                                                setfilterOpenClose(
-                                                                    false
-                                                                );
-                                                        }}
+                                                    <Link
+                                                        to={`/catagory/${slug}`}
+                                                        // onClick={() => {
+                                                        //     handleCategoriesFilter(
+                                                        //         id,
+                                                        //         categoryName
+                                                        //     ),
+                                                        //         setfilterOpenClose(
+                                                        //             false
+                                                        //         );
+                                                        // }}
+                                                        // onClick={() => {
+                                                        //     handleCategoriesFilter(
+                                                        //         slug,
+                                                        //         categoryName
+                                                        //     ),
+                                                        //         setfilterOpenClose(
+                                                        //             false
+                                                        //         );
+                                                        // }}
                                                     >
                                                         {categoryName}
-                                                    </span>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         );
@@ -186,11 +209,21 @@ const Shop = ({
                                 )}
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 w-full sm:w-[85%] gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[3vw] sm:pt-[6vw]">
+                    <div
+                        // variants={containerVariants}
+                        // initial="hidden"
+                        // whileInView="show"
+                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 w-full sm:w-[85%] gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[3vw] sm:pt-[6vw]"
+                    >
                         {newCategoriesData &&
-                            newCategoriesData.map((product) => {
+                            newCategoriesData.map((product, index) => {
                                 return (
-                                    <div
+                                    <motion.div
+                                        variants={containerVariants}
+                                        initial="initial"
+                                        whileInView="animate"
+                                        // viewport={{ once: true }}
+                                        custom={product.index}
                                         key={product.id}
                                         className="col-span-1 group card"
                                     >
@@ -210,7 +243,7 @@ const Shop = ({
                                                 onClick={() =>
                                                     handleCart(product)
                                                 }
-                                                className="px-[2vw] py-[2vw] bg-[#111111] rounded-full flex justify-center items-center absolute left-0 bottom-[-15%] right-0 opacity-0 group-hover:bottom-[-15vw]
+                                                className="px-[2vw] active:scale-90 py-[2vw] bg-[#111111] rounded-full flex justify-center items-center absolute left-0 bottom-[-15%] right-0 opacity-0 group-hover:bottom-[-15vw]
                                             group-hover:opacity-0 
                                             lg:group-hover:bottom-[1vw] lg:group-hover:opacity-100 transition-all duration-[0.4s] w-[90%] mx-auto cursor-pointer hover:bg-[#222020] z-50"
                                             >
@@ -228,7 +261,7 @@ const Shop = ({
                                         <p className="text-xl font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191]">
                                             $ {product.price}
                                         </p>
-                                    </div>
+                                    </motion.div>
                                 );
                             })}
                     </div>

@@ -59,7 +59,6 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
                             </span>
                         </div>
                         <div className="flex flex-col sm:flex-row gap-1 sm:gap-[0.6vw] w-full">
-                            {/* flex flex-row sm:flex-col */}
                             <div className="order-2 sm:order-1 w-full sm:w-[22.85%] grid grid-cols-4 sm:grid-cols-1 sm:grid-rows-4 gap-1 sm:gap-[0.6vw] px-5 sm:px-0">
                                 <div
                                     className={`col-span-1${
