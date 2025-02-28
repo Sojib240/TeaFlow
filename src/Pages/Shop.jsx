@@ -6,7 +6,6 @@ import { CiFilter } from "react-icons/ci";
 import { MdArrowBackIosNew } from "react-icons/md";
 import Title from "../Common/Title";
 import Discount from "../Common/Discount";
-import { animate, delay, motion } from "framer-motion";
 
 const Shop = ({
     newCategoriesData,
@@ -15,7 +14,7 @@ const Shop = ({
     settitleChange,
 }) => {
     document.title = "TeaFlow － Products";
-    const [productsApiData, setproductsApiData] = useContext(productContext);
+    const [productsApiData] = useContext(productContext);
     const { slug } = useParams();
     const { products } = productsApiData;
 
@@ -31,7 +30,9 @@ const Shop = ({
                         return p.slug.includes(slug);
                     }
                     return p.slug === slug;
+                    
                 });
+                console.log(filter);
             setnewCategoriesData(filter);
 
             window.scrollTo({
@@ -153,17 +154,8 @@ const Shop = ({
                                             ({ SubTitle, id, slug }) => {
                                                 return (
                                                     <Link
-                                                        to={`/products/${slug}`}
+                                                        to={`/catagory/${decodeURIComponent(slug)}`}
                                                         key={id}
-                                                        // onClick={() => {
-                                                        //     handleSubCategoriesFilter(
-                                                        //         id,
-                                                        //         SubTitle
-                                                        //     ),
-                                                        //         setfilterOpenClose(
-                                                        //             false
-                                                        //         );
-                                                        // }}
                                                         className="cursor-pointer"
                                                     >
                                                         <p>{SubTitle}</p>
@@ -218,12 +210,8 @@ const Shop = ({
                         {newCategoriesData &&
                             newCategoriesData.map((product, index) => {
                                 return (
-                                    <motion.div
-                                        variants={containerVariants}
-                                        initial="initial"
-                                        whileInView="animate"
-                                        // viewport={{ once: true }}
-                                        custom={product.index}
+                                    <div
+                                    
                                         key={product.id}
                                         className="col-span-1 group card"
                                     >
@@ -261,7 +249,7 @@ const Shop = ({
                                         <p className="text-xl font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191]">
                                             $ {product.price}
                                         </p>
-                                    </motion.div>
+                                    </div>
                                 );
                             })}
                     </div>

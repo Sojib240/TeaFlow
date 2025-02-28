@@ -1,19 +1,19 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import Title from "../Common/Title";
 import Discount from "../Common/Discount";
-import { journalsContext } from "../Utils/JournalContext";
 import { Link } from "react-router-dom";
+import { productContext } from "../Utils/Context";
 
 const Journal = () => {
     document.title = "TeaFlow － Journal";
-    const [journalApiData, setjournalApiData] = useContext(journalsContext);
+    const [productsApiData] = useContext(productContext);
 
     return (
         <div className="pt-12 sm:pt-[5vw]">
             <Title text={"Journal"} />
             <div className="px-5 sm:px-[5.15vw] mx-auto mt-20 sm:mt-[8vw] font-GolosRegular">
-                {journalApiData.journals &&
-                    journalApiData.journals.map(
+                {productsApiData.journals &&
+                    productsApiData.journals.map(
                         ({ date, id, mainImgSrc, title }) => {
                             return (
                                 <>

@@ -8,7 +8,7 @@ import FollowUs from "../Common/FollowUs";
 import { productContext } from "../Utils/Context";
 
 const Flows = ({handleFlowsCategoriesFilter}) => {
-        const [productsApiData, setproductsApiData] = useContext(productContext);
+        const [productsApiData] = useContext(productContext);
     document.title = "TeaFlow － Flows";
     return (
         <>

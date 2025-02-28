@@ -2,9 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { productContext } from "../Utils/Context";
 import { cartContextData } from "../Utils/CartContext";
+import { motion } from "framer-motion";
 
-const AllTopSales = (
-) => {
+const AllTopSales = () => {
     // data coming from context api
     const [productsApiData, setproductsApiData] = useContext(productContext);
     // filtered data for top sale
@@ -41,19 +41,32 @@ const AllTopSales = (
             <div className="inline-block">
                 <Link
                     to={"/catagory/top-sales"}
-                    className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw] font-GolosRegular"
+                    
                 >
-                    <span className="block border-b">all top sales</span>
-                    <span className="mt-[-0.5vw] block">10+</span>
+                    <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5}}
+                        className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw] font-GolosRegular"
+                    >
+                        <span className="block border-b">all top sales</span>
+                        <span className="mt-[-0.5vw] block">10+</span>
+                    </motion.div>
                 </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[4.5vw] pt-10 sm:pt-[3.5vw]">
                 {filterProduct &&
-                    filterProduct.map((product) => {
+                    filterProduct.map((product, index) => {
                         return (
-                            <div
+                            <motion.div
+                                initial={{ opacity: 0, y: 150 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    duration: 0.5,
+                                    delay: 0.08 * index,
+                                }}
                                 key={product.id}
-                                className="col-span-1 mt-[-2.5vw] group card"
+                                className="box col-span-1 mt-[-2.5vw] group card"
                             >
                                 <div className="card-image relative overflow-hidden">
                                     <Link
@@ -86,7 +99,7 @@ const AllTopSales = (
                                 <p className="text-xl font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191]">
                                     $ {product.price}
                                 </p>
-                            </div>
+                            </motion.div>
                         );
                     })}
             </div>

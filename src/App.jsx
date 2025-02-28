@@ -17,20 +17,22 @@ import gsap from "gsap";
 import ScrollToTop from "./Common/ScrollToTop";
 import SingleJournal from "./Pages/SingleJournal";
 import CheckOut from "./Pages/CheckOut";
-import { productContext } from "./Utils/Context";
 import Flows from "./Pages/Flows";
+import { productContext } from "./Utils/Context";
+
 
 const App = () => {
-    // context data coming from api
-    const [productsApiData, setproductsApiData] = useContext(productContext);
 
+    // context data coming from api
+    const [productsApiData] = useContext(productContext);
+    const { products } = productsApiData;
     // app states
     const [CartOpenClose, setCartOpenClose] = useState(false);
     const [menuOpenClose, setmenuOpenClose] = useState(false);
     // filter to top sales
-    const { products } = productsApiData;
     const [newCategoriesData, setnewCategoriesData] = useState();
     const [titleChange, settitleChange] = useState("Products");
+    //
     // mouse-follower
     const cursor = useRef(null);
     const handleMouseMove = (event) => {

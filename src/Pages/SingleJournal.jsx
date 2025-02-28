@@ -1,15 +1,16 @@
 import React, { useContext, useEffect, useState } from "react";
-import { journalsContext } from "../Utils/JournalContext";
+import { productContext } from "../Utils/Context";
 import { useParams } from "react-router-dom";
 
 const SingleJournal = () => {
-    const [journalApiData, setjournalApiData] = useContext(journalsContext);
+    const [productsApiData] = useContext(productContext);
+
     const { id } = useParams();
     const [singleJournal, setsingleJournal] = useState();
     let journalPageTitle;
 
     const singleJournalId = () => {
-        const journal = journalApiData.journals[id - 1];
+        const journal = productsApiData.journals[id - 1];
         setsingleJournal(journal);
         journalPageTitle = document.title = `TEAFLOW － ${journal.title}`;
     };
