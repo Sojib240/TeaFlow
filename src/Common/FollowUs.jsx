@@ -5,28 +5,32 @@ import { follow_us } from "../Utils/AditionalData";
 const FollowUs = () => {
     return (
         <div className="pl-5 sm:pl-[14.44vw] w-full">
-            <motion.h2
-                initial={{ opacity: 0, y: 100 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                    duration: 0.5,
-                }}
-                className="uppercase text-4xl sm:text-[8vw] pb-[6vw] font-GolosBold"
-            >
-                Follow us
-            </motion.h2>
+            <div className="overflow-hidden h-auto w-auto">
+                <motion.h2
+                    initial={{ opacity: 0, y: "100%" }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        duration: 0.6,
+                    }}
+                    className="uppercase text-4xl sm:text-[8vw] pb-[6vw] font-GolosBold"
+                >
+                    Follow us
+                </motion.h2>
+            </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-[1.2vw] w-full font-GolosRegular">
-                {follow_us.map(({ id, image }) => {
+                {follow_us.map(({ id, image }, index) => {
                     return (
                         <motion.div
                             key={id}
-                            initial={{ opacity: 0, y: 150 }}
+                            initial={{ opacity: 0, y: 100 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{
-                                duration: 0.5,
-                                delay: 0.06 * id,
+                                duration: 0.8,
+                                delay: 0.1 * index,
                             }}
-                            className={`${id=== 1 && 'rounded-[4vw] '} overflow-hidden group relative flex col-span-1`}
+                            className={`${
+                                id === 1 && "rounded-[4vw] "
+                            } overflow-hidden group relative flex col-span-1`}
                         >
                             <img className="w-full" src={image} alt="" />
                             <a

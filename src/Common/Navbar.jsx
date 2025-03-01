@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from "react";
 import { useGSAP } from "@gsap/react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import CartPage from "../Pages/CartPage";
 import Menu from "../Components/Menu";
 import gsap from "gsap";
@@ -69,27 +69,64 @@ const Navbar = ({
                         </div>
                     </div>
                     <div className="col-span-1 flex justify-end sm:justify-between gap-[2vw]">
-                        <div
+                        <nav
                             className={`hidden font-GolosRegular ${
                                 menuOpenClose == true && "opacity-0 invisible"
                             } sm:flex items-center gap-[3vw]`}
                         >
-                            <Link
-                                to={`/catagory/${'products'}`}
+                            <NavLink
+                                style={(e) => {
+                                    return {
+                                        borderBottom: e.isActive
+                                            ? "2px dashed #e6e6e6"
+                                            : "",
+                                    };
+                                }}
+                                to={`/catagory/${"products"}`}
                                 className="text-[1.1vw]"
                             >
                                 shop
-                            </Link>
-                            <Link to={"/aboutUs"} className="text-[1.1vw]">
+                            </NavLink>
+                            <NavLink
+                                style={(e) => {
+                                    return {
+                                        borderBottom: e.isActive
+                                            ? "2px dashed #e6e6e6"
+                                            : "",
+                                    };
+                                }}
+                                to={"/aboutUs"}
+                                className="text-[1.1vw]"
+                            >
                                 about us
-                            </Link>
-                            <Link to={"/journal"} className="text-[1.1vw]">
+                            </NavLink>
+                            <NavLink
+                                style={(e) => {
+                                    return {
+                                        borderBottom: e.isActive
+                                            ? "2px dashed #e6e6e6"
+                                            : "",
+                                    };
+                                }}
+                                to={"/journal"}
+                                className="text-[1.1vw]"
+                            >
                                 journal
-                            </Link>
-                            <Link to={"/contact"} className="text-[1.1vw]">
+                            </NavLink>
+                            <NavLink
+                                style={(e) => {
+                                    return {
+                                        borderBottom: e.isActive
+                                            ? "2px dashed #e6e6e6"
+                                            : "",
+                                    };
+                                }}
+                                to={"/contact"}
+                                className="text-[1.1vw]"
+                            >
                                 contacts
-                            </Link>
-                        </div>
+                            </NavLink>
+                        </nav>
                         <div className="flex gap-6 sm:gap-[2.5vw] items-center">
                             <div className="flex items-center gap-1 sm:gap-[0.2vw]">
                                 <div

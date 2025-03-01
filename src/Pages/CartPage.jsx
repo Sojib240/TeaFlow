@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { cartContextData } from "../Utils/CartContext";
-import Empty from "../Components/Empty";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
     // page title
@@ -20,7 +20,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
     useEffect(() => {
         handlePrice();
     });
-    
+
     const handleAmount = (p, inDe) => {
         var temArr = cart;
         cart.map((cartIt, index) => {
@@ -41,14 +41,21 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
         const cartFilteredData = cart.filter((fillItem) => fillItem.id !== id);
         setcart(cartFilteredData);
     };
-
     return (
-        <div
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            tansition={{ ease: "easeInOut" }}
             className={`w-full h-screen bg-[#000000d0] fixed top-0 flex justify-center items-center z-0 transition-all duration-1000 opacity-0 p-0 sm:px-[5.15vw] md:px-[16.44vw] ${
-                CartOpenClose == true && "opacity-100 z-[999]"
+                CartOpenClose == true && "z-[999]"
             }`}
         >
-            <div className="container w-full h-full sm:h-auto bg-white py-6 sm:p-[3.5vw] rounded-4xl sm:rounded-[3vw] mx-auto flex flex-col items-start">
+            <motion.div
+                initial={{ scale: 0.8 }}
+                animate={{ scale: 1 }}
+                // tansition={{ duration: 5 }}
+                className="container w-full h-full sm:h-auto bg-white py-6 sm:p-[3.5vw] rounded-4xl sm:rounded-[3vw] mx-auto flex flex-col items-start"
+            >
                 <div className="flex justify-between items-center gap-[2vw] w-full mb-8 sm:mb-[2vw] px-5 sm:px-0">
                     <h2 className="uppercase text-2xl sm:text-[1.6vw] font-GolosDemiBold">
                         my Cart
@@ -71,7 +78,11 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                     }`}
                 >
                     {cart.length == 0 ? (
-                        <Empty />
+                        <div className="w-full h-full flex justify-center items-center">
+                            <h2 className="text-base sm:text-[1vw] font-GolosRegular">
+                                No items found.
+                            </h2>
+                        </div>
                     ) : (
                         cart.map(
                             ({ id, title, image, price, amount, flavor }) => {
@@ -189,8 +200,8 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                         </Link>
                     </div>
                 )}
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 };
 

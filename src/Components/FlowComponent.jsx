@@ -18,28 +18,28 @@ const FlowComponent = () => {
     return (
         <>
             <div className="flex w-full justify-between px-5 sm:px-[14.44vw] items-center mb-10 sm:mb-[5vw] pt-20  sm:pt-[20vw] flex-wrap gap-5 sm:gap-[2vw]">
-                <motion.h2
-                    initial={{ opacity: 0, y: 100 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{
-                        duration: 0.5,
-                        delay: 0.06,
-                    }}
-                    className="flowsss text-4xl sm:text-[3.5vw] uppercase font-GolosRegular font-semibold"
-                >
-                    choose your flow
-                </motion.h2>
-                <Link to={"/flows"}>
+                <div className="overflow-hidden w-auto h-auto">
+                    <motion.h2
+                        initial={{ opacity: 0, y: "100%" }}
+                        whileInView={{ opacity: 1, y : 0 }}
+                        transition={{
+                            duration: 0.6,
+                        }}
+                        className="flowsss text-4xl sm:text-[3.5vw] uppercase font-GolosRegular font-semibold w-full"
+                    >
+                        choose your flow
+                    </motion.h2>
+                </div>
+                <Link to={"/flows"} className="overflow-hidden w-auto h-auto">
                     <motion.div
-                        initial={{ opacity: 0, y: 100 }}
+                        initial={{ opacity: 0, y: "100%" }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{
-                            duration: 0.5,
-                            delay: 0.06,
+                            duration: 0.6,
                         }}
-                        className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw]  font-GolosRegular"
+                        className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw]  font-GolosRegular "
                     >
-                        <span className="block border-b">all flows</span>
+                        <span className="block border-b border-dashed border-[#000]">all flows</span>
                         <span className="mt-[-0.5vw] block">4</span>
                     </motion.div>
                 </Link>
@@ -72,7 +72,7 @@ const FlowComponent = () => {
                                             initial={{ opacity: 0, y: 150 }}
                                             whileInView={{ opacity: 1, y: 0 }}
                                             transition={{
-                                                duration: 0.5,
+                                                duration: 0.6,
                                                 delay: 0.1 * index,
                                             }}
                                             className=""

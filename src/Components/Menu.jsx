@@ -1,25 +1,9 @@
-import gsap from "gsap";
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
-    if (menuOpenClose === true) {
-        gsap.from(".navMenuText", {
-            opacity: 0,
-            y: "3vw",
-            stagger: 0.05,
-        });
-        gsap.from(".navMenuText3", {
-            opacity: 0,
-            y: "3.5vw",
-            stagger: 0.1,
-        });
-        gsap.from(".navMenuText2", {
-            opacity: 0,
-            y: "3vw",
-            stagger: 0.1,
-        });
-    }
+
     return (
         <div
             className={`w-full min-h-screen h-full overflow-x-auto fixed top-0 left-0 bg-white duration-200 transition-all z-[99] -translate-y-[100%] pb-5 sm:pb-0 pl-5 sm:pl-[59.25%] pr-5 sm:pr-0 flex flex-col pt-32 sm:pt-[15vw] md:pt-[15vw] lg:pt-[12vw] xl:pt-[9vw] font-GolosRegular ${
@@ -30,37 +14,67 @@ const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
                 <Link
                     onClick={() => setmenuOpenClose(false)}
                     to={"/"}
-                    className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
+                    className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase overflow-hidden w-auto h-auto"
                 >
-                    home
+                    <motion.p
+                        initial={{ opacity: 0, y: "100%" }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3,delay:0.1 }}
+                    >
+                        home
+                    </motion.p>
                 </Link>
                 <Link
                     onClick={() => setmenuOpenClose(false)}
                     to={`/catagory/products`}
-                    className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
+                    className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase overflow-hidden w-auto h-auto"
                 >
-                    products
+                    <motion.p
+                        initial={{ opacity: 0, y: "100%" }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3, delay: 0.2 }}
+                    >
+                        products
+                    </motion.p>
                 </Link>
                 <Link
                     onClick={() => setmenuOpenClose(false)}
                     to={"/flows"}
-                    className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
+                    className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase overflow-hidden w-auto h-auto"
                 >
-                    flows
+                    <motion.p
+                        initial={{ opacity: 0, y: "100%" }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3, delay: 0.3 }}
+                    >
+                        flows
+                    </motion.p>
                 </Link>
                 <Link
                     onClick={() => setmenuOpenClose(false)}
                     to={`/catagory/top-sales`}
-                    className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
+                    className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase overflow-hidden w-auto h-auto"
                 >
-                    top sales
+                    <motion.p
+                        initial={{ opacity: 0, y: "100%" }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3, delay: 0.4 }}
+                    >
+                        top sales
+                    </motion.p>
                 </Link>
                 <Link
                     onClick={() => setmenuOpenClose(false)}
                     to={"/journal"}
-                    className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase"
+                    className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase overflow-hidden w-auto h-auto"
                 >
-                    journal
+                    <motion.p
+                        initial={{ opacity: 0, y: "100%" }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3, delay: 0.5 }}
+                    >
+                        journal
+                    </motion.p>
                 </Link>
             </div>
             <div className="flex gap-10 sm:gap-[6vw] mt-16 sm:mt-[5vw] flex-wrap">
@@ -68,54 +82,96 @@ const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
                     <Link
                         onClick={() => setmenuOpenClose(false)}
                         to={"/delivery"}
-                        className="navMenuText3 text-lg sm:text-[1.1vw]"
+                        className="navMenuText3 text-lg sm:text-[1.1vw] overflow-hidden w-auto h-auto"
                     >
-                        delivery
+                        <motion.p
+                            initial={{ opacity: 0, y: "100%" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3,delay: 0.1 }}
+                        >
+                            delivery
+                        </motion.p>
                     </Link>
                     <Link
                         onClick={() => setmenuOpenClose(false)}
                         to={"/returns"}
-                        className="navMenuText3 text-lg sm:text-[1.1vw]"
+                        className="navMenuText3 text-lg sm:text-[1.1vw]  overflow-hidden w-auto h-auto "
                     >
-                        returns and exchanges
+                        <motion.p
+                            initial={{ opacity: 0, y: "100%" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3,delay: 0.2 }}
+                        >
+                            returns and exchanges delivery
+                        </motion.p>
                     </Link>
                     <Link
                         onClick={() => setmenuOpenClose(false)}
                         to={"/privacyPolicy"}
-                        className="navMenuText3 text-lg sm:text-[1.1vw]"
+                        className="navMenuText3 text-lg sm:text-[1.1vw]  overflow-hidden w-auto h-auto "
                     >
-                        privacy policy
+                        <motion.p
+                            initial={{ opacity: 0, y: "100%" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3,delay: 0.3 }}
+                        >
+                            privacy policy
+                        </motion.p>
                     </Link>
                     <Link
                         onClick={() => setmenuOpenClose(false)}
                         to={"/TermsAndConditions"}
-                        className="navMenuText3 text-lg sm:text-[1.1vw]"
+                        className="navMenuText3 text-lg sm:text-[1.1vw]  overflow-hidden w-auto h-auto "
                     >
-                        terms and conditions
+                        <motion.p
+                            initial={{ opacity: 0, y: "100%" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3,delay: 0.4 }}
+                        >
+                            terms and conditions
+                        </motion.p>
                     </Link>
                 </div>
-                <div className="navMenuText flex flex-col gap-2 sm:gap-[0.5vw]">
+                <div className="navMenuText flex flex-col gap-2 sm:gap-[0.5vw]  overflow-hidden w-auto h-auto ">
                     <Link
                         onClick={() => setmenuOpenClose(false)}
                         to={"/aboutUs"}
                         className="text-lg sm:text-[1.1vw]"
                     >
-                        about us
+                        <motion.p
+                            initial={{ opacity: 0, y: "100%" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3,delay: 0.1 }}
+                        >
+                            about us
+                        </motion.p>
                     </Link>
                     <Link
                         onClick={() => setmenuOpenClose(false)}
                         to={"/contact"}
-                        className="navMenuText text-lg sm:text-[1.1vw]"
+                        className="navMenuText text-lg sm:text-[1.1vw] overflow-hidden w-auto h-auto "
                     >
-                        contacts
+                        <motion.p
+                            initial={{ opacity: 0, y: "100%" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3,delay: 0.2 }}
+                        >
+                            contacts
+                        </motion.p>
                     </Link>
                     <a
                         href="https://www.instagram.com/accounts/login/?next=%2Ftea_flow_usa%2F&source=omni_redirect"
                         target="blank"
                         to={"/"}
-                        className="navMenuText text-lg sm:text-[1.1vw]"
+                        className="navMenuText text-lg sm:text-[1.1vw] overflow-hidden w-auto h-auto "
                     >
-                        instagram
+                        <motion.p
+                            initial={{ opacity: 0, y: "100%" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3,delay: 0.3 }}
+                        >
+                            instagram
+                        </motion.p>
                     </a>
                 </div>
             </div>

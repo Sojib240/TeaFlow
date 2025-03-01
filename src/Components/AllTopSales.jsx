@@ -41,15 +41,17 @@ const AllTopSales = () => {
             <div className="inline-block">
                 <Link
                     to={"/catagory/top-sales"}
-                    
+                    className="overflow-hidden h-auto w-auto block"
                 >
                     <motion.div
-                        initial={{ opacity: 0, y: 100 }}
+                        initial={{ opacity: 0, y: "100%" }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5}}
+                        transition={{
+                            duration: 0.6,
+                        }}
                         className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw] font-GolosRegular"
                     >
-                        <span className="block border-b">all top sales</span>
+                        <span className="block border-b border-dashed border-[#000]">all top sales</span>
                         <span className="mt-[-0.5vw] block">10+</span>
                     </motion.div>
                 </Link>
@@ -62,8 +64,8 @@ const AllTopSales = () => {
                                 initial={{ opacity: 0, y: 150 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{
-                                    duration: 0.5,
-                                    delay: 0.08 * index,
+                                    duration: 0.6,
+                                    delay: 0.1 * index,
                                 }}
                                 key={product.id}
                                 className="box col-span-1 mt-[-2.5vw] group card"

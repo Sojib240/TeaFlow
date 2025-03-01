@@ -6,6 +6,7 @@ import { CiFilter } from "react-icons/ci";
 import { MdArrowBackIosNew } from "react-icons/md";
 import Title from "../Common/Title";
 import Discount from "../Common/Discount";
+import { delay, motion } from "framer-motion";
 
 const Shop = ({
     newCategoriesData,
@@ -30,9 +31,7 @@ const Shop = ({
                         return p.slug.includes(slug);
                     }
                     return p.slug === slug;
-                    
                 });
-                console.log(filter);
             setnewCategoriesData(filter);
 
             window.scrollTo({
@@ -63,25 +62,23 @@ const Shop = ({
         setDropDown(!DropDown);
     };
 
-    // framer motions animation
-    const containerVariants = {
-        initial: { opacity: 0, y: 150 },
-        animate: (index) => ({
-            opacity: 1,
-            y: 0,
-            transition: {
-                delay: 0.05 * index,
-            },
-        }),
-    };
-
     return (
         <>
-            <div className="px-[5.15vw] pt-8 sm:pt-[3vw] text-[#9C9797] font-GolosRegular text-[13px] sm:text-[1vw] sm:flex gap-5 sm:gap-[1.5vw] capitalize hidden">
-                <span>Home</span>
-                <span>/</span>
-                <span>{titleChange}</span>
+            <div className="overflow-hidden w-auto h-auto">
+                <motion.div
+                    initial={{ opacity: 0, y: "100%" }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        duration: 0.6,
+                    }}
+                    className="px-[5.15vw] pt-8 sm:pt-[3vw] text-[#9C9797] font-GolosRegular text-[13px] sm:text-[1vw] sm:flex gap-5 sm:gap-[1.5vw] capitalize hidden"
+                >
+                    <span>Home</span>
+                    <span>/</span>
+                    <span>{titleChange}</span>
+                </motion.div>
             </div>
+
             <div className="pt-10 sm:pt-0">
                 <Title text={titleChange} />
             </div>
@@ -128,37 +125,66 @@ const Shop = ({
                                 </div>
                             </div>
                             <div>
-                                <div
-                                    onClick={() => handleDropDown()}
-                                    className="flex items-center text-[22px] sm:text-[1.2vw] uppercase font-GolosDemiBold w-full justify-between cursor-pointer"
-                                >
-                                    <span>Tea Type</span>
-                                    <span
-                                        className={` duration-300 transition-all ${
-                                            DropDown === true
-                                                ? "rotate-90"
-                                                : "-rotate-90"
-                                        } block text-lg  sm:text-[0.9vw]`}
+                                <div className="overflow-hidden w-auto h-auto">
+                                    <motion.div
+                                        initial={{ opacity: 0, y: "100%" }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{
+                                            duration: 0.6,
+                                        }}
+                                        onClick={() => handleDropDown()}
+                                        className="flex items-center text-[22px] sm:text-[1.2vw] uppercase font-GolosDemiBold w-full justify-between cursor-pointer"
                                     >
-                                        <MdArrowBackIosNew />
-                                    </span>
+                                        <span>Tea Type</span>
+                                        <span
+                                            className={` duration-300 transition-all ${
+                                                DropDown === true
+                                                    ? "rotate-90"
+                                                    : "-rotate-90"
+                                            } block text-lg  sm:text-[0.9vw]`}
+                                        >
+                                            <MdArrowBackIosNew />
+                                        </span>
+                                    </motion.div>
                                 </div>
 
                                 <div
-                                    className={`text-lg sm:text-[1.1vw] font-GolosRegular leading-[180%] sm:leading-[1.8vw] mt-5 sm:mt-[0.6vw] pl-4 sm:pl-[0.6vw] lowercase ${
+                                    className={`text-lg sm:text-[1.1vw] font-GolosRegular leading-[180%] sm:leading-[1.8vw] mt-5 sm:mt-[0.6vw] pl-4 sm:pl-0 flex flex-col gap-[0.2vw] lowercase ${
                                         DropDown === true ? "block" : "hidden"
                                     }`}
                                 >
                                     {productsApiData.subCategories &&
                                         productsApiData.subCategories.map(
-                                            ({ SubTitle, id, slug }) => {
+                                            ({ SubTitle, id, slug }, index) => {
                                                 return (
                                                     <Link
-                                                        to={`/catagory/${decodeURIComponent(slug)}`}
+                                                        to={`/catagory/${decodeURIComponent(
+                                                            slug
+                                                        )}`}
                                                         key={id}
-                                                        className="cursor-pointer"
+                                                        className="cursor-pointer overflow-hidden w-auto h-auto block"
                                                     >
-                                                        <p>{SubTitle}</p>
+                                                        <div className="inline-block">
+                                                            <motion.p
+                                                                initial={{
+                                                                    opacity: 0,
+                                                                    y: "100%",
+                                                                }}
+                                                                whileInView={{
+                                                                    opacity: 1,
+                                                                    y: 0,
+                                                                }}
+                                                                transition={{
+                                                                    duration: 0.6,
+                                                                    delay:
+                                                                        0.1 *
+                                                                        index,
+                                                                }}
+                                                                className="block hover:bg-[#f7f7f7] active:bg-[#f1f1f1] px-3 py-1 sm:py-[0.2vw] sm:px-[1vw] rounded-full"
+                                                            >
+                                                                {SubTitle}
+                                                            </motion.p>
+                                                        </div>
                                                     </Link>
                                                 );
                                             }
@@ -167,32 +193,30 @@ const Shop = ({
                             </div>
                             {productsApiData.categories &&
                                 productsApiData.categories.map(
-                                    ({ id, categoryName, slug }) => {
+                                    ({ id, categoryName, slug }, index) => {
                                         return (
                                             <div key={id}>
-                                                <div className="flex items-center text-[22px] sm:text-[1.2vw] uppercase font-GolosDemiBold w-full justify-between cursor-pointer">
+                                                <div className="flex items-center text-[22px] sm:text-[1.2vw] uppercase font-GolosDemiBold w-full justify-between cursor-pointer overflow-hidden h-auto">
                                                     <Link
                                                         to={`/catagory/${slug}`}
-                                                        // onClick={() => {
-                                                        //     handleCategoriesFilter(
-                                                        //         id,
-                                                        //         categoryName
-                                                        //     ),
-                                                        //         setfilterOpenClose(
-                                                        //             false
-                                                        //         );
-                                                        // }}
-                                                        // onClick={() => {
-                                                        //     handleCategoriesFilter(
-                                                        //         slug,
-                                                        //         categoryName
-                                                        //     ),
-                                                        //         setfilterOpenClose(
-                                                        //             false
-                                                        //         );
-                                                        // }}
                                                     >
-                                                        {categoryName}
+                                                        <motion.p
+                                                            initial={{
+                                                                opacity: 0,
+                                                                y: "100%",
+                                                            }}
+                                                            whileInView={{
+                                                                opacity: 1,
+                                                                y: 0,
+                                                            }}
+                                                            transition={{
+                                                                duration: 0.6,
+                                                                delay:
+                                                                    0.1 * index,
+                                                            }}
+                                                        >
+                                                            {categoryName}
+                                                        </motion.p>
                                                     </Link>
                                                 </div>
                                             </div>
@@ -201,17 +225,17 @@ const Shop = ({
                                 )}
                         </div>
                     </div>
-                    <div
-                        // variants={containerVariants}
-                        // initial="hidden"
-                        // whileInView="show"
-                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 w-full sm:w-[85%] gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[3vw] sm:pt-[6vw]"
-                    >
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ml-auto sm:ml-0 w-full sm:w-[85%] gap-y-10 gap-x-0 sm:gap-y-[5.5vw] sm:gap-x-[2vw] md:gap-x-[1vw] md:gap-y-[3vw] sm:pt-[6vw]">
                         {newCategoriesData &&
                             newCategoriesData.map((product, index) => {
                                 return (
-                                    <div
-                                    
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 150 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{
+                                            duration: 0.6,
+                                            delay: 0.06 * index,
+                                        }}
                                         key={product.id}
                                         className="col-span-1 group card"
                                     >
@@ -249,7 +273,7 @@ const Shop = ({
                                         <p className="text-xl font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191]">
                                             $ {product.price}
                                         </p>
-                                    </div>
+                                    </motion.div>
                                 );
                             })}
                     </div>
