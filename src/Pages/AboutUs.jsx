@@ -37,7 +37,7 @@ const AboutUs = () => {
                             vibrant communities.`
                                 .split("\n")
                                 .map((text, index) => (
-                                    <div className="overflow-hidden h-auto w-auto text-lg sm:text-[1.1vw] leading-[150%] sm:leading-[2.2vw] text-white">
+                                    <div key={index} className="overflow-hidden h-auto w-auto text-lg sm:text-[1.1vw] leading-[150%] sm:leading-[2.2vw] text-white">
                                         <motion.p
                                             initial={{
                                                 opacity: 0,
@@ -63,7 +63,7 @@ const AboutUs = () => {
                             other, and the world around us.`
                                 .split("\n")
                                 .map((text, index) => (
-                                    <div className="overflow-hidden h-auto w-auto text-2xl leading-[150%] sm:text-[2vw] uppercase sm:leading-[2.8vw] text-white">
+                                    <div key={index} className="overflow-hidden h-auto w-auto text-2xl leading-[150%] sm:text-[2vw] uppercase sm:leading-[2.8vw] text-white">
                                         <motion.p
                                             initial={{
                                                 opacity: 0,
@@ -96,7 +96,7 @@ const AboutUs = () => {
                             unique flavors and cultures of their origins.`
                                 .split("\n")
                                 .map((text, index) => (
-                                    <div className="overflow-hidden h-auto w-auto text-lg sm:text-[1.1vw] leading-[150%] sm:leading-[2vw] text-white">
+                                    <div key={index} className="overflow-hidden h-auto w-auto text-lg sm:text-[1.1vw] leading-[150%] sm:leading-[2vw] text-white">
                                         <motion.p
                                             initial={{
                                                 opacity: 0,
@@ -130,7 +130,7 @@ const AboutUs = () => {
                             of delicious and sustainable teas today!`
                                 .split("\n")
                                 .map((text, index) => (
-                                    <div className="overflow-hidden h-auto w-auto text-lg sm:text-[1.1vw] leading-[150%] sm:leading-[2vw] text-white">
+                                    <div key={index} className="overflow-hidden h-auto w-auto text-lg sm:text-[1.1vw] leading-[150%] sm:leading-[2vw] text-white">
                                         <motion.p
                                             initial={{
                                                 opacity: 0,
@@ -191,7 +191,7 @@ const AboutUs = () => {
                 place!`
                                     .split("\n")
                                     .map((text, index) => (
-                                        <div className="overflow-hidden h-auto w-auto text-2xl leading-[150%] sm:text-[2vw] uppercase sm:leading-[2.8vw] font-semibold">
+                                        <div key={index} className="overflow-hidden h-auto w-auto text-2xl leading-[150%] sm:text-[2vw] uppercase sm:leading-[2.8vw] font-semibold">
                                             <motion.p
                                                 initial={{
                                                     opacity: 0,
@@ -229,7 +229,7 @@ const AboutUs = () => {
                 cup of tea at a time!`
                                         .split("\n")
                                         .map((text, index) => (
-                                            <div className="overflow-hidden h-auto w-auto">
+                                            <div key={index} className="overflow-hidden h-auto w-auto">
                                                 <motion.p
                                                     initial={{
                                                         opacity: 0,

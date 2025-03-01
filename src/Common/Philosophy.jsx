@@ -47,7 +47,7 @@ const Philosophy = () => {
                         premium tea, you help clean the ocean of plastic!`
                         .split("\n")
                         .map((text, index) => (
-                            <div className="overflow-hidden h-auto w-auto">
+                            <div key={index} className="overflow-hidden h-auto w-auto">
                                 <motion.p
                                     initial={{
                                         opacity: 0,

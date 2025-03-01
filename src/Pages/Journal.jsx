@@ -16,10 +16,9 @@ const Journal = () => {
                     productsApiData.journals.map(
                         ({ date, id, mainImgSrc, title }) => {
                             return (
-                                <>
+                                <div key={id}>
                                     <Link
                                         className="border-t border-dashed border-[#DEDADA] block overflow-hidden w-auto h-auto"
-                                        key={id}
                                         to={`/singleJournal/${id}`}
                                     >
                                         <motion.div
@@ -30,7 +29,8 @@ const Journal = () => {
                                                 delay: 0.01 * id,
                                             }}
                                             className={`w-full ${
-                                                id === 8 && "border-b border-dashed border-[#DEDADA]"
+                                                id === 8 &&
+                                                "border-b border-dashed border-[#DEDADA]"
                                             } flex flex-col gap-5 sm:gap-[8vw] sm:flex-row justify-between items-start sm:items-center py-5 sm:py-[2vw]`}
                                         >
                                             <div className="w-full sm:w-[72%] flex flex-col justify-between h-full">
@@ -61,7 +61,7 @@ const Journal = () => {
                                             </button> */}
                                         </motion.div>
                                     </Link>
-                                </>
+                                </div>
                             );
                         }
                     )}

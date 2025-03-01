@@ -68,7 +68,7 @@ const TopSales = () => {
                                 obtained.`
                                     .split("\n")
                                     .map((text, index) => (
-                                        <div className="overflow-hidden h-auto w-auto">
+                                        <div key={index} className="overflow-hidden h-auto w-auto">
                                             <motion.p
                                                 initial={{
                                                     opacity: 0,

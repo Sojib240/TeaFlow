@@ -20,9 +20,7 @@ import CheckOut from "./Pages/CheckOut";
 import Flows from "./Pages/Flows";
 import { productContext } from "./Utils/Context";
 
-
 const App = () => {
-
     // context data coming from api
     const [productsApiData] = useContext(productContext);
     const { products } = productsApiData;

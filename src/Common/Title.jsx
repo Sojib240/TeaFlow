@@ -5,7 +5,7 @@ const Title = ({ text }) => {
     return (
         <div className="px-5 sm:px-[5.15vw] mx-auto overflow-hidden w-auto h-auto mt-5 sm:mt-[2.6vw]">
             {text.split("\n").map((tex,index) => (
-                <motion.p
+                <motion.p key={index}
                     className="text-[48px] sm:text-[8vw] font-GolosBold uppercase leading-[100%] text-black"
                     initial={{
                         opacity: 0,

@@ -22,7 +22,7 @@ const Discount = () => {
                           email footer. Here is our`
                             .split("\n")
                             .map((text, index) => (
-                                <div className="overflow-hidden h-auto w-[30vw]">
+                                <div key={index} className="overflow-hidden h-auto w-[30vw]">
                                     <motion.p
                                         initial={{
                                             opacity: 0,
