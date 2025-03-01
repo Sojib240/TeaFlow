@@ -47,7 +47,10 @@ const Philosophy = () => {
                         premium tea, you help clean the ocean of plastic!`
                         .split("\n")
                         .map((text, index) => (
-                            <div key={index} className="overflow-hidden h-auto w-auto">
+                            <div
+                                key={index}
+                                className="overflow-hidden h-auto w-auto"
+                            >
                                 <motion.p
                                     initial={{
                                         opacity: 0,
@@ -66,11 +69,11 @@ const Philosophy = () => {
                                 </motion.p>
                             </div>
                         ))}
-                    <div className="pt-8 sm:pt-[1.3vw] overflow-hidden w-auto h-auto ">
+                    <div className="pt-8 sm:pt-[1.3vw]">
                         <motion.div
-                            initial={{ opacity: 0, y: "100%" }}
+                            initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
                             className="flex items-center gap-2 sm:gap-[1vw]"
                         >
                             <Link
