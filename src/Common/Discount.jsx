@@ -17,7 +17,7 @@ const Discount = () => {
                             Get 20% off
                         </motion.h2>
                     </div>
-                    <div className="text-base sm:text-[1.2vw] pt-[4vw] leading-[144%] sm:leading-[2.3vw] font-GolosRegular w-full max-w-[390px] sm:w-[30vw]">
+                    <div className="text-base sm:text-[1.2vw] pt-[4vw] leading-[144%] sm:leading-[2.3vw] font-GolosRegular w-full max-w-[390px] sm:max-w-[30vw]">
                         <div className="flex flex-wrap gap-[6px] sm:gap-[0.4vw]">
                             {"Your first order + future sales updates. You can safely unsubscribe anytime from any email footer. Here is our"
                                 .split(" ")

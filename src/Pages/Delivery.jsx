@@ -9,7 +9,7 @@ const Delivery = () => {
             <div className="pt-10 sm:pt-[4vw]">
                 <Title text={"delivery"} />
             </div>
-            <div className="px-5 sm:pl-[14.44vw] sm:pr-[32vw] mx-auto mt-16 sm:mt-[7vw] font-GolosRegular">
+            <div className="px-5 sm:pl-[14.44vw] sm:pr-[30vw] mx-auto mt-16 sm:mt-[7vw] font-GolosRegular">
                 <div className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2.3vw]">
                     <span>
                         For questions or comments please call us toll free at
@@ -26,44 +26,42 @@ const Delivery = () => {
                         offices are closed on weekends and holidays, and
                         therefore we do not ship on those days.
                     </span>
-                    <span className="flex mt-5 sm:mt-[1.2vw] font-bold">
+                    <div className="flex flex-wrap gap-x-2 mt-5 sm:mt-[1.2vw] font-bold">
                         ‍Check current{" "}
-                        <a className="underline text-blue-700 ml-2" href="">
+                        <a className="underline text-blue-700" href="">
                             Fedex Shipping Delays here.
                         </a>
-                    </span>
+                    </div>
                 </div>
 
                 <div className="mt-[5vw]">
                     <h4 className="mb-6 sm:mb-[1vw] text-2xl sm:text-[1.7vw] leading-[130%] sm:leading-[2.3vw] font-semibold uppercase">
                         Closures:
                     </h4>
-                    <div className="flex gap-2 sm:gap-[0.2vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
+                    <div className="flex flex-wrap gap-2 sm:gap-[0.2vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]">
                         <span className="block font-bold">July 4th -</span>
-                        <span>closed, processing resumes July 5th</span>
+                        closed, processing resumes July 5th
                     </div>
-                    <div className="flex gap-2 sm:gap-[0.2vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mt-2 sm:mt-[0.4vw]">
+                    <div className="flex flex-wrap gap-2 sm:gap-[0.2vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mt-2 sm:mt-[0.4vw]">
                         <span className="block font-bold">September 5th -</span>
-                        <span>closed, processing resumes September 6th</span>
+                        closed, processing resumes September 6th
                     </div>
-                    <div className="flex gap-2 sm:gap-[0.2vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mt-2 sm:mt-[0.4vw]">
+                    <div className="flex flex-wrap gap-2 sm:gap-[0.2vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mt-2 sm:mt-[0.4vw]">
                         <span className="block font-bold">
                             September 16th -
                         </span>
-                        <span>
-                            shipping paused, processing resumes September 19th.
-                            Offices are still open.
-                        </span>
+                        shipping paused, processing resumes September 19th.
+                        Offices are still open.
                     </div>
-                    <div className="flex gap-2 sm:gap-[0.2vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mt-2 sm:mt-[0.4vw]">
+                    <div className="flex flex-wrap gap-2 sm:gap-[0.2vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mt-2 sm:mt-[0.4vw]">
                         <span className="block font-bold">November 24th -</span>
-                        <span>closed, processing resumes November 25th</span>
+                        closed, processing resumes November 25th
                     </div>
-                    <div className="flex gap-2 sm:gap-[0.2vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mt-2 sm:mt-[0.4vw]">
+                    <div className="flex flex-wrap gap-2 sm:gap-[0.2vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] mt-2 sm:mt-[0.4vw]">
                         <span className="block font-bold">
                             ‍December 26th -
                         </span>
-                        <span>closed, processing resumes December 27th</span>
+                        closed, processing resumes December 27th
                     </div>
                 </div>
 
@@ -94,7 +92,7 @@ const Delivery = () => {
                             . A member of our team will reach out within 1-2
                             business days.
                         </span>
-                        <span className="flex mt-5 sm:mt-[1vw]">
+                        <div className="flex flex-wrap mt-5 sm:mt-[1vw]">
                             Questions? Contact us{" "}
                             <a
                                 className="underline text-blue-700 ml-1 sm:ml-[0.2vw]"
@@ -103,7 +101,7 @@ const Delivery = () => {
                                 info@tea-flow.com
                             </a>
                             .
-                        </span>
+                        </div>
                     </div>
                 </div>
             </div>

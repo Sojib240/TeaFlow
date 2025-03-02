@@ -49,7 +49,7 @@ const Returns = () => {
                         </span>
                     </div>
                     <a
-                        className="underline inline-block mt-5 sm:mt-[1vw] text-blue-700"
+                        className="underline inline-block mt-2 sm:mt-[1vw] text-blue-700"
                         href=""
                     >
                         WhatsApp

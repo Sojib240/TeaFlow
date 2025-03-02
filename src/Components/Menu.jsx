@@ -101,7 +101,7 @@ const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.3, delay: 0.2 }}
                         >
-                            returns and exchanges delivery
+                            returns and exchanges
                         </motion.p>
                     </Link>
                     <Link

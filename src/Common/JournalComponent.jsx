@@ -53,10 +53,10 @@ const JournalComponent = () => {
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6 }}
-                                    className="font-GolosRegular  py-5 sm:py-[1vw] mt-8 sm:mt-[4vw] flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-[8vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] group"
+                                    className="font-GolosRegular py-5 sm:py-[1vw] mt-8 sm:mt-[4vw] flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-[8vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] group"
                                 >
-                                    <h4 className="">{date}</h4>
-                                    <h4 className="text-2xl sm:text-[1.2vw] group-hover:ml-[2vw] duration-500 transition-all">
+                                    <h4 className="text-sm">{date}</h4>
+                                    <h4 className="text-xl sm:text-[1.2vw] group-hover:ml-[2vw] duration-500 transition-all">
                                         {title}
                                     </h4>
                                 </motion.div>
