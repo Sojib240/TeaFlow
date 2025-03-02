@@ -1,5 +1,3 @@
-import { image } from "framer-motion/client";
-
 export const sliderData = [
     {
         id: 1,
@@ -44,8 +42,8 @@ export const sliderData = [
 ];
 
 export const follow_us = [
-    { id: 1, image: "http://localhost:5173/Images/follow-us-1.jpg" },
-    { id: 2, image: "http://localhost:5173/Images/follow-us-2.jpg" },
-    { id: 3, image: "http://localhost:5173/Images/follow-us-3.jpg" },
-    { id: 4, image: "http://localhost:5173/Images/follow-us-4.jpg" },
+    { id: 1, image: "/Images/follow-us-1.jpg" },
+    { id: 2, image: "/Images/follow-us-2.jpg" },
+    { id: 3, image: "/Images/follow-us-3.jpg" },
+    { id: 4, image: "/Images/follow-us-4.jpg" },
 ];

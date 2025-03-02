@@ -1,14 +1,15 @@
 import React, { useContext } from "react";
 import Title from "../Utils/CartContext";
 import { cartContextData } from "../Utils/CartContext";
+import FollowUs from "../Common/FollowUs";
 
 const CheckOut = () => {
     const [cart, setcart] = useContext(cartContextData);
     return (
         <>
-            <Title text={"checkout"} />
+            <Title text="checkout" />
             <div className="px-0 mt-0 sm:px-[5.14vw] lg:px-[14.44vw] sm:mt-[6vw]">
-                <div className="flex items-start gap-0 sm:gap-[2vw] flex-col sm:flex-row">
+                <div className="flex items-start gap-0 sm:gap-[2vw] flex-col sm:flex-row relative">
                     <div className="py-5 sm:py-[1.5vw] w-full sm:w-[60%] bg-[#F1F1F1] px-5 sm:px-[1.5vw] rounded-bl-0 rounded-br-0 sm:rounded-[1vw]">
                         <div className="mb-[1vw]">
                             <h4 className="text-2xl sm:text-[1.6vw] uppercase font-semibold font-GolosRegular mb-5 sm:mb-[1.5vw]">
@@ -96,7 +97,7 @@ const CheckOut = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-[#F1F1F1] pt-10 pb-5 sm:py-[1.5vw] w-full sm:w-[40%] rounded-bl-2xl rounded-br-2xl sm:rounded-[1vw]">
+                    <div className="bg-[#F1F1F1] pt-10 pb-5 sm:py-[1.5vw] w-full sm:w-[40%] rounded-bl-2xl rounded-br-2xl sm:rounded-[1vw] sticky">
                         <div className="px-5 sm:px-[1.5vw]">
                             <h4 className="text-2xl sm:text-[1.6vw] uppercase font-semibold font-GolosRegular mb-7 sm:mb-[1.5vw]">
                                 detail product
@@ -113,7 +114,10 @@ const CheckOut = () => {
                                             flavor,
                                         }) => {
                                             return (
-                                                <div key={id} className="flex justify-between gap-5 sm:gap-[1vw] w-full border-b border-[#dadada] pb-5 sm:pb-[0.8vw]">
+                                                <div
+                                                    key={id}
+                                                    className="flex justify-between gap-5 sm:gap-[1vw] w-full border-b border-[#dadada] pb-5 sm:pb-[0.8vw]"
+                                                >
                                                     <div className="w-40 sm:w-[10vw] overflow-hidden cart-image rounded-[1vw]">
                                                         <img
                                                             className="w-full object-cover flex h-full"
@@ -179,6 +183,9 @@ const CheckOut = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="pt-16 sm:pt-[16vw]">
+                <FollowUs />
             </div>
         </>
     );

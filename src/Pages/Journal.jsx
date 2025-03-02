@@ -19,7 +19,7 @@ const Journal = () => {
                                 <div key={id}>
                                     <Link
                                         className="border-t border-dashed border-[#DEDADA] block overflow-hidden w-auto h-auto"
-                                        to={`/singleJournal/${id}`}
+                                        to={`/single-journal/${id}`}
                                     >
                                         <motion.div
                                             initial={{ opacity: 0, y: 100 }}

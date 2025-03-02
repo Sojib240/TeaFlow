@@ -83,7 +83,7 @@ const TopSales = () => {
                                         </div>
                                     ))}
                             </div>
-                            <Link to={`/productsDetails/${29}`}>
+                            <Link to={`/product-details/${29}`}>
                                 <motion.div
                                     initial={{
                                         opacity: 0,

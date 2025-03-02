@@ -75,6 +75,7 @@ const Context = () => {
             {
                 id: 1,
                 title: "red tea #10",
+                param:'red-tea-10',
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f7_red-10-min.jpg",
                 price: 38,
                 amount: 1,
@@ -103,10 +104,10 @@ const Context = () => {
                 flavor: "Flavor: refined, bright, sweet",
                 Ingredients: "Organic red tea",
             },
-            //
             {
                 id: 2,
                 title: "ginseng oolong",
+                param: "ginseng-oolong",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f5_ginseng-1200-min.jpg",
                 price: 14,
                 amount: 1,
@@ -138,6 +139,7 @@ const Context = () => {
             {
                 id: 3,
                 title: "shu pu-erh #10",
+                param: "shu-pu-erh-10",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806697_%D0%94%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
                 price: 27,
                 amount: 1,
@@ -191,6 +193,7 @@ const Context = () => {
             {
                 id: 4,
                 title: "shu pu-erh #14",
+                param: "shu-pu-erh-14",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b5_shu-14-min.jpg",
                 price: 14,
                 amount: 1,
@@ -265,6 +268,7 @@ const Context = () => {
             {
                 id: 5,
                 title: "red tea #4",
+                param: "red-tea-4",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a1c_red-4-1-min.jpg",
                 price: 12,
                 amount: 1,
@@ -334,6 +338,7 @@ const Context = () => {
             {
                 id: 6,
                 title: "black tea #3",
+                param: "black-tea-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b2_black-3-min.jpg",
                 price: 12,
                 amount: 1,
@@ -385,6 +390,7 @@ const Context = () => {
             {
                 id: 7,
                 title: "shu pu-erh #27",
+                param: "shu-pu-erh-27",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c0_shu-27-1-min.jpg",
                 price: 26,
                 amount: 1,
@@ -452,6 +458,7 @@ const Context = () => {
             {
                 id: 8,
                 title: "sheng pu-erh #3",
+                param: "sheng-pu-erh-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80671c_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
                 price: 21,
                 amount: 1,
@@ -532,6 +539,7 @@ const Context = () => {
             {
                 id: 9,
                 title: "red tea #3",
+                param: "red-tea-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069af_red-3-min.jpg",
                 price: 21,
                 amount: 1,
@@ -606,6 +614,7 @@ const Context = () => {
             {
                 id: 10,
                 title: "red tea #6",
+                param: "red-tea-6",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ef_red-1200-min.jpg",
                 price: 27,
                 amount: 1,
@@ -632,6 +641,7 @@ const Context = () => {
             {
                 id: 11,
                 title: "white tea #1",
+                param: "white-tea-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bd_white-min.jpg",
                 price: 14,
                 amount: 1,
@@ -701,6 +711,7 @@ const Context = () => {
             {
                 id: 12,
                 title: "gaba oolong #1",
+                param: "gaba-oolong-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f4_gaba-oolong1-1200-min.jpg",
                 price: 35,
                 amount: 1,
@@ -761,6 +772,7 @@ const Context = () => {
             {
                 id: 13,
                 title: "gaba oolong #5",
+                param: "gaba-oolong-5",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f1_gaba5-1200-min.jpg",
                 price: 57,
                 amount: 1,
@@ -828,6 +840,7 @@ Repeat several times until the flavor and aroma of the tea dissipates. As the br
             {
                 id: 14,
                 title: "black tea #1",
+                param: "black-tea-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b1_black-1-min.jpg",
                 price: 21,
                 amount: 1,
@@ -911,6 +924,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
             {
                 id: 15,
                 title: "gaba oolong #4",
+                param: "gaba-oolong-4",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f0_gaba4-1200-min.jpg",
                 price: 65,
                 amount: 1,
@@ -998,6 +1012,7 @@ Repeat several times until the flavor and aroma of the tea dissipates. As the br
             {
                 id: 16,
                 title: "shu pu-erh #9",
+                param: "shu-pu-erh-9",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b4_shu-9-min.jpg",
                 price: 12,
                 amount: 1,
@@ -1087,6 +1102,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
             {
                 id: 17,
                 title: "green tea #1",
+                param: "green-tea-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bc_green-1-min.jpg",
                 price: 12,
                 amount: 1,
@@ -1120,6 +1136,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
             {
                 id: 18,
                 title: "osmanthus oolong",
+                param: "osmanthus-oolong",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fe_Osman-Thus%20Oolong-1200-1-min.jpg",
                 price: 45,
                 amount: 1,
@@ -1188,6 +1205,7 @@ Infuse the brew for 2-3 minutes.
             {
                 id: 19,
                 title: "wishan oolong #2",
+                param: "wishan-oolong-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fa_Wishan-2-1200-min.jpg",
                 price: 15,
                 amount: 1,
@@ -1278,6 +1296,7 @@ Infuse 2nd and subsequent brews for 5-15 seconds.
             {
                 id: 20,
                 title: "dong ding lao shi",
+                param: "dong-ding-lao-shi",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fc_dong-1200-min.jpg",
                 price: 50,
                 amount: 1,
@@ -1372,6 +1391,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
             {
                 id: 21,
                 title: "wishan oolong #1",
+                param: "wishan-oolong-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fb_wishan-1200-min.jpg",
                 price: 15,
                 amount: 1,
@@ -1461,6 +1481,7 @@ Infuse 2nd and subsequent brews for 5-15 seconds.
             {
                 id: 22,
                 title: "tie-guan yin #3",
+                param: "tie-guan-yin-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a1b_Tie-Guan%203%201200%20copy-min.jpg",
                 price: 15,
                 amount: 1,
@@ -1540,6 +1561,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
             {
                 id: 23,
                 title: "milk oolong",
+                param: "milk-oolong",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f2_milk-oolong-1200-min.jpg",
                 price: 18,
                 amount: 1,
@@ -1604,6 +1626,7 @@ Infuse the brew for 3 minutes.
             {
                 id: 24,
                 title: "black tea #3",
+                param: "black-tea-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b2_black-3-min.jpg",
                 price: 15,
                 amount: 1,
@@ -1682,6 +1705,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
             {
                 id: 25,
                 title: "aged oolong #1",
+                param: "aged-oolong-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f9_Aged%20Oolong-1200-min.jpg",
                 price: 50,
                 amount: 1,
@@ -1776,6 +1800,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
             {
                 id: 26,
                 title: "tie-guan yin #1",
+                param: "tie-guan-yin-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f3_1200-Tie-Guan%20Yin%201-min.jpg",
                 price: 14,
                 amount: 1,
@@ -1840,6 +1865,7 @@ Infuse the brew for 2-3 minutes.
             {
                 id: 27,
                 title: "dan tsung #1",
+                param: "dan-tsung-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ee_dan-1200-min.jpg",
                 price: 33,
                 amount: 1,
@@ -1914,6 +1940,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
             {
                 id: 28,
                 title: "shu pu-erh #18",
+                param: "shu-pu-erh-18",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b6_shu-18-min.jpg",
                 price: 15,
                 amount: 1,
@@ -1979,6 +2006,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
             {
                 id: 29,
                 title: "green tea #2",
+                param: "green-tea-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bb_green-2-min.jpg",
                 price: 27,
                 amount: 1,
@@ -2050,6 +2078,7 @@ Infuse the brew for 2.5 minutes.
             {
                 id: 30,
                 title: "green tea flow",
+                param: "green-tea_flow",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b9_green%20flow%20combo-min.jpg",
                 price: 50,
                 amount: 1,
@@ -2111,6 +2140,7 @@ Have a nice tea party.
             {
                 id: 31,
                 title: "pu-erh flow",
+                param: "pu-erh-flow",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b8_pu-erh%20flow%20combo-min.jpg",
                 price: 55,
                 amount: 1,
@@ -2160,6 +2190,7 @@ Have a nice tea party.
             {
                 id: 32,
                 title: "teaFlow",
+                param: "tea-flow",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806924_Slide7-min.jpg",
                 price: 72,
                 amount: 1,
@@ -2207,6 +2238,7 @@ Have a nice tea party.
             {
                 id: 33,
                 title: "teapot #1",
+                param: "teapot-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ec_teapot-1-min.jpg",
                 price: 85,
                 amount: 1,
@@ -2230,6 +2262,7 @@ Have a nice tea party.
             {
                 id: 34,
                 title: "teapot #2",
+                param: "teapot-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e9_teapot-2-min.jpg",
                 price: 70,
                 amount: 1,
@@ -2252,7 +2285,8 @@ Have a nice tea party.
             },
             {
                 id: 35,
-                title: "teapot #5",
+                title: "teapot #5",   
+                param: "teapot-5",   
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ed_teapot-5-min.jpg",
                 price: 100,
                 amount: 1,
@@ -2276,6 +2310,7 @@ Have a nice tea party.
             {
                 id: 36,
                 title: "gaiwan #1",
+                param: "gaiwan-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d5_gaiwan-1-new-1-min.jpg",
                 price: 18,
                 amount: 1,
@@ -2298,6 +2333,7 @@ Have a nice tea party.
             {
                 id: 37,
                 title: "teacup #7",
+                param: "teacup-7",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069df_teacup-7-new-min.jpg",
                 price: 5,
                 amount: 1,
@@ -2320,6 +2356,7 @@ Have a nice tea party.
             {
                 id: 38,
                 title: "teacup #1",
+                param: "teacup-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d9_tea-cup-1-new-1-min.jpg",
                 price: 8,
                 amount: 1,
@@ -2342,6 +2379,7 @@ Have a nice tea party.
             {
                 id: 39,
                 title: "teacup #2",
+                param: "teacup-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069da_tea-cup-2-new-1-min.jpg",
                 price: 5,
                 amount: 1,
@@ -2364,6 +2402,7 @@ Have a nice tea party.
             {
                 id: 40,
                 title: "gaiwan #4",
+                param: "gaiwan-4",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d7_gaiwan-4-new-1-min.jpeg",
                 price: 36,
                 amount: 1,
@@ -2386,6 +2425,7 @@ Have a nice tea party.
             {
                 id: 41,
                 title: "teapot #4",
+                param: "teapot-4",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069eb_teapot-4-min.jpg",
                 price: 70,
                 amount: 1,
@@ -2409,6 +2449,7 @@ Have a nice tea party.
             {
                 id: 42,
                 title: "teapot #3",
+                param: "teapot-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ea_teapot-3-min.jpg",
                 price: 80,
                 amount: 1,
@@ -2432,6 +2473,7 @@ Have a nice tea party.
             {
                 id: 43,
                 title: "gaiwan #5",
+                param: "gaiwan-5",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d8_gaiwan-5-new-min.jpeg",
                 price: 30,
                 amount: 1,
@@ -2454,6 +2496,7 @@ Have a nice tea party.
             {
                 id: 44,
                 title: "teacup #5",
+                param: "teacup-5",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069dd_Teacup%20%235-new-1-min.jpg",
                 price: 18,
                 amount: 1,
@@ -2476,6 +2519,7 @@ Have a nice tea party.
             {
                 id: 45,
                 title: "teacup #8",
+                param: "teacup-8",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e0_Teacup%20%238-new-1-min.jpg",
                 price: 18,
                 amount: 1,
@@ -2498,6 +2542,7 @@ Have a nice tea party.
             {
                 id: 46,
                 title: "gaiwan #2",
+                param: "gaiwan-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d4_gaiwan-2-new-1-min.jpeg",
                 price: 26,
                 amount: 1,
@@ -2521,6 +2566,7 @@ Have a nice tea party.
             {
                 id: 47,
                 title: "chaban #2",
+                param: "chaban-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c5_chaban-2-new-1-min.jpeg",
                 price: 150,
                 amount: 1,
@@ -2544,6 +2590,7 @@ Have a nice tea party.
             {
                 id: 48,
                 title: "pu-erh tea knife #1",
+                param: "pu-erh-tea-knife-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c8_pu-erh-tea-knife-new-1-min.jpeg",
                 price: 9,
                 amount: 1,
@@ -2565,6 +2612,7 @@ Have a nice tea party.
             {
                 id: 49,
                 title: "chaban #1",
+                param: "chaban-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c6_Chaban%20%231-new-1-min.jpeg",
                 price: 110,
                 amount: 1,
@@ -2588,6 +2636,7 @@ Have a nice tea party.
             {
                 id: 50,
                 title: "chaban #3",
+                param: "chaban-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c4_chaban-3-new-1-min.jpeg",
                 price: 60,
                 amount: 1,
@@ -2611,6 +2660,7 @@ Have a nice tea party.
             {
                 id: 51,
                 title: "tweezers tea #1",
+                param: "tweezers-tea-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c7_tweezers-tea-1-new-1-min.jpeg",
                 price: 5,
                 amount: 1,
@@ -2632,6 +2682,7 @@ Have a nice tea party.
             {
                 id: 52,
                 title: "black tea #2",
+                param: "black-tea-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e8_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
                 price: 27,
                 amount: 1,
@@ -2692,6 +2743,7 @@ Have a nice tea party.
             {
                 id: 53,
                 title: "red tea #15",
+                param: "red-tea-15",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f6_red-15-1200-min.jpg",
                 price: 33,
                 amount: 1,
@@ -2764,67 +2816,40 @@ Have a nice tea party.
             },
             {
                 id: 54,
-                title: "red tea #10",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f7_red-10-min.jpg",
-                price: 38,
+                title: "green tea #4",
+                param: "green-tea-4",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bf_green-4-min.jpg",
+                price: 12,
                 amount: 1,
-                flow: 1,
-                subCategory: 2,
-                category: [1, 7],
-                slug: ["premium-tea", "products", "relax-flow", "red-tea"],
+                flow: 2,
+                subCategory: 3,
+                category: [3, 7],
+                slug: ["top-sales", "products", "life-flow", "green-tea"],
                 minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068dd_%D0%95%20%D0%A8%D0%B5%D0%BD%20%D0%A5%D1%83%D0%BD%20%D0%A7%D0%B0%20%D1%81%20%D0%B4%D0%B8%D0%BA%D0%B8%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806807_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D1%81%20%D0%B6%D0%B0%D1%81%D0%BC%D0%B8%D0%BD%D0%BE%D0%BC%20%D0%9C%D0%BE%D0%BB%D0%B8%20%D0%A5%D1%83%D0%B0%20%D0%9B%D1%8E%D0%B8%CC%86%20%D0%A7%D0%B0%2C%202021%20%D0%B3-min.jpg",
                 minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d1_%D0%95%20%D0%A8%D0%B5%D0%BD%20%D0%A5%D1%83%D0%BD%20%D0%A7%D0%B0%20%D1%81%20%D0%B4%D0%B8%D0%BA%D0%B8%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(2)-min.jpg",
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8067e1_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D1%81%20%D0%B6%D0%B0%D1%81%D0%BC%D0%B8%D0%BD%D0%BE%D0%BC%20%D0%9C%D0%BE%D0%BB%D0%B8%20%D0%A5%D1%83%D0%B0%20%D0%9B%D1%8E%D0%B8%CC%86%20%D0%A7%D0%B0%2C%202021%20%D0%B3(2)-min.jpg",
                 minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e5_%D0%95%20%D0%A8%D0%B5%D0%BD%20%D0%A5%D1%83%D0%BD%20%D0%A7%D0%B0%20%D1%81%20%D0%B4%D0%B8%D0%BA%D0%B8%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(3)-min.jpg",
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80678b_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D1%81%20%D0%B6%D0%B0%D1%81%D0%BC%D0%B8%D0%BD%D0%BE%D0%BC%20%D0%9C%D0%BE%D0%BB%D0%B8%20%D0%A5%D1%83%D0%B0%20%D0%9B%D1%8E%D0%B8%CC%86%20%D0%A7%D0%B0%2C%202021%20%D0%B3(3)-min.jpg",
                 availability: "in stock",
-                TastingNotes:
-                    'refined, bright, sweet, with fruit and berry sourness, "festive". Impact: powerful, warming, intoxicating, meditative.',
+                TastingNotes: `mild taste without astringency or bitterness, with a slight sourness of green apples. The aftertaste is long, juicy, refreshing. Impact: perfectly refreshes, and gently tones. A good option for morning or afternoon tea.`,
                 aboutProduct: `
-                            <p>
-                Red tea from wild tea trees from the mountainous region of
-                Ulyanshan. The first spring training camp.
-            </p>
-            <p>
-                A special type of wild tea tree defines a unique aromatic and
-                flavor palette. The tea is completely different from the classic
-                Yunnan reds. It has the potential to change over time — it will
-                gain softness and depth of taste.
-            </p>
-            <p>
-                Aroma: heady, fragrant, with hints of wild berries, flowers, and
-                tropical fruits (passion fruit).
-            </p>
-            <p>
-                Taste: refined, bright, sweet, with fruit and berry sourness,
-                "festive".
-            </p>
-            <p>Effects: powerful, warming, intoxicating, meditative.</p>
-            <p>
-                Collection: Spring 2022, Ulyanshan Mountains, Pu'er County,
-                prov. Yunnan, China.
-            </p>
+                <p>Green tea with jasmine petals. Thanks to natural aromatization, jasmine’s fragrance is delicate, and soft, and lasts until the end of the tea party. </p>
+                <p>Fragrance: subtle, sweet, with a pronounced note of jasmine.</p> 
+                <p>Taste and aftertaste: mild taste without astringency or bitterness, with a slight sourness of green apples. The aftertaste is long, juicy, and refreshing. </p> 
+                <p>Effect: perfectly refreshes, gently tones. A good option for morning or afternoon tea.</p>
                 `,
-                SteepingInstructions: `
-                <p>Traditional Preparation</p>
-            <p>Add 7-10 grams to a Gaiwan or Gongfu Teapot (150ml-200ml).</p>
-            <p>Use 212°F boiling water.</p>
-            <p>Briefly rinse the leaves. Decant and discard this infusion.</p>
-            <p>Infuse the first brew for 5 seconds.</p>
-            <p>Infuse 2nd and subsequent brews for 5-15 seconds.</p>
-            <p>
-                Repeat several times until the flavor and aroma of the tea
-                dissipates. As the brewing session ensues, increase infusion
-                time to coax out the body and strength of the final infusions.
-            </p>
-                `,
-                flavor: "Flavor: refined, bright, sweet",
-                Ingredients: "Organic red tea",
+                SteepingInstructions: `<p>Tea Preparation</p>
+                <p>Add 6 grams to a Teapot (300 ml). </p> 
+                <p>Use 180°F water. </p> 
+                <p>Infuse the brew for 2-3 minutes.</p>`,
+                flavor: "Flavor: mild, sourness of the green apple",
+                Ingredients: "Organic green tea",
             },
             {
                 id: 55,
                 title: "shu pu-erh #16",
+                param: "shu-pu-erh-16",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fd_shu-16-1200-min.jpg",
                 price: 30,
                 amount: 1,
@@ -2893,6 +2918,7 @@ Have a nice tea party.
             {
                 id: 56,
                 title: `dong ding lao shi`,
+                param: `dong-ding-lao-shi`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fc_dong-1200-min.jpg",
                 price: 50,
                 amount: 1,
@@ -2971,6 +2997,7 @@ intoxicating, relaxing, meditative.`,
             {
                 id: 57,
                 title: "red tea #5",
+                param: "red-tea-5",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f8_red-5-min.jpg",
                 price: 37,
                 amount: 1,
@@ -3032,6 +3059,7 @@ relaxing.`,
             {
                 id: 58,
                 title: "green tea #3",
+                param: "green-tea-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ba_green-3-min.jpg",
                 price: 14,
                 amount: 1,
@@ -3080,6 +3108,7 @@ invigorating and toning, refreshing.`,
             {
                 id: 59,
                 title: "shu pu-erh #2",
+                param: "shu-pu-erh-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b3_shu-2-min.jpg",
                 price: 15,
                 amount: 1,
@@ -3141,6 +3170,7 @@ invigorates and tones`,
             {
                 id: 60,
                 title: "teacup #9",
+                param: "teacup-9",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e1_teacup-9-new-1-min.jpg",
                 price: 14,
                 amount: 1,
@@ -3163,6 +3193,7 @@ invigorates and tones`,
             {
                 id: 61,
                 title: "teacup #10",
+                param: "teacup-10",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e2_teacup-10-new-1-min.jpg",
                 price: 14,
                 amount: 1,
@@ -3185,6 +3216,7 @@ invigorates and tones`,
             {
                 id: 62,
                 title: "teacup #11",
+                param: "teacup-11",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e3_teacup-11-new-1-min.jpg",
                 price: 10,
                 amount: 1,
@@ -3207,6 +3239,7 @@ invigorates and tones`,
             {
                 id: 63,
                 title: "chaban #3",
+                param: "chaban-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c4_chaban-3-new-1-min.jpeg",
                 price: 60,
                 amount: 1,
@@ -3230,6 +3263,7 @@ invigorates and tones`,
             {
                 id: 64,
                 title: "fireproof teapot #1",
+                param: "fireproof-teapot-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d1_teapot-is-fireproof-glass-1-new-min.jpeg",
                 price: 25,
                 amount: 1,
@@ -3253,6 +3287,7 @@ invigorates and tones`,
             {
                 id: 65,
                 title: "cha he #1",
+                param: "cha-he-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c9_Cha%20He%20%231%20-%20new-min.jpg",
                 price: 9,
                 amount: 1,
@@ -3275,6 +3310,7 @@ invigorates and tones`,
             {
                 id: 66,
                 title: "cha hai #1",
+                param: "cha-hai-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d0_cha-hai-1-new-min.jpeg",
                 price: 15,
                 amount: 1,
@@ -3296,6 +3332,7 @@ invigorates and tones`,
             {
                 id: 67,
                 title: "chaban #4",
+                param: "chaban-4",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c3_Chaban%20%234-new-1-min.jpg",
                 price: 190,
                 amount: 1,
@@ -3319,6 +3356,7 @@ invigorates and tones`,
             {
                 id: 68,
                 title: "cha hai #2",
+                param: "cha-hai-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069cf_cha-hai-2-new-min.jpg",
                 price: 18,
                 amount: 1,
@@ -3341,6 +3379,7 @@ invigorates and tones`,
             {
                 id: 69,
                 title: "cha hai #3",
+                param: "cha-hai-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ce_cha-hai-3-new-min.jpg",
                 price: 26,
                 amount: 1,
@@ -3363,6 +3402,7 @@ invigorates and tones`,
             {
                 id: 70,
                 title: "figure #1",
+                param: "figure-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e4_figure-1-min.jpg",
                 price: 16,
                 amount: 1,
@@ -3385,6 +3425,7 @@ invigorates and tones`,
             {
                 id: 71,
                 title: "teacup #6",
+                param: "teacup-6",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069de_teacup-6-new-min.jpg",
                 price: 9,
                 amount: 1,
@@ -3408,6 +3449,7 @@ invigorates and tones`,
             {
                 id: 72,
                 title: "teacup #3",
+                param: "teacup-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069db_tea-cup-3-new-1-min.jpg",
                 price: 23,
                 amount: 1,
@@ -3430,6 +3472,7 @@ invigorates and tones`,
             {
                 id: 73,
                 title: "gaiwan #3",
+                param: "gaiwan-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d6_gaiwan-3-new-1-min.jpeg",
                 price: 36,
                 amount: 1,
@@ -3452,6 +3495,7 @@ invigorates and tones`,
             {
                 id: 74,
                 title: "figure #3",
+                param: "figure-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d3_figure-3-new-1-min.jpg",
                 price: 23,
                 amount: 1,
@@ -3475,6 +3519,7 @@ invigorates and tones`,
             {
                 id: 75,
                 title: "cha hai #7",
+                param: "cha-hai-7",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ca_cha-hai-7-new-min.jpg",
                 price: 23,
                 amount: 1,
@@ -3498,6 +3543,7 @@ invigorates and tones`,
             {
                 id: 76,
                 title: "figure #4",
+                param: "figure-4",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e6_figure-4-min.jpg",
                 price: 17,
                 amount: 1,
@@ -3520,6 +3566,7 @@ invigorates and tones`,
             {
                 id: 77,
                 title: "figure #6",
+                param: "figure-6",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e7_figure-6-min.jpg",
                 price: 37,
                 amount: 1,
@@ -3542,7 +3589,8 @@ invigorates and tones`,
             },
             {
                 id: 78,
-                title: "figure #7",
+                title: "figure #7",  
+                param: "figure-7",  
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e8_figure-7-min.jpg",
                 price: 22,
                 amount: 1,
@@ -3561,37 +3609,6 @@ invigorates and tones`,
                 SteepingInstructions: null,
                 flavor: "Figurine of a seated monk, clay, glaze",
                 Ingredients: null,
-            },
-            {
-                id: 79,
-                title: "green tea #4",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bf_green-4-min.jpg",
-                price: 12,
-                amount: 1,
-                flow: 2,
-                subCategory: 3,
-                category: [3, 7],
-                slug: ["top-sales", "products", "life-flow", "green-tea"],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806807_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D1%81%20%D0%B6%D0%B0%D1%81%D0%BC%D0%B8%D0%BD%D0%BE%D0%BC%20%D0%9C%D0%BE%D0%BB%D0%B8%20%D0%A5%D1%83%D0%B0%20%D0%9B%D1%8E%D0%B8%CC%86%20%D0%A7%D0%B0%2C%202021%20%D0%B3-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8067e1_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D1%81%20%D0%B6%D0%B0%D1%81%D0%BC%D0%B8%D0%BD%D0%BE%D0%BC%20%D0%9C%D0%BE%D0%BB%D0%B8%20%D0%A5%D1%83%D0%B0%20%D0%9B%D1%8E%D0%B8%CC%86%20%D0%A7%D0%B0%2C%202021%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80678b_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D1%81%20%D0%B6%D0%B0%D1%81%D0%BC%D0%B8%D0%BD%D0%BE%D0%BC%20%D0%9C%D0%BE%D0%BB%D0%B8%20%D0%A5%D1%83%D0%B0%20%D0%9B%D1%8E%D0%B8%CC%86%20%D0%A7%D0%B0%2C%202021%20%D0%B3(3)-min.jpg",
-                availability: "in stock",
-                TastingNotes: `mild taste without astringency or bitterness, with a slight sourness of green apples. The aftertaste is long, juicy, refreshing. Impact: perfectly refreshes, and gently tones. A good option for morning or afternoon tea.`,
-                aboutProduct: `
-                <p>Green tea with jasmine petals. Thanks to natural aromatization, jasmine’s fragrance is delicate, and soft, and lasts until the end of the tea party. </p>
-                <p>Fragrance: subtle, sweet, with a pronounced note of jasmine.</p> 
-                <p>Taste and aftertaste: mild taste without astringency or bitterness, with a slight sourness of green apples. The aftertaste is long, juicy, and refreshing. </p> 
-                <p>Effect: perfectly refreshes, gently tones. A good option for morning or afternoon tea.</p>
-                `,
-                SteepingInstructions: `<p>Tea Preparation</p>
-                <p>Add 6 grams to a Teapot (300 ml). </p> 
-                <p>Use 180°F water. </p> 
-                <p>Infuse the brew for 2-3 minutes.</p>`,
-                flavor: "Flavor: mild, sourness of the green apple",
-                Ingredients: "Organic green tea",
             },
         ],
         journals: [

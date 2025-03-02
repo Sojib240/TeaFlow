@@ -75,54 +75,26 @@ const Navbar = ({
                             } sm:flex items-center gap-[3vw]`}
                         >
                             <NavLink
-                                style={(e) => {
-                                    return {
-                                        borderBottom: e.isActive
-                                            ? "2px dashed #e6e6e6"
-                                            : "",
-                                    };
-                                }}
                                 to={`/catagory/${"products"}`}
-                                className="text-[1.1vw]"
+                                className="text-[1vw] nav-link py-1"
                             >
                                 shop
                             </NavLink>
                             <NavLink
-                                style={(e) => {
-                                    return {
-                                        borderBottom: e.isActive
-                                            ? "2px dashed #e6e6e6"
-                                            : "",
-                                    };
-                                }}
-                                to={"/aboutUs"}
-                                className="text-[1.1vw]"
+                                to={"/about-us"}
+                                className="text-[1vw] nav-link py-1"
                             >
                                 about us
                             </NavLink>
                             <NavLink
-                                style={(e) => {
-                                    return {
-                                        borderBottom: e.isActive
-                                            ? "2px dashed #e6e6e6"
-                                            : "",
-                                    };
-                                }}
                                 to={"/journal"}
-                                className="text-[1.1vw]"
+                                className="text-[1vw] nav-link py-1"
                             >
                                 journal
                             </NavLink>
                             <NavLink
-                                style={(e) => {
-                                    return {
-                                        borderBottom: e.isActive
-                                            ? "2px dashed #e6e6e6"
-                                            : "",
-                                    };
-                                }}
                                 to={"/contact"}
-                                className="text-[1.1vw]"
+                                className="text-[1vw] nav-link py-1"
                             >
                                 contacts
                             </NavLink>

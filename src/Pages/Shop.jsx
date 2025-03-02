@@ -103,7 +103,7 @@ const Shop = ({
                         } left-0 bg-[#000000d0] h-screen w-full z-[9999]`}
                     ></div>
                     <div
-                        className={`sm:block w-full h-[100vh] sm:h-full min-h-auto sm:min-h-auto bg-white sm:bg-transparent sm:w-[15%] fixed sm:sticky sm:top-0 bottom-0 left-0 z-[9999999] sm:z-auto pl-6 pr-6 pb-6 pt-6 rounded-tl-4xl rounded-tr-4xl translate-y-[0%] sm:translate-y-0 sm:pt-[6vw] sm:pb-0 sm:pl-0 sm:pr-0 ${
+                        className={`sm:block w-full h-[90vh] sm:h-full min-h-auto sm:min-h-auto bg-white sm:bg-transparent sm:w-[15%] fixed sm:sticky sm:top-0 bottom-0 left-0 z-[9999999] sm:z-auto pl-6 pr-6 pb-6 pt-6 rounded-tl-4xl rounded-tr-4xl translate-y-[0%] sm:translate-y-0 sm:pt-[6vw] sm:pb-0 sm:pl-0 sm:pr-0 ${
                             filterOpenClose === true
                                 ? "translate-y-[0%]"
                                 : "translate-y-[105%]"
@@ -162,6 +162,11 @@ const Shop = ({
                                                             slug
                                                         )}`}
                                                         key={id}
+                                                        onClick={() =>
+                                                            setfilterOpenClose(
+                                                                false
+                                                            )
+                                                        }
                                                         className="cursor-pointer overflow-hidden w-auto h-auto block"
                                                     >
                                                         <div className="inline-block">
@@ -199,6 +204,11 @@ const Shop = ({
                                                 <div className="flex items-center text-[22px] sm:text-[1.2vw] uppercase font-GolosDemiBold w-full justify-between cursor-pointer overflow-hidden h-auto">
                                                     <Link
                                                         to={`/catagory/${slug}`}
+                                                        onClick={() =>
+                                                            setfilterOpenClose(
+                                                                false
+                                                            )
+                                                        }
                                                     >
                                                         <motion.p
                                                             initial={{
@@ -241,7 +251,9 @@ const Shop = ({
                                     >
                                         <div className="card-image relative overflow-hidden">
                                             <Link
-                                                to={`/productsDetails/${product.id}`}
+                                                to={`/product-details/${product.id}/${product.param}`}
+                                                // to={`/product-details/${product.title} `}
+                                                // to={`/product-details/${product.param}`}
                                                 className="relative z-30"
                                             >
                                                 <img

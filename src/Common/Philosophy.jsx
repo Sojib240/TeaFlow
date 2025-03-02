@@ -74,7 +74,7 @@ const Philosophy = () => {
                             className="flex items-center gap-2 sm:gap-[1vw]"
                         >
                             <Link
-                                to={"/aboutUs"}
+                                to={"/about-us"}
                                 className="border-b border-dashed border-[#DEDADA] inline-block text-base sm:text-[1vw] text-[#DEDADA] sm:text-[#DEDADA] sm:leading-[1.4vw]"
                             >
                                 about us

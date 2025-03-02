@@ -77,17 +77,20 @@ const App = () => {
                         />
                     }
                 />
-                <Route path="/aboutUs" element={<AboutUs />} />
+                <Route path="/about-us" element={<AboutUs />} />
                 <Route path="/journal" element={<Journal />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/returns" element={<Returns />} />
                 <Route path="/delivery" element={<Delivery />} />
                 <Route path="/flows" element={<Flows />} />
-                <Route path="/singleJournal/:id" element={<SingleJournal />} />
+                <Route path="/single-journal/:id" element={<SingleJournal />} />
                 <Route path="/checkout" element={<CheckOut />} />
                 <Route
-                    path="/productsDetails/:id"
+                    // path="/product-details/:title"
+                    // path="/product-details/:id"
+                    // path="/product-details/:param"
+                    path="/product-details/:id/:param"
                     element={
                         <ProductsDetails
                             titleChange={titleChange}
@@ -96,7 +99,7 @@ const App = () => {
                     }
                 />
                 <Route
-                    path="/TermsAndConditions"
+                    path="/terms-and-conditions"
                     element={<TermsAndConditions />}
                 />
             </Routes>

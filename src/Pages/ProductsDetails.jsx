@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { productContext } from "../Utils/Context";
 import { cartContextData } from "../Utils/CartContext";
 import SemilarProducts from "../Components/SemilarProducts";
+import { motion } from "framer-motion";
 
 const ProductsDetails = ({ titleChange, settitleChange }) => {
     const { id } = useParams();
@@ -16,13 +17,21 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
     const handleSlider = (src) => {
         setimageSlider(src);
     };
+    const param = useParams();
 
     const singleProductId = () => {
         const product = productsApiData.products[id - 1];
-        setsingleProduct(product);
+        // const product = productsApiData.products.title;
+        const pro = productsApiData.products.map((i) => i.param);
+        // const product = productsApiData.products[pro];
+        // console.log(productsApiData.products);
+
+        setsingleProduct(product, pro);
         setimageSlider(product.image);
         productPageTitle = document.title = `TeaFlow － ${product.title}`;
     };
+    console.log(singleProduct);
+
     // handle cart
     const handleCart = (product) => {
         var isTrue = false;
@@ -42,23 +51,36 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
         singleProductId();
     }, []);
 
+    console.log();
     return (
         <>
             {singleProduct && (
                 <div className="px-0 sm:px-[5.15vw] w-full flex gap-[6vw] font-GolosRegular relative">
                     <div className="w-full sm:w-[58%] pt-0 sm:pt-[5vw] bg-[#FFFFFF]">
-                        <div className="px-0 text-[#9C9797] font-GolosRegular text-[13px] sm:text-[1vw] sm:flex gap-5 sm:gap-[1vw] capitalize mt-0 sm:mt-[-3.5vw] pb-[3vw] hidden ">
-                            <span>Home</span>
-                            <span>/</span>
-                            <span>shop</span>
-                            <span>/</span>
-                            <span>{titleChange}</span>
-                            <span>/</span>
-                            <span className="capitalize">
-                                {singleProduct.title}
-                            </span>
+                        <div className="w-auto h-auto">
+                            <motion.div
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    duration: 0.6,
+                                }}
+                                className="px-0 text-[#9C9797] font-GolosRegular text-[13px] sm:text-[1vw] sm:flex gap-5 sm:gap-[1vw] capitalize mt-0 sm:mt-[-3.5vw] pb-[3vw] hidden "
+                            >
+                                <p>Home</p>
+                                <p>/</p>
+                                <p className="capitalize">
+                                    {singleProduct.title}
+                                </p>
+                            </motion.div>
                         </div>
-                        <div className="flex flex-col sm:flex-row gap-1 sm:gap-[0.6vw] w-full">
+                        <motion.div
+                            initial={{ opacity: 0, y: 80 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.6,
+                            }}
+                            className="flex flex-col sm:flex-row gap-1 sm:gap-[0.6vw] w-full"
+                        >
                             <div className="order-2 sm:order-1 w-full sm:w-[22.85%] grid grid-cols-4 sm:grid-cols-1 sm:grid-rows-4 gap-1 sm:gap-[0.6vw] px-5 sm:px-0">
                                 <div
                                     className={`col-span-1${
@@ -71,7 +93,7 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
                                         onMouseEnter={() =>
                                             handleSlider(singleProduct.image)
                                         }
-                                        className=" border border-[#f1f1f1] w-full h-full object-cover"
+                                        className=" border border-[#f1f1f1] border-dashed w-full h-full object-cover"
                                         src={
                                             singleProduct && singleProduct.image
                                         }
@@ -89,7 +111,7 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
                                         onMouseEnter={() =>
                                             handleSlider(singleProduct.minImg1)
                                         }
-                                        className="border border-[#f1f1f1] w-full h-full object-cover"
+                                        className="border border-[#f1f1f1] border-dashed w-full h-full object-cover"
                                         src={
                                             singleProduct &&
                                             singleProduct.minImg1
@@ -109,7 +131,7 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
                                         onMouseEnter={() =>
                                             handleSlider(singleProduct.minImg2)
                                         }
-                                        className="border border-[#f1f1f1] w-full h-full object-cover"
+                                        className="border border-[#f1f1f1] border-dashed w-full h-full object-cover"
                                         src={
                                             singleProduct &&
                                             singleProduct.minImg2
@@ -129,7 +151,7 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
                                         onMouseEnter={() =>
                                             handleSlider(singleProduct.minImg3)
                                         }
-                                        className="border border-[#f1f1f1] w-full h-full object-cover"
+                                        className="border border-[#f1f1f1] border-dashed w-full h-full object-cover"
                                         src={
                                             singleProduct &&
                                             singleProduct.minImg3
@@ -138,35 +160,103 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
                                     />
                                 </div>
                             </div>
-                            <div className="order-1 sm:order-2 w-full rounded-[5vw] sm:h-[37vw] overflow-hidden flex border border-[#f1f1f1]">
+                            <div className="order-1 sm:order-2 w-full rounded-[5vw] sm:h-[37vw] overflow-hidden flex border border-[#f1f1f1] border-dashed">
                                 <img
                                     className="object-cover flex w-full"
                                     src={imageSlider && imageSlider}
                                     alt=""
                                 />
                             </div>
-                        </div>
+                        </motion.div>
 
                         <div className="w-full block sm:hidden mt-10 sm:mt-0 px-5 sm:px-0">
-                            <div className="">
-                                <h2 className="text-4xl sm:text-[3.5vw] uppercase font-GolosBold mb-4 sm:mb-[7vw]">
-                                    {singleProduct && singleProduct.title}
-                                </h2>
-                                <div
-                                    className={`${
-                                        singleProduct.TastingNotes == null
-                                            ? "hidden"
-                                            : "block"
-                                    } text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col`}
-                                >
-                                    Tasting notes:{" "}
-                                    <span>
-                                        {singleProduct &&
-                                            singleProduct.TastingNotes}
-                                    </span>
+                            <div className="flex flex-col gap-10">
+                                <div className="overflow-hidden h-auto w-auto">
+                                    <motion.div
+                                        initial={{ opacity: 0, y: "100%" }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{
+                                            duration: 0.6,
+                                        }}
+                                        className="text-4xl sm:text-[3.5vw] uppercase font-GolosBold"
+                                    >
+                                        {singleProduct && singleProduct.title}
+                                    </motion.div>
+                                </div>
+                                <div className="overflow-hidden w-auto h-auto">
+                                    <div
+                                        initial={{ opacity: 0, y: "100%" }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{
+                                            duration: 0.6,
+                                        }}
+                                        className={`${
+                                            singleProduct.TastingNotes == null
+                                                ? "hidden"
+                                                : "block"
+                                        } text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col`}
+                                    >
+                                        <div className="overflow-hidden h-auto w-auto">
+                                            <motion.p
+                                                initial={{
+                                                    opacity: 0,
+                                                    y: "100%",
+                                                }}
+                                                whileInView={{
+                                                    opacity: 1,
+                                                    y: 0,
+                                                }}
+                                                transition={{
+                                                    duration: 0.8,
+                                                    delay: 0.01,
+                                                }}
+                                            >
+                                                Tasting notes:
+                                            </motion.p>
+                                        </div>
+                                        <div className="flex flex-wrap gap-[6px] sm:gap-[0.4vw]">
+                                            {String(
+                                                singleProduct &&
+                                                    singleProduct.TastingNotes
+                                            )
+                                                .split(" ")
+                                                .map((text, index) => (
+                                                    <div
+                                                        key={index}
+                                                        className="overflow-hidden h-auto w-auto"
+                                                    >
+                                                        <motion.p
+                                                            initial={{
+                                                                opacity: 0,
+                                                                y: "100%",
+                                                            }}
+                                                            whileInView={{
+                                                                opacity: 1,
+                                                                y: 0,
+                                                            }}
+                                                            transition={{
+                                                                duration: 0.8,
+                                                                delay:
+                                                                    0.01 *
+                                                                    index,
+                                                            }}
+                                                        >
+                                                            {text}
+                                                        </motion.p>
+                                                    </div>
+                                                ))}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="flex flex-col sm:flex-row sm:items-center gap-[2vw] mt-6 sm:mt-[3vw]">
+                            <motion.div
+                                initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    duration: 0.6,
+                                }}
+                                className="flex flex-col sm:flex-row sm:items-center gap-[2vw] mt-6 sm:mt-[3vw]"
+                            >
                                 <button
                                     onClick={() => handleCart(singleProduct)}
                                     className="flex items-center justify-between gap-[0.5vw] bg-[#222020] px-8 py-6 sm:p-[2.2vw] rounded-full sm:w-[70%]"
@@ -192,8 +282,15 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
                                     />{" "}
                                     in stock
                                 </h4>
-                            </div>
-                            <div className="flex items-center sm:items-start gap-3 sm:gap-[1vw] mt-5 font-GolosDemiBold">
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    duration: 0.6,
+                                }}
+                                className="flex items-center sm:items-start gap-3 sm:gap-[1vw] mt-5 font-GolosDemiBold"
+                            >
                                 <span className="block w-10 sm:w-auto mt-1">
                                     <img
                                         src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806639_hand-notification.svg"
@@ -204,7 +301,7 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
                                     Every time you buy our premium tea, you help
                                     clean the ocean of plastic!
                                 </h4>
-                            </div>
+                            </motion.div>
                         </div>
                         <div className="mt-12 sm:mt-[5vw] mb-6 sm:mb-[4vw] px-5 sm:px-0">
                             <div className={`mb-6 sm:mb-[4vw]`}>
@@ -310,25 +407,92 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
                                 : "min-h-[38vw]"
                         } h-full pt-[5vw]`}
                     >
-                        <div className="">
-                            <h2 className="text-[3.5vw] uppercase font-GolosBold mb-[7vw]">
-                                {singleProduct && singleProduct.title}
-                            </h2>
+                        <div className="flex flex-col gap-14 sm:gap-[6vw]">
+                            {/*  */}
+                            <div className="h-auto w-auto overflow-hidden">
+                                <motion.h2
+                                    initial={{ opacity: 0, y: "100%" }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{
+                                        duration: 0.6,
+                                    }}
+                                    className="text-[3.5vw] uppercase font-GolosBold"
+                                >
+                                    {singleProduct && singleProduct.title}
+                                </motion.h2>
+                            </div>
                             <div
                                 className={`${
                                     singleProduct.TastingNotes == null
                                         ? "hidden"
                                         : "block"
-                                } text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col`}
+                                } text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col overflow-hidden h-auto w-auto`}
                             >
-                                Tasting notes:{" "}
-                                <span>
-                                    {singleProduct &&
-                                        singleProduct.TastingNotes}
-                                </span>
+                                <div className="overflow-hidden h-auto w-auto">
+                                    <motion.p
+                                        initial={{
+                                            opacity: 0,
+                                            y: "100%",
+                                        }}
+                                        whileInView={{
+                                            opacity: 1,
+                                            y: 0,
+                                        }}
+                                        transition={{
+                                            duration: 0.8,
+                                            delay: 0.01,
+                                        }}
+                                    >
+                                        Tasting notes:
+                                    </motion.p>
+                                </div>
+
+                                <div className="flex flex-wrap gap-[6px] sm:gap-[0.4vw]">
+                                    {String(
+                                        singleProduct &&
+                                            singleProduct.TastingNotes
+                                    )
+                                        .split(" ")
+                                        .map((text, index) => (
+                                            <div
+                                                key={index}
+                                                className="overflow-hidden h-auto w-auto"
+                                            >
+                                                <motion.p
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: "100%",
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                    }}
+                                                    transition={{
+                                                        duration: 0.8,
+                                                        delay: 0.01 * index,
+                                                    }}
+                                                >
+                                                    {text}
+                                                </motion.p>
+                                            </div>
+                                        ))}
+                                </div>
                             </div>
                         </div>
-                        <div className="flex items-center gap-[2vw] mt-[1.8vw]">
+                        <motion.div
+                            initial={{
+                                opacity: 0,
+                                y: 80,
+                            }}
+                            whileInView={{
+                                opacity: 1,
+                                y: 0,
+                            }}
+                            transition={{
+                                duration: 0.8,
+                            }}
+                            className="flex items-center gap-[2vw] mt-[1.8vw]"
+                        >
                             <button
                                 onClick={() => handleCart(singleProduct)}
                                 className="flex items-center justify-between gap-[0.5vw] bg-[#222020] p-[2.2vw] rounded-full w-full sm:w-[70%]"
@@ -347,15 +511,28 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
                                     $ {singleProduct && singleProduct.price}
                                 </p>
                             </button>
-                            <h4 className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] text-[#989292] flex items-center gap-2 sm:gap-[1vw] w-[30%]">
+                            <div className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] text-[#989292] flex items-center gap-2 sm:gap-[1vw] w-[30%]">
                                 <img
                                     src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806603_in-stock.svg"
                                     alt=""
                                 />{" "}
                                 in stock
-                            </h4>
-                        </div>
-                        <div className="flex items-start gap-[1vw] mt-[1.5vw] font-GolosDemiBold">
+                            </div>
+                        </motion.div>
+                        <motion.div
+                            initial={{
+                                opacity: 0,
+                                y: 80,
+                            }}
+                            whileInView={{
+                                opacity: 1,
+                                y: 0,
+                            }}
+                            transition={{
+                                duration: 0.6,
+                            }}
+                            className="flex items-start gap-[1vw] mt-[1.5vw] font-GolosDemiBold"
+                        >
                             <span className="block mt-[0.7vw]">
                                 <img
                                     className="w-[1vw]"
@@ -367,7 +544,7 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
                                 Every time you buy our premium tea, you help
                                 clean the ocean of plastic!
                             </h4>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             )}

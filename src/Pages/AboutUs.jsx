@@ -112,7 +112,7 @@ const AboutUs = () => {
                                     </div>
                                 ))}
                         </div>
-                        <div className="mt-8 sm:mt-[5vw] flex flex-wrap gap-[6px] sm:gap-[1.1vw]">
+                        <div className="mt-8 sm:mt-[5vw] flex flex-wrap gap-[6px] sm:gap-[0.4vw]">
                             {`Transparency and quality are at the heart of everything we do. We're proud to say that we taste and test every tea we offer, ensuring that only the finest teas make it into our collections. We're committed to making a positive impact on the world - with every purchase of our tea, you're helping to support sustainable and eco-friendly practices. Join us on this journey to discover the incredible world of tea and to make a positive impact on the world around us. Explore our selection of delicious and sustainable teas today!`
                                 .split(" ")
                                 .map((text, index) => (
