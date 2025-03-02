@@ -59,14 +59,9 @@ const TopSales = () => {
                             </div>
                         </div>
                         <div>
-                            <div className="text-base sm:text-[1.1vw] mt-6 sm:mt-[1vw] font-GolosRegular leading-[2.2vw]">
-                                {`Longjing is one of the ten 'Famous Teas of
-                                China". It is made of small tea leaves and buds,
-                                thanks to which it is drunk for a long time, and
-                                has a bright aroma and rich taste. In the
-                                manufacture of thin and flat leaves are
-                                obtained.`
-                                    .split("\n")
+                            <div className="text-base sm:text-[1.1vw] mt-6 sm:mt-[1vw] font-GolosRegular leading-[144%] sm:leading-[2.5vw] flex flex-wrap gap-[6px] sm:gap-[0.4vw]">
+                                {`Longjing is one of the ten 'Famous Teas of China". It is made of small tea leaves and buds, thanks to which it is drunk for a long time, and has a bright aroma and rich taste. In the manufacture of thin and flat leaves are obtained.`
+                                    .split(" ")
                                     .map((text, index) => (
                                         <div key={index} className="overflow-hidden h-auto w-auto">
                                             <motion.p
@@ -99,7 +94,7 @@ const TopSales = () => {
                                         y: 0,
                                     }}
                                     transition={{
-                                        duration: 0.5,
+                                        duration: 0.8, delay: 0.2,
                                     }}
                                     className="flex gap-2 sm:gap-[1vw] mt-6 sm:mt-[1.2vw] items-center cursor-pointer group font-GolosRegular"
                                 >

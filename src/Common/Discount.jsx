@@ -17,42 +17,49 @@ const Discount = () => {
                             Get 20% off
                         </motion.h2>
                     </div>
-                    <div className="text-base sm:text-[1.2vw] pt-[4vw] leading-[30px] sm:leading-[2.3vw] font-GolosRegular">
-                        {`Your first order + future sales updates. You can safely unsubscribe anytime from any
-                          email footer. Here is our`
-                            .split("\n")
-                            .map((text, index) => (
-                                <div key={index} className="overflow-hidden h-auto w-[30vw]">
-                                    <motion.p
-                                        initial={{
-                                            opacity: 0,
-                                            y: "100%",
-                                        }}
-                                        whileInView={{
-                                            opacity: 1,
-                                            y: 0,
-                                        }}
+                    <div className="text-base sm:text-[1.2vw] pt-[4vw] leading-[144%] sm:leading-[2.3vw] font-GolosRegular w-full max-w-[390px] sm:w-[30vw]">
+                        <div className="flex flex-wrap gap-[6px] sm:gap-[0.4vw]">
+                            {"Your first order + future sales updates. You can safely unsubscribe anytime from any email footer. Here is our"
+                                .split(" ")
+                                .map((text, index) => (
+                                    <div
+                                        key={index}
+                                        className="overflow-hidden h-auto"
+                                    >
+                                        <motion.p
+                                            initial={{
+                                                opacity: 0,
+                                                y: "100%",
+                                            }}
+                                            whileInView={{
+                                                opacity: 1,
+                                                y: 0,
+                                            }}
+                                            transition={{
+                                                duration: 0.8,
+                                                delay: 0.01 * index,
+                                            }}
+                                        >
+                                            {text}
+                                        </motion.p>
+                                    </div>
+                                ))}
+                            <Link to={"/privacyPolicy"} href="#">
+                                <div className="overflow-hidden w-auto h-auto">
+                                    <motion.span
+                                        className="inline-block border-b border-dashed border-[#DEDADA]"
+                                        initial={{ opacity: 0, y: "100%" }}
+                                        whileInView={{ opacity: 1, y: 0 }}
                                         transition={{
-                                            duration: 0.8,
-                                            delay: 0.1 * index,
+                                            duration: 0.6,
+                                            delay: 0.3,
                                         }}
                                     >
-                                        {text}
-                                    </motion.p>
+                                        privacy policy
+                                    </motion.span>
                                 </div>
-                            ))}
-                        <Link to={"/privacyPolicy"} href="#">
-                            <div className="overflow-hidden w-auto h-auto">
-                                <motion.span
-                                    className="inline-block border-b border-dashed border-[#DEDADA]"
-                                    initial={{ opacity: 0, y: "100%" }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6, delay:0.4 }}
-                                >
-                                    privacy policy
-                                </motion.span>
-                            </div>
-                        </Link>
+                            </Link>
+                        </div>
                     </div>
                 </div>
                 <motion.div

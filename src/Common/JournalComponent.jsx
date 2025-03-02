@@ -18,7 +18,7 @@ const JournalComponent = () => {
 
     return (
         <div className="px-5 sm:px-[14.44vw] pt-16 sm:pt-[16vw] pb-0  sm:pb-0">
-            <div className="flex w-full justify-between items-center mb-16 sm:mb-[10vw] flex-wrap gap-5 sm:gap-[2vw]">
+            <div className="flex w-full justify-between items-center mb-10 sm:mb-[10vw] flex-wrap gap-y-5 gap-x-10 sm:gap-[3vw]">
                 <div className="overflow-hidden w-auto h-auto ">
                     <motion.h2
                         initial={{ opacity: 0, y: "100%" }}

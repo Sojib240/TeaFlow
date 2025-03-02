@@ -144,13 +144,18 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-28 block sm:hidden">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="w-28 block sm:hidden"
+                >
                     <img
                         className="w-full"
                         src="/Images/TeaFlow_logo_black.svg"
                         alt=""
                     />
-                </div>
+                </motion.div>
                 <div className="flex justify-end gap-[12vw] ">
                     <div className="hidden sm:block">
                         <div className="mb-[2.8vw] overflow-hidden w-auto h-auto">
@@ -238,38 +243,38 @@ const Footer = () => {
             </div>
             <div className="overflow-hidden h-auto w-auto">
                 <motion.div
-                initial={{ opacity: 0, y: '100%' }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="flex flex-col sm:flex-row sm:items-center sm:justify-between"
-            >
-                <div className="flex gap-[9vw]">
-                    <div className="w-[9vw] hidden sm:block">
-                        <img
-                            className="w-full"
-                            src="/Images/TeaFlow_logo_black.svg"
-                            alt=""
-                        />
-                    </div>
-                    <p className="text-[15px] sm:text-[0.9vw]">
-                        © 2024 Tea flow
-                    </p>
-                </div>
-                <a
-                    href="https://gladkov.company/?r=teaflow"
-                    target="_blank"
-                    className="flex items-center gap-3 text-[15px] sm:text-[1vw]"
+                    initial={{ opacity: 0, y: "100%" }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="flex flex-col sm:flex-row sm:items-center sm:justify-between"
                 >
-                    design and development by{" "}
-                    <span className="sm:w-[2.3vw]">
-                        <img
-                            className="w-full"
-                            src="/Images/Logo-gladkov.svg"
-                            alt=""
-                        />
-                    </span>
-                </a>
-            </motion.div>
+                    <div className="flex gap-[9vw]">
+                        <div className="w-[9vw] hidden sm:block">
+                            <img
+                                className="w-full"
+                                src="/Images/TeaFlow_logo_black.svg"
+                                alt=""
+                            />
+                        </div>
+                        <p className="text-[15px] sm:text-[0.9vw]">
+                            © 2024 Tea flow
+                        </p>
+                    </div>
+                    <a
+                        href="https://gladkov.company/?r=teaflow"
+                        target="_blank"
+                        className="flex items-center gap-3 text-[15px] sm:text-[1vw]"
+                    >
+                        design and development by{" "}
+                        <span className="sm:w-[2.3vw]">
+                            <img
+                                className="w-full"
+                                src="/Images/Logo-gladkov.svg"
+                                alt=""
+                            />
+                        </span>
+                    </a>
+                </motion.div>
             </div>
         </div>
     );

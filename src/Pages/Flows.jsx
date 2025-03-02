@@ -15,43 +15,34 @@ const Flows = ({ handleFlowsCategoriesFilter }) => {
         <>
             <Title text={"choose your flow"} />
             <div className="px-5 sm:px-[14.44vw] mx-auto mt-18 sm:mt-[9vw] font-GolosRegular">
-                {/* <h4 className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2.3vw] pr-0 sm:pr-[20vw]">
-                    Welcome to Choose Your Flow, where we offer a selection of
-                    teas to cater to your needs and help you find your ideal
-                    state of mind. Whether you're seeking to unwind and relax,
-                    promote wellness and balance, reconnect with yourself, or
-                    boost your energy, we've got you covered.
-                </h4> */}
-                {`Welcome to Choose Your Flow, where we offer a selection of
-                    teas to cater to your needs and help you find your ideal
-                    state of mind. Whether you're seeking to unwind and relax,
-                    promote wellness and balance, reconnect with yourself, or
-                    boost your energy, we've got you covered.`
-                    .split("\n")
-                    .map((text, index) => (
-                        <div className="overflow-hidden h-auto w-auto text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2.3vw] pr-0 sm:pr-[20vw]">
-                            <motion.p
-                                initial={{
-                                    opacity: 0,
-                                    y: "100%",
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0,
-                                }}
-                                transition={{
-                                    duration: 0.8,
-                                    delay: 0.015 * index,
-                                }}
-                            >
-                                {text}
-                            </motion.p>
-                        </div>
-                    ))}
+                <div className="flex flex-wrap gap-[6px] sm:gap-[0.4vw] pr-0 sm:pr-[20vw]">
+                    {"Welcome to Choose Your Flow, where we offer a selection of teas to cater to your needs and help you find your ideal state of mind. Whether you're seeking to unwind and relax, promote wellness and balance, reconnect with yourself, or boost your energy, we've got you covered."
+                        .split(" ")
+                        .map((text, index) => (
+                            <div className="overflow-hidden h-auto w-auto text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2.3vw]">
+                                <motion.p
+                                    initial={{
+                                        opacity: 0,
+                                        y: "100%",
+                                    }}
+                                    whileInView={{
+                                        opacity: 1,
+                                        y: 0,
+                                    }}
+                                    transition={{
+                                        duration: 0.8,
+                                        delay: 0.015 * index,
+                                    }}
+                                >
+                                    {text}
+                                </motion.p>
+                            </div>
+                        ))}
+                </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-14 sm:gap-[3vw] mt-8 sm:mt-[5vw]">
                     {productsApiData.flows &&
                         productsApiData.flows.map(
-                            ({ id, flowTitle, image, desc },index) => {
+                            ({ id, flowTitle, image, desc }, index) => {
                                 return (
                                     <>
                                         <Link
