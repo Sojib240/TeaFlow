@@ -4,6 +4,7 @@ import Discount from "../Common/Discount";
 import Title from "../Common/Title";
 import JournalComponent from "../Common/JournalComponent";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
     document.title = "TeaFlow － About Us";
@@ -232,32 +233,34 @@ const AboutUs = () => {
                                 </div>
                                 {/*  */}
                                 <div to={`/productsDetails/${29}`}>
-                                <motion.div
-                                    initial={{
-                                        opacity: 0,
-                                        y: 50,
-                                    }}
-                                    whileInView={{
-                                        opacity: 1,
-                                        y: 0,
-                                    }}
-                                    transition={{
-                                        duration: 0.8, delay: 0.2,
-                                    }}
-                                    className="flex gap-2 sm:gap-[1vw] mt-6 sm:mt-[1.2vw] items-center cursor-pointer group font-GolosRegular"
-                                >
-                                    <span className="text-[12px] sm:text-[0.9vw] font-semibold uppercase tracking-[0.2vw]">
-                                    watch catalog
-                                    </span>
-                                    <span className="block w-10 sm:w-[4vw] group-hover:translate-x-[1.2vw] transition-all duration-300">
-                                        <img
-                                            className="w-full"
-                                            src="/Images/Btn-icon.svg"
-                                            alt=""
-                                        />
-                                    </span>
-                                </motion.div>
-                            </div>
+                                    <motion.div
+                                        initial={{
+                                            opacity: 0,
+                                            y: 50,
+                                        }}
+                                        whileInView={{
+                                            opacity: 1,
+                                            y: 0,
+                                        }}
+                                        transition={{
+                                            duration: 0.8,
+                                            delay: 0.2,
+                                        }}
+                                    >
+                                        <Link to={`/catagory/${"products"}`} className="flex gap-2 sm:gap-[1vw] mt-6 sm:mt-[1.2vw] items-center cursor-pointer group font-GolosRegular">
+                                            <span className="text-[12px] sm:text-[0.9vw] font-semibold uppercase tracking-[0.2vw]">
+                                                watch catalog
+                                            </span>
+                                            <span className="block w-10 sm:w-[4vw] group-hover:translate-x-[1.2vw] transition-all duration-300">
+                                                <img
+                                                    className="w-full"
+                                                    src="/Images/Btn-icon.svg"
+                                                    alt=""
+                                                />
+                                            </span>
+                                        </Link>
+                                    </motion.div>
+                                </div>
                                 {/*  */}
                                 {/* <div className="">
                                     <motion.button

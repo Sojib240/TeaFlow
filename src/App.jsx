@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import HomePage from "./Pages/HomePage";
 import Footer from "./Common/Footer";
 import Navbar from "./Common/Navbar";
-import { Route, Routes, useParams } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Contact from "./Pages/Contact";
 import Shop from "./Pages/Shop";
 import Journal from "./Pages/Journal";
@@ -35,22 +35,10 @@ const App = () => {
     const cursor = useRef(null);
     const handleMouseMove = (event) => {
         const { clientX, clientY } = event;
-        let mm = gsap.matchMedia();
-        mm.add(
-            {
-                isMobile: "(min-width:640px)",
-            },
-            (Context) => {
-                let { isMobile } = Context.conditions;
-
-                gsap.to(cursor.current, {
-                    ease: "power2.out",
-                    x: isMobile ? clientX - 24 / 2 : null,
-                    y: isMobile ? clientY - 24 / 2 : null,
-                    opacity: isMobile ? 1 : 0,
-                });
-            }
-        );
+        gsap.to(cursor.current, {
+            x: clientX - 24 / 2,
+            y: clientY - 24 / 2,
+        });
     };
 
     return (
@@ -87,17 +75,11 @@ const App = () => {
                 <Route path="/single-journal/:id" element={<SingleJournal />} />
                 <Route path="/checkout" element={<CheckOut />} />
                 <Route
-                    // path="/product-details/:title"
-                    // path="/product-details/:id"
-                    // path="/product-details/:param"
                     path="/product-details/:id/:param"
-                    element={
-                        <ProductsDetails
-                            titleChange={titleChange}
-                            settitleChange={settitleChange}
-                        />
-                    }
+                    element={<ProductsDetails />}
                 />
+                {/* // path="/product-details/:id"
+                    // path="/product-details/:param"  */}
                 <Route
                     path="/terms-and-conditions"
                     element={<TermsAndConditions />}

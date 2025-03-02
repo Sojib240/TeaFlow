@@ -11,13 +11,16 @@ const SingleJournal = () => {
     let journalPageTitle;
 
     const singleJournalId = () => {
-        const journal = productsApiData.journals[id - 1];
+        const journal =
+            productsApiData.journals && productsApiData.journals[id - 1];
         setsingleJournal(journal);
         journalPageTitle = document.title = `TEAFLOW － ${journal.title}`;
     };
     useEffect(() => {
-        singleJournalId();
-    }, []);
+        if (productsApiData.journals) {
+            singleJournalId();
+        }
+    }, [productsApiData.journals]);
 
     return (
         <div className="sm:pl-[5.15vw] px-5 sm:pr-[20vw] mt-6 sm:mt-[2vw] font-GolosRegular">

@@ -6,9 +6,9 @@ import { cartContextData } from "../Utils/CartContext";
 import SemilarProducts from "../Components/SemilarProducts";
 import { motion } from "framer-motion";
 
-const ProductsDetails = ({ titleChange, settitleChange }) => {
+const ProductsDetails = () => {
     const { id } = useParams();
-    const [productsApiData, setproductsApiData] = useContext(productContext);
+    const [productsApiData] = useContext(productContext);
     const [singleProduct, setsingleProduct] = useState();
     const [cart, setcart] = useContext(cartContextData);
     let productPageTitle;
@@ -17,12 +17,14 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
     const handleSlider = (src) => {
         setimageSlider(src);
     };
-    const param = useParams();
 
     const singleProductId = () => {
-        const product = productsApiData.products[id - 1];
+        const product =
+            productsApiData.products && productsApiData.products[id - 1];
         // const product = productsApiData.products.title;
-        const pro = productsApiData.products.map((i) => i.param);
+        const pro =
+            productsApiData.products &&
+            productsApiData.products.map((i) => i.param);
         // const product = productsApiData.products[pro];
         // console.log(productsApiData.products);
 
@@ -30,7 +32,6 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
         setimageSlider(product.image);
         productPageTitle = document.title = `TeaFlow － ${product.title}`;
     };
-    console.log(singleProduct);
 
     // handle cart
     const handleCart = (product) => {
@@ -48,13 +49,14 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
 
     //
     useEffect(() => {
-        singleProductId();
-    }, []);
+        if (productsApiData.products) {
+            singleProductId();
+        }
+    }, [productsApiData.products]);
 
-    console.log();
     return (
         <>
-            {singleProduct && (
+            {singleProduct ? (
                 <div className="px-0 sm:px-[5.15vw] w-full flex gap-[6vw] font-GolosRegular relative">
                     <div className="w-full sm:w-[58%] pt-0 sm:pt-[5vw] bg-[#FFFFFF]">
                         <div className="w-auto h-auto">
@@ -547,6 +549,8 @@ const ProductsDetails = ({ titleChange, settitleChange }) => {
                         </motion.div>
                     </div>
                 </div>
+            ) : (
+                <h2>loading</h2>
             )}
             <div className="">
                 <SemilarProducts />
