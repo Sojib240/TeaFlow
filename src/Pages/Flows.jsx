@@ -30,7 +30,7 @@ const Flows = ({ handleFlowsCategoriesFilter }) => {
                                         y: 0,
                                     }}
                                     transition={{
-                                        duration: 0.8,
+                                        duration: 0.6,
                                         delay: 0.015 * index,
                                     }}
                                 >
@@ -42,53 +42,46 @@ const Flows = ({ handleFlowsCategoriesFilter }) => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-14 sm:gap-[3vw] mt-8 sm:mt-[5vw]">
                     {productsApiData.flows &&
                         productsApiData.flows.map(
-                            ({ id, flowTitle, image, desc }, index) => {
+                            ({ id, flowTitle, image, desc, slug }, index) => {
                                 return (
-                                    <>
-                                        <Link
-                                            key={id}
-                                            className="col-span-1 group"
+                                    <Link
+                                        key={id}
+                                        to={`/catagory/${slug}`}
+                                        className="col-span-1 group"
+                                    >
+                                        <motion.div
+                                            initial={{ opacity: 0, y: 150 }}
+                                            whileInView={{
+                                                opacity: 1,
+                                                y: 0,
+                                            }}
+                                            transition={{
+                                                duration: 0.5,
+                                                delay: 0.1 * index,
+                                            }}
+                                            className=""
                                         >
-                                            <motion.div
-                                                initial={{ opacity: 0, y: 150 }}
-                                                whileInView={{
-                                                    opacity: 1,
-                                                    y: 0,
-                                                }}
-                                                transition={{
-                                                    duration: 0.5,
-                                                    delay: 0.1 * index,
-                                                }}
-                                                className=""
+                                            <div
+                                                className={`card-image overflow-hidden max-h-[75vw] sm:max-h-[29.51vw] h-full`}
                                             >
-                                                <div
-                                                    className={`card-image overflow-hidden max-h-[75vw] sm:max-h-[29.51vw] h-full`}
+                                                <Link
+                                                    to={`/catagory/${slug}`}
                                                 >
-                                                    <Link
-                                                        onClick={() =>
-                                                            handleFlowsCategoriesFilter(
-                                                                id,
-                                                                flowTitle
-                                                            )
-                                                        }
-                                                        to={"/shop"}
-                                                    >
-                                                        <img
-                                                            className="group-hover:scale-125 duration-1200 transition-all h-full w-full object-cover"
-                                                            src={image}
-                                                            alt=""
-                                                        />
-                                                    </Link>
-                                                </div>
-                                                <h4 className="text-xl sm:text-[2.4vw] md:text-[3vw] mt-4 sm:mt-[1vw] font-GolosDemiBold text-[#222020] uppercase">
-                                                    {flowTitle}
-                                                </h4>
-                                                <p className="text-base font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191] mt-2 sm:mt-[1vw]">
-                                                    {desc}
-                                                </p>
-                                            </motion.div>
-                                        </Link>
-                                    </>
+                                                    <img
+                                                        className="group-hover:scale-125 duration-1200 transition-all h-full w-full object-cover"
+                                                        src={image}
+                                                        alt=""
+                                                    />
+                                                </Link>
+                                            </div>
+                                            <h4 className="text-xl sm:text-[2.4vw] md:text-[3vw] mt-4 sm:mt-[1vw] font-GolosDemiBold text-[#222020] uppercase">
+                                                {flowTitle}
+                                            </h4>
+                                            <p className="text-base font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191] mt-2 sm:mt-[1vw]">
+                                                {desc}
+                                            </p>
+                                        </motion.div>
+                                    </Link>
                                 );
                             }
                         )}

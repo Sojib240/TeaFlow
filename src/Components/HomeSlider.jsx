@@ -8,57 +8,79 @@ import "swiper/css/navigation";
 import "swiper/css";
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
-import { sliderData } from "../Utils/AditionalData";
+import { sliders } from "../Utils/AditionalData";
 import SliderTitle from "./SliderTitle";
+import { motion } from "framer-motion";
 
 const HomeSlider = () => {
-    const [SliderTitleData, setSliderTitleData] = useState([]);
-    const handleSliderContent = (sliDat) => {
-        var slideIndex = sliDat.realIndex + 1;
-        sliderData.forEach((item) => {
-            if (slideIndex === item.id) {
-                setSliderTitleData(item);
-            }
+    const [SliderTitleData, setSliderTitleData] = useState([
+        {
+            id: 1,
+            title: "Relax with",
+            title2: "Rich Red",
+            title3: "Tea #3",
+            desc: "Discover the complex aroma and sweet jam taste of Golden Eyebrows - a deservedly popular red tea!",
+            image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806659_Slide1-min-p-1080.jpeg",
+        },
+    ]);
+    const handleSliderContent = (e) => {
+        var slideIndex = e.activeIndex;
+        const filt = sliders.filter(({ id }) => {
+            return id - 1 === slideIndex;
         });
+        setSliderTitleData(filt);
     };
+
     return (
         <div className="HomeSlider w-full flex-col-reverse sm:flex-row flex px-0 sm:px-[5.14vw]">
             <div className="w-full sm:w-[50%] px-5 sm:px-0 flex items-center">
                 <SliderTitle SliderTitleData={SliderTitleData} />
             </div>
             {/* swiper */}
-            <Swiper
-                className="w-full sm:w-[50%] rounded-[5vw] overflow-hidden ml-auto z-10"
-                onSlideChange={(e) => {
-                    handleSliderContent(e);
+            <motion.div
+                initial={{
+                    opacity: 0,
+                    y: 80,
                 }}
-                loop
-                centeredSlides={true}
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: true,
+                animate={{
+                    opacity: 1,
+                    y: 0,
                 }}
-                navigation={true}
-                modules={[Autoplay, Navigation]}
+                viewport={{once:true}}
+                transition={{
+                    duration: 0.5,
+                }}
+                className="w-full sm:w-[50%]"
             >
-                {sliderData &&
-                    sliderData.map((slide) => {
-                        return (
-                            <SwiperSlide
-                                key={slide.id}
-                                className="w-full h-full select-none"
-                            >
-                                <div className="h-full w-full">
-                                    <img
-                                        className="w-full h-full object-cover"
-                                        src={slide.image}
-                                        alt=""
-                                    />
-                                </div>
-                            </SwiperSlide>
-                        );
-                    })}
-            </Swiper>
+                <Swiper
+                    className="rounded-[5vw] overflow-hidden ml-auto z-10"
+                    onSlideChange={(e) => {
+                        handleSliderContent(e);
+                    }}
+                    rewind={true}
+                    centeredSlides={true}
+                    navigation={true}
+                    modules={[Autoplay, Navigation]}
+                >
+                    {sliders &&
+                        sliders.map((slide) => {
+                            return (
+                                <SwiperSlide
+                                    key={slide.id}
+                                    className="w-full h-full select-none"
+                                >
+                                    <div className="h-full w-full">
+                                        <img
+                                            className="w-full h-full object-cover"
+                                            src={slide.image}
+                                            alt=""
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                            );
+                        })}
+                </Swiper>
+            </motion.div>
         </div>
     );
 };

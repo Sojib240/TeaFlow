@@ -13,9 +13,10 @@ const Contact = () => {
                     <div className="overflow-hidden w-auto h-auto">
                         <motion.span
                             initial={{ opacity: 0, y: "100%" }}
+                            viewport={{ once: true }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{
-                                duration: 0.6,
+                                duration: 0.5,
                             }}
                             className="block text-5xl sm:text-[14vw] uppercase font-GolosBold whitespace-nowrap leading-[12.5vw]"
                         >
@@ -29,9 +30,10 @@ const Contact = () => {
                     <div className="overflow-hidden w-auto h-auto">
                         <motion.p
                             initial={{ opacity: 0, y: "100%" }}
+                            viewport={{ once: true }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{
-                                duration: 0.6,
+                                duration: 0.5,
                             }}
                             className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw]"
                         >
@@ -41,9 +43,10 @@ const Contact = () => {
                     <div className="overflow-hidden w-auto h-auto">
                         <motion.a
                             initial={{ opacity: 0, y: "100%" }}
+                            viewport={{ once: true }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{
-                                duration: 0.6,
+                                duration: 0.5,
                             }}
                             className="text-lg sm:text-[1.2vw] border-b inline-block border-dashed border-[#000]"
                             href=""
@@ -58,9 +61,10 @@ const Contact = () => {
                         <motion.div
                             className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] "
                             initial={{ opacity: 0, y: "100%" }}
+                            viewport={{ once: true }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{
-                                duration: 0.6,
+                                duration: 0.5,
                             }}
                         >
                             support:
@@ -69,9 +73,10 @@ const Contact = () => {
                     <div className="overflow-hidden w-auto h-auto">
                         <motion.div
                             initial={{ opacity: 0, y: "100%" }}
+                            viewport={{ once: true }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{
-                                duration: 0.6,
+                                duration: 0.5,
                             }}
                             className=""
                         >
@@ -80,7 +85,8 @@ const Contact = () => {
                                 href=""
                             >
                                 info@tea-flow.com
-                            </a>{' , '}
+                            </a>
+                            {" , "}
                             <a
                                 className="text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] border-b border-dashed border-[#000]"
                                 href=""

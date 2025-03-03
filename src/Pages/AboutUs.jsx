@@ -16,8 +16,9 @@ const AboutUs = () => {
                     <motion.div
                         initial={{ y: 150 }}
                         whileInView={{ y: 0 }}
+                        viewport={{once:true}}
                         transition={{
-                            duration: 0.6,
+                            duration: 0.5,
                         }}
                         className="overflow-hidden rounded-[50px] w-full sm:w-[65%] mt-[-8vw]"
                     >
@@ -45,8 +46,9 @@ const AboutUs = () => {
                                                 opacity: 1,
                                                 y: 0,
                                             }}
+                                            viewport={{once:true}}
                                             transition={{
-                                                duration: 0.8,
+                                                duration: 0.5,
                                                 delay: 0.015 * index,
                                             }}
                                         >
@@ -72,8 +74,9 @@ const AboutUs = () => {
                                                 opacity: 1,
                                                 y: 0,
                                             }}
+                                            viewport={{once:true}}
                                             transition={{
-                                                duration: 0.8,
+                                                duration: 0.5,
                                                 delay: 0.015 * index,
                                             }}
                                         >
@@ -103,8 +106,9 @@ const AboutUs = () => {
                                                 opacity: 1,
                                                 y: 0,
                                             }}
+                                            viewport={{once:true}}
                                             transition={{
-                                                duration: 0.8,
+                                                duration: 0.5,
                                                 delay: 0.015 * index,
                                             }}
                                         >
@@ -130,8 +134,9 @@ const AboutUs = () => {
                                                 opacity: 1,
                                                 y: 0,
                                             }}
+                                            viewport={{once:true}}
                                             transition={{
-                                                duration: 0.8,
+                                                duration: 0.5,
                                                 delay: 0.015 * index,
                                             }}
                                         >
@@ -144,8 +149,9 @@ const AboutUs = () => {
                     <motion.div
                         initial={{ y: 150 }}
                         whileInView={{ y: 0 }}
+                        viewport={{once:true}}
                         transition={{
-                            duration: 0.6,
+                            duration: 0.5,
                         }}
                         className="w-[60%] sm:w-[40%] mb-[-10vw]"
                     >
@@ -164,8 +170,9 @@ const AboutUs = () => {
                         <motion.div
                             initial={{ y: 150 }}
                             whileInView={{ y: 0 }}
+                            viewport={{once:true}}
                             transition={{
-                                duration: 0.6,
+                                duration: 0.5,
                             }}
                             className="w-full sm:w-[42%] h-auto overflow-hidden"
                         >
@@ -193,8 +200,9 @@ const AboutUs = () => {
                                                     opacity: 1,
                                                     y: 0,
                                                 }}
+                                                viewport={{once:true}}
                                                 transition={{
-                                                    duration: 0.8,
+                                                    duration: 0.5,
                                                     delay: 0.01 * index,
                                                 }}
                                             >
@@ -221,8 +229,9 @@ const AboutUs = () => {
                                                         opacity: 1,
                                                         y: 0,
                                                     }}
+                                                    viewport={{once:true}}
                                                     transition={{
-                                                        duration: 0.8,
+                                                        duration: 0.5,
                                                         delay: 0.01 * index,
                                                     }}
                                                 >
@@ -232,7 +241,7 @@ const AboutUs = () => {
                                         ))}
                                 </div>
                                 {/*  */}
-                                <div to={`/productsDetails/${29}`}>
+                                <div>
                                     <motion.div
                                         initial={{
                                             opacity: 0,
@@ -242,9 +251,10 @@ const AboutUs = () => {
                                             opacity: 1,
                                             y: 0,
                                         }}
+                                        viewport={{once:true}}
                                         transition={{
-                                            duration: 0.8,
-                                            delay: 0.2,
+                                            duration: 0.5,
+                                            delay: 1.5,
                                         }}
                                     >
                                         <Link to={`/catagory/${"products"}`} className="flex gap-2 sm:gap-[1vw] mt-6 sm:mt-[1.2vw] items-center cursor-pointer group font-GolosRegular">
@@ -261,35 +271,6 @@ const AboutUs = () => {
                                         </Link>
                                     </motion.div>
                                 </div>
-                                {/*  */}
-                                {/* <div className="">
-                                    <motion.button
-                                        initial={{
-                                            opacity: 0,
-                                            y: 50,
-                                        }}
-                                        whileInView={{
-                                            opacity: 1,
-                                            y: 0,
-                                        }}
-                                        transition={{
-                                            duration: 0.6,
-                                            delay: 0.05,
-                                        }}
-                                        className="flex gap-2 sm:gap-[1vw] mt-6 sm:mt-[1.2vw] items-center cursor-pointer group"
-                                    >
-                                        <span className="text-[12px] sm:text-[0.9vw] uppercase font-GolosDemiBold tracking-[0.2vw]">
-                                            watch catalog
-                                        </span>
-                                        <span className="block w-10 sm:w-[4vw] group-hover:translate-x-[1.2vw] transition-all duration-300">
-                                            <img
-                                                className="w-full"
-                                                src="/Images/Btn-icon.svg"
-                                                alt=""
-                                            />
-                                        </span>
-                                    </motion.button>
-                                </div> */}
                             </div>
                         </div>
                     </div>

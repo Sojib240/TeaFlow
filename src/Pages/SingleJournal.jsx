@@ -29,9 +29,10 @@ const SingleJournal = () => {
                     <div className="overflow-hidden w-auto h-auto">
                         <motion.div
                             initial={{ opacity: 0, y: "100%" }}
+                            viewport={{ once: true }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{
-                                duration: 0.6,
+                                duration: 0.5,
                             }}
                             className="text-[#9C9797] font-GolosRegular text-[13px] sm:text-[1vw] sm:flex gap-5 sm:gap-[1.5vw] capitalize hidden"
                         >
@@ -47,9 +48,10 @@ const SingleJournal = () => {
                     <div className="overflow-hidden w-auto h-auto border-b border-[#DEDADA] border-dashed mt-[3vw]">
                         <motion.p
                             initial={{ opacity: 0, y: "100%" }}
+                            viewport={{ once: true }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{
-                                duration: 0.6,
+                                duration: 0.5,
                             }}
                             className="text-3xl sm:text-[3.6vw] uppercase font-GolosDemiBold pb-7 sm:pb-[2vw] pr-0 sm:pr-[24vw]"
                         >
@@ -61,9 +63,10 @@ const SingleJournal = () => {
                             <div className="overflow-hidden w-auto h-auto">
                                 <motion.p
                                     initial={{ opacity: 0, y: "100%" }}
+                                    viewport={{ once: true }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{
-                                        duration: 0.6,
+                                        duration: 0.5,
                                     }}
                                     className="capitalize"
                                 >
@@ -73,9 +76,10 @@ const SingleJournal = () => {
                             <div className="overflow-hidden w-auto h-auto">
                                 <motion.p
                                     initial={{ opacity: 0, y: "100%" }}
+                                    viewport={{ once: true }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{
-                                        duration: 0.6,
+                                        duration: 0.5,
                                     }}
                                 >
                                     {singleJournal.date && singleJournal.date}

@@ -5,6 +5,7 @@ import CartPage from "../Pages/CartPage";
 import Menu from "../Components/Menu";
 import gsap from "gsap";
 import { cartContextData } from "../Utils/CartContext";
+import { motion } from "framer-motion";
 
 const Navbar = ({
     CartOpenClose,
@@ -22,13 +23,11 @@ const Navbar = ({
             const currentScroll = window.scrollY;
             if (prevScroll > currentScroll) {
                 gsap.to(navTopRef.current, {
-                    // ease: "power4",
                     ease: "power4.out",
                     top: "0",
                 });
             } else {
                 gsap.to(navTopRef.current, {
-                    // ease: "power4",
                     ease: "power4.out",
                     top: "-15%",
                 });
@@ -56,7 +55,12 @@ const Navbar = ({
                 ref={navTopRef}
                 className="px-5 sm:px-[5.15vw] py-6 sm:py-[2vw] z-[999] fixed top-0 w-full bg-white"
             >
-                <nav className="grid grid-cols-2 items-center">
+                <motion.nav
+                    initial={{ opacity: 0, y: -150 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="grid grid-cols-2 items-center"
+                >
                     <div className="col-span-1">
                         <div className="logo w-32 sm:w-[8.5vw]">
                             <Link to={"/"}>
@@ -134,7 +138,7 @@ const Navbar = ({
                             </div>
                         </div>
                     </div>
-                </nav>
+                </motion.nav>
             </div>
             {CartOpenClose === true && (
                 <CartPage

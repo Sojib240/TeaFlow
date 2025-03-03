@@ -23,7 +23,8 @@ const JournalComponent = () => {
                     <motion.h2
                         initial={{ opacity: 0, y: "100%" }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
+                        viewport={{once:true}}
+                        transition={{ duration: 0.5 }}
                         className="text-3xl sm:text-[3.5vw] uppercase font-GolosRegular font-semibold"
                     >
                         Journal
@@ -36,7 +37,8 @@ const JournalComponent = () => {
                     <motion.div
                         initial={{ opacity: 0, y: "100%" }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
+                        viewport={{once:true}}
+                        transition={{ duration: 0.5 }}
                         className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw] font-GolosRegular"
                     >
                         <span className="block border-b border-dashed border-[#000]">Read all stories</span>
@@ -52,7 +54,8 @@ const JournalComponent = () => {
                                 <motion.div
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
+                                    viewport={{once:true}}
+                                    transition={{ duration: 0.5 }}
                                     className="font-GolosRegular py-5 sm:py-[1vw] mt-8 sm:mt-[4vw] flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-[8vw] text-lg sm:text-[1.2vw] leading-[130%] sm:leading-[2.3vw] group"
                                 >
                                     <h4 className="text-sm">{date}</h4>

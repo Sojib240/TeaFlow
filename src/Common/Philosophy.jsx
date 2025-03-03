@@ -2,29 +2,8 @@ import { motion } from "framer-motion";
 import React from "react";
 import { CiShare1 } from "react-icons/ci";
 import { Link } from "react-router-dom";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/all";
-import gsap from "gsap";
 
 const Philosophy = () => {
-    //
-    // gsap.registerPlugin(ScrollTrigger);
-    // useGSAP(() => {
-    //     const boxes = gsap.utils.toArray(".box");
-
-    //     gsap.from(box, {
-    //         opacity: 0,
-    //         y: 50,
-    //         duration: 1,
-    //         scrollTrigger: {
-    //             trigger: box,
-    //             start: "top 80%",
-    //             toggleActions: "play none none reverse",
-    //             markers: true, // Optional, for debugging
-    //         },
-    //     });
-    // }, []);
-    //
     return (
         <div className="w-full philosophy flex items-end pb-24 sm:pb-[10vw] ">
             <div className="px-5 pt-24 sm:pl-[14vw] sm:pt-[28vw] sm:pr-[3vw] flex justify-between flex-col sm:flex-row items-start gap-10 sm:gap-[1vw] w-full">
@@ -32,7 +11,8 @@ const Philosophy = () => {
                     <motion.h2
                         initial={{ opacity: 0, y: "100%" }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
+                        viewport={{once:true}}
+                        transition={{ duration: 0.5 }}
                         className="uppercase text-4xl sm:text-[7vw] text-white w-[65%] sm:leading-none font-GolosRegular"
                     >
                         philosophy
@@ -56,8 +36,9 @@ const Philosophy = () => {
                                             opacity: 1,
                                             y: 0,
                                         }}
+                                        viewport={{once:true}}
                                         transition={{
-                                            duration: 0.8,
+                                            duration: 0.5,
                                             delay: 0.01 * index,
                                         }}
                                     >
@@ -70,7 +51,8 @@ const Philosophy = () => {
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: 0.2 }}
+                            viewport={{once:true}}
+                            transition={{ duration: 0.5, delay: 0.2 }}
                             className="flex items-center gap-2 sm:gap-[1vw]"
                         >
                             <Link

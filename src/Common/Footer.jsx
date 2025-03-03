@@ -12,7 +12,8 @@ const Footer = () => {
                             <motion.h2
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                                 className="text-[1.5vw] uppercase font-GolosDemiBold"
                             >
                                 Shop
@@ -26,7 +27,8 @@ const Footer = () => {
                                 <motion.p
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
+                                    transition={{ duration: 0.5 }}
+                                    viewport={{ once: true }}
                                 >
                                     home
                                 </motion.p>
@@ -38,7 +40,8 @@ const Footer = () => {
                                 <motion.p
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
+                                    transition={{ duration: 0.5 }}
+                                    viewport={{ once: true }}
                                 >
                                     products
                                 </motion.p>
@@ -50,7 +53,8 @@ const Footer = () => {
                                 <motion.p
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
+                                    transition={{ duration: 0.5 }}
+                                    viewport={{ once: true }}
                                 >
                                     top sales
                                 </motion.p>
@@ -62,7 +66,8 @@ const Footer = () => {
                                 <motion.p
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
+                                    transition={{ duration: 0.5 }}
+                                    viewport={{ once: true }}
                                 >
                                     premium tea
                                 </motion.p>
@@ -74,7 +79,8 @@ const Footer = () => {
                                 <motion.p
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
+                                    transition={{ duration: 0.5 }}
+                                    viewport={{ once: true }}
                                 >
                                     sets
                                 </motion.p>
@@ -86,7 +92,8 @@ const Footer = () => {
                             <motion.h2
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                                 className="text-[1.5vw] uppercase font-GolosDemiBold"
                             >
                                 help
@@ -100,7 +107,8 @@ const Footer = () => {
                                 <motion.p
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
+                                    transition={{ duration: 0.5 }}
+                                    viewport={{ once: true }}
                                 >
                                     delivery
                                 </motion.p>
@@ -112,7 +120,8 @@ const Footer = () => {
                                 <motion.p
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
+                                    transition={{ duration: 0.5 }}
+                                    viewport={{ once: true }}
                                 >
                                     returns and exchanges
                                 </motion.p>
@@ -124,7 +133,8 @@ const Footer = () => {
                                 <motion.p
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
+                                    transition={{ duration: 0.5 }}
+                                    viewport={{ once: true }}
                                 >
                                     terms and conditions
                                 </motion.p>
@@ -136,7 +146,8 @@ const Footer = () => {
                                 <motion.p
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
+                                    transition={{ duration: 0.5 }}
+                                    viewport={{ once: true }}
                                 >
                                     privacy policy
                                 </motion.p>
@@ -147,7 +158,8 @@ const Footer = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
                     className="w-28 block sm:hidden"
                 >
                     <img
@@ -162,7 +174,8 @@ const Footer = () => {
                             <motion.h2
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                                 className="text-[1.5vw] uppercase font-GolosDemiBold"
                             >
                                 about us
@@ -176,7 +189,8 @@ const Footer = () => {
                                 <motion.p
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
+                                    transition={{ duration: 0.5 }}
+                                    viewport={{ once: true }}
                                 >
                                     about us
                                 </motion.p>
@@ -188,7 +202,8 @@ const Footer = () => {
                                 <motion.p
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
+                                    transition={{ duration: 0.5 }}
+                                    viewport={{ once: true }}
                                 >
                                     contacts
                                 </motion.p>
@@ -200,7 +215,8 @@ const Footer = () => {
                                 <motion.p
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
+                                    transition={{ duration: 0.5 }}
+                                    viewport={{ once: true }}
                                 >
                                     journal
                                 </motion.p>
@@ -211,7 +227,8 @@ const Footer = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
+                        transition={{ duration: 0.5 }}
+                        viewport={{ once: true }}
                         className="flex items-start gap-3 sm:gap-[1vw]"
                     >
                         <div>
@@ -248,7 +265,8 @@ const Footer = () => {
                         <motion.h2
                             initial={{ opacity: 0, y: "100%" }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true }}
                             className="text-lg sm:text-[1.5vw] uppercase font-GolosDemiBold"
                         >
                             Shop
@@ -262,7 +280,8 @@ const Footer = () => {
                             <motion.p
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                                 cl
                             >
                                 home
@@ -275,7 +294,8 @@ const Footer = () => {
                             <motion.p
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                             >
                                 products
                             </motion.p>
@@ -287,7 +307,8 @@ const Footer = () => {
                             <motion.p
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                             >
                                 top sales
                             </motion.p>
@@ -299,7 +320,8 @@ const Footer = () => {
                             <motion.p
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                             >
                                 premium tea
                             </motion.p>
@@ -311,7 +333,8 @@ const Footer = () => {
                             <motion.p
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                             >
                                 sets
                             </motion.p>
@@ -323,7 +346,8 @@ const Footer = () => {
                         <motion.h2
                             initial={{ opacity: 0, y: "100%" }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true }}
                             className="text-lg sm:text-[1.5vw] uppercase font-GolosDemiBold"
                         >
                             help
@@ -337,7 +361,8 @@ const Footer = () => {
                             <motion.p
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                             >
                                 delivery
                             </motion.p>
@@ -349,7 +374,8 @@ const Footer = () => {
                             <motion.p
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                             >
                                 returns and exchanges
                             </motion.p>
@@ -361,7 +387,8 @@ const Footer = () => {
                             <motion.p
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                             >
                                 terms and conditions
                             </motion.p>
@@ -373,7 +400,8 @@ const Footer = () => {
                             <motion.p
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                             >
                                 privacy policy
                             </motion.p>
@@ -385,7 +413,8 @@ const Footer = () => {
                         <motion.h2
                             initial={{ opacity: 0, y: "100%" }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true }}
                             className="text-lg sm:text-[1.5vw] uppercase font-GolosDemiBold"
                         >
                             about us
@@ -399,7 +428,8 @@ const Footer = () => {
                             <motion.p
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                             >
                                 about us
                             </motion.p>
@@ -411,7 +441,8 @@ const Footer = () => {
                             <motion.p
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                             >
                                 contacts
                             </motion.p>
@@ -423,7 +454,8 @@ const Footer = () => {
                             <motion.p
                                 initial={{ opacity: 0, y: "100%" }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
+                                transition={{ duration: 0.5 }}
+                                viewport={{ once: true }}
                             >
                                 journal
                             </motion.p>
@@ -436,7 +468,8 @@ const Footer = () => {
                 <motion.div
                     initial={{ opacity: 0, y: "100%" }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
                     className="flex flex-col gap-0 mt-5 sm:mt-[] sm:flex-row sm:items-center sm:justify-between"
                 >
                     <div className="flex gap-[9vw]">

@@ -22,8 +22,9 @@ const FlowComponent = () => {
                     <motion.h2
                         initial={{ opacity: 0, y: "100%" }}
                         whileInView={{ opacity: 1, y : 0 }}
+                        viewport={{once:true}}
                         transition={{
-                            duration: 0.6,
+                            duration: 0.5,
                         }}
                         className="flowsss text-4xl sm:text-[3.5vw] uppercase font-GolosRegular font-semibold w-full"
                     >
@@ -34,8 +35,9 @@ const FlowComponent = () => {
                     <motion.div
                         initial={{ opacity: 0, y: "100%" }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{once:true}}
                         transition={{
-                            duration: 0.6,
+                            duration: 0.5,
                         }}
                         className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw]  font-GolosRegular "
                     >
@@ -48,7 +50,7 @@ const FlowComponent = () => {
             <div className="pl-5 sm:pl-[14.44vw]">
                 <Swiper
                     className="z-10"
-                    loop
+                    rewind={true}
                     breakpoints={{
                         640: {
                             slidesPerView: 3,
@@ -56,7 +58,6 @@ const FlowComponent = () => {
                     }}
                     slidesPerView={1}
                     spaceBetween={15}
-                    centeredSlides={true}
                     navigation={true}
                     modules={[FreeMode, Navigation]}
                 >
@@ -71,8 +72,9 @@ const FlowComponent = () => {
                                         <motion.div
                                             initial={{ opacity: 0, y: 150 }}
                                             whileInView={{ opacity: 1, y: 0 }}
+                                            viewport={{once:true}}
                                             transition={{
-                                                duration: 0.6,
+                                                duration: 0.5,
                                                 delay: 0.1 * index,
                                             }}
                                             className=""

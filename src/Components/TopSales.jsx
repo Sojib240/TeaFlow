@@ -10,8 +10,9 @@ const TopSales = () => {
                     <motion.h2
                         initial={{ opacity: 0, y: "100%" }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{once:true}}
                         transition={{
-                            duration: 0.6,
+                            duration: 0.5,
                         }}
                         className="text-5xl sm:text-[14vw] text-center font-GolosBold"
                     >
@@ -37,8 +38,9 @@ const TopSales = () => {
                                 <motion.h4
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{once:true}}
                                     transition={{
-                                        duration: 0.6,
+                                        duration: 0.5,
                                     }}
                                     className="text-2xl sm:text-[2vw] uppercase mb-5 sm:mb-[1vw] font-GolosDemiBold"
                                 >
@@ -49,8 +51,9 @@ const TopSales = () => {
                                 <motion.h5
                                     initial={{ opacity: 0, y: "100%" }}
                                     whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{once:true}}
                                     transition={{
-                                        duration: 0.6,
+                                        duration: 0.5,
                                     }}
                                     className="font-GolosRegular text-xl sm:text-[1.3vw]"
                                 >
@@ -73,8 +76,9 @@ const TopSales = () => {
                                                     opacity: 1,
                                                     y: 0,
                                                 }}
+                                                viewport={{once:true}}
                                                 transition={{
-                                                    duration:  0.8,
+                                                    duration:  0.5,
                                                     delay: 0.01 * index,
                                                 }}
                                             >
@@ -83,7 +87,7 @@ const TopSales = () => {
                                         </div>
                                     ))}
                             </div>
-                            <Link to={`/product-details/${29}`}>
+                            <Link to={`/product-details/${29}/green-tea-2`}>
                                 <motion.div
                                     initial={{
                                         opacity: 0,
@@ -93,8 +97,9 @@ const TopSales = () => {
                                         opacity: 1,
                                         y: 0,
                                     }}
+                                    viewport={{once:true}}
                                     transition={{
-                                        duration: 0.8, delay: 0.2,
+                                        duration: 0.5, delay: 0.2,
                                     }}
                                     className="flex gap-2 sm:gap-[1vw] mt-6 sm:mt-[1.2vw] items-center cursor-pointer group font-GolosRegular"
                                 >

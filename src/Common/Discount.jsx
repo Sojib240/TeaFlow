@@ -11,7 +11,8 @@ const Discount = () => {
                         <motion.h2
                             initial={{ opacity: 0, y: "100%" }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6 }}
+                            viewport={{once:true}}
+                            transition={{ duration: 0.5 }}
                             className="text-4xl sm:text-[3.5vw] uppercase font-GolosDemiBold"
                         >
                             Get 20% off
@@ -35,8 +36,9 @@ const Discount = () => {
                                                 opacity: 1,
                                                 y: 0,
                                             }}
+                                            viewport={{once:true}}
                                             transition={{
-                                                duration: 0.8,
+                                                duration: 0.5,
                                                 delay: 0.01 * index,
                                             }}
                                         >
@@ -50,9 +52,10 @@ const Discount = () => {
                                         className="inline-block border-b border-dashed border-[#DEDADA]"
                                         initial={{ opacity: 0, y: "100%" }}
                                         whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{once:true}}
                                         transition={{
-                                            duration: 0.6,
-                                            delay: 0.3,
+                                            duration: 0.5,
+                                            delay: 0.2,
                                         }}
                                     >
                                         privacy policy
@@ -65,8 +68,9 @@ const Discount = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{once:true}}
                     transition={{
-                        duration: 0.6,
+                        duration: 0.5,
                     }}
                     className="w-full sm:w-[35%] border-b border-dashed border-[#DEDADA] flex justify-between pb-3 font-GolosRegular"
                 >

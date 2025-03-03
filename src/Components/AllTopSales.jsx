@@ -46,8 +46,9 @@ const AllTopSales = () => {
                     <motion.div
                         initial={{ opacity: 0, y: "100%" }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{once:true}}
                         transition={{
-                            duration: 0.6,
+                            duration: 0.5,
                         }}
                         className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw] font-GolosRegular"
                     >
@@ -63,8 +64,9 @@ const AllTopSales = () => {
                             <motion.div
                                 initial={{ opacity: 0, y: 150 }}
                                 whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{once:true}}
                                 transition={{
-                                    duration: 0.6,
+                                    duration: 0.5,
                                     delay: 0.1 * index,
                                 }}
                                 key={product.id}

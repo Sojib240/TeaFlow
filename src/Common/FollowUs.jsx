@@ -9,9 +9,9 @@ const FollowUs = () => {
                 <motion.h2
                     initial={{ opacity: 0, y: "100%" }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    
+                    viewport={{once:true}}
                     transition={{
-                        duration: 0.6,
+                        duration: 0.5,
                     }}
                     className="uppercase text-4xl sm:text-[8vw] pb-[6vw] font-GolosBold"
                 >
@@ -25,8 +25,9 @@ const FollowUs = () => {
                             key={id}
                             initial={{ opacity: 0, y: 100 }}
                             whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{once:true}}
                             transition={{
-                                duration: 0.8,
+                                duration: 0.5,
                                 delay: 0.1 * index,
                             }}
                             className={`${

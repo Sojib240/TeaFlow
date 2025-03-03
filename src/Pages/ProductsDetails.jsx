@@ -62,6 +62,7 @@ const ProductsDetails = () => {
                         <div className="w-auto h-auto">
                             <motion.div
                                 initial={{ opacity: 0, y: 50 }}
+                                viewport={{ once: true }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{
                                     duration: 0.6,
@@ -77,6 +78,7 @@ const ProductsDetails = () => {
                         </div>
                         <motion.div
                             initial={{ opacity: 0, y: 80 }}
+                            viewport={{ once: true }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{
                                 duration: 0.6,
@@ -176,6 +178,7 @@ const ProductsDetails = () => {
                                 <div className="overflow-hidden h-auto w-auto">
                                     <motion.div
                                         initial={{ opacity: 0, y: "100%" }}
+                                        viewport={{ once: true }}
                                         whileInView={{ opacity: 1, y: 0 }}
                                         transition={{
                                             duration: 0.6,
@@ -188,6 +191,7 @@ const ProductsDetails = () => {
                                 <div className="overflow-hidden w-auto h-auto">
                                     <div
                                         initial={{ opacity: 0, y: "100%" }}
+                                        viewport={{ once: true }}
                                         whileInView={{ opacity: 1, y: 0 }}
                                         transition={{
                                             duration: 0.6,
@@ -204,12 +208,13 @@ const ProductsDetails = () => {
                                                     opacity: 0,
                                                     y: "100%",
                                                 }}
+                                                viewport={{ once: true }}
                                                 whileInView={{
                                                     opacity: 1,
                                                     y: 0,
                                                 }}
                                                 transition={{
-                                                    duration: 0.8,
+                                                    duration: 0.6,
                                                     delay: 0.01,
                                                 }}
                                             >
@@ -232,12 +237,15 @@ const ProductsDetails = () => {
                                                                 opacity: 0,
                                                                 y: "100%",
                                                             }}
+                                                            viewport={{
+                                                                once: true,
+                                                            }}
                                                             whileInView={{
                                                                 opacity: 1,
                                                                 y: 0,
                                                             }}
                                                             transition={{
-                                                                duration: 0.8,
+                                                                duration: 0.6,
                                                                 delay:
                                                                     0.01 *
                                                                     index,
@@ -253,6 +261,7 @@ const ProductsDetails = () => {
                             </div>
                             <motion.div
                                 initial={{ opacity: 0, y: 80 }}
+                                viewport={{ once: true }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{
                                     duration: 0.6,
@@ -287,6 +296,7 @@ const ProductsDetails = () => {
                             </motion.div>
                             <motion.div
                                 initial={{ opacity: 0, y: 80 }}
+                                viewport={{ once: true }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{
                                     duration: 0.6,
@@ -414,6 +424,7 @@ const ProductsDetails = () => {
                             <div className="h-auto w-auto overflow-hidden">
                                 <motion.h2
                                     initial={{ opacity: 0, y: "100%" }}
+                                    viewport={{ once: true }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{
                                         duration: 0.6,
@@ -436,12 +447,13 @@ const ProductsDetails = () => {
                                             opacity: 0,
                                             y: "100%",
                                         }}
+                                        viewport={{ once: true }}
                                         whileInView={{
                                             opacity: 1,
                                             y: 0,
                                         }}
                                         transition={{
-                                            duration: 0.8,
+                                            duration: 0.6,
                                             delay: 0.01,
                                         }}
                                     >
@@ -465,12 +477,13 @@ const ProductsDetails = () => {
                                                         opacity: 0,
                                                         y: "100%",
                                                     }}
+                                                    viewport={{ once: true }}
                                                     whileInView={{
                                                         opacity: 1,
                                                         y: 0,
                                                     }}
                                                     transition={{
-                                                        duration: 0.8,
+                                                        duration: 0.6,
                                                         delay: 0.01 * index,
                                                     }}
                                                 >
@@ -486,12 +499,13 @@ const ProductsDetails = () => {
                                 opacity: 0,
                                 y: 80,
                             }}
+                            viewport={{ once: true }}
                             whileInView={{
                                 opacity: 1,
                                 y: 0,
                             }}
                             transition={{
-                                duration: 0.8,
+                                duration: 0.6,
                             }}
                             className="flex items-center gap-[2vw] mt-[1.8vw]"
                         >
@@ -526,6 +540,7 @@ const ProductsDetails = () => {
                                 opacity: 0,
                                 y: 80,
                             }}
+                            viewport={{ once: true }}
                             whileInView={{
                                 opacity: 1,
                                 y: 0,
@@ -550,7 +565,7 @@ const ProductsDetails = () => {
                     </div>
                 </div>
             ) : (
-                <h2>loading</h2>
+                ""
             )}
             <div className="">
                 <SemilarProducts />
