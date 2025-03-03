@@ -257,7 +257,7 @@ const AboutUs = () => {
                                             delay: 1.5,
                                         }}
                                     >
-                                        <Link to={`/catagory/${"products"}`} className="flex gap-2 sm:gap-[1vw] mt-6 sm:mt-[1.2vw] items-center cursor-pointer group font-GolosRegular">
+                                        <Link to={`/catagory/${"products"}`} className="flex gap-2 sm:gap-[1vw] mt-3 sm:mt-[1.2vw] items-center cursor-pointer group font-GolosRegular">
                                             <span className="text-[12px] sm:text-[0.9vw] font-semibold uppercase tracking-[0.2vw]">
                                                 watch catalog
                                             </span>

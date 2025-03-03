@@ -14,7 +14,7 @@ const Flows = ({ handleFlowsCategoriesFilter }) => {
     return (
         <>
             <Title text={"choose your flow"} />
-            <div className="px-5 sm:px-[14.44vw] mx-auto mt-18 sm:mt-[9vw] font-GolosRegular">
+            <div className="px-5 sm:px-[14.44vw] mx-auto mt-16 sm:mt-7vw] font-GolosRegular">
                 <div className="flex flex-wrap gap-[6px] sm:gap-[0.4vw] pr-0 sm:pr-[20vw]">
                     {"Welcome to Choose Your Flow, where we offer a selection of teas to cater to your needs and help you find your ideal state of mind. Whether you're seeking to unwind and relax, promote wellness and balance, reconnect with yourself, or boost your energy, we've got you covered."
                         .split(" ")
@@ -29,8 +29,9 @@ const Flows = ({ handleFlowsCategoriesFilter }) => {
                                         opacity: 1,
                                         y: 0,
                                     }}
+                                    viewport={{once:true}}
                                     transition={{
-                                        duration: 0.6,
+                                        duration: 0.5,
                                         delay: 0.015 * index,
                                     }}
                                 >
@@ -55,6 +56,7 @@ const Flows = ({ handleFlowsCategoriesFilter }) => {
                                                 opacity: 1,
                                                 y: 0,
                                             }}
+                                            viewport={{once:true}}
                                             transition={{
                                                 duration: 0.5,
                                                 delay: 0.1 * index,
@@ -87,10 +89,10 @@ const Flows = ({ handleFlowsCategoriesFilter }) => {
                         )}
                 </div>
             </div>
-            <div className="mt-[15vw]">
+            <div className="mt-16 sm:mt-[12vw]">
                 <Philosophy />
             </div>
-            <div className="mb-[12vw]">
+            <div className="mt-0 mb-[12vw]">
                 <JournalComponent />
             </div>
             <div className="">
