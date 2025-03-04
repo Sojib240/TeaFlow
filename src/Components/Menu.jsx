@@ -12,7 +12,7 @@ const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
             <div className="flex flex-col gap-4 sm:gap-[1.1vw] font-GolosDemiBold">
                 <Link
                     onClick={() => setmenuOpenClose(false)}
-                    to={"/teaflow"}
+                    to={"/"}
                     className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase overflow-hidden w-auto h-auto"
                 >
                     <motion.p

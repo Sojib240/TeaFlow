@@ -52,7 +52,7 @@ const App = () => {
                 />
             </div>
             <Routes>
-                <Route path="/teaflow" element={<HomePage />} />
+                <Route path="/" element={<HomePage />} />
                 <Route
                     path="/catagory/:slug"
                     element={
