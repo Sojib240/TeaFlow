@@ -87,7 +87,7 @@ const TopSales = () => {
                                         </div>
                                     ))}
                             </div>
-                            <Link to={`/product-details/${29}/green-tea-2`}>
+                            <Link to={`/product/green-tea-2`}>
                                 <motion.div
                                     initial={{
                                         opacity: 0,

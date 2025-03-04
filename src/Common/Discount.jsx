@@ -46,7 +46,7 @@ const Discount = () => {
                                         </motion.p>
                                     </div>
                                 ))}
-                            <Link to={"/privacyPolicy"} href="#">
+                            <Link to={"/privacy-policy"} href="#">
                                 <div className="overflow-hidden w-auto h-auto">
                                     <motion.span
                                         className="inline-block border-b border-dashed border-[#DEDADA]"

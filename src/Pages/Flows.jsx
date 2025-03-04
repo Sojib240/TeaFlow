@@ -32,7 +32,7 @@ const Flows = ({ handleFlowsCategoriesFilter }) => {
                                     viewport={{once:true}}
                                     transition={{
                                         duration: 0.5,
-                                        delay: 0.015 * index,
+                                        delay: 0.01 * index,
                                     }}
                                 >
                                     {text}

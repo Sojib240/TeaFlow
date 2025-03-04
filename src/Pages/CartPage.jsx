@@ -41,6 +41,14 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
         const cartFilteredData = cart.filter((fillItem) => fillItem.id !== id);
         setcart(cartFilteredData);
     };
+    // check-out
+    const [checkOutState, setcheckOutState] = useState(false);
+    const checkOut = () => {
+        setcheckOutState(true);
+        setTimeout(() => {
+            setcheckOutState(false);
+        }, 5000);
+    };
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -50,10 +58,20 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                 CartOpenClose == true && "z-[999]"
             }`}
         >
+            <div
+                className={`fixed top-0 right-0 transition-all duration-500 pt-5 sm:pt-[1vw] ${
+                    checkOutState ? "translate-x-[0] opacity-100 visible" : "translate-x-[100%] opacity-0 invisible"
+                }`}
+            >
+                <div className="pl-3 pr-2 sm:pl-[1.5vw] sm:pr-[1vw] py-3 sm:py-[1vw] rounded-tl-full rounded-bl-full bg-red-500">
+                    <h2 className="font-GolosRegular text-[10px] sm:text-[0.8vw] tracking-[1px] text-white sm:tracking-[0.1vw]">
+                        Checkout is disabled on this site.
+                    </h2>
+                </div>
+            </div>
             <motion.div
                 initial={{ scale: 0.8 }}
                 animate={{ scale: 1 }}
-                // tansition={{ duration: 5 }}
                 className="container w-full h-full sm:h-auto bg-white py-6 sm:p-[3.5vw] rounded-4xl sm:rounded-[3vw] mx-auto flex flex-col items-start"
             >
                 <div className="flex justify-between items-center gap-[2vw] w-full mb-8 sm:mb-[2vw] px-5 sm:px-0">
@@ -190,14 +208,12 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                             </div>
                         )}
 
-                        <Link
-                            onClick={() => setCartOpenClose(false)}
-                            to={"/checkout"}
+                        <button
+                            onClick={() => checkOut()}
+                            className="hover:bg-[#222020] border-[#222020] border p-5 sm:p-[1.5vw] rounded-full w-full mt-8 sm:mt-[2vw] text-sm sm:text-[0.9vw] font-bold uppercase tracking-[0.2vw] text-center transition-all duration-200 hover:text-white font-GolosRegular cursor-pointer"
                         >
-                            <button className="hover:bg-[#222020] border-[#222020] border p-5 sm:p-[1.5vw] rounded-full w-full mt-8 sm:mt-[2vw] text-sm sm:text-[0.9vw] font-bold uppercase tracking-[0.2vw] text-center transition-all duration-200 hover:text-white font-GolosRegular cursor-pointer">
-                                Continue to Checkout
-                            </button>
-                        </Link>
+                            Continue to Checkout
+                        </button>
                     </div>
                 )}
             </motion.div>

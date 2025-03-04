@@ -69,7 +69,7 @@ const Shop = ({
                     initial={{ opacity: 0, y: "100%" }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{
-                            duration: 0.5,
+                        duration: 0.5,
                     }}
                     className="px-[5.15vw] pt-8 sm:pt-[3vw] text-[#9C9797] font-GolosRegular text-[13px] sm:text-[1vw] sm:flex gap-5 sm:gap-[1.5vw] capitalize hidden"
                 >
@@ -129,9 +129,9 @@ const Shop = ({
                                     <motion.div
                                         initial={{ opacity: 0, y: "100%" }}
                                         whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{once:true}}
+                                        viewport={{ once: true }}
                                         transition={{
-                                                duration: 0.5,
+                                            duration: 0.5,
                                         }}
                                         onClick={() => handleDropDown()}
                                         className="flex items-center text-[22px] sm:text-[1.2vw] uppercase font-GolosDemiBold w-full justify-between cursor-pointer"
@@ -180,9 +180,11 @@ const Shop = ({
                                                                     opacity: 1,
                                                                     y: 0,
                                                                 }}
-                                                                viewport={{once:true}}
+                                                                viewport={{
+                                                                    once: true,
+                                                                }}
                                                                 transition={{
-                                                                        duration: 0.5,
+                                                                    duration: 0.5,
                                                                     delay:
                                                                         0.1 *
                                                                         index,
@@ -221,9 +223,11 @@ const Shop = ({
                                                                 opacity: 1,
                                                                 y: 0,
                                                             }}
-                                                            viewport={{once:true}}
+                                                            viewport={{
+                                                                once: true,
+                                                            }}
                                                             transition={{
-                                                                    duration: 0.5,
+                                                                duration: 0.5,
                                                                 delay:
                                                                     0.1 * index,
                                                             }}
@@ -245,9 +249,9 @@ const Shop = ({
                                     <motion.div
                                         initial={{ opacity: 0, y: 150 }}
                                         whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{once:true}}
+                                        viewport={{ once: true }}
                                         transition={{
-                                                duration: 0.5,
+                                            duration: 0.5,
                                             delay: 0.06 * index,
                                         }}
                                         key={product.id}
@@ -255,9 +259,7 @@ const Shop = ({
                                     >
                                         <div className="card-image relative overflow-hidden">
                                             <Link
-                                                to={`/product-details/${product.id}/${product.param}`}
-                                                // to={`/product-details/${product.title} `}
-                                                // to={`/product-details/${product.param}`}
+                                                to={`/product/${product.param}`}
                                                 className="relative z-30"
                                             >
                                                 <img

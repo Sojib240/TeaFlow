@@ -14,12 +14,12 @@ const Journal = () => {
             <div className="px-5 sm:px-[5.15vw] mx-auto mt-20 sm:mt-[8vw] font-GolosRegular">
                 {productsApiData.journals &&
                     productsApiData.journals.map(
-                        ({ date, id, mainImgSrc, title }) => {
+                        ({ date, id, mainImgSrc, title,param }) => {
                             return (
                                 <div key={id}>
                                     <Link
                                         className="border-t border-dashed border-[#DEDADA] block overflow-hidden w-auto h-auto"
-                                        to={`/single-journal/${id}`}
+                                        to={`/post/${param}`}
                                     >
                                         <motion.div
                                             initial={{ opacity: 0, y: 100 }}

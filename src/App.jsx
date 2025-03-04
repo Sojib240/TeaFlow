@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import HomePage from "./Pages/HomePage";
 import Footer from "./Common/Footer";
 import Navbar from "./Common/Navbar";
@@ -16,7 +16,6 @@ import ProductsDetails from "./Pages/ProductsDetails";
 import gsap from "gsap";
 import ScrollToTop from "./Common/ScrollToTop";
 import SingleJournal from "./Pages/SingleJournal";
-import CheckOut from "./Pages/CheckOut";
 import Flows from "./Pages/Flows";
 import { productContext } from "./Utils/Context";
 
@@ -53,7 +52,7 @@ const App = () => {
                 />
             </div>
             <Routes>
-                <Route path="/" element={<HomePage />} />
+                <Route path="/teaflow" element={<HomePage />} />
                 <Route
                     path="/catagory/:slug"
                     element={
@@ -72,14 +71,13 @@ const App = () => {
                 <Route path="/returns" element={<Returns />} />
                 <Route path="/delivery" element={<Delivery />} />
                 <Route path="/flows" element={<Flows />} />
-                <Route path="/single-journal/:id" element={<SingleJournal />} />
-                <Route path="/checkout" element={<CheckOut />} />
+                <Route 
+                path="/post/:param"
+                 element={<SingleJournal />} />
                 <Route
-                    path="/product-details/:id/:param"
+                    path="/product/:param"
                     element={<ProductsDetails />}
                 />
-                {/* // path="/product-details/:id"
-                    // path="/product-details/:param"  */}
                 <Route
                     path="/terms-and-conditions"
                     element={<TermsAndConditions />}

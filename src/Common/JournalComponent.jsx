@@ -47,9 +47,9 @@ const JournalComponent = () => {
                 </Link>
             </div>
             {journalNewData &&
-                journalNewData.map(({ date, title, id }, index) => {
+                journalNewData.map(({ date, title, id,param }, index) => {
                     return (
-                        <Link to={`/singleJournal/${id}`} key={id}>
+                        <Link to={`/post/${param}`} key={id}>
                             <div className="overflow-hidden w-auto h-auto border-b border-dashed border-[#DEDADA]">
                                 <motion.div
                                     initial={{ opacity: 0, y: "100%" }}

@@ -20,7 +20,7 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col gap-[1.1vw] text-[1.1vw]">
                             <Link
-                                to={"/"}
+                                to={"/teaflow"}
                                 className="hover:opacity-70 duration-100 transition-all overflow-hidden w-auto h-auto"
                             >
                                 <motion.p

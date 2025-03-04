@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 const Menu = ({ menuOpenClose, setmenuOpenClose }) => {
     return (
         <div
-            className={`w-full min-h-screen h-full overflow-x-auto fixed top-0 left-0 bg-white duration-200 transition-all z-[99] -translate-y-[100%] pb-5 sm:pb-0 pl-5 sm:pl-[59.25%] pr-5 sm:pr-0 flex flex-col pt-32 sm:pt-[15vw] md:pt-[15vw] lg:pt-[12vw] xl:pt-[9vw] opacity-0 font-GolosRegular invisible ${
+            className={`w-full min-h-svh sm:min-h-screen h-full overflow-x-auto fixed top-0 left-0 bg-white duration-200 transition-all z-[99] -translate-y-[100%] pb-5 sm:pb-0 pl-5 sm:pl-[59.25%] pr-5 sm:pr-0 flex flex-col pt-32 sm:pt-[15vw] md:pt-[15vw] lg:pt-[12vw] xl:pt-[9vw] opacity-0 font-GolosRegular invisible ${
                 menuOpenClose === true && "translate-y-0 visible opacity-100"
             }`}
         >
             <div className="flex flex-col gap-4 sm:gap-[1.1vw] font-GolosDemiBold">
                 <Link
                     onClick={() => setmenuOpenClose(false)}
-                    to={"/"}
+                    to={"/teaflow"}
                     className="navMenuText2 text-5xl sm:text-[3.5vw] font-bold uppercase overflow-hidden w-auto h-auto"
                 >
                     <motion.p

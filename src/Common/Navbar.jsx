@@ -63,7 +63,7 @@ const Navbar = ({
                 >
                     <div className="col-span-1">
                         <div className="logo w-32 sm:w-[8.5vw]">
-                            <Link to={"/"}>
+                            <Link to={"/teaflow"}>
                                 <img
                                     className="w-full"
                                     src="/Images/TeaFlow_logo_black.svg"

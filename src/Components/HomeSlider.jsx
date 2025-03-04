@@ -21,6 +21,7 @@ const HomeSlider = () => {
             title3: "Tea #3",
             desc: "Discover the complex aroma and sweet jam taste of Golden Eyebrows - a deservedly popular red tea!",
             image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806659_Slide1-min-p-1080.jpeg",
+            Path: `/product/red-tea-3`,
         },
     ]);
     const handleSliderContent = (e) => {

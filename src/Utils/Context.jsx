@@ -8,7 +8,7 @@ const Context = (props) => {
     //
     const callProducts = () => {
         const api =
-            "https://teaflows-eed2e-default-rtdb.firebaseio.com/productsData.json";
+            "https://teaflows-eed2e-default-rtdb.firebaseio.com/allDatas.json";
         axios
             .get(api)
             .then((res) => {

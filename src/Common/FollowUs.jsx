@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
-import React from "react";
-import { follow_us } from "../Utils/AditionalData";
+import React, { useContext } from "react";
+import { productContext } from "../Utils/Context";
 
 const FollowUs = () => {
+        const [productsApiData] = useContext(productContext);
     return (
         <div className="pl-5 sm:pl-[14.44vw] w-full">
             <div className="overflow-hidden h-auto w-auto">
@@ -19,7 +20,7 @@ const FollowUs = () => {
                 </motion.h2>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-[1.2vw] w-full font-GolosRegular">
-                {follow_us.map(({ id, image }, index) => {
+                {productsApiData.followUs && productsApiData.followUs.map(({ id, image }, index) => {
                     return (
                         <motion.div
                             key={id}

@@ -16,7 +16,7 @@ const AboutUs = () => {
                     <motion.div
                         initial={{ y: 150 }}
                         whileInView={{ y: 0 }}
-                        viewport={{once:true}}
+                        viewport={{ once: true }}
                         transition={{
                             duration: 0.5,
                         }}
@@ -46,10 +46,10 @@ const AboutUs = () => {
                                                 opacity: 1,
                                                 y: 0,
                                             }}
-                                            viewport={{once:true}}
+                                            viewport={{ once: true }}
                                             transition={{
                                                 duration: 0.5,
-                                                delay: 0.015 * index,
+                                                delay: 0.01 * index,
                                             }}
                                         >
                                             {text}
@@ -74,10 +74,10 @@ const AboutUs = () => {
                                                 opacity: 1,
                                                 y: 0,
                                             }}
-                                            viewport={{once:true}}
+                                            viewport={{ once: true }}
                                             transition={{
                                                 duration: 0.5,
-                                                delay: 0.015 * index,
+                                                delay: 0.01 * index,
                                             }}
                                         >
                                             {text}
@@ -106,10 +106,10 @@ const AboutUs = () => {
                                                 opacity: 1,
                                                 y: 0,
                                             }}
-                                            viewport={{once:true}}
+                                            viewport={{ once: true }}
                                             transition={{
                                                 duration: 0.5,
-                                                delay: 0.015 * index,
+                                                delay: 0.01 * index,
                                             }}
                                         >
                                             {text}
@@ -134,10 +134,10 @@ const AboutUs = () => {
                                                 opacity: 1,
                                                 y: 0,
                                             }}
-                                            viewport={{once:true}}
+                                            viewport={{ once: true }}
                                             transition={{
                                                 duration: 0.5,
-                                                delay: 0.015 * index,
+                                                delay: 0.01 * index,
                                             }}
                                         >
                                             {text}
@@ -149,7 +149,7 @@ const AboutUs = () => {
                     <motion.div
                         initial={{ y: 150 }}
                         whileInView={{ y: 0 }}
-                        viewport={{once:true}}
+                        viewport={{ once: true }}
                         transition={{
                             duration: 0.5,
                         }}
@@ -170,7 +170,7 @@ const AboutUs = () => {
                         <motion.div
                             initial={{ y: 150 }}
                             whileInView={{ y: 0 }}
-                            viewport={{once:true}}
+                            viewport={{ once: true }}
                             transition={{
                                 duration: 0.5,
                             }}
@@ -200,7 +200,7 @@ const AboutUs = () => {
                                                     opacity: 1,
                                                     y: 0,
                                                 }}
-                                                viewport={{once:true}}
+                                                viewport={{ once: true }}
                                                 transition={{
                                                     duration: 0.5,
                                                     delay: 0.01 * index,
@@ -213,7 +213,7 @@ const AboutUs = () => {
                             </div>
                             <div className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] flex flex-col gap-6 sm:gap-[1.1vw]">
                                 <div className="mt-10 sm:mt-[3vw] flex flex-wrap gap-[6px] sm:gap-[0.4vw]">
-                                    {`At Tea Flow, we believe it's our responsibility to make the world cleaner and healthier for everyone. That's why we're proud to introduce our newest initiative - every time you buy our premium tea, you help clean the ocean of plastic! We know that plastic pollution is a huge problem in our oceans, so we've partnered with 4ocean - a company dedicated to cleaning up our oceans and beaches. For every purchase you make, we invest a percentage of our profits into 4ocean's incredible efforts to remove plastic waste from our oceans. So not only will you enjoy our delicious teas, but you'll also be making a tangible difference in the fight against plastic pollution. With your help, we can create a cleaner, healthier world for generations to come. Join us on this mission to make a positive impact - one cup of tea at a time!`
+                                    {`At Tea Flow, we believe it's our responsibility to make the world cleaner and healthier for everyone. That's why we're proud to introduce our newest initiative - every time you buy our premium tea, you help clean the ocean of plastic!`
                                         .split(" ")
                                         .map((text, index) => (
                                             <div
@@ -229,7 +229,63 @@ const AboutUs = () => {
                                                         opacity: 1,
                                                         y: 0,
                                                     }}
-                                                    viewport={{once:true}}
+                                                    // viewport={{ once: true }}
+                                                    transition={{
+                                                        duration: 0.5,
+                                                        delay: 0.01 * index,
+                                                    }}
+                                                >
+                                                    {text}
+                                                </motion.p>
+                                            </div>
+                                        ))}
+                                </div>
+                                <div className="mt-5 sm:mt-[1vw] flex flex-wrap gap-[6px] sm:gap-[0.4vw]">
+                                    {`We know that plastic pollution is a huge problem in our oceans, so we've partnered with 4ocean - a company dedicated to cleaning up our oceans and beaches. For every purchase you make, we invest a percentage of our profits into 4ocean's incredible efforts to remove plastic waste from our oceans.`
+                                        .split(" ")
+                                        .map((text, index) => (
+                                            <div
+                                                key={index}
+                                                className="overflow-hidden h-auto w-auto"
+                                            >
+                                                <motion.p
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: "100%",
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                    }}
+                                                    // viewport={{ once: true }}
+                                                    transition={{
+                                                        duration: 0.5,
+                                                        delay: 0.01 * index,
+                                                    }}
+                                                >
+                                                    {text}
+                                                </motion.p>
+                                            </div>
+                                        ))}
+                                </div>
+                                <div className="mt-5 sm:mt-[1vw] flex flex-wrap gap-[6px] sm:gap-[0.4vw]">
+                                    {`So not only will you enjoy our delicious teas, but you'll also be making a tangible difference in the fight against plastic pollution. With your help, we can create a cleaner, healthier world for generations to come. Join us on this mission to make a positive impact - one cup of tea at a time!`
+                                        .split(" ")
+                                        .map((text, index) => (
+                                            <div
+                                                key={index}
+                                                className="overflow-hidden h-auto w-auto"
+                                            >
+                                                <motion.p
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: "100%",
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                    }}
+                                                    // viewport={{ once: true }}
                                                     transition={{
                                                         duration: 0.5,
                                                         delay: 0.01 * index,
@@ -251,13 +307,16 @@ const AboutUs = () => {
                                             opacity: 1,
                                             y: 0,
                                         }}
-                                        viewport={{once:true}}
+                                        // viewport={{ once: true }}
                                         transition={{
                                             duration: 0.5,
-                                            delay: 1.5,
+                                            delay: 0.4,
                                         }}
                                     >
-                                        <Link to={`/catagory/${"products"}`} className="flex gap-2 sm:gap-[1vw] mt-3 sm:mt-[1.2vw] items-center cursor-pointer group font-GolosRegular">
+                                        <Link
+                                            to={`/catagory/${"products"}`}
+                                            className="flex gap-2 sm:gap-[1vw] mt-3 sm:mt-[1.2vw] items-center cursor-pointer group font-GolosRegular"
+                                        >
                                             <span className="text-[12px] sm:text-[0.9vw] font-semibold uppercase tracking-[0.2vw]">
                                                 watch catalog
                                             </span>
