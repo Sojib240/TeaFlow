@@ -54,13 +54,15 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             tansition={{ ease: "easeInOut" }}
-            className={`w-full h-screen bg-[#000000d0] fixed top-0 flex justify-center items-center z-0 transition-all duration-1000 opacity-0 p-0 sm:px-[5.15vw] md:px-[16.44vw] ${
+            className={`w-full h-svh sm:h-screen bg-[#000000d0] fixed top-0 flex justify-center items-center z-0 transition-all duration-1000 opacity-0 p-0 sm:px-[5.15vw] md:px-[16.44vw] ${
                 CartOpenClose == true && "z-[999]"
             }`}
         >
             <div
                 className={`fixed top-0 right-0 transition-all duration-500 pt-5 sm:pt-[1vw] ${
-                    checkOutState ? "translate-x-[0] opacity-100 visible" : "translate-x-[100%] opacity-0 invisible"
+                    checkOutState
+                        ? "translate-x-[0] opacity-100 visible"
+                        : "translate-x-[100%] opacity-0 invisible"
                 }`}
             >
                 <div className="pl-3 pr-2 sm:pl-[1.5vw] sm:pr-[1vw] py-3 sm:py-[1vw] rounded-tl-full rounded-bl-full bg-red-500">

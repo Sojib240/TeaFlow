@@ -1,6 +1,6 @@
 import React from "react";
 
-const Context = () => {
+const Data = () => {
     const productsData = {
         categories: [
             {
@@ -89,6 +89,28 @@ const Context = () => {
                 subCategory: 2,
                 category: 4,
                 slug: ["new-arrivals", "red-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 25,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) tin",
+                        price: 38,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 71,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 170,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068dd_%D0%95%20%D0%A8%D0%B5%D0%BD%20%D0%A5%D1%83%D0%BD%20%D0%A7%D0%B0%20%D1%81%20%D0%B4%D0%B8%D0%BA%D0%B8%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -121,6 +143,43 @@ const Context = () => {
                 subCategory: 1,
                 category: [3, 7],
                 slug: ["top-sales", "products", "energy-flow", "oolong-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 9,
+                    },
+                    {
+                        id: 2,
+                        size: "0.78 oz (22 G) tin",
+                        price: 9,
+                    },
+                    {
+                        id: 3,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 14,
+                    },
+                    {
+                        id: 4,
+                        size: "1.5 oz (43 G) tin",
+                        price: 14,
+                    },
+                    {
+                        id: 5,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 21,
+                    },
+                    {
+                        id: 6,
+                        size: "3 oz (86 G) tin",
+                        price: 21,
+                    },
+                    {
+                        id: 7,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 45,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806876_%D0%96%D0%B5%D0%BD%D1%8C%D1%88%D0%B5%D0%BD%D1%8C%20%D0%A3%D0%BB%D1%83%D0%BD%2C%20%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC%2C%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B8%CC%86%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -153,6 +212,43 @@ const Context = () => {
                 subCategory: 5,
                 category: [1, 7],
                 slug: ["premium-tea", "products", "energy-flow", "black-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 16,
+                    },
+                    {
+                        id: 2,
+                        size: "0.78 oz (22 G) tin",
+                        price: 16,
+                    },
+                    {
+                        id: 3,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 27,
+                    },
+                    {
+                        id: 4,
+                        size: "1.5 oz (43 G) tin",
+                        price: 27,
+                    },
+                    {
+                        id: 5,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 50,
+                    },
+                    {
+                        id: 6,
+                        size: "3 oz (86 G) tin",
+                        price: 50,
+                    },
+                    {
+                        id: 7,
+                        size: "7 oz (200 G) trunk",
+                        price: 120,
+                    },
+                ],
                 minImg1:
                     " https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806751_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%C2%AB%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%20%D0%B2%20%D0%91%D0%B0%D0%BC%D0%B1%D1%83%D0%BA%D0%B5%C2%BB%2C%202021%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -207,6 +303,43 @@ const Context = () => {
                 subCategory: 5,
                 category: [3, 7],
                 slug: ["top-sales", "products", "energy-flow", "black-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 9,
+                    },
+                    {
+                        id: 2,
+                        size: "0.78 oz (22 G) tin",
+                        price: 9,
+                    },
+                    {
+                        id: 3,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 14,
+                    },
+                    {
+                        id: 4,
+                        size: "1.5 oz (43 G) tin",
+                        price: 14,
+                    },
+                    {
+                        id: 5,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 21,
+                    },
+                    {
+                        id: 6,
+                        size: "3 oz (86 G) tin",
+                        price: 21,
+                    },
+                    {
+                        id: 7,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 45,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80672e_%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%A7%D0%B5%CC%88%D1%80%D0%BD%D1%8B%D0%B8%CC%86%20%D0%96%D0%B5%D0%BC%D1%87%D1%83%D0%B3%2C%202018%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -282,6 +415,28 @@ const Context = () => {
                 subCategory: 1,
                 category: [3, 7],
                 slug: ["top-sales", "products", "awareness-flow", "red-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 8,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) tin",
+                        price: 12,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 18,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 35,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d7_%D0%A1%D1%8F%D0%BE%20%D0%A7%D0%B6%D1%83%D0%BD%20%D0%A5%D1%83%D0%B0%20%D0%A1%D1%8F%D0%BD%20%C2%AB%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20%D0%B0%D1%80%D0%BE%D0%BC%D0%B0%D1%82%C2%BB%2C%202021%20%D0%B3-min.jpg",
                 minImg2:
@@ -352,6 +507,28 @@ const Context = () => {
                 subCategory: 5,
                 category: 7,
                 slug: ["products", "awareness-flow", "black-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 10,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) tin",
+                        price: 15,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 25,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 55,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ef_%D0%9B%D1%8E%D0%B0%D0%BD%D1%8C%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%20%D0%B2%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%BA%D0%B5%2C%202021%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -404,6 +581,28 @@ const Context = () => {
                 subCategory: 5,
                 category: [4, 7],
                 slug: ["new-arrivals", "products", "black-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 10,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 15,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 26,
+                    },
+                    {
+                        id: 4,
+                        size: "7 oz (215 G) cake",
+                        price: 45,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806987_%D0%9C%D1%8D%D0%BD%D1%85%D0%B0%D0%B8%CC%86%20%D0%92%D1%8D%D0%B8%CC%86%20%C2%AB%D0%A7%D0%B8%D1%81%D1%82%D1%8B%D0%B8%CC%86%20%D0%92%D0%BA%D1%83%D1%81%20%D0%9C%D1%8D%D0%BD%D1%85%D0%B0%D1%8F%C2%BB%2C%202021%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -470,13 +669,54 @@ const Context = () => {
                 amount: 1,
                 flow: 3,
                 subCategory: 3,
-                // subSlug: "green-tea",..............................................
                 category: [1, 7],
                 slug: [
                     "premium-tea",
                     "products",
                     "awareness-flow",
                     "green-tea",
+                ],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 14,
+                    },
+                    {
+                        id: 2,
+                        size: "0.78 oz (22 G) tin",
+                        price: 14,
+                    },
+                    {
+                        id: 3,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 21,
+                    },
+                    {
+                        id: 4,
+                        size: "1.5 oz (43 G) tin",
+                        price: 21,
+                    },
+                    {
+                        id: 5,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 35,
+                    },
+                    {
+                        id: 6,
+                        size: "3 oz (86 G) tin",
+                        price: 35,
+                    },
+                    {
+                        id: 7,
+                        size: "6 oz (172 G) zip pouch",
+                        price: 45,
+                    },
+                    {
+                        id: 8,
+                        size: "12.6 oz (357 G) cake",
+                        price: 45,
+                    },
                 ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806784_%20%D0%98%20%D0%A3%20%2522%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D0%BE%D0%B5%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%2522%2C%202008%20%D0%B3(4)-min.jpg",
@@ -553,6 +793,28 @@ const Context = () => {
                 subCategory: 2,
                 category: 7,
                 slug: ["products", "awareness-flow", "red-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 14,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) tin",
+                        price: 21,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 35,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 80,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c2_%D0%A6%D0%B7%D0%B8%D0%BD%D1%8C%20%D0%A6%D0%B7%D1%8E%D0%BD%D1%8C%20%D0%9C%D1%8D%D0%B8%CC%86%20%C2%AB%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5%20%D0%91%D1%80%D0%BE%D0%B2%D0%B8%C2%BB%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -628,6 +890,28 @@ const Context = () => {
                 subCategory: 2,
                 category: [1, 7],
                 slug: ["premium-tea", "products", "energy-flow", "red-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 16,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) tin",
+                        price: 27,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 50,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 115,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c8_%D0%94%D0%B0%20%D0%A6%D0%B7%D0%B8%D0%BD%D1%8C%20%D0%A7%D0%B6%D1%8D%D0%BD%D1%8C%20%D0%92%D0%B0%D0%BD%20%C2%AB%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5%20%D0%98%D0%B3%D0%BB%D1%8B%C2%BB%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -653,9 +937,30 @@ const Context = () => {
                 amount: 1,
                 flow: 1,
                 subCategory: 4,
-                // subslug: "white-tea",
                 category: 7,
                 slug: ["products", "relax-flow", "white-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) tin",
+                        price: 14,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 21,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 35,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 80,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d4_%D0%91%D0%B0%D0%B8%CC%86%20%D0%A5%D0%B0%D0%BE%20%D0%98%D0%BD%D1%8C%20%D0%A7%D0%B6%D1%8D%D0%BD%D1%8C%2C%20%D0%AE%D0%BD%D1%8C%D0%BD%D0%B0%D0%BD%D1%8C%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -725,6 +1030,28 @@ const Context = () => {
                 subCategory: 1,
                 category: [3, 7],
                 slug: ["top-sales", "accessories", "life-flow", "oolong-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 14,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 21,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 35,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 80,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068af_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%93%D0%B0%D0%B1%D0%B0%20%D0%9D%D0%B0%D0%BD%D1%8C%D1%82%D0%BE%D1%83-min.jpg",
                 minImg2:
@@ -786,6 +1113,28 @@ const Context = () => {
                 subCategory: 1,
                 category: [1, 7],
                 slug: ["premium-tea", "products", "life-flow", "oolong-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 18,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 30,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) tin",
+                        price: 57,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 134,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ad_%D0%93%D0%B0%D0%B1%D0%B0%20%D0%90%D0%BB%D0%B8%20%D0%A8%D0%B0%D0%BD%D1%8C%2C%20%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC-min.jpg",
                 minImg2:
@@ -854,6 +1203,28 @@ Repeat several times until the flavor and aroma of the tea dissipates. As the br
                 subCategory: 5,
                 category: 7,
                 slug: ["products", "life-flow", "black-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 14,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 21,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 35,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 80,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068da_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B02-min.jpg",
                 minImg2:
@@ -944,6 +1315,28 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                     "relax-flow",
                     "oolong-tea",
                 ],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 20,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 35,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 65,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 156,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ae_%D0%93%D0%B0%D0%B1%D0%B0%20%D0%A0%D1%83%D0%B1%D0%B8%D0%BD%20%D0%A2%D0%B5%CC%88%D0%BC%D0%BD%D0%B0%D1%8F-min.jpg",
                 minImg2:
@@ -1026,6 +1419,28 @@ Repeat several times until the flavor and aroma of the tea dissipates. As the br
                 subCategory: 5,
                 category: [3, 7],
                 slug: ["top-sales", "accessories", "energy-flow", "black-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 9,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) tin",
+                        price: 12,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) tin",
+                        price: 18,
+                    },
+                    {
+                        id: 4,
+                        size: "12.6 oz (357 G) cake",
+                        price: 45,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80664a_%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%20%D0%AE%D0%B8%CC%86%20%D0%98%D0%BD%D1%8C%2C%202013%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -1114,9 +1529,30 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 amount: 1,
                 flow: 2,
                 subCategory: 3,
-                // subSlug: [],
                 category: 7,
                 slug: ["products", "green-tea", "life-flow"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 8,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) tin",
+                        price: 12,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 18,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 35,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806787_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D0%91%D0%B8%D0%BB%D0%BE%D1%87%D1%83%D0%BD%D1%8C%20%C2%AB%D0%98%D0%B7%D1%83%D0%BC%D1%80%D1%83%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%A1%D0%BF%D0%B8%D1%80%D0%B0%D0%BB%D0%B8%20%D0%92%D0%B5%D1%81%D0%BD%D1%8B%C2%BB%2C%20%D0%AE%D0%BD%D1%8C%D0%BD%D0%B0%D0%BD%D1%8C%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -1150,6 +1586,28 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 subCategory: 1,
                 category: [1, 7],
                 slug: ["premium-tea", "products", "oolong-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 15,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 25,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) tin",
+                        price: 45,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 100,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b1_%D0%A3%D0%BB%D1%83%D0%BD%20%D1%81%20%D0%BE%D1%81%D0%BC%D0%B0%D0%BD%D1%82%D1%83%D1%81%D0%BE%D0%BC%20%D1%81%20%D0%BE.%20%D0%A2%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%2C%20%D0%BD%D0%B0%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86-min.jpg",
                 minImg2:
@@ -1219,6 +1677,28 @@ Infuse the brew for 2-3 minutes.
                 subCategory: 1,
                 category: [1, 7],
                 slug: ["premium-tea", "products", "life-flow", "oolong-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 15,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 25,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 45,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 100,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ba_%D0%A8%D1%83%D0%B8%CC%86%20%D0%A1%D1%8F%D0%BD%D1%8C%20%D0%93%D0%B0%D0%BE%20%D0%A8%D0%B0%D0%BD%D1%8C%20%D0%A2%D0%B0%D0%BD%20%D0%91%D1%8D%D0%B8%CC%86%20%C2%AB%E2%80%8E%D0%92%D1%8B%D1%81%D0%BE%D0%BA%D0%BE%D0%B3%D0%BE%D1%80%D0%BD%D1%8B%D0%B8%CC%86%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%C2%BB-min.jpg",
                 minImg2:
@@ -1301,98 +1781,104 @@ Infuse 2nd and subsequent brews for 5-15 seconds.
             },
             {
                 id: 20,
-                title: "dong ding lao shi",
-                param: "dong-ding-lao-shi",
+                title: `dong ding lao shi`,
+                param: `dong-ding-lao-shi`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fc_dong-1200-min.jpg",
                 price: 50,
                 amount: 1,
-                flow: 1,
+                flow: null,
                 subCategory: 1,
-                category: 4,
-                slug: ["new-arrivals", "oolong-tea"],
+                category: [1, 7],
+                slug: ["premium-tea", "products", "relax-flow"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 16,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 27,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) tin",
+                        price: 50,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 115,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b5_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%94%D1%83%D0%BD%20%D0%94%D0%B8%D0%BD%20%D0%9B%D0%B0%D0%BE%20%D0%A8%D0%B8%2C%20%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-min.jpg",
                 minImg2:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b3_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%94%D1%83%D0%BD%20%D0%94%D0%B8%D0%BD%20%D0%9B%D0%B0%D0%BE%20%D0%A8%D0%B8%2C%20%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B8%CC%86(2)-min.jpg",
                 minImg3: null,
                 availability: "in stock",
-                TastingNotes:
-                    "soft, sweet, multi-faceted, spicy-caramel, nutty and woody-dried fruit, with smoky coffee notes in the aftertaste and menthol freshness. Impact: intoxicating, relaxing, meditative.",
+                TastingNotes: `soft, sweet, multi-faceted, spicy-caramel, nutty and
+woody-dried fruit, with smoky coffee notes in the
+aftertaste and menthol freshness. Impact:
+intoxicating, relaxing, meditative.`,
                 aboutProduct: `<p>
-                        Medium-fermented highly roasted hemispherical twisted oolong. It is grown and made on the tea farm of the Lu Gu region.
-
-
-                    </p>
-                    <p>
-                    This tea is the ancestor of almost the entire tradition of Taiwanese oolongs, originally produced on a mountain peak in the area of Nantou. For this, he received the name "Oolong from Frosty Peak". The technology of its manufacture came to the island together with refugees from Fujian Province (China) in the mid-1960s. Some features of the technology have become leading in the tradition of Taiwanese teas. Now tea called "Dong Ding" is made all over Taiwan and this name has become more of an indication of the processing technology (special roasting) than the terrain.
-
-
-                    </p>
-                    <p>
-Lao Shi Dong Ding (traditional Dong Ding) has preserved the taste of that era through the centuries, it differs from its modern counterparts. The tea is made from the Qing Xing variety, and has a dark color and a sweet-caramel taste, which is due to technological features. The brightest and most important is roasting. It occurs in two stages, first, they are fried according to the modern method in a drying cabinet, but then they are brought on charcoal. Solid wood is used for coals, for expensive representatives - coals of the Lunyan tree.
-
-
-                    </p>
-                    <p>
-This tea only improves over time. It is better not to drink it immediately after production, after the fire settles down, the residual bitterness in the taste passes, and only sweetness remains. This tea is perfect for long-term storage, it is from him that the famous Lao Cha Wangs originate.
-
-
-                    </p>
-                    <p>
-Aroma: caramel, honey, with nuances of flowers, fruits, and spices.
-
-
-                    </p>
-                    <p>
-Taste: soft, sweet, multi-faceted, spicy caramel, nutty and woody-dried fruit, with smoky coffee notes in the aftertaste and menthol freshness. 
-
-
-                    </p>
-                    <p>
-                       Effects: intoxicating, relaxing, meditative.
-
- 
-                    </p>
-                    `,
-                SteepingInstructions: `<p>
-                        Traditional Preparation
-
-
-                    </p>
-                    <p>
-                    Add 7-10 grams to a Gaiwan or Gongfu Teapot (150ml-200ml). 
-
-
-                    </p>
-                    <p>
-Use 212°F boiling water.
-
-
-                    </p>
-                    <p>
-Briefly rinse the leaves. Decant and discard this infusion.
-
-
-                    </p>
-                    <p>
-Infuse the first brew for 10 seconds.  
-
-
-                    </p>
-                    <p>
-Infuse 2nd and subsequent brews for 10-30 seconds. 
-
-
-                    </p>
-                    <p>
-                        Repeat several times until the flavor and aroma of the tea dissipates. As the brewing session ensues, increase infusion time to coax out the body and strength of the final infusions.
-
-
-                    </p>
-                    `,
+                Medium-fermented highly roasted hemispherical twisted oolong. It
+                is grown and made on the tea farm of the Lu Gu region.
+            </p>
+            <p>
+                This tea is the ancestor of almost the entire tradition of
+                Taiwanese oolongs, originally produced on a mountain peak in the
+                area of Nantou. For this, he received the name "Oolong from
+                Frosty Peak". The technology of its manufacture came to the
+                island together with refugees from Fujian Province (China) in
+                the mid-1960s. Some features of the technology have become
+                leading in the tradition of Taiwanese teas. Now tea called "Dong
+                Ding" is made all over Taiwan and this name has become more of
+                an indication of the processing technology (special roasting)
+                than the terrain.
+            </p>
+            <p>
+                Lao Shi Dong Ding (traditional Dong Ding) has preserved the
+                taste of that era through the centuries, it differs from its
+                modern counterparts. The tea is made from the Qing Xing variety,
+                and has a dark color and a sweet-caramel taste, which is due to
+                technological features. The brightest and most important is
+                roasting. It occurs in two stages, first, they are fried
+                according to the modern method in a drying cabinet, but then
+                they are brought on charcoal. Solid wood is used for coals, for
+                expensive representatives - coals of the Lunyan tree.
+            </p>
+            <p>
+                This tea only improves over time. It is better not to drink it
+                immediately after production, after the fire settles down, the
+                residual bitterness in the taste passes, and only sweetness
+                remains. This tea is perfect for long-term storage, it is from
+                him that the famous Lao Cha Wangs originate.
+            </p>
+            <p>
+                Aroma: caramel, honey, with nuances of flowers, fruits, and
+                spices.
+            </p>
+            <p>
+                Taste: soft, sweet, multi-faceted, spicy caramel, nutty and
+                woody-dried fruit, with smoky coffee notes in the aftertaste and
+                menthol freshness.
+            </p>
+            <p>Effects: intoxicating, relaxing, meditative.</p>`,
+                SteepingInstructions: `<p>Traditional Preparation</p>
+            <p>Add 7-10 grams to a Gaiwan or Gongfu Teapot (150ml-200ml).</p>
+            <p>Use 212°F boiling water.</p>
+            <p>Briefly rinse the leaves. Decant and discard this infusion.</p>
+            <p>Infuse the first brew for 10 seconds.</p>
+            <p>Infuse 2nd and subsequent brews for 10-30 seconds.</p>
+            <p>
+                Repeat several times until the flavor and aroma of the tea
+                dissipates. As the brewing session ensues, increase infusion
+                time to coax out the body and strength of the final infusions.
+            </p>`,
                 flavor: "Flavor: spicy caramel, nutty, woody, fruit",
                 Ingredients: "Organic oolong tea",
-                TopSale: true,
             },
             {
                 id: 21,
@@ -1405,6 +1891,28 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 subCategory: 1,
                 category: [1, 7],
                 slug: ["premium-tea", "products", "relax-flow", "oolong-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 15,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 25,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 45,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 100,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068be_%D0%9C%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B6%D0%B0%D0%BD%D1%8C%20%C2%AB%D0%94%D0%B8%D0%BA%D0%B0%D1%8F%20%D0%A1%D0%BB%D0%B8%D0%B2%D0%B0%C2%BB-min.jpg",
                 minImg2:
@@ -1495,6 +2003,33 @@ Infuse 2nd and subsequent brews for 5-15 seconds.
                 subCategory: 1,
                 category: 7,
                 slug: ["products", "awareness-flow", "oolong-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 10,
+                    },
+                    {
+                        id: 2,
+                        size: "0.78 oz (22 G) tin",
+                        price: 10,
+                    },
+                    {
+                        id: 3,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 15,
+                    },
+                    {
+                        id: 4,
+                        size: "1.5 oz (43 G) tin",
+                        price: 15,
+                    },
+                    {
+                        id: 5,
+                        size: "3 oz (100 G) trunk",
+                        price: 30,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8067cc_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%A2%D0%B5%D0%B3%D1%83%D0%B0%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C%20%D0%B2%20%D0%9A%D1%83%D0%B3%D1%83%D0%B0%2C%20%D0%BF%D1%80%D0%BE%D0%B6%D0%B0%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8%CC%86%20%D0%B8%20%D0%B2%D1%8B%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%BD%D1%8B%D0%B8%CC%86%2C%202019%20%D0%B3-min.jpg",
                 minImg2:
@@ -1575,6 +2110,28 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 subCategory: 1,
                 category: 7,
                 slug: ["products", "relax-flow", "oolong-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 8,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 12,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) tin",
+                        price: 18,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 35,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806899_%D0%9C%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20%D0%A3%D0%BB%D1%83%D0%BD%20%C2%AB%D0%9D%D0%B0%D0%B8%CC%86%20%D0%A1%D1%8F%D0%BD%C2%BB%2C%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B8%CC%86%2C%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -1640,6 +2197,28 @@ Infuse the brew for 3 minutes.
                 subCategory: 5,
                 category: 1,
                 slug: ["premium tea", "black-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 10,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) tin",
+                        price: 15,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 25,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 55,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ef_%D0%9B%D1%8E%D0%B0%D0%BD%D1%8C%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%20%D0%B2%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%BA%D0%B5%2C%202021%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -1719,6 +2298,28 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 subCategory: 1,
                 category: [1, 7],
                 slug: ["premium-tea", "products", "relax-flow", "oolong-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 16,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 27,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) tin",
+                        price: 50,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 115,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068cb_%D0%9B%D1%83%20%D0%93%D1%83%20%D0%9B%D0%B0%D0%BE%20%D0%A7%D0%B0%20%D0%92%D0%B0%D0%BD%2012-%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D0%B8%CC%86-min.jpg",
                 minImg2:
@@ -1814,6 +2415,33 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 subCategory: 1,
                 category: [3, 7],
                 slug: ["top-sales", "products", "relax-flow", "oolong-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 9,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) tin",
+                        price: 14,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 21,
+                    },
+                    {
+                        id: 4,
+                        size: "3 oz (86 G) tin",
+                        price: 21,
+                    },
+                    {
+                        id: 5,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 45,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80678c_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%A2%D0%B5%D0%B3%D1%83%D0%B0%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -1879,6 +2507,43 @@ Infuse the brew for 2-3 minutes.
                 subCategory: 1,
                 category: [1, 7],
                 slug: ["premium-tea", "products", "energy-flow", "oolong-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 19,
+                    },
+                    {
+                        id: 2,
+                        size: "0.78 oz (22 G) tin",
+                        price: 19,
+                    },
+                    {
+                        id: 3,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 33,
+                    },
+                    {
+                        id: 4,
+                        size: "1.5 oz (43 G) tin",
+                        price: 33,
+                    },
+                    {
+                        id: 5,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 60,
+                    },
+                    {
+                        id: 6,
+                        size: "3 oz (86 G) tin",
+                        price: 60,
+                    },
+                    {
+                        id: 5,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 145,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c1_%D0%9C%D0%B8%20%D0%9B%D0%B0%D0%BD%D1%8C%20%D0%A1%D1%8F%D0%BD%20%D0%93%D0%B0%D0%BE%D1%88%D0%B0%D0%BD%D1%8C%20%D0%94%D0%B0%D0%BD%D1%8C%20%D0%A6%D1%83%D0%BD%20%C2%AB%D0%9C%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D1%85%D0%B8%D0%B4%D0%B5%D1%8F%C2%BB%20-min.jpg",
                 minImg2:
@@ -1954,6 +2619,48 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 subCategory: 5,
                 category: [3, 7],
                 slug: ["top-sales", "products", "energy-flow", "black-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 10,
+                    },
+                    {
+                        id: 2,
+                        size: "0.78 oz (22 G) tin",
+                        price: 10,
+                    },
+                    {
+                        id: 3,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 15,
+                    },
+                    {
+                        id: 4,
+                        size: "1.5 oz (43 G) tin",
+                        price: 15,
+                    },
+                    {
+                        id: 5,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 25,
+                    },
+                    {
+                        id: 6,
+                        size: "3 oz (86 G) tin",
+                        price: 25,
+                    },
+                    {
+                        id: 7,
+                        size: "7.5 oz (172 G) zip pouch",
+                        price: 40,
+                    },
+                    {
+                        id: 8,
+                        size: "12.6 oz (357 G) zip pouch",
+                        price: 60,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806752_%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%20%D0%92%D0%B0%D0%BD%2C%202012%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -2018,9 +2725,35 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 amount: 1,
                 flow: 2,
                 subCategory: 3,
-                // subSlug: "green-tea",..............................................
                 category: 7,
                 slug: ["products", "life-flow", "green-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 17,
+                    },
+                    {
+                        id: 2,
+                        size: "0.78 oz (22 G) tin",
+                        price: 17,
+                    },
+                    {
+                        id: 3,
+                        size: "1.5 oz (43 G) tin",
+                        price: 27,
+                    },
+                    {
+                        id: 4,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 49,
+                    },
+                    {
+                        id: 5,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 115,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806788_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D0%A1%D0%B8%20%D0%A5%D1%83%20%D0%9B%D1%83%D0%BD%D1%86%D0%B7%D0%B8%D0%BD%20%C2%AB%D0%9A%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D1%86%20%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0%C2%BB%2C%20%D0%B2%D1%8B%D1%81%D1%88%D0%B8%D0%B8%CC%86%20%D1%81%D0%BE%D1%80%D1%82%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(3)-min.jpg",
                 minImg2:
@@ -2243,450 +2976,6 @@ Have a nice tea party.
             },
             {
                 id: 33,
-                title: "teapot #1",
-                param: "teapot-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ec_teapot-1-min.jpg",
-                price: 85,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: 5,
-                slug: "teaware",
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690f_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%203-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806905_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%204-min.jpeg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690c_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%205-min.jpeg",
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Tea ceremony teapot, Yixing clay, 135 ml",
-                Ingredients: null,
-            },
-            {
-                id: 34,
-                title: "teapot #2",
-                param: "teapot-2",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e9_teapot-2-min.jpg",
-                price: 70,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: [3, 5],
-                slug: ["top-sales", "teaware"],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691c_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%203-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806919_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%204-min.jpeg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691b_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%205-min.jpeg",
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Tea ceremony teapot, Yixing clay, 160 ml",
-                Ingredients: null,
-            },
-            {
-                id: 35,
-                title: "teapot #5",
-                param: "teapot-5",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ed_teapot-5-min.jpg",
-                price: 100,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: [4, 5],
-                slug: ["new-arrivals", "teaware"],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80692e_img_9146-1000x1000-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806931_img_9148-1000x1000-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806936_img_9149-1000x1000-min.jpg",
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Tea ceremony teapot, Yixing clay, 105 ml",
-                Ingredients: null,
-            },
-            {
-                id: 36,
-                title: "gaiwan #1",
-                param: "gaiwan-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d5_gaiwan-1-new-1-min.jpg",
-                price: 18,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: [3, 5],
-                slug: ["top-sales", "teaware"],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ea_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%20%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D1%81%202-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068f0_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%20%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D1%81%203-min.jpg",
-                minImg3: null,
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Gaiwan Cosmos, clay, glaze, 130 ml",
-                Ingredients: null,
-            },
-            {
-                id: 37,
-                title: "teacup #7",
-                param: "teacup-7",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069df_teacup-7-new-min.jpg",
-                price: 5,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: 5,
-                slug: "teaware",
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806948_img_5224-1000x1000-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694c_img_5223-1000x1000-min.jpg",
-                minImg3: null,
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Teacup, white matte, porcelain, 60 ml",
-                Ingredients: null,
-            },
-            {
-                id: 38,
-                title: "teacup #1",
-                param: "teacup-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d9_tea-cup-1-new-1-min.jpg",
-                price: 8,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: [3, 5],
-                slug: ["top-sales", "teaware"],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ff_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%20%D0%A1%D0%B0%D0%BA%D1%83%D1%80%D0%B0%203-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068fd_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%20%D0%A1%D0%B0%D0%BA%D1%83%D1%80%D0%B0%202-min.jpeg",
-                minImg3: null,
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Teacup sakura 326, clay, glaze, 65 ml",
-                Ingredients: null,
-            },
-            {
-                id: 39,
-                title: "teacup #2",
-                param: "teacup-2",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069da_tea-cup-2-new-1-min.jpg",
-                price: 5,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: 5,
-                slug: "teaware",
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806911_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%202-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806912_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%203-min.jpeg",
-                minImg3: null,
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Teacup blue sky, porcelain, 60 ml",
-                Ingredients: null,
-            },
-            {
-                id: 40,
-                title: "gaiwan #4",
-                param: "gaiwan-4",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d7_gaiwan-4-new-1-min.jpeg",
-                price: 36,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: 5,
-                slug: "teaware",
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806937_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80693c_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%202-min.jpeg",
-                minImg3: null,
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Gaiwan Fan Gu, porcelain, 185 ml",
-                Ingredients: null,
-            },
-            {
-                id: 41,
-                title: "teapot #4",
-                param: "teapot-4",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069eb_teapot-4-min.jpg",
-                price: 70,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: [4, 5],
-                slug: ["new-arrivals", "teaware"],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806932_img_8523-1000x1000.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806930_img_8525-1000x1000.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80692d_img_8526-1000x1000.jpg",
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Tea ceremony teapot, Yixing clay, 165 ml",
-                Ingredients: null,
-            },
-            {
-                id: 42,
-                title: "teapot #3",
-                param: "teapot-3",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ea_teapot-3-min.jpg",
-                price: 80,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: 5,
-                slug: "teaware",
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806929_img_8464-1000x1000-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80692f_img_8460-1000x1000-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806927_img_8463-1000x1000-min.jpg",
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Tea ceremony teapot, Yixing clay, 190 ml",
-                Ingredients: null,
-            },
-            {
-                id: 43,
-                title: "gaiwan #5",
-                param: "gaiwan-5",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d8_gaiwan-5-new-min.jpeg",
-                price: 30,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: [5, 6],
-                slug: ["teaware", "accessories"],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806941_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806940_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%202-min.jpeg",
-                minImg3: null,
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Gaiwan Cobalt Lotus, hand-painted, 170 ml",
-                Ingredients: null,
-            },
-            {
-                id: 44,
-                title: "teacup #5",
-                param: "teacup-5",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069dd_Teacup%20%235-new-1-min.jpg",
-                price: 18,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: 5,
-                slug: "teaware",
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806943_img_8186-1000x1000-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806946_img_8185-1000x1000-min.jpg",
-                minImg3: null,
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Teacup, lava ceramic, 100 ml",
-                Ingredients: null,
-            },
-            {
-                id: 45,
-                title: "teacup #8",
-                param: "teacup-8",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e0_Teacup%20%238-new-1-min.jpg",
-                price: 18,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: 5,
-                slug: "teaware",
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694d_dsc07420-1000x1000-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806956_dsc07419-1000x1000-min.jpg",
-                minImg3: null,
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Teacup, lava ceramic, 100 ml",
-                Ingredients: null,
-            },
-            {
-                id: 46,
-                title: "gaiwan #2",
-                param: "gaiwan-2",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d4_gaiwan-2-new-1-min.jpeg",
-                price: 26,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: [3, 5],
-                slug: ["teaware", "top-sales"],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806935_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%202-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80693a_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%204-min.jpeg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806939_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%205-min.jpeg",
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Gaiwan Cranes, porcelain, 180 ml",
-                Ingredients: null,
-            },
-            {
-                id: 47,
-                title: "chaban #2",
-                param: "chaban-2",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c5_chaban-2-new-1-min.jpeg",
-                price: 150,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: 6,
-                slug: "accessories",
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691f_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%202-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691e_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%204-min.jpeg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806922_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%205-min.jpeg",
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Chaban (Tea Tray) made of wood, solid",
-                Ingredients: null,
-            },
-            {
-                id: 48,
-                title: "pu-erh tea knife #1",
-                param: "pu-erh-tea-knife-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c8_pu-erh-tea-knife-new-1-min.jpeg",
-                price: 9,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: 6,
-                slug: "accessories",
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ee_%D0%A8%D0%B8%D0%BB%D0%BE%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%83%D1%8D%D1%80%D0%B0%20.jpeg",
-                minImg2: null,
-                minImg3: null,
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Pu-erh tea knife Cigar, dark, flat cut",
-                Ingredients: null,
-            },
-            {
-                id: 49,
-                title: "chaban #1",
-                param: "chaban-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c6_Chaban%20%231-new-1-min.jpeg",
-                price: 110,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: 6,
-                slug: "accessories",
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068f3_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%20StoneLeaf%202.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068f5_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%20StoneLeaf%203.jpeg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068fa_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%20StoneLeaf%204.jpeg",
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: `Chaban (Tea Tray), "Black Horse", bamboo`,
-                Ingredients: null,
-            },
-            {
-                id: 50,
-                title: "chaban #3",
-                param: "chaban-3",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c4_chaban-3-new-1-min.jpeg",
-                price: 60,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: 6,
-                slug: "accessories",
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806923_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%202-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806921_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%203-min.jpeg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806925_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%204-min.jpeg",
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: `Chaban (Tea Tray) "With a bird", bamboo`,
-                Ingredients: null,
-            },
-            {
-                id: 51,
-                title: "tweezers tea #1",
-                param: "tweezers-tea-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c7_tweezers-tea-1-new-1-min.jpeg",
-                price: 5,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: 6,
-                slug: "accessories",
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ed_%D0%9F%D0%B8%D0%BD%D1%86%D0%B5%D1%82%20%D1%81%20%D0%BE%D0%B1%D0%BC%D0%BE%D1%82%D0%BA%D0%BE%D0%B8%CC%86%20-min.jpeg",
-                minImg2: null,
-                minImg3: null,
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Tweezers tea, bamboo",
-                Ingredients: null,
-            },
-            {
-                id: 52,
                 title: "black tea #2",
                 param: "black-tea-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e8_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
@@ -2696,6 +2985,28 @@ Have a nice tea party.
                 subCategory: 5,
                 category: [1, 7],
                 slug: ["premium-tea", "products", "life-flow", "black-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 17,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) tin",
+                        price: 27,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 49,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 115,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068de_%D0%9B%D1%8E%20%D0%91%D0%B0%D0%BE%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%208005%2C%202018%20%D0%B3(2)-min.jpg",
                 minImg2:
@@ -2747,7 +3058,7 @@ Have a nice tea party.
                 Ingredients: "Organic black tea",
             },
             {
-                id: 53,
+                id: 34,
                 title: "red tea #15",
                 param: "red-tea-15",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f6_red-15-1200-min.jpg",
@@ -2757,6 +3068,28 @@ Have a nice tea party.
                 subCategory: 2,
                 category: [1, 7],
                 slug: ["premium-tea", "products", "awareness-flow", "red-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 19,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) tin",
+                        price: 33,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 60,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 145,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d0_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B02-min.jpg",
                 minImg2:
@@ -2821,7 +3154,7 @@ Have a nice tea party.
                 Ingredients: "Organic red tea",
             },
             {
-                id: 54,
+                id: 35,
                 title: "green tea #4",
                 param: "green-tea-4",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bf_green-4-min.jpg",
@@ -2831,6 +3164,33 @@ Have a nice tea party.
                 subCategory: 3,
                 category: [3, 7],
                 slug: ["top-sales", "products", "life-flow", "green-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 8,
+                    },
+                    {
+                        id: 2,
+                        size: "0.78 oz (22 G) tin",
+                        price: 8,
+                    },
+                    {
+                        id: 3,
+                        size: "1.5 oz (43 G) tin",
+                        price: 12,
+                    },
+                    {
+                        id: 4,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 18,
+                    },
+                    {
+                        id: 5,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 35,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806807_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D1%81%20%D0%B6%D0%B0%D1%81%D0%BC%D0%B8%D0%BD%D0%BE%D0%BC%20%D0%9C%D0%BE%D0%BB%D0%B8%20%D0%A5%D1%83%D0%B0%20%D0%9B%D1%8E%D0%B8%CC%86%20%D0%A7%D0%B0%2C%202021%20%D0%B3-min.jpg",
                 minImg2:
@@ -2853,7 +3213,7 @@ Have a nice tea party.
                 Ingredients: "Organic green tea",
             },
             {
-                id: 55,
+                id: 36,
                 title: "shu pu-erh #16",
                 param: "shu-pu-erh-16",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fd_shu-16-1200-min.jpg",
@@ -2863,6 +3223,28 @@ Have a nice tea party.
                 subCategory: 5,
                 category: [1, 7],
                 slug: ["premium-tea", "products", "energy-flow", "black-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 18,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) tin",
+                        price: 30,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 57,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 120,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80674f_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%D1%81%D0%BE%20%D1%81%D1%82%D0%B0%D1%80%D1%8B%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%202021%20%D0%B3-min.jpg",
                 minImg2:
@@ -2922,86 +3304,7 @@ Have a nice tea party.
                 Ingredients: "Organic Shu Pu-erh",
             },
             {
-                id: 56,
-                title: `dong ding lao shi`,
-                param: `dong-ding-lao-shi`,
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fc_dong-1200-min.jpg",
-                price: 50,
-                amount: 1,
-                flow: null,
-                subCategory: 1,
-                category: [1, 7],
-                slug: ["premium-tea", "products", "relax-flow"],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b5_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%94%D1%83%D0%BD%20%D0%94%D0%B8%D0%BD%20%D0%9B%D0%B0%D0%BE%20%D0%A8%D0%B8%2C%20%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b3_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%94%D1%83%D0%BD%20%D0%94%D0%B8%D0%BD%20%D0%9B%D0%B0%D0%BE%20%D0%A8%D0%B8%2C%20%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B8%CC%86(2)-min.jpg",
-                minImg3: null,
-                availability: "in stock",
-                TastingNotes: `soft, sweet, multi-faceted, spicy-caramel, nutty and
-woody-dried fruit, with smoky coffee notes in the
-aftertaste and menthol freshness. Impact:
-intoxicating, relaxing, meditative.`,
-                aboutProduct: `<p>
-                Medium-fermented highly roasted hemispherical twisted oolong. It
-                is grown and made on the tea farm of the Lu Gu region.
-            </p>
-            <p>
-                This tea is the ancestor of almost the entire tradition of
-                Taiwanese oolongs, originally produced on a mountain peak in the
-                area of Nantou. For this, he received the name "Oolong from
-                Frosty Peak". The technology of its manufacture came to the
-                island together with refugees from Fujian Province (China) in
-                the mid-1960s. Some features of the technology have become
-                leading in the tradition of Taiwanese teas. Now tea called "Dong
-                Ding" is made all over Taiwan and this name has become more of
-                an indication of the processing technology (special roasting)
-                than the terrain.
-            </p>
-            <p>
-                Lao Shi Dong Ding (traditional Dong Ding) has preserved the
-                taste of that era through the centuries, it differs from its
-                modern counterparts. The tea is made from the Qing Xing variety,
-                and has a dark color and a sweet-caramel taste, which is due to
-                technological features. The brightest and most important is
-                roasting. It occurs in two stages, first, they are fried
-                according to the modern method in a drying cabinet, but then
-                they are brought on charcoal. Solid wood is used for coals, for
-                expensive representatives - coals of the Lunyan tree.
-            </p>
-            <p>
-                This tea only improves over time. It is better not to drink it
-                immediately after production, after the fire settles down, the
-                residual bitterness in the taste passes, and only sweetness
-                remains. This tea is perfect for long-term storage, it is from
-                him that the famous Lao Cha Wangs originate.
-            </p>
-            <p>
-                Aroma: caramel, honey, with nuances of flowers, fruits, and
-                spices.
-            </p>
-            <p>
-                Taste: soft, sweet, multi-faceted, spicy caramel, nutty and
-                woody-dried fruit, with smoky coffee notes in the aftertaste and
-                menthol freshness.
-            </p>
-            <p>Effects: intoxicating, relaxing, meditative.</p>`,
-                SteepingInstructions: `<p>Traditional Preparation</p>
-            <p>Add 7-10 grams to a Gaiwan or Gongfu Teapot (150ml-200ml).</p>
-            <p>Use 212°F boiling water.</p>
-            <p>Briefly rinse the leaves. Decant and discard this infusion.</p>
-            <p>Infuse the first brew for 10 seconds.</p>
-            <p>Infuse 2nd and subsequent brews for 10-30 seconds.</p>
-            <p>
-                Repeat several times until the flavor and aroma of the tea
-                dissipates. As the brewing session ensues, increase infusion
-                time to coax out the body and strength of the final infusions.
-            </p>`,
-                flavor: "Flavor: spicy caramel, nutty, woody, fruit",
-                Ingredients: "Organic oolong tea",
-            },
-            {
-                id: 57,
+                id: 37,
                 title: "red tea #5",
                 param: "red-tea-5",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f8_red-5-min.jpg",
@@ -3016,6 +3319,28 @@ intoxicating, relaxing, meditative.`,
                     "products",
                     "awareness-flow",
                     "red-tea",
+                ],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 21,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) tin",
+                        price: 37,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 70,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 170,
+                    },
                 ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e2_%D0%93%D1%83%D0%BD%D1%84%D1%83%20%D0%A5%D1%83%D0%BD%20%D0%B8%D0%B7%20%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%20%D0%A2%D1%83%D0%BD%20%D0%9C%D1%83-min.jpg",
@@ -3063,7 +3388,7 @@ relaxing.`,
                 Ingredients: "Organic red tea",
             },
             {
-                id: 58,
+                id: 38,
                 title: "green tea #3",
                 param: "green-tea-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ba_green-3-min.jpg",
@@ -3071,9 +3396,30 @@ relaxing.`,
                 amount: 1,
                 flow: 2,
                 subCategory: 3,
-                // subSlug: "green-tea",..............................................
                 category: [3, 7],
                 slug: ["top-sales", "products", "life-flow", "green-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 9,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) tin",
+                        price: 14,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) zip pouch",
+                        price: 21,
+                    },
+                    {
+                        id: 4,
+                        size: "7.5 oz (215 G) zip pouch",
+                        price: 45,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806759_%D0%9C%D0%B0%D0%BE%D1%86%D0%B7%D1%8F%D0%BD%D1%8C%20%D0%95%20%D0%A8%D1%8D%D0%BD%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
                 minImg2:
@@ -3112,7 +3458,7 @@ invigorating and toning, refreshing.`,
                 Ingredients: "Organic green tea",
             },
             {
-                id: 59,
+                id: 39,
                 title: "shu pu-erh #2",
                 param: "shu-pu-erh-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b3_shu-2-min.jpg",
@@ -3122,6 +3468,28 @@ invigorating and toning, refreshing.`,
                 subCategory: 5,
                 category: [3, 7],
                 slug: ["top-sales", "products", "energy-flow", "black-tea"],
+                teaSizeAndPrice: [
+                    {
+                        id: 1,
+                        size: "0.78 oz (22 G) zip pouch",
+                        price: 7,
+                    },
+                    {
+                        id: 2,
+                        size: "1.5 oz (43 G) zip pouch",
+                        price: 10,
+                    },
+                    {
+                        id: 3,
+                        size: "3 oz (86 G) tin",
+                        price: 15,
+                    },
+                    {
+                        id: 4,
+                        size: "8.8 oz (250 G) brick",
+                        price: 30,
+                    },
+                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806630_%D0%A8%D1%83%20%D0%BF%D1%83%D1%8D%D1%80%20%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%2C%202016%20%D0%B3-min.jpg",
                 minImg2:
@@ -3172,6 +3540,473 @@ invigorates and tones`,
             </p>`,
                 flavor: "Flavor: sweet, woody, nutty, chocolate",
                 Ingredients: "Organic Shu Pu’er",
+            },
+            {
+                id: 40,
+                title: "teapot #1",
+                param: "teapot-1",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ec_teapot-1-min.jpg",
+                price: 85,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: 5,
+                slug: "teaware",
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690f_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%203-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806905_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%204-min.jpeg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690c_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%205-min.jpeg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Tea ceremony teapot, Yixing clay, 135 ml",
+                Ingredients: null,
+            },
+            {
+                id: 41,
+                title: "teapot #2",
+                param: "teapot-2",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e9_teapot-2-min.jpg",
+                price: 70,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: [3, 5],
+                slug: ["top-sales", "teaware"],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691c_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%203-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806919_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%204-min.jpeg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691b_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%205-min.jpeg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Tea ceremony teapot, Yixing clay, 160 ml",
+                Ingredients: null,
+            },
+            {
+                id: 42,
+                title: "teapot #5",
+                param: "teapot-5",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ed_teapot-5-min.jpg",
+                price: 100,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: [4, 5],
+                slug: ["new-arrivals", "teaware"],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80692e_img_9146-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806931_img_9148-1000x1000-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806936_img_9149-1000x1000-min.jpg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Tea ceremony teapot, Yixing clay, 105 ml",
+                Ingredients: null,
+            },
+            {
+                id: 43,
+                title: "gaiwan #1",
+                param: "gaiwan-1",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d5_gaiwan-1-new-1-min.jpg",
+                price: 18,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: [3, 5],
+                slug: ["top-sales", "teaware"],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ea_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%20%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D1%81%202-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068f0_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%20%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D1%81%203-min.jpg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Gaiwan Cosmos, clay, glaze, 130 ml",
+                Ingredients: null,
+            },
+            {
+                id: 44,
+                title: "teacup #7",
+                param: "teacup-7",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069df_teacup-7-new-min.jpg",
+                price: 5,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: 5,
+                slug: "teaware",
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806948_img_5224-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694c_img_5223-1000x1000-min.jpg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Teacup, white matte, porcelain, 60 ml",
+                Ingredients: null,
+            },
+            {
+                id: 45,
+                title: "teacup #1",
+                param: "teacup-1",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d9_tea-cup-1-new-1-min.jpg",
+                price: 8,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: [3, 5],
+                slug: ["top-sales", "teaware"],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ff_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%20%D0%A1%D0%B0%D0%BA%D1%83%D1%80%D0%B0%203-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068fd_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%20%D0%A1%D0%B0%D0%BA%D1%83%D1%80%D0%B0%202-min.jpeg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Teacup sakura 326, clay, glaze, 65 ml",
+                Ingredients: null,
+            },
+            {
+                id: 46,
+                title: "teacup #2",
+                param: "teacup-2",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069da_tea-cup-2-new-1-min.jpg",
+                price: 5,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: 5,
+                slug: "teaware",
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806911_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%202-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806912_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%203-min.jpeg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Teacup blue sky, porcelain, 60 ml",
+                Ingredients: null,
+            },
+            {
+                id: 47,
+                title: "gaiwan #4",
+                param: "gaiwan-4",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d7_gaiwan-4-new-1-min.jpeg",
+                price: 36,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: 5,
+                slug: "teaware",
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806937_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80693c_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%202-min.jpeg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Gaiwan Fan Gu, porcelain, 185 ml",
+                Ingredients: null,
+            },
+            {
+                id: 48,
+                title: "teapot #4",
+                param: "teapot-4",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069eb_teapot-4-min.jpg",
+                price: 70,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: [4, 5],
+                slug: ["new-arrivals", "teaware"],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806932_img_8523-1000x1000.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806930_img_8525-1000x1000.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80692d_img_8526-1000x1000.jpg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Tea ceremony teapot, Yixing clay, 165 ml",
+                Ingredients: null,
+            },
+            {
+                id: 49,
+                title: "teapot #3",
+                param: "teapot-3",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ea_teapot-3-min.jpg",
+                price: 80,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: 5,
+                slug: "teaware",
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806929_img_8464-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80692f_img_8460-1000x1000-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806927_img_8463-1000x1000-min.jpg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Tea ceremony teapot, Yixing clay, 190 ml",
+                Ingredients: null,
+            },
+            {
+                id: 50,
+                title: "gaiwan #5",
+                param: "gaiwan-5",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d8_gaiwan-5-new-min.jpeg",
+                price: 30,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: [5, 6],
+                slug: ["teaware", "accessories"],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806941_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806940_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%202-min.jpeg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Gaiwan Cobalt Lotus, hand-painted, 170 ml",
+                Ingredients: null,
+            },
+            {
+                id: 51,
+                title: "teacup #5",
+                param: "teacup-5",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069dd_Teacup%20%235-new-1-min.jpg",
+                price: 18,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: 5,
+                slug: "teaware",
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806943_img_8186-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806946_img_8185-1000x1000-min.jpg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Teacup, lava ceramic, 100 ml",
+                Ingredients: null,
+            },
+            {
+                id: 52,
+                title: "teacup #8",
+                param: "teacup-8",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e0_Teacup%20%238-new-1-min.jpg",
+                price: 18,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: 5,
+                slug: "teaware",
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694d_dsc07420-1000x1000-min.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806956_dsc07419-1000x1000-min.jpg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Teacup, lava ceramic, 100 ml",
+                Ingredients: null,
+            },
+            {
+                id: 53,
+                title: "gaiwan #2",
+                param: "gaiwan-2",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d4_gaiwan-2-new-1-min.jpeg",
+                price: 26,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: [3, 5],
+                slug: ["teaware", "top-sales"],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806935_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%202-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80693a_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%204-min.jpeg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806939_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%205-min.jpeg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Gaiwan Cranes, porcelain, 180 ml",
+                Ingredients: null,
+            },
+            {
+                id: 54,
+                title: "chaban #2",
+                param: "chaban-2",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c5_chaban-2-new-1-min.jpeg",
+                price: 150,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: 6,
+                slug: "accessories",
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691f_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%202-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691e_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%204-min.jpeg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806922_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%205-min.jpeg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Chaban (Tea Tray) made of wood, solid",
+                Ingredients: null,
+            },
+            {
+                id: 55,
+                title: "pu-erh tea knife #1",
+                param: "pu-erh-tea-knife-1",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c8_pu-erh-tea-knife-new-1-min.jpeg",
+                price: 9,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: 6,
+                slug: "accessories",
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ee_%D0%A8%D0%B8%D0%BB%D0%BE%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%83%D1%8D%D1%80%D0%B0%20.jpeg",
+                minImg2: null,
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Pu-erh tea knife Cigar, dark, flat cut",
+                Ingredients: null,
+            },
+            {
+                id: 56,
+                title: "chaban #1",
+                param: "chaban-1",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c6_Chaban%20%231-new-1-min.jpeg",
+                price: 110,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: 6,
+                slug: "accessories",
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068f3_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%20StoneLeaf%202.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068f5_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%20StoneLeaf%203.jpeg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068fa_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%20StoneLeaf%204.jpeg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: `Chaban (Tea Tray), "Black Horse", bamboo`,
+                Ingredients: null,
+            },
+            {
+                id: 57,
+                title: "chaban #3",
+                param: "chaban-3",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c4_chaban-3-new-1-min.jpeg",
+                price: 60,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: 6,
+                slug: "accessories",
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806923_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%202-min.jpeg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806921_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%203-min.jpeg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806925_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%204-min.jpeg",
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: `Chaban (Tea Tray) "With a bird", bamboo`,
+                Ingredients: null,
+            },
+            {
+                id: 58,
+                title: "tweezers tea #1",
+                param: "tweezers-tea-1",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c7_tweezers-tea-1-new-1-min.jpeg",
+                price: 5,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: 6,
+                slug: "accessories",
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ed_%D0%9F%D0%B8%D0%BD%D1%86%D0%B5%D1%82%20%D1%81%20%D0%BE%D0%B1%D0%BC%D0%BE%D1%82%D0%BA%D0%BE%D0%B8%CC%86%20-min.jpeg",
+                minImg2: null,
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Tweezers tea, bamboo",
+                Ingredients: null,
+            },
+            {
+                id: 59,
+                title: "figure #7",
+                param: "figure-7",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e8_figure-7-min.jpg",
+                price: 22,
+                amount: 1,
+                flow: null,
+                subCategory: null,
+                category: [4, 6],
+                slug: ["new-arrivals", "accessories"],
+                minImg1:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806971_img_9969-1000x1000.jpg",
+                minImg2:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806973_img_9968-1000x1000.jpg",
+                minImg3: null,
+                availability: "in stock",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Figurine of a seated monk, clay, glaze",
+                Ingredients: null,
             },
             {
                 id: 60,
@@ -3591,29 +4426,6 @@ invigorates and tones`,
                 aboutProduct: null,
                 SteepingInstructions: null,
                 flavor: "Figurine of Green Rhinoceros, clay",
-                Ingredients: null,
-            },
-            {
-                id: 78,
-                title: "figure #7",
-                param: "figure-7",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e8_figure-7-min.jpg",
-                price: 22,
-                amount: 1,
-                flow: null,
-                subCategory: null,
-                category: [4, 6],
-                slug: ["new-arrivals", "accessories"],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806971_img_9969-1000x1000.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806973_img_9968-1000x1000.jpg",
-                minImg3: null,
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Figurine of a seated monk, clay, glaze",
                 Ingredients: null,
             },
         ],
@@ -5216,4 +6028,4 @@ invigorates and tones`,
     return null;
 };
 
-export default Context;
+export default Data;
