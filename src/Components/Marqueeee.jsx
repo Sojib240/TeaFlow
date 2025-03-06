@@ -11,7 +11,7 @@ const Marqueeee = ({ text }) => {
                 transition={{
                     duration: 0.5,
                 }}
-                className="block text-[16vw] sm:text-[14vw] uppercase font-GolosBold whitespace-nowrap leading-[16.5vw] sm:leading-[12.5vw]"
+                className="block text-[20vw] sm:text-[14vw] uppercase font-GolosBold whitespace-nowrap leading-[20vw] sm:leading-[12.5vw]"
             >
                 {text}
             </motion.span>

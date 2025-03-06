@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from "react";
 import HomePage from "./Pages/HomePage";
-import Footer from "./Common/Footer";
-import Navbar from "./Common/Navbar";
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Contact from "./Pages/Contact";
 import Shop from "./Pages/Shop";
@@ -14,7 +14,7 @@ import CursorFollower from "./Components/CursorFollower";
 import Delivery from "./Pages/Delivery";
 import ProductsDetails from "./Pages/ProductsDetails";
 import gsap from "gsap";
-import ScrollToTop from "./Common/ScrollToTop";
+import ScrollToTop from "./Components/ScrollToTop";
 import SingleJournal from "./Pages/SingleJournal";
 import Flows from "./Pages/Flows";
 import { productContext } from "./Utils/Context";

@@ -59,7 +59,7 @@ const SemilarProducts = () => {
                             >
                                 <div className="card-image relative overflow-hidden">
                                     <Link
-                                        to={`/product-details/${product.id}/${product.param}`}
+                                        to={`/product/${product.param}`}
                                         className="relative z-30"
                                     >
                                         <img

@@ -42,7 +42,7 @@ const FlowComponent = () => {
                         className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw]  font-GolosRegular "
                     >
                         <span className="block border-b border-dashed border-[#000]">all flows</span>
-                        <span className="mt-[-0.5vw] block">4</span>
+                        <span className="block text-[12px] sm:text-[0.8vw]">4</span>
                     </motion.div>
                 </Link>
             </div>

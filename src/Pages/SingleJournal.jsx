@@ -16,7 +16,6 @@ const SingleJournal = () => {
             productsApiData.journals.filter((jour) => {
                 return jour.param === param;
             });
-        console.log(journal);
         setsingleJournal(journal);
         journal.map((j) => {
             journalPageTitle = document.title = `${j.title}`;

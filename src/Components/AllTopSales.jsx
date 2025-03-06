@@ -53,7 +53,7 @@ const AllTopSales = () => {
                         className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw] font-GolosRegular"
                     >
                         <span className="block border-b border-dashed border-[#000]">all top sales</span>
-                        <span className="mt-[-0.5vw] block">10+</span>
+                        <span className="text-[12px] sm:text-[0.8vw] block">10+</span>
                     </motion.div>
                 </Link>
             </div>
@@ -101,7 +101,7 @@ const AllTopSales = () => {
                                     {product.flavor}
                                 </p>
                                 <p className="text-xl font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191]">
-                                    $ {product.price}
+                                $ {product.teaSizeAndPrice[0].price}
                                 </p>
                             </motion.div>
                         );

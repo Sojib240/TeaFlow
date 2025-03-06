@@ -11,7 +11,9 @@ const ProductsDetails = () => {
     const [productsApiData] = useContext(productContext);
     const [singleProduct, setsingleProduct] = useState();
     const [cart, setcart] = useContext(cartContextData);
-    let productPageTitle;
+    const [selectedSize, setSelectedSize] = useState(); // Default size
+    const [selectedPrice, setSelectedPrice] = useState(); // Default price
+    var productPageTitle;
 
     const [imageSlider, setimageSlider] = useState();
     const handleSlider = (src) => {
@@ -28,30 +30,48 @@ const ProductsDetails = () => {
         setsingleProduct(product);
         product.map((p) => {
             setimageSlider(p.image);
-            productPageTitle = document.title = `${p.title}`;
+            productPageTitle = document.title = `${p.title}`.toUpperCase();
         });
     };
 
-    // handle cart
     const handleCart = (product) => {
-        var isTrue = false;
-        cart.map((prod) => {
-            if (prod.id === product.id) {
-                isTrue = true;
-            }
-        });
-        if (isTrue) {
-            return;
+        // Check if the exact product with the selected size already exists in the cart
+        const isProductWithSizeInCart = cart.some(
+            (cartItem) =>
+                cartItem.id === product.id && cartItem.size === selectedSize
+        );
+
+        if (isProductWithSizeInCart) {
+            return; // Product with the same size is already in the cart, so do nothing
         }
-        setcart([...cart, product]);
+
+        // Add the product to the cart with the selected size and price
+        setcart([
+            ...cart,
+            { ...product, price: selectedPrice, size: selectedSize },
+        ]);
     };
 
     //
+
     useEffect(() => {
         if (productsApiData.products) {
             singleProductId();
         }
     }, [productsApiData.products]);
+
+    const handleSizeChange = (size, price) => {
+        setSelectedSize(size);
+        setSelectedPrice(price);
+    };
+
+    useEffect(() => {
+        singleProduct &&
+            singleProduct.map((p) => {
+                setSelectedPrice(p.teaSizeAndPrice[0].price);
+                setSelectedSize(p.teaSizeAndPrice[0].size);
+            });
+    }, [singleProduct]);
 
     return (
         <>
@@ -89,7 +109,9 @@ const ProductsDetails = () => {
                                     }}
                                     className="flex flex-col sm:flex-row gap-1 sm:gap-[0.6vw] w-full"
                                 >
-                                    <div className="order-2 sm:order-1 w-full sm:w-[22.85%] grid grid-cols-4 sm:grid-cols-1 sm:grid-rows-4 gap-1 sm:gap-[0.6vw] px-5 sm:px-0">
+                                    <div
+                                        className={`order-2 sm:order-1 w-full sm:w-[22.85%] grid grid-cols-4 sm:grid-cols-1 sm:grid-rows-4 gap-1 sm:gap-[0.6vw] px-5 sm:px-0 `}
+                                    >
                                         <div
                                             className={`col-span-1${
                                                 singPro.image == null
@@ -101,7 +123,12 @@ const ProductsDetails = () => {
                                                 onMouseEnter={() =>
                                                     handleSlider(singPro.image)
                                                 }
-                                                className=" border border-[#f1f1f1] border-dashed w-full h-full object-cover"
+                                                className={`border w-full h-full object-cover ${
+                                                    singPro.image ===
+                                                    imageSlider
+                                                        ? "border-black"
+                                                        : "border-[#ececec]"
+                                                }`}
                                                 src={singPro && singPro.image}
                                                 alt=""
                                             />
@@ -119,7 +146,12 @@ const ProductsDetails = () => {
                                                         singPro.minImg1
                                                     )
                                                 }
-                                                className="border border-[#f1f1f1] border-dashed w-full h-full object-cover"
+                                                className={`border w-full h-full object-cover ${
+                                                    singPro.minImg1 ===
+                                                    imageSlider
+                                                        ? "border-black"
+                                                        : "border-[#ececec]"
+                                                }`}
                                                 src={singPro && singPro.minImg1}
                                                 alt=""
                                             />
@@ -138,7 +170,12 @@ const ProductsDetails = () => {
                                                         singPro.minImg2
                                                     )
                                                 }
-                                                className="border border-[#f1f1f1] border-dashed w-full h-full object-cover"
+                                                className={`border w-full h-full object-cover ${
+                                                    singPro.minImg2 ===
+                                                    imageSlider
+                                                        ? "border-black"
+                                                        : "border-[#ececec]"
+                                                }`}
                                                 src={singPro && singPro.minImg2}
                                                 alt=""
                                             />
@@ -157,7 +194,12 @@ const ProductsDetails = () => {
                                                         singPro.minImg3
                                                     )
                                                 }
-                                                className="border border-[#f1f1f1] border-dashed w-full h-full object-cover"
+                                                className={`border w-full h-full object-cover ${
+                                                    singPro.minImg3 ===
+                                                    imageSlider
+                                                        ? "border-black"
+                                                        : "border-[#ececec]"
+                                                }`}
                                                 src={singPro && singPro.minImg3}
                                                 alt=""
                                             />
@@ -273,15 +315,61 @@ const ProductsDetails = () => {
                                         </div>
                                     </div>
                                     {/* mobile */}
-                                    <div className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col mt-5 sm:mt-[2vw]">
-                                    <p>Choose an option:</p>
-                                    <div className="flex flex-wrap gap-3 text-sm sm:text-[0.9vw] leading-[144%] sm:leading-[2vw] mt-3 sm:mt-[0.5vw]">
-                                        <p className="px-5 py-2 border rounded-full">0.78 OZ (22 G) ZIP POUCH</p>
-                                        <p className="px-5 py-2 border rounded-full">1.5 OZ (43 G) ZIP POUCH</p>
-                                        <p className="px-5 py-2 border rounded-full">3 OZ (86 G) TIN</p>
-                                        <p className="px-5 py-2 border rounded-full">7.5 OZ (215 G) ZIP POUCH</p>
-                                    </div>
-                                </div>
+                                    <motion.div
+                                        initial={{
+                                            opacity: 0,
+                                            y: 80,
+                                        }}
+                                        viewport={{ once: true }}
+                                        whileInView={{
+                                            opacity: 1,
+                                            y: 0,
+                                        }}
+                                        transition={{
+                                            duration: 0.5,
+                                            delay: 0.05,
+                                        }}
+                                        className={`text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col mt-8 sm:mt-[2vw] ${
+                                            singPro.TastingNotes == null
+                                                ? "hidden"
+                                                : "block"
+                                        }`}
+                                    >
+                                        <p>Choose an option:</p>
+                                        <div className="flex flex-wrap gap-3 text-base sm:text-[0.8vw] leading-[144%] sm:leading-[2vw] mt-3 sm:mt-[0.5vw]">
+                                            {singPro.teaSizeAndPrice &&
+                                                singPro.teaSizeAndPrice.map(
+                                                    (sizAndPri) => {
+                                                        return (
+                                                            <button
+                                                                key={
+                                                                    sizAndPri.id
+                                                                }
+                                                                onClick={() =>
+                                                                    handleSizeChange(
+                                                                        sizAndPri.size,
+                                                                        sizAndPri.price
+                                                                    )
+                                                                }
+                                                                className={`px-3 py-2 border font-GolosRegular ${
+                                                                    sizAndPri.size ===
+                                                                    selectedSize
+                                                                        ? "text-black"
+                                                                        : "border-[#ADA7A7] text-[#ADA7A7] hover:bg-[#f8f8f8]"
+                                                                } rounded-full cursor-pointer ${
+                                                                    sizAndPri.size ==
+                                                                    null
+                                                                        ? "hidden"
+                                                                        : ""
+                                                                }`}
+                                                            >
+                                                                {sizAndPri.size}
+                                                            </button>
+                                                        );
+                                                    }
+                                                )}
+                                        </div>
+                                    </motion.div>
                                     <motion.div
                                         initial={{ opacity: 0, y: 80 }}
                                         viewport={{ once: true }}
@@ -306,7 +394,8 @@ const ProductsDetails = () => {
                                                 </h4>
                                             </div>
                                             <p className="text-white text-base sm:text-[1vw] font-medium">
-                                                $ {singPro && singPro.price}
+                                                ${" "}
+                                                {selectedPrice && selectedPrice}
                                             </p>
                                         </button>
                                         <h4 className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] text-[#989292] flex items-center gap-[1vw] w-full sm:w-[30%] mt-3 mb-2 sm:my-0">
@@ -338,7 +427,7 @@ const ProductsDetails = () => {
                                         </h4>
                                     </motion.div>
                                 </div>
-                                <div className="mt-16 sm:mt-[5vw] mb-6 sm:mb-[4vw] px-5 sm:px-0">
+                                <div className={` ${singPro.aboutProduct == null ? "mt-0 sm:mt-[5vw]" :'mt-16 sm:mt-[5vw]' }  mb-6 sm:mb-[4vw] px-5 sm:px-0`}>
                                     <div className={`mb-6 sm:mb-[4vw]`}>
                                         <h4
                                             className={`${
@@ -440,9 +529,9 @@ const ProductsDetails = () => {
                                 </div>
                             </div>
                             <div
-                                className={`w-[42%] hidden sm:block static sm:sticky top-0 right-0 ${
+                                className={`w-[42%] hidden sm:flex flex-col justify-between static sm:sticky top-0 right-0 ${
                                     singPro.TastingNotes == null
-                                        ? "min-h-[32vw]"
+                                        ? "min-h-[40vw]"
                                         : "min-h-[38vw]"
                                 } h-full pt-[5vw]`}
                             >
@@ -524,15 +613,6 @@ const ProductsDetails = () => {
                                     </div>
                                 </div>
                                 {/* pc */}
-                                <div className="text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col mt-8 sm:mt-[2vw]">
-                                    <p>Choose an option:</p>
-                                    <div className="flex flex-wrap gap-3 text-base sm:text-[0.9vw] leading-[144%] sm:leading-[2vw] mt-3 sm:mt-[0.5vw]">
-                                        <p className="px-5 py-2 border rounded-full">0.78 OZ (22 G) ZIP POUCH</p>
-                                        <p className="px-5 py-2 border rounded-full">1.5 OZ (43 G) ZIP POUCH</p>
-                                        <p className="px-5 py-2 border rounded-full">3 OZ (86 G) TIN</p>
-                                        <p className="px-5 py-2 border rounded-full">7.5 OZ (215 G) ZIP POUCH</p>
-                                    </div>
-                                </div>
                                 <motion.div
                                     initial={{
                                         opacity: 0,
@@ -545,62 +625,119 @@ const ProductsDetails = () => {
                                     }}
                                     transition={{
                                         duration: 0.5,
+                                        delay: 0.05,
                                     }}
-                                    className="flex items-center gap-[2vw] mt-[1.8vw]"
+                                    className={`text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2vw] flex flex-col mt-8 sm:mt-[2vw] ${
+                                        singPro.TastingNotes == null
+                                            ? "hidden"
+                                            : "block"
+                                    }`}
                                 >
-                                    <button
-                                        onClick={() => handleCart(singPro)}
-                                        className="flex items-center justify-between gap-[0.5vw] bg-[#222020] p-[2.2vw] rounded-full w-full sm:w-[70%]"
+                                    <p>Choose an option:</p>
+                                    <div className="flex flex-wrap gap-3 text-base sm:text-[0.8vw] leading-[144%] sm:leading-[2vw] mt-3 sm:mt-[0.5vw]">
+                                        {singPro.teaSizeAndPrice &&
+                                            singPro.teaSizeAndPrice.map(
+                                                (sizAndPri) => {
+                                                    return (
+                                                        <button
+                                                            key={sizAndPri.id}
+                                                            onClick={() =>
+                                                                handleSizeChange(
+                                                                    sizAndPri.size,
+                                                                    sizAndPri.price
+                                                                )
+                                                            }
+                                                            className={`px-[1.8vw] py-[0.3vw] border font-GolosRegular ${
+                                                                sizAndPri.size ===
+                                                                selectedSize
+                                                                    ? "text-black"
+                                                                    : "border-[#ADA7A7] text-[#ADA7A7] hover:bg-[#f8f8f8]"
+                                                            } rounded-full cursor-pointer ${
+                                                                sizAndPri.size ==
+                                                                null
+                                                                    ? "hidden"
+                                                                    : ""
+                                                            }`}
+                                                        >
+                                                            {sizAndPri.size}
+                                                        </button>
+                                                    );
+                                                }
+                                            )}
+                                    </div>
+                                </motion.div>
+                                <div className="">
+                                    <motion.div
+                                        initial={{
+                                            opacity: 0,
+                                            y: 80,
+                                        }}
+                                        viewport={{ once: true }}
+                                        whileInView={{
+                                            opacity: 1,
+                                            y: 0,
+                                        }}
+                                        transition={{
+                                            duration: 0.5,
+                                            delay: 0.12,
+                                        }}
+                                        className="flex items-center gap-[2vw] mt-[1.8vw]"
                                     >
-                                        <div className="flex items-center gap-[1vw]">
+                                        <button
+                                            onClick={() => handleCart(singPro)}
+                                            className="flex items-center justify-between gap-[0.5vw] bg-[#222020] p-[2.2vw] rounded-full w-full sm:w-[70%]"
+                                        >
+                                            <div className="flex items-center gap-[1vw]">
+                                                <img
+                                                    className="w-[1vw]"
+                                                    src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806607_card-white.svg"
+                                                    alt=""
+                                                />
+                                                <span className="text-white block text-lg sm:text-[1vw] font-medium">
+                                                    ADD TO CART
+                                                </span>
+                                            </div>
+                                            <p className="text-white text-base sm:text-[1vw] font-medium">
+                                                ${" "}
+                                                {selectedPrice && selectedPrice}
+                                            </p>
+                                        </button>
+                                        <div className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] text-[#989292] flex items-center gap-2 sm:gap-[1vw] w-[30%]">
+                                            <img
+                                                src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806603_in-stock.svg"
+                                                alt=""
+                                            />{" "}
+                                            in stock
+                                        </div>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{
+                                            opacity: 0,
+                                            y: 80,
+                                        }}
+                                        viewport={{ once: true }}
+                                        whileInView={{
+                                            opacity: 1,
+                                            y: 0,
+                                        }}
+                                        transition={{
+                                            duration: 0.5,
+                                        }}
+                                        className="flex items-start gap-[1vw] mt-[1.5vw] font-GolosDemiBold"
+                                    >
+                                        <span className="block mt-[0.7vw]">
                                             <img
                                                 className="w-[1vw]"
-                                                src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806607_card-white.svg"
+                                                src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806639_hand-notification.svg"
                                                 alt=""
                                             />
-                                            <span className="text-white block text-lg sm:text-[1vw] font-medium">
-                                                ADD TO CART
-                                            </span>
-                                        </div>
-                                        <p className="text-white text-base sm:text-[1vw] font-medium">
-                                            $ {singPro && singPro.price}
-                                        </p>
-                                    </button>
-                                    <div className="text-lg sm:text-[1.1vw] leading-[144%] sm:leading-[2vw] text-[#989292] flex items-center gap-2 sm:gap-[1vw] w-[30%]">
-                                        <img
-                                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806603_in-stock.svg"
-                                            alt=""
-                                        />{" "}
-                                        in stock
-                                    </div>
-                                </motion.div>
-                                <motion.div
-                                    initial={{
-                                        opacity: 0,
-                                        y: 80,
-                                    }}
-                                    viewport={{ once: true }}
-                                    whileInView={{
-                                        opacity: 1,
-                                        y: 0,
-                                    }}
-                                    transition={{
-                                        duration: 0.5,
-                                    }}
-                                    className="flex items-start gap-[1vw] mt-[1.5vw] font-GolosDemiBold"
-                                >
-                                    <span className="block mt-[0.7vw]">
-                                        <img
-                                            className="w-[1vw]"
-                                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806639_hand-notification.svg"
-                                            alt=""
-                                        />
-                                    </span>{" "}
-                                    <h4 className="text-base sm:text-[1vw] leading-[144%] sm:leading-[2vw]">
-                                        Every time you buy our premium tea, you
-                                        help clean the ocean of plastic!
-                                    </h4>
-                                </motion.div>
+                                        </span>{" "}
+                                        <h4 className="text-base sm:text-[1vw] leading-[144%] sm:leading-[2vw]">
+                                            Every time you buy our premium tea,
+                                            you help clean the ocean of plastic!
+                                        </h4>
+                                    </motion.div>
+                                </div>
                             </div>
                         </div>
                     );

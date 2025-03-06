@@ -1,6 +1,6 @@
 import React from "react";
 
-const Data = () => {
+const OldData = () => {
     const productsData = {
         categories: [
             {
@@ -83,10 +83,11 @@ const Data = () => {
                 title: "red tea #10",
                 param: "red-tea-10",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f7_red-10-min.jpg",
-                price: 25,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 38,
                 amount: 1,
                 flow: null,
+                subCategory: 2,
+                category: 4,
                 slug: ["new-arrivals", "red-tea"],
                 teaSizeAndPrice: [
                     {
@@ -132,10 +133,11 @@ const Data = () => {
                 title: "ginseng oolong",
                 param: "ginseng-oolong",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f5_ginseng-1200-min.jpg",
-                price: 9,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 14,
                 amount: 1,
                 flow: 4,
+                subCategory: 1,
+                category: [3, 7],
                 slug: ["top-sales", "products", "energy-flow", "oolong-tea"],
                 teaSizeAndPrice: [
                     {
@@ -186,16 +188,18 @@ const Data = () => {
                     <p>Infuse the brew for 2-3 minutes.</p>`,
                 flavor: "Flavor: refreshing, floral",
                 Ingredients: "Organic oolong tea",
+                TopSale: true,
             },
             {
                 id: 3,
                 title: "shu pu-erh #10",
                 param: "shu-pu-erh-10",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806697_%D0%94%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
-                price: 16,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 27,
                 amount: 1,
                 flow: 4,
+                subCategory: 5,
+                category: [1, 7],
                 slug: ["premium-tea", "products", "energy-flow", "black-tea"],
                 teaSizeAndPrice: [
                     {
@@ -275,37 +279,45 @@ const Data = () => {
                 title: "shu pu-erh #14",
                 param: "shu-pu-erh-14",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b5_shu-14-min.jpg",
-                price: 9,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 14,
                 amount: 1,
                 flow: 4,
+                subCategory: 5,
+                category: [3, 7],
                 slug: ["top-sales", "products", "energy-flow", "black-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 9,
                     },
                     {
+                        id: 2,
                         size: "0.78 oz (22 G) tin",
                         price: 9,
                     },
                     {
+                        id: 3,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 14,
                     },
                     {
+                        id: 4,
                         size: "1.5 oz (43 G) tin",
                         price: 14,
                     },
                     {
+                        id: 5,
                         size: "3 oz (86 G) zip pouch",
                         price: 21,
                     },
                     {
+                        id: 6,
                         size: "3 oz (86 G) tin",
                         price: 21,
                     },
                     {
+                        id: 7,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 45,
                     },
@@ -379,25 +391,30 @@ const Data = () => {
                 title: "red tea #4",
                 param: "red-tea-4",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a1c_red-4-1-min.jpg",
-                price: 8,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 12,
                 amount: 1,
                 flow: 3,
+                subCategory: 1,
+                category: [3, 7],
                 slug: ["top-sales", "products", "awareness-flow", "red-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 8,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) tin",
                         price: 12,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 18,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 35,
                     },
@@ -459,31 +476,37 @@ const Data = () => {
                     </p>`,
                 flavor: "Flavor: rich, with pronounced sweet, butter",
                 Ingredients: "Organic red tea",
+                TopSale: true,
             },
             {
                 id: 6,
                 title: "black tea #3",
                 param: "black-tea-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b2_black-3-min.jpg",
-                price: 10,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 12,
                 amount: 1,
                 flow: null,
+                subCategory: 5,
+                category: 7,
                 slug: ["products", "awareness-flow", "black-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 10,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) tin",
                         price: 15,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 25,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 55,
                     },
@@ -534,26 +557,30 @@ const Data = () => {
                 title: "shu pu-erh #27",
                 param: "shu-pu-erh-27",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c0_shu-27-1-min.jpg",
-                price: 10,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 26,
                 amount: 1,
                 flow: null,
-
+                subCategory: 5,
+                category: [4, 7],
                 slug: ["new-arrivals", "products", "black-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 10,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 15,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 26,
                     },
                     {
+                        id: 4,
                         size: "7 oz (215 G) cake",
                         price: 45,
                     },
@@ -620,10 +647,11 @@ const Data = () => {
                 title: "sheng pu-erh #3",
                 param: "sheng-pu-erh-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80671c_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
-                price: 14,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 21,
                 amount: 1,
                 flow: 3,
+                subCategory: 3,
+                category: [1, 7],
                 slug: [
                     "premium-tea",
                     "products",
@@ -632,34 +660,42 @@ const Data = () => {
                 ],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 14,
                     },
                     {
+                        id: 2,
                         size: "0.78 oz (22 G) tin",
                         price: 14,
                     },
                     {
+                        id: 3,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 21,
                     },
                     {
+                        id: 4,
                         size: "1.5 oz (43 G) tin",
                         price: 21,
                     },
                     {
+                        id: 5,
                         size: "3 oz (86 G) zip pouch",
                         price: 35,
                     },
                     {
+                        id: 6,
                         size: "3 oz (86 G) tin",
                         price: 35,
                     },
                     {
+                        id: 7,
                         size: "6 oz (172 G) zip pouch",
                         price: 45,
                     },
                     {
+                        id: 8,
                         size: "12.6 oz (357 G) cake",
                         price: 45,
                     },
@@ -726,31 +762,37 @@ const Data = () => {
                     </p>`,
                 flavor: "Flavor: honey, dried fruits, fresh apples",
                 Ingredients: "Organic Sheng Pu-erh",
+                TopSale: true,
             },
             {
                 id: 9,
                 title: "red tea #3",
                 param: "red-tea-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069af_red-3-min.jpg",
-                price: 14,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 21,
                 amount: 1,
                 flow: 3,
+                subCategory: 2,
+                category: 7,
                 slug: ["products", "awareness-flow", "red-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 14,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) tin",
                         price: 21,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 35,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 80,
                     },
@@ -818,32 +860,36 @@ const Data = () => {
                     </p>`,
                 flavor: "Flavor: sweet, clean, rich-jam, caramel",
                 Ingredients: "Organic red tea",
-                TopSale: true,
             },
             {
                 id: 10,
                 title: "red tea #6",
                 param: "red-tea-6",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ef_red-1200-min.jpg",
-                price: 16,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 27,
                 amount: 1,
                 flow: 4,
+                subCategory: 2,
+                category: [1, 7],
                 slug: ["premium-tea", "products", "energy-flow", "red-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 16,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) tin",
                         price: 27,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 50,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 115,
                     },
@@ -870,24 +916,29 @@ const Data = () => {
                 param: "white-tea-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bd_white-min.jpg",
                 price: 14,
-                size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
                 flow: 1,
+                subCategory: 4,
+                category: 7,
                 slug: ["products", "relax-flow", "white-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) tin",
                         price: 14,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 21,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 35,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 80,
                     },
@@ -955,25 +1006,30 @@ const Data = () => {
                 title: "gaba oolong #1",
                 param: "gaba-oolong-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f4_gaba-oolong1-1200-min.jpg",
-                price: 14,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 35,
                 amount: 1,
                 flow: 2,
+                subCategory: 1,
+                category: [3, 7],
                 slug: ["top-sales", "accessories", "life-flow", "oolong-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 14,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 21,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 35,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 80,
                     },
@@ -1033,26 +1089,30 @@ const Data = () => {
                 title: "gaba oolong #5",
                 param: "gaba-oolong-5",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f1_gaba5-1200-min.jpg",
-                price: 18,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 57,
                 amount: 1,
                 flow: 2,
-
+                subCategory: 1,
+                category: [1, 7],
                 slug: ["premium-tea", "products", "life-flow", "oolong-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 18,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 30,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) tin",
                         price: 57,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 134,
                     },
@@ -1119,26 +1179,30 @@ Repeat several times until the flavor and aroma of the tea dissipates. As the br
                 title: "black tea #1",
                 param: "black-tea-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b1_black-1-min.jpg",
-                price: 14,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 21,
                 amount: 1,
                 flow: 2,
-
+                subCategory: 5,
+                category: 7,
                 slug: ["products", "life-flow", "black-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 14,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 21,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 35,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 80,
                     },
@@ -1221,10 +1285,11 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 title: "gaba oolong #4",
                 param: "gaba-oolong-4",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f0_gaba4-1200-min.jpg",
-                price: 20,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 65,
                 amount: 1,
                 flow: 1,
+                subCategory: 1,
+                category: [1, 3, 7],
                 slug: [
                     "premium-tea",
                     "top-sales",
@@ -1234,18 +1299,22 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 ],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 20,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 35,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 65,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 156,
                     },
@@ -1326,25 +1395,30 @@ Repeat several times until the flavor and aroma of the tea dissipates. As the br
                 title: "shu pu-erh #9",
                 param: "shu-pu-erh-9",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b4_shu-9-min.jpg",
-                price: 9,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 12,
                 amount: 1,
                 flow: 4,
+                subCategory: 5,
+                category: [3, 7],
                 slug: ["top-sales", "accessories", "energy-flow", "black-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 9,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) tin",
                         price: 12,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) tin",
                         price: 18,
                     },
                     {
+                        id: 4,
                         size: "12.6 oz (357 G) cake",
                         price: 45,
                     },
@@ -1433,26 +1507,30 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 title: "green tea #1",
                 param: "green-tea-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bc_green-1-min.jpg",
-                price: 8,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 12,
                 amount: 1,
                 flow: 2,
-
+                subCategory: 3,
+                category: 7,
                 slug: ["products", "green-tea", "life-flow"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 8,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) tin",
                         price: 12,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 18,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 35,
                     },
@@ -1484,26 +1562,30 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 title: "osmanthus oolong",
                 param: "osmanthus-oolong",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fe_Osman-Thus%20Oolong-1200-1-min.jpg",
-                price: 15,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 45,
                 amount: 1,
                 flow: 1,
-
+                subCategory: 1,
+                category: [1, 7],
                 slug: ["premium-tea", "products", "oolong-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 15,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 25,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) tin",
                         price: 45,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 100,
                     },
@@ -1565,7 +1647,6 @@ Infuse the brew for 2-3 minutes.
                     </p>`,
                 flavor: "Flavor: dried fruit with berry sweetness",
                 Ingredients: "Organic oolong tea",
-                TopSale: true,
             },
             {
                 id: 19,
@@ -1573,25 +1654,29 @@ Infuse the brew for 2-3 minutes.
                 param: "wishan-oolong-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fa_Wishan-2-1200-min.jpg",
                 price: 15,
-                size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
                 flow: 2,
-
+                subCategory: 1,
+                category: [1, 7],
                 slug: ["premium-tea", "products", "life-flow", "oolong-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 15,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 25,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 45,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 100,
                     },
@@ -1681,26 +1766,30 @@ Infuse 2nd and subsequent brews for 5-15 seconds.
                 title: `dong ding lao shi`,
                 param: `dong-ding-lao-shi`,
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fc_dong-1200-min.jpg",
-                price: 16,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 50,
                 amount: 1,
                 flow: null,
-
+                subCategory: 1,
+                category: [1, 7],
                 slug: ["premium-tea", "products", "relax-flow"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 16,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 27,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) tin",
                         price: 50,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 115,
                     },
@@ -1772,7 +1861,6 @@ intoxicating, relaxing, meditative.`,
             </p>`,
                 flavor: "Flavor: spicy caramel, nutty, woody, fruit",
                 Ingredients: "Organic oolong tea",
-                TopSale: true,
             },
             {
                 id: 21,
@@ -1780,24 +1868,29 @@ intoxicating, relaxing, meditative.`,
                 param: "wishan-oolong-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fb_wishan-1200-min.jpg",
                 price: 15,
-                size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
                 flow: 1,
+                subCategory: 1,
+                category: [1, 7],
                 slug: ["premium-tea", "products", "relax-flow", "oolong-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 15,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 25,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 45,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 100,
                     },
@@ -1880,37 +1973,41 @@ Infuse 2nd and subsequent brews for 5-15 seconds.
                     `,
                 flavor: "Flavor: voluminous sweet and fruity",
                 Ingredients: "Organic oolong tea",
-                TopSale: true,
             },
             {
                 id: 22,
                 title: "tie-guan yin #3",
                 param: "tie-guan-yin-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a1b_Tie-Guan%203%201200%20copy-min.jpg",
-                price: 10,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 15,
                 amount: 1,
                 flow: 3,
-
+                subCategory: 1,
+                category: 7,
                 slug: ["products", "awareness-flow", "oolong-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 10,
                     },
                     {
+                        id: 2,
                         size: "0.78 oz (22 G) tin",
                         price: 10,
                     },
                     {
+                        id: 3,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 15,
                     },
                     {
+                        id: 4,
                         size: "1.5 oz (43 G) tin",
                         price: 15,
                     },
                     {
+                        id: 5,
                         size: "3 oz (100 G) trunk",
                         price: 30,
                     },
@@ -1989,26 +2086,30 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 title: "milk oolong",
                 param: "milk-oolong",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f2_milk-oolong-1200-min.jpg",
-                price: 8,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 18,
                 amount: 1,
                 flow: 1,
-
+                subCategory: 1,
+                category: 7,
                 slug: ["products", "relax-flow", "oolong-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 8,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 12,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) tin",
                         price: 18,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 35,
                     },
@@ -2072,26 +2173,30 @@ Infuse the brew for 3 minutes.
                 title: "black tea #3",
                 param: "black-tea-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b2_black-3-min.jpg",
-                price: 10,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 15,
                 amount: 1,
                 flow: 3,
-
+                subCategory: 5,
+                category: 1,
                 slug: ["premium tea", "black-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 10,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) tin",
                         price: 15,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 25,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 55,
                     },
@@ -2169,26 +2274,30 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 title: "aged oolong #1",
                 param: "aged-oolong-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f9_Aged%20Oolong-1200-min.jpg",
-                price: 16,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 50,
                 amount: 1,
                 flow: 1,
-
+                subCategory: 1,
+                category: [1, 7],
                 slug: ["premium-tea", "products", "relax-flow", "oolong-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 16,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 27,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) tin",
                         price: 50,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 115,
                     },
@@ -2282,30 +2391,35 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 title: "tie-guan yin #1",
                 param: "tie-guan-yin-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f3_1200-Tie-Guan%20Yin%201-min.jpg",
-                price: 9,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 14,
                 amount: 1,
                 flow: 1,
-
+                subCategory: 1,
+                category: [3, 7],
                 slug: ["top-sales", "products", "relax-flow", "oolong-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 9,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) tin",
                         price: 14,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 21,
                     },
                     {
+                        id: 4,
                         size: "3 oz (86 G) tin",
                         price: 21,
                     },
                     {
+                        id: 5,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 45,
                     },
@@ -2369,38 +2483,45 @@ Infuse the brew for 2-3 minutes.
                 title: "dan tsung #1",
                 param: "dan-tsung-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ee_dan-1200-min.jpg",
-                price: 19,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 33,
                 amount: 1,
                 flow: 4,
-
+                subCategory: 1,
+                category: [1, 7],
                 slug: ["premium-tea", "products", "energy-flow", "oolong-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 19,
                     },
                     {
+                        id: 2,
                         size: "0.78 oz (22 G) tin",
                         price: 19,
                     },
                     {
+                        id: 3,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 33,
                     },
                     {
+                        id: 4,
                         size: "1.5 oz (43 G) tin",
                         price: 33,
                     },
                     {
+                        id: 5,
                         size: "3 oz (86 G) zip pouch",
                         price: 60,
                     },
                     {
+                        id: 6,
                         size: "3 oz (86 G) tin",
                         price: 60,
                     },
                     {
+                        id: 5,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 145,
                     },
@@ -2474,42 +2595,50 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 title: "shu pu-erh #18",
                 param: "shu-pu-erh-18",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b6_shu-18-min.jpg",
-                price: 10,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 15,
                 amount: 1,
                 flow: 4,
-
+                subCategory: 5,
+                category: [3, 7],
                 slug: ["top-sales", "products", "energy-flow", "black-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 10,
                     },
                     {
+                        id: 2,
                         size: "0.78 oz (22 G) tin",
                         price: 10,
                     },
                     {
+                        id: 3,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 15,
                     },
                     {
+                        id: 4,
                         size: "1.5 oz (43 G) tin",
                         price: 15,
                     },
                     {
+                        id: 5,
                         size: "3 oz (86 G) zip pouch",
                         price: 25,
                     },
                     {
+                        id: 6,
                         size: "3 oz (86 G) tin",
                         price: 25,
                     },
                     {
+                        id: 7,
                         size: "7.5 oz (172 G) zip pouch",
                         price: 40,
                     },
                     {
+                        id: 8,
                         size: "12.6 oz (357 G) zip pouch",
                         price: 60,
                     },
@@ -2574,30 +2703,35 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 title: "green tea #2",
                 param: "green-tea-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bb_green-2-min.jpg",
-                price: 17,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 27,
                 amount: 1,
                 flow: 2,
-
+                subCategory: 3,
+                category: 7,
                 slug: ["products", "life-flow", "green-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 17,
                     },
                     {
+                        id: 2,
                         size: "0.78 oz (22 G) tin",
                         price: 17,
                     },
                     {
+                        id: 3,
                         size: "1.5 oz (43 G) tin",
                         price: 27,
                     },
                     {
+                        id: 4,
                         size: "3 oz (86 G) zip pouch",
                         price: 49,
                     },
                     {
+                        id: 5,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 115,
                     },
@@ -2660,6 +2794,7 @@ Infuse the brew for 2.5 minutes.
                     `,
                 flavor: "Flavor: flowery with slight bitterness",
                 Ingredients: "Organic green tea",
+                TopSale: true,
             },
             {
                 id: 30,
@@ -2667,16 +2802,11 @@ Infuse the brew for 2.5 minutes.
                 param: "green-tea_flow",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b9_green%20flow%20combo-min.jpg",
                 price: 50,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [2, 7],
                 slug: ["sets", "products"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 50,
-                    },
-                ],
                 minImg1: null,
                 minImg2: null,
                 minImg3: null,
@@ -2727,7 +2857,6 @@ Have a nice tea party.
                 SteepingInstructions: null,
                 flavor: "The set includes 6 varieties of green tea",
                 Ingredients: "Organic green tea",
-                TopSale: true,
             },
             {
                 id: 31,
@@ -2735,16 +2864,11 @@ Have a nice tea party.
                 param: "pu-erh-flow",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b8_pu-erh%20flow%20combo-min.jpg",
                 price: 55,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [2, 7],
                 slug: ["sets", "products"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 55,
-                    },
-                ],
                 minImg1: null,
                 minImg2: null,
                 minImg3: null,
@@ -2789,17 +2913,12 @@ Have a nice tea party.
                 title: "teaFlow",
                 param: "tea-flow",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806924_Slide7-min.jpg",
-                price: null,
-                size: null,
+                price: 72,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [2, 7],
                 slug: ["sets", "products"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 72,
-                    },
-                ],
                 minImg1: null,
                 minImg2: null,
                 minImg3: null,
@@ -2842,25 +2961,30 @@ Have a nice tea party.
                 title: "black tea #2",
                 param: "black-tea-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e8_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
-                price: 17,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 27,
                 amount: 1,
                 flow: 2,
+                subCategory: 5,
+                category: [1, 7],
                 slug: ["premium-tea", "products", "life-flow", "black-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 17,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) tin",
                         price: 27,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 49,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 115,
                     },
@@ -2920,25 +3044,30 @@ Have a nice tea party.
                 title: "red tea #15",
                 param: "red-tea-15",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f6_red-15-1200-min.jpg",
-                price: 19,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 33,
                 amount: 1,
                 flow: 3,
+                subCategory: 2,
+                category: [1, 7],
                 slug: ["premium-tea", "products", "awareness-flow", "red-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 19,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) tin",
                         price: 33,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 60,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 145,
                     },
@@ -3011,30 +3140,35 @@ Have a nice tea party.
                 title: "green tea #4",
                 param: "green-tea-4",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bf_green-4-min.jpg",
-                price: 8,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 12,
                 amount: 1,
                 flow: 2,
-
+                subCategory: 3,
+                category: [3, 7],
                 slug: ["top-sales", "products", "life-flow", "green-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 8,
                     },
                     {
+                        id: 2,
                         size: "0.78 oz (22 G) tin",
                         price: 8,
                     },
                     {
+                        id: 3,
                         size: "1.5 oz (43 G) tin",
                         price: 12,
                     },
                     {
+                        id: 4,
                         size: "3 oz (86 G) zip pouch",
                         price: 18,
                     },
                     {
+                        id: 5,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 35,
                     },
@@ -3065,26 +3199,30 @@ Have a nice tea party.
                 title: "shu pu-erh #16",
                 param: "shu-pu-erh-16",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fd_shu-16-1200-min.jpg",
-                price: 18,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 30,
                 amount: 1,
                 flow: 4,
-
+                subCategory: 5,
+                category: [1, 7],
                 slug: ["premium-tea", "products", "energy-flow", "black-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 18,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) tin",
                         price: 30,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 57,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 120,
                     },
@@ -3152,10 +3290,11 @@ Have a nice tea party.
                 title: "red tea #5",
                 param: "red-tea-5",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f8_red-5-min.jpg",
-                price: 21,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 37,
                 amount: 1,
                 flow: 3,
+                subCategory: 2,
+                category: [1, 3, 7],
                 slug: [
                     "premium-tea",
                     "top-sales",
@@ -3165,18 +3304,22 @@ Have a nice tea party.
                 ],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 21,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) tin",
                         price: 37,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 70,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 170,
                     },
@@ -3231,26 +3374,30 @@ relaxing.`,
                 title: "green tea #3",
                 param: "green-tea-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ba_green-3-min.jpg",
-                price: 9,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 14,
                 amount: 1,
                 flow: 2,
-
+                subCategory: 3,
+                category: [3, 7],
                 slug: ["top-sales", "products", "life-flow", "green-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 9,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) tin",
                         price: 14,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) zip pouch",
                         price: 21,
                     },
                     {
+                        id: 4,
                         size: "7.5 oz (215 G) zip pouch",
                         price: 45,
                     },
@@ -3297,26 +3444,30 @@ invigorating and toning, refreshing.`,
                 title: "shu pu-erh #2",
                 param: "shu-pu-erh-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b3_shu-2-min.jpg",
-                price: 7,
-                size: "0.78 oz (22 G) zip pouch",
+                price: 15,
                 amount: 1,
                 flow: 4,
-
+                subCategory: 5,
+                category: [3, 7],
                 slug: ["top-sales", "products", "energy-flow", "black-tea"],
                 teaSizeAndPrice: [
                     {
+                        id: 1,
                         size: "0.78 oz (22 G) zip pouch",
                         price: 7,
                     },
                     {
+                        id: 2,
                         size: "1.5 oz (43 G) zip pouch",
                         price: 10,
                     },
                     {
+                        id: 3,
                         size: "3 oz (86 G) tin",
                         price: 15,
                     },
                     {
+                        id: 4,
                         size: "8.8 oz (250 G) brick",
                         price: 30,
                     },
@@ -3378,16 +3529,11 @@ invigorates and tones`,
                 param: "teapot-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ec_teapot-1-min.jpg",
                 price: 85,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 5,
                 slug: "teaware",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 85,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690f_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%203-min.jpeg",
                 minImg2:
@@ -3407,16 +3553,11 @@ invigorates and tones`,
                 param: "teapot-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e9_teapot-2-min.jpg",
                 price: 70,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [3, 5],
                 slug: ["top-sales", "teaware"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 70,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691c_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%203-min.jpeg",
                 minImg2:
@@ -3436,16 +3577,11 @@ invigorates and tones`,
                 param: "teapot-5",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ed_teapot-5-min.jpg",
                 price: 100,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [4, 5],
                 slug: ["new-arrivals", "teaware"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 100,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80692e_img_9146-1000x1000-min.jpg",
                 minImg2:
@@ -3465,16 +3601,11 @@ invigorates and tones`,
                 param: "gaiwan-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d5_gaiwan-1-new-1-min.jpg",
                 price: 18,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [3, 5],
                 slug: ["top-sales", "teaware"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 18,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ea_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%20%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D1%81%202-min.jpg",
                 minImg2:
@@ -3493,16 +3624,11 @@ invigorates and tones`,
                 param: "teacup-7",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069df_teacup-7-new-min.jpg",
                 price: 5,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 5,
                 slug: "teaware",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 5,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806948_img_5224-1000x1000-min.jpg",
                 minImg2:
@@ -3521,16 +3647,11 @@ invigorates and tones`,
                 param: "teacup-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d9_tea-cup-1-new-1-min.jpg",
                 price: 8,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [3, 5],
                 slug: ["top-sales", "teaware"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 8,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ff_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%20%D0%A1%D0%B0%D0%BA%D1%83%D1%80%D0%B0%203-min.jpeg",
                 minImg2:
@@ -3549,16 +3670,11 @@ invigorates and tones`,
                 param: "teacup-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069da_tea-cup-2-new-1-min.jpg",
                 price: 5,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 5,
                 slug: "teaware",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 5,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806911_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%202-min.jpeg",
                 minImg2:
@@ -3577,16 +3693,11 @@ invigorates and tones`,
                 param: "gaiwan-4",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d7_gaiwan-4-new-1-min.jpeg",
                 price: 36,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 5,
                 slug: "teaware",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 36,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806937_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
                 minImg2:
@@ -3605,16 +3716,11 @@ invigorates and tones`,
                 param: "teapot-4",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069eb_teapot-4-min.jpg",
                 price: 70,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [4, 5],
                 slug: ["new-arrivals", "teaware"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 70,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806932_img_8523-1000x1000.jpg",
                 minImg2:
@@ -3634,16 +3740,11 @@ invigorates and tones`,
                 param: "teapot-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ea_teapot-3-min.jpg",
                 price: 80,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 5,
                 slug: "teaware",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 80,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806929_img_8464-1000x1000-min.jpg",
                 minImg2:
@@ -3663,16 +3764,11 @@ invigorates and tones`,
                 param: "gaiwan-5",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d8_gaiwan-5-new-min.jpeg",
                 price: 30,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [5, 6],
                 slug: ["teaware", "accessories"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 30,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806941_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
                 minImg2:
@@ -3691,16 +3787,11 @@ invigorates and tones`,
                 param: "teacup-5",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069dd_Teacup%20%235-new-1-min.jpg",
                 price: 18,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 5,
                 slug: "teaware",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 18,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806943_img_8186-1000x1000-min.jpg",
                 minImg2:
@@ -3719,16 +3810,11 @@ invigorates and tones`,
                 param: "teacup-8",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e0_Teacup%20%238-new-1-min.jpg",
                 price: 18,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 5,
                 slug: "teaware",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 18,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694d_dsc07420-1000x1000-min.jpg",
                 minImg2:
@@ -3747,16 +3833,11 @@ invigorates and tones`,
                 param: "gaiwan-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d4_gaiwan-2-new-1-min.jpeg",
                 price: 26,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [3, 5],
                 slug: ["teaware", "top-sales"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 26,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806935_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%202-min.jpeg",
                 minImg2:
@@ -3776,16 +3857,11 @@ invigorates and tones`,
                 param: "chaban-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c5_chaban-2-new-1-min.jpeg",
                 price: 150,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 6,
                 slug: "accessories",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 150,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691f_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%202-min.jpeg",
                 minImg2:
@@ -3805,16 +3881,11 @@ invigorates and tones`,
                 param: "pu-erh-tea-knife-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c8_pu-erh-tea-knife-new-1-min.jpeg",
                 price: 9,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 6,
                 slug: "accessories",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 9,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ee_%D0%A8%D0%B8%D0%BB%D0%BE%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%83%D1%8D%D1%80%D0%B0%20.jpeg",
                 minImg2: null,
@@ -3832,16 +3903,11 @@ invigorates and tones`,
                 param: "chaban-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c6_Chaban%20%231-new-1-min.jpeg",
                 price: 110,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 6,
                 slug: "accessories",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 110,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068f3_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%20StoneLeaf%202.jpeg",
                 minImg2:
@@ -3861,16 +3927,11 @@ invigorates and tones`,
                 param: "chaban-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c4_chaban-3-new-1-min.jpeg",
                 price: 60,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 6,
                 slug: "accessories",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 60,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806923_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%202-min.jpeg",
                 minImg2:
@@ -3890,16 +3951,11 @@ invigorates and tones`,
                 param: "tweezers-tea-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c7_tweezers-tea-1-new-1-min.jpeg",
                 price: 5,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 6,
                 slug: "accessories",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 5,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ed_%D0%9F%D0%B8%D0%BD%D1%86%D0%B5%D1%82%20%D1%81%20%D0%BE%D0%B1%D0%BC%D0%BE%D1%82%D0%BA%D0%BE%D0%B8%CC%86%20-min.jpeg",
                 minImg2: null,
@@ -3917,16 +3973,11 @@ invigorates and tones`,
                 param: "figure-7",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e8_figure-7-min.jpg",
                 price: 22,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [4, 6],
                 slug: ["new-arrivals", "accessories"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 22,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806971_img_9969-1000x1000.jpg",
                 minImg2:
@@ -3945,16 +3996,11 @@ invigorates and tones`,
                 param: "teacup-9",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e1_teacup-9-new-1-min.jpg",
                 price: 14,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [4, 5],
                 slug: ["new-arrivals", "teaware"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 14,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806975_img_9992-1000x1000.jpg",
                 minImg2:
@@ -3973,16 +4019,11 @@ invigorates and tones`,
                 param: "teacup-10",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e2_teacup-10-new-1-min.jpg",
                 price: 14,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [4, 5],
                 slug: ["new-arrivals", "teaware"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 14,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80697b_img_9998-1000x1000.jpg",
                 minImg2:
@@ -4001,16 +4042,11 @@ invigorates and tones`,
                 param: "teacup-11",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e3_teacup-11-new-1-min.jpg",
                 price: 10,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [4, 5],
                 slug: ["new-arrivals", "teaware"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 10,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806978_img_9988-1000x1000.jpg",
                 minImg2:
@@ -4029,16 +4065,11 @@ invigorates and tones`,
                 param: "chaban-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c4_chaban-3-new-1-min.jpeg",
                 price: 60,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [3, 6],
                 slug: ["top-sales", "accessories"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 60,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806923_%D0%A7%D0%B0%D0%B1%D0%B0%D0%BD%D1%8C%202-min.jpeg",
                 minImg2:
@@ -4058,16 +4089,11 @@ invigorates and tones`,
                 param: "fireproof-teapot-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d1_teapot-is-fireproof-glass-1-new-min.jpeg",
                 price: 25,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [3, 6],
                 slug: ["top-sales", "accessories"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 25,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806913_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%20%D0%B8%D0%B7%20%D0%BE%D0%B3%D0%BD%D0%B5%D1%83%D0%BF%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%81%D1%82%D0%B5%D0%BA%D0%BB%D0%B0%202-min.jpeg",
                 minImg2:
@@ -4087,16 +4113,11 @@ invigorates and tones`,
                 param: "cha-he-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c9_Cha%20He%20%231%20-%20new-min.jpg",
                 price: 9,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [3, 6],
                 slug: ["top-sales", "accessories"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 9,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068f8_%D0%A7%D0%B0%D1%85%D1%8D%20%D0%93%D0%BE%D1%80%D1%8B%202.jpeg",
                 minImg2:
@@ -4115,16 +4136,11 @@ invigorates and tones`,
                 param: "cha-hai-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d0_cha-hai-1-new-min.jpeg",
                 price: 15,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 6,
                 slug: "accessories",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 15,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/64899c647bc07ddd2ccf0cf5/64899c647bc07ddd2ccf10b6_%D0%A7%D0%B0%D1%85%D0%B0%D0%B8%CC%86%20%D0%A2%D1%80%D0%B0%D0%BF%D0%B5%D1%86%D0%B8%D1%8F%202-min.jpeg",
                 minImg2: null,
@@ -4142,16 +4158,11 @@ invigorates and tones`,
                 param: "chaban-4",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c3_Chaban%20%234-new-1-min.jpg",
                 price: 190,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [4, 6],
                 slug: ["new-arrivals", "accessories"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 190,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806953_img_4749-1000x1000-min.jpg",
                 minImg2:
@@ -4171,16 +4182,11 @@ invigorates and tones`,
                 param: "cha-hai-2",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069cf_cha-hai-2-new-min.jpg",
                 price: 18,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 6,
                 slug: "accessories",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 18,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806949_img_3749-1000x1000-min.jpg",
                 minImg2:
@@ -4199,16 +4205,11 @@ invigorates and tones`,
                 param: "cha-hai-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ce_cha-hai-3-new-min.jpg",
                 price: 26,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 6,
                 slug: "accessories",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 26,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694b_img_9463-1000x1000-min.jpg",
                 minImg2:
@@ -4227,16 +4228,11 @@ invigorates and tones`,
                 param: "figure-1",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e4_figure-1-min.jpg",
                 price: 16,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 6,
                 slug: "accessories",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 16,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806951_img_9323-1000x1000-min.jpg",
                 minImg2:
@@ -4255,16 +4251,11 @@ invigorates and tones`,
                 param: "teacup-6",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069de_teacup-6-new-min.jpg",
                 price: 9,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 5,
                 slug: "teaware",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 9,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806944_img_5336-1000x1000-min.jpg",
                 minImg2:
@@ -4284,16 +4275,11 @@ invigorates and tones`,
                 param: "teacup-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069db_tea-cup-3-new-1-min.jpg",
                 price: 23,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 5,
                 slug: "teaware",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 23,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690a_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%202.jpeg",
                 minImg2:
@@ -4312,16 +4298,11 @@ invigorates and tones`,
                 param: "gaiwan-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d6_gaiwan-3-new-1-min.jpeg",
                 price: 36,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: 5,
                 slug: "teaware",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 36,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80693d_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
                 minImg2:
@@ -4340,16 +4321,11 @@ invigorates and tones`,
                 param: "figure-3",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d3_figure-3-new-1-min.jpg",
                 price: 23,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [4, 6],
                 slug: ["new-arrivals", "accessories"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 23,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806968_img_9288-1000x1000-min.jpg",
                 minImg2:
@@ -4369,16 +4345,11 @@ invigorates and tones`,
                 param: "cha-hai-7",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ca_cha-hai-7-new-min.jpg",
                 price: 23,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [4, 6],
                 slug: ["new-arrivals", "accessories"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 23,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806963_img_8093-1000x1000-min.jpg",
                 minImg2:
@@ -4398,16 +4369,11 @@ invigorates and tones`,
                 param: "figure-4",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e6_figure-4-min.jpg",
                 price: 17,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [4, 6],
                 slug: ["new-arrivals", "accessories"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 17,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80696b_img_9340-1000x1000.jpg",
                 minImg2:
@@ -4426,16 +4392,11 @@ invigorates and tones`,
                 param: "figure-6",
                 image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e7_figure-6-min.jpg",
                 price: 37,
-                size: null,
                 amount: 1,
                 flow: null,
+                subCategory: null,
+                category: [4, 6],
                 slug: ["new-arrivals", "accessories"],
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 37,
-                    },
-                ],
                 minImg1:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806970_img_9975-1000x1000.jpg",
                 minImg2:
@@ -6045,8 +6006,7 @@ invigorates and tones`,
             },
         ],
     };
-
     return null;
 };
 
-export default Data;
+export default OldData;

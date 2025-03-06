@@ -45,6 +45,8 @@ const Shop = ({
     const [DropDown, setDropDown] = useState(false);
     const [cart, setcart] = useContext(cartContextData);
     const [filterOpenClose, setfilterOpenClose] = useState(false);
+
+
     const handleCart = (product) => {
         var isTrue = false;
         cart.map((prod) => {
@@ -55,9 +57,9 @@ const Shop = ({
         if (isTrue) {
             return;
         }
-        setcart([...cart, product]);
+        setcart([...cart,product]);
     };
-    //
+
     const handleDropDown = () => {
         setDropDown(!DropDown);
     };
@@ -100,7 +102,7 @@ const Shop = ({
                             filterOpenClose === true
                                 ? "opacity-100 visible"
                                 : "opacity-0 invisible"
-                        } left-0 bg-[#000000d0] h-screen w-full z-[9999]`}
+                        } left-0 bg-[#000000e1] h-screen w-full z-[9999]`}
                     ></div>
                     <div
                         className={`sm:block w-full h-[90vh] sm:h-full min-h-auto sm:min-h-auto bg-white sm:bg-transparent sm:w-[15%] fixed sm:sticky sm:top-0 bottom-0 left-0 z-[9999999] sm:z-auto pl-6 pr-6 pb-6 pt-6 rounded-tl-4xl rounded-tr-4xl translate-y-[0%] sm:translate-y-0 sm:pt-[6vw] sm:pb-0 sm:pl-0 sm:pr-0 ${
@@ -270,9 +272,8 @@ const Shop = ({
                                             </Link>
                                             {/* cart button */}
                                             <button
-                                                onClick={() =>
-                                                    handleCart(product)
-                                                }
+                                                onClick={() => handleCart(product)}
+
                                                 className="px-[2vw] active:scale-90 py-[2vw] bg-[#111111] rounded-full flex justify-center items-center absolute left-0 bottom-[-15%] right-0 opacity-0 group-hover:bottom-[-15vw]
                                             group-hover:opacity-0 
                                             lg:group-hover:bottom-[1vw] lg:group-hover:opacity-100 transition-all duration-[0.4s] w-[90%] mx-auto cursor-pointer hover:bg-[#222020] z-50"
@@ -288,8 +289,9 @@ const Shop = ({
                                         <p className="text-base sm:text-[1.7vw] md:text-[0.9vw] py-[0.4vw] text-[#413F3F] font-GolosRegular">
                                             {product.flavor}
                                         </p>
+                                        {/* {} */}
                                         <p className="text-xl font-GolosRegular sm:text-[2.2vw] md:text-[1.2vw] text-[#979191]">
-                                            $ {product.price}
+                                            $ {product.teaSizeAndPrice[0].price}
                                         </p>
                                     </motion.div>
                                 );

@@ -20,7 +20,7 @@ const AboutUs = () => {
                         transition={{
                             duration: 0.5,
                         }}
-                        className="overflow-hidden rounded-[50px] w-full sm:w-[65%] mt-[-8vw]"
+                        className="overflow-hidden rounded-[50px] w-full sm:w-[65%] -mt-10 sm:mt-[-8vw]"
                     >
                         <img
                             className="flex object-cover w-full"

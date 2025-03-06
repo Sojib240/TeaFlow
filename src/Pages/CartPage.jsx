@@ -21,10 +21,10 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
         handlePrice();
     });
 
-    const handleAmount = (p, inDe) => {
+    const handleAmount = (p, inDe, size) => {
         var temArr = cart;
         cart.map((cartIt, index) => {
-            if (cartIt.id === p) {
+            if (cartIt.id === p && cartIt.size === size) {
                 temArr[index].amount += inDe;
             }
             if (temArr[index].amount === 0) {
@@ -37,8 +37,10 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
         });
     };
     // handle remove
-    const handleRemove = (id) => {
-        const cartFilteredData = cart.filter((fillItem) => fillItem.id !== id);
+    const handleRemove = (id, size) => {
+        const cartFilteredData = cart.filter(
+            (fillItem) => !(fillItem.id == id && fillItem.size == size)
+        );
         setcart(cartFilteredData);
     };
     // check-out
@@ -54,7 +56,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             tansition={{ ease: "easeInOut" }}
-            className={`w-full h-svh sm:h-screen bg-[#000000d0] fixed top-0 flex justify-center items-center z-0 transition-all duration-1000 opacity-0 p-0 sm:px-[5.15vw] md:px-[16.44vw] ${
+            className={`w-full h-svh sm:h-screen bg-[#000000e1] fixed top-0 flex justify-center items-center z-0 transition-all duration-1000 opacity-0 p-0 sm:px-[5.15vw] md:px-[16.44vw] ${
                 CartOpenClose == true && "z-[999]"
             }`}
         >
@@ -66,9 +68,17 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                 }`}
             >
                 <div className="pl-3 pr-2 sm:pl-[1.5vw] sm:pr-[1vw] py-3 sm:py-[1vw] rounded-tl-full rounded-bl-full bg-red-500">
-                    <h2 className="font-GolosRegular text-[10px] sm:text-[0.8vw] tracking-[1px] text-white sm:tracking-[0.1vw]">
-                        Checkout is disabled on this site.
-                    </h2>
+                    <div className="font-GolosRegular text-[10px] sm:text-[0.8vw] tracking-[1px] text-white sm:tracking-[0.1vw] flex items-center gap-1 sm:gap-[0.6vw] lg:gap-[0.4vw]">
+                        Checkout is{" "}
+                        <span className="block w-4 sm:w-[1.5vw] lg:w-[1vw]">
+                            <img
+                                className="w-full"
+                                src="/Images/disable.png"
+                                alt=""
+                            />
+                        </span>{" "}
+                        disabled on this site.
+                    </div>
                 </div>
             </div>
             <motion.div
@@ -105,18 +115,26 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                         </div>
                     ) : (
                         cart.map(
-                            ({ id, title, image, price, amount, flavor }) => {
+                            ({
+                                id,
+                                title,
+                                image,
+                                price,
+                                amount,
+                                size,
+                                param,
+                            }) => {
                                 return (
                                     <div
                                         key={id}
-                                        className="cart-card flex justify-between gap-[2.5vw] card border-b border-[#F1F1F1] w-full p-4 sm:p-[1.5vw]"
+                                        className="cart-card flex justify-between items-start gap-[2.5vw] card border-b border-[#F1F1F1] w-full p-4 sm:p-[1.5vw] h-auto"
                                     >
                                         <Link
-                                            to={`/productsDetails/${id}`}
+                                            to={`/product/${param}`}
                                             className="w-40 sm:w-[10vw] overflow-hidden cart-image border border-[#F1F1F1]"
                                         >
                                             <img
-                                                className="w-full object-cover flex h-full"
+                                                className="w-full object-cover flex h-auto"
                                                 src={image}
                                                 alt=""
                                             />
@@ -125,16 +143,19 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                             <div className="flex justify-between flex-col sm:flex-row gap-5 sm:gap-0 w-full">
                                                 <div className="flex flex-col items-start gap-[2vw] w-full">
                                                     <div className="">
-                                                        <h4 className="text-lg sm:text-[1.3vw] font-GolosDemiBold">
+                                                        <h4 className="text-lg sm:text-[1.3vw] font-GolosDemiBold uppercase">
                                                             {title}
                                                         </h4>
                                                         <p className="text-sm sm:text-[0.9vw] font-GolosRegular">
-                                                            {flavor}
+                                                            {size}
                                                         </p>
                                                     </div>
                                                     <button
                                                         onClick={() =>
-                                                            handleRemove(id)
+                                                            handleRemove(
+                                                                id,
+                                                                size
+                                                            )
                                                         }
                                                         className="border-b border-[#ccc5c5] text-[#ACA6A6] text-[12px] cursor-pointer sm:text-[0.8vw] font-GolosRegular"
                                                     >
@@ -153,7 +174,8 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                                                 onClick={() =>
                                                                     handleAmount(
                                                                         id,
-                                                                        +1
+                                                                        +1,
+                                                                        size
                                                                     )
                                                                 }
                                                                 className="bg-[#F1F1F1] w-8 sm:w-[1.5vw] font-GolosRegular h-1/2 rounded-[0.2vw] overflow-hidden text-base sm:text-[0.8vw] font-bold cursor-pointer"
@@ -164,7 +186,8 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                                                 onClick={() =>
                                                                     handleAmount(
                                                                         id,
-                                                                        -1
+                                                                        -1,
+                                                                        size
                                                                     )
                                                                 }
                                                                 className="bg-[#F1F1F1] w-8 font-GolosRegular sm:w-[1.5vw] h-1/2 rounded-[0.2vw] overflow-hidden text-base sm:text-[0.8vw] font-bold cursor-pointer"

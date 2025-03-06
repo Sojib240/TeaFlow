@@ -42,7 +42,7 @@ const JournalComponent = () => {
                         className="text-sm sm:text-[1vw] flex gap-2 sm:gap-[0.4vw] font-GolosRegular"
                     >
                         <span className="block border-b border-dashed border-[#000]">Read all stories</span>
-                        <span className="mt-[-0.5vw] block">8</span>
+                        <span className="text-[12px] sm:text-[0.8vw] block">8</span>
                     </motion.div>
                 </Link>
             </div>
