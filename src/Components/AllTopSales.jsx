@@ -4,7 +4,7 @@ import { productContext } from "../Utils/Context";
 import { cartContextData } from "../Utils/CartContext";
 import { motion } from "framer-motion";
 
-const AllTopSales = () => {
+const AllTopSales = ({setCartOpenClose}) => {
     // data coming from context api
     const [productsApiData, setproductsApiData] = useContext(productContext);
     // filtered data for top sale
@@ -84,7 +84,7 @@ const AllTopSales = () => {
                                         />
                                     </Link>
                                     <button
-                                        onClick={() => handleCart(product)}
+                                        onClick={() => {handleCart(product),setCartOpenClose(true)}}
                                         className="px-[2vw] py-[2vw] bg-[#111111] rounded-full flex justify-center items-center absolute left-0 bottom-[-15%] right-0 opacity-0 group-hover:bottom-[-15vw]
                                             group-hover:opacity-0 
                                             lg:group-hover:bottom-[1vw] lg:group-hover:opacity-100 transition-all duration-[0.4s] w-[90%] mx-auto cursor-pointer hover:bg-[#222020] z-50"

@@ -6,7 +6,7 @@ import { cartContextData } from "../Utils/CartContext";
 import SemilarProducts from "../Components/SemilarProducts";
 import { motion } from "framer-motion";
 
-const ProductsDetails = () => {
+const ProductsDetails = ({ setCartOpenClose }) => {
     const { param } = useParams();
     const [productsApiData] = useContext(productContext);
     const [singleProduct, setsingleProduct] = useState();
@@ -58,7 +58,7 @@ const ProductsDetails = () => {
         if (productsApiData.products) {
             singleProductId();
         }
-    }, [productsApiData.products]);
+    }, [productsApiData.products, param]);
 
     const handleSizeChange = (size, price) => {
         setSelectedSize(size);
@@ -339,12 +339,10 @@ const ProductsDetails = () => {
                                         <div className="flex flex-wrap gap-3 text-base sm:text-[0.8vw] leading-[144%] sm:leading-[2vw] mt-3 sm:mt-[0.5vw]">
                                             {singPro.teaSizeAndPrice &&
                                                 singPro.teaSizeAndPrice.map(
-                                                    (sizAndPri) => {
+                                                    (sizAndPri, index) => {
                                                         return (
                                                             <button
-                                                                key={
-                                                                    sizAndPri.id
-                                                                }
+                                                                key={index}
                                                                 onClick={() =>
                                                                     handleSizeChange(
                                                                         sizAndPri.size,
@@ -380,7 +378,10 @@ const ProductsDetails = () => {
                                         className="flex flex-col sm:flex-row sm:items-center gap-[2vw] mt-8 sm:mt-[3vw]"
                                     >
                                         <button
-                                            onClick={() => handleCart(singPro)}
+                                            onClick={() => {
+                                                handleCart(singPro),
+                                                    setCartOpenClose(true);
+                                            }}
                                             className="flex items-center justify-between gap-[0.5vw] bg-[#222020] px-8 py-6 sm:p-[2.2vw] rounded-full sm:w-[70%]"
                                         >
                                             <div className="flex gap-3 sm:gap-[1vw]">
@@ -427,7 +428,13 @@ const ProductsDetails = () => {
                                         </h4>
                                     </motion.div>
                                 </div>
-                                <div className={` ${singPro.aboutProduct == null ? "mt-0 sm:mt-[5vw]" :'mt-16 sm:mt-[5vw]' }  mb-6 sm:mb-[4vw] px-5 sm:px-0`}>
+                                <div
+                                    className={` ${
+                                        singPro.aboutProduct == null
+                                            ? "mt-0 sm:mt-[5vw]"
+                                            : "mt-16 sm:mt-[5vw]"
+                                    }  mb-6 sm:mb-[4vw] px-5 sm:px-0`}
+                                >
                                     <div className={`mb-6 sm:mb-[4vw]`}>
                                         <h4
                                             className={`${
@@ -637,10 +644,10 @@ const ProductsDetails = () => {
                                     <div className="flex flex-wrap gap-3 text-base sm:text-[0.8vw] leading-[144%] sm:leading-[2vw] mt-3 sm:mt-[0.5vw]">
                                         {singPro.teaSizeAndPrice &&
                                             singPro.teaSizeAndPrice.map(
-                                                (sizAndPri) => {
+                                                (sizAndPri, index) => {
                                                     return (
                                                         <button
-                                                            key={sizAndPri.id}
+                                                            key={index}
                                                             onClick={() =>
                                                                 handleSizeChange(
                                                                     sizAndPri.size,
@@ -684,7 +691,10 @@ const ProductsDetails = () => {
                                         className="flex items-center gap-[2vw] mt-[1.8vw]"
                                     >
                                         <button
-                                            onClick={() => handleCart(singPro)}
+                                            onClick={() => {
+                                                handleCart(singPro),
+                                                    setCartOpenClose(true);
+                                            }}
                                             className="flex items-center justify-between gap-[0.5vw] bg-[#222020] p-[2.2vw] rounded-full w-full sm:w-[70%]"
                                         >
                                             <div className="flex items-center gap-[1vw]">

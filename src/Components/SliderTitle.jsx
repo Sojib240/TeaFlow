@@ -10,11 +10,12 @@ const SliderTitle = ({ SliderTitleData }) => {
     useEffect(() => {
         handleAnimationTrigger();
     }, [SliderTitleData]);
+    
 
     return (
         <div className="z-50 relative pt-3">
             {SliderTitleData.map(
-                ({ id, title, title2, title3, desc, path }) => {
+                ({ id, title, title2, title3, desc, direction }) => {
                     return (
                         <div key={id}>
                             <div className="text-[35px] sm:text-[6.6vw] uppercase font-GolosBold leading-[120%] sm:leading-[100%] whitespace-nowrap">
@@ -110,7 +111,7 @@ const SliderTitle = ({ SliderTitleData }) => {
                                     className="inline-block mt-6 sm:mt-[2vw]"
                                 >
                                     <Link
-                                        to={`${path}`}
+                                        to={direction}
                                         className="flex gap-2 sm:gap-[1vw] items-center cursor-pointer group font-GolosRegular "
                                     >
                                         <span className="text-[12px] sm:text-[0.8vw] font-semibold uppercase tracking-[0.2vw]">

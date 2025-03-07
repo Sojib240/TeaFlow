@@ -57,9 +57,6 @@ const Journal = () => {
                                                     alt=""
                                                 />
                                             </div>
-                                            {/* <button className="block sm:hidden text-base sm:text-[0.9vw]">
-                                                Read article
-                                            </button> */}
                                         </motion.div>
                                     </Link>
                                 </div>

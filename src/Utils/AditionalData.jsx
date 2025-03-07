@@ -6,7 +6,7 @@ export const sliders = [
         title3: "Tea #3",
         desc: `Discover the complex aroma and sweet jam taste of Golden Eyebrows - a deservedly popular red tea!`,
         image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806659_Slide1-min-p-1080.jpeg",
-        Path: "/product/red-tea-3",
+        direction: "/product/red-tea-3",
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const sliders = [
         title3: "to your day",
         desc: `Discover the refreshing taste of Green Tea with Jasmine - a perfect blend to soothe your senses`,
         image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ba_green-3-min.jpg",
-        Path: "/product/green-tea-4",
+        direction: "/product/green-tea-3",
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ export const sliders = [
         title3: "Oolong",
         desc: `Experience the deliciously balanced and soothing taste of Gaba oolong`,
         image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806667_Slide3-min-p-1080.jpeg",
-        Path: "/product/gaba-oolong-1",
+        direction: "/product/gaba-oolong-1",
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ export const sliders = [
         title3: null,
         desc: `Soothe Your Senses with the Rich Aroma & Flavor of Red Tea - A True Tea Lover's Delight`,
         image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec80666f_Slide6-min-p-1080.jpg",
-        Path: "/catagory/red-tea",
+        direction: "/catagory/red-tea",
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ export const sliders = [
         title3: "Boost",
         desc: `Indulge in the rich and invigorating taste of Guntin Pu-erh tea`,
         image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec806670_Slide5-min-p-1080.jpeg",
-        Path: "/product/shu-pu-erh-2",
+        direction: "/product/shu-pu-erh-2",
     },
     {
         id: 6,
@@ -51,6 +51,6 @@ export const sliders = [
         title3: "First Dates",
         desc: `Savor the Best: 7 Delicious Teas! Perfect Gift for Tea Lovers & First Dates`,
         image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec8065e0/6765d66f89f7f0b8ec80667f_Slide7-min-p-800.jpg",
-        Path: "/product/tea-flow",
+        direction: `${"/product/tea-flow"}`,
     },
 ];

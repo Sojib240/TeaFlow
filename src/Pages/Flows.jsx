@@ -8,7 +8,7 @@ import FollowUs from "../Common/FollowUs";
 import { productContext } from "../Utils/Context";
 import { motion } from "framer-motion";
 
-const Flows = ({ handleFlowsCategoriesFilter }) => {
+const Flows = () => {
     const [productsApiData] = useContext(productContext);
     document.title = "TeaFlow － Flows";
     return (
@@ -19,7 +19,10 @@ const Flows = ({ handleFlowsCategoriesFilter }) => {
                     {"Welcome to Choose Your Flow, where we offer a selection of teas to cater to your needs and help you find your ideal state of mind. Whether you're seeking to unwind and relax, promote wellness and balance, reconnect with yourself, or boost your energy, we've got you covered."
                         .split(" ")
                         .map((text, index) => (
-                            <div className="overflow-hidden h-auto w-auto text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2.3vw]">
+                            <div
+                                key={index}
+                                className="overflow-hidden h-auto w-auto text-lg sm:text-[1.2vw] leading-[144%] sm:leading-[2.3vw]"
+                            >
                                 <motion.p
                                     initial={{
                                         opacity: 0,
@@ -29,7 +32,7 @@ const Flows = ({ handleFlowsCategoriesFilter }) => {
                                         opacity: 1,
                                         y: 0,
                                     }}
-                                    viewport={{once:true}}
+                                    viewport={{ once: true }}
                                     transition={{
                                         duration: 0.5,
                                         delay: 0.01 * index,
@@ -45,18 +48,14 @@ const Flows = ({ handleFlowsCategoriesFilter }) => {
                         productsApiData.flows.map(
                             ({ id, flowTitle, image, desc, slug }, index) => {
                                 return (
-                                    <Link
-                                        key={id}
-                                        to={`/catagory/${slug}`}
-                                        className="col-span-1 group"
-                                    >
+                                    <div key={id} className="col-span-1 group">
                                         <motion.div
                                             initial={{ opacity: 0, y: 150 }}
                                             whileInView={{
                                                 opacity: 1,
                                                 y: 0,
                                             }}
-                                            viewport={{once:true}}
+                                            viewport={{ once: true }}
                                             transition={{
                                                 duration: 0.5,
                                                 delay: 0.1 * index,
@@ -66,9 +65,7 @@ const Flows = ({ handleFlowsCategoriesFilter }) => {
                                             <div
                                                 className={`card-image overflow-hidden max-h-[75vw] sm:max-h-[29.51vw] h-full`}
                                             >
-                                                <Link
-                                                    to={`/catagory/${slug}`}
-                                                >
+                                                <Link to={`/catagory/${slug}`}>
                                                     <img
                                                         className="group-hover:scale-125 duration-1200 transition-all h-full w-full object-cover"
                                                         src={image}
@@ -83,7 +80,7 @@ const Flows = ({ handleFlowsCategoriesFilter }) => {
                                                 {desc}
                                             </p>
                                         </motion.div>
-                                    </Link>
+                                    </div>
                                 );
                             }
                         )}

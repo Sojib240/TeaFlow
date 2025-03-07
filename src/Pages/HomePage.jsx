@@ -9,7 +9,7 @@ import HomeSlider from "../Components/HomeSlider";
 import FlowComponent from "../Components/FlowComponent";
 import AllTopSales from "../Components/AllTopSales";
 
-const HomePage = () => {
+const HomePage = ({setCartOpenClose}) => {
     document.title = "TeaFlow － Premium Teas & Accessories";
 
     return (
@@ -17,7 +17,7 @@ const HomePage = () => {
             <HomeSlider />
             <FlowComponent />
             <TopSales />
-            <AllTopSales />
+            <AllTopSales setCartOpenClose={setCartOpenClose} />
             <div className="pb-16 sm:pb-[16vw] pt-24 sm:pt-[16vw]">
                 <Marquess />
             </div>

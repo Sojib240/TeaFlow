@@ -16,9 +16,9 @@ const Title = ({ text }) => {
                 .toString()
                 .split(" ")
                 .map((word, index) => (
-                    <div className="overflow-hidden w-auto h-auto">
+                    <div key={index} className="overflow-hidden w-auto h-auto">
                         <motion.p
-                            key={`${word}-${index}-${triggerAnimation}`} // Unique key for each word
+                            key={`${word}-${index}-${triggerAnimation}`}
                             className="text-[48px] sm:text-[8vw] font-GolosBold uppercase leading-[100%]"
                             initial={{
                                 opacity: 0,

@@ -52,7 +52,7 @@ const App = () => {
                 />
             </div>
             <Routes>
-                <Route path="/" element={<HomePage />} />
+                <Route path="/" element={<HomePage setCartOpenClose={setCartOpenClose} />} />
                 <Route
                     path="/catagory/:slug"
                     element={
@@ -61,6 +61,7 @@ const App = () => {
                             setnewCategoriesData={setnewCategoriesData}
                             titleChange={titleChange}
                             settitleChange={settitleChange}
+                            setCartOpenClose={setCartOpenClose}
                         />
                     }
                 />
@@ -76,7 +77,7 @@ const App = () => {
                  element={<SingleJournal />} />
                 <Route
                     path="/product/:param"
-                    element={<ProductsDetails />}
+                    element={<ProductsDetails setCartOpenClose={setCartOpenClose} />}
                 />
                 <Route
                     path="/terms-and-conditions"

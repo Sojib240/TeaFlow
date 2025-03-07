@@ -54,29 +54,36 @@ const SingleJournal = () => {
                             </div>
                             <div className="flex flex-wrap gap-[6px] sm:gap-[0.4vw] pb-7 sm:pb-[2vw] pr-0 sm:pr-[24vw] w-full border-b border-[#DEDADA] border-dashed mt-[3vw]">
                                 {singJour.title &&
-                                    singJour.title.split(" ").map((tex) => {
-                                        return (
-                                            <div className="overflow-hidden w-auto h-auto ">
-                                                <motion.p
-                                                    initial={{
-                                                        opacity: 0,
-                                                        y: "100%",
-                                                    }}
-                                                    viewport={{ once: true }}
-                                                    whileInView={{
-                                                        opacity: 1,
-                                                        y: 0,
-                                                    }}
-                                                    transition={{
-                                                        duration: 0.5,
-                                                    }}
-                                                    className="text-3xl sm:text-[3.6vw] uppercase font-GolosDemiBold"
+                                    singJour.title
+                                        .split(" ")
+                                        .map((tex, index) => {
+                                            return (
+                                                <div
+                                                    key={index}
+                                                    className="overflow-hidden w-auto h-auto "
                                                 >
-                                                    {tex}
-                                                </motion.p>
-                                            </div>
-                                        );
-                                    })}
+                                                    <motion.p
+                                                        initial={{
+                                                            opacity: 0,
+                                                            y: "100%",
+                                                        }}
+                                                        viewport={{
+                                                            once: true,
+                                                        }}
+                                                        whileInView={{
+                                                            opacity: 1,
+                                                            y: 0,
+                                                        }}
+                                                        transition={{
+                                                            duration: 0.5,
+                                                        }}
+                                                        className="text-3xl sm:text-[3.6vw] uppercase font-GolosDemiBold"
+                                                    >
+                                                        {tex}
+                                                    </motion.p>
+                                                </div>
+                                            );
+                                        })}
                             </div>
 
                             <div className="mt-8 sm:mt-[2vw]">
