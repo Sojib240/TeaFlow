@@ -24,7 +24,7 @@ const AboutUs = () => {
                     >
                         <img
                             className="flex object-cover w-full"
-                            src="/Images/6765d66f89f7f0b8ec80667b_about-us-pic1-min-p-1080.jpg"
+                            src="/Images/About/about-1.jpg"
                             alt=""
                         />
                     </motion.div>
@@ -157,7 +157,7 @@ const AboutUs = () => {
                     >
                         <img
                             className="flex object-cover w-full h-full"
-                            src="/Images/6765d66f89f7f0b8ec80666b_about-us-pic2-min-p-500.jpg"
+                            src="/Images/About/about-2.jpg"
                             alt=""
                         />
                     </motion.div>
@@ -178,7 +178,7 @@ const AboutUs = () => {
                         >
                             <img
                                 className="flex object-cover w-full"
-                                src="/Images/6765d66f89f7f0b8ec806681_about-us-pic3-min.jpg"
+                                src="/Images/About/about-3.jpg"
                                 alt=""
                             />
                         </motion.div>
@@ -229,7 +229,7 @@ const AboutUs = () => {
                                                         opacity: 1,
                                                         y: 0,
                                                     }}
-                                                    // viewport={{ once: true }}
+                                                    viewport={{ once: true }}
                                                     transition={{
                                                         duration: 0.5,
                                                         delay: 0.01 * index,
@@ -257,7 +257,7 @@ const AboutUs = () => {
                                                         opacity: 1,
                                                         y: 0,
                                                     }}
-                                                    // viewport={{ once: true }}
+                                                    viewport={{ once: true }}
                                                     transition={{
                                                         duration: 0.5,
                                                         delay: 0.01 * index,
@@ -285,7 +285,7 @@ const AboutUs = () => {
                                                         opacity: 1,
                                                         y: 0,
                                                     }}
-                                                    // viewport={{ once: true }}
+                                                    viewport={{ once: true }}
                                                     transition={{
                                                         duration: 0.5,
                                                         delay: 0.01 * index,
@@ -307,7 +307,7 @@ const AboutUs = () => {
                                             opacity: 1,
                                             y: 0,
                                         }}
-                                        // viewport={{ once: true }}
+                                        viewport={{ once: true }}
                                         transition={{
                                             duration: 0.5,
                                             delay: 0.4,

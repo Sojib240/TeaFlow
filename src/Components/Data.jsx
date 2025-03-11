@@ -46,43 +46,42 @@ const Data = () => {
                 id: 1,
                 flowTitle: "relax flow",
                 slug: "relax-flow",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a02_relax%20fl-min.jpg",
+                image: "/Images/Flows/relax-flow.jpg",
                 desc: "Teas that help you to find your inner calm and unwind",
             },
             {
                 id: 2,
                 flowTitle: "Life flow",
                 slug: "life-flow",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a03_life%20fl-min.jpg",
+                image: "/Images/Flows/life-flow.jpg",
                 desc: "Designed to promote wellness and balance in your daily life",
             },
             {
                 id: 3,
                 flowTitle: "Awareness flow",
                 slug: "awareness-flow",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a05_awareness%20fl-min-1.jpg",
+                image: "/Images/Flows/awareness-flow.jpg",
                 desc: "Teas that will help you slow down for a moment and reconnect with yourself",
             },
             {
                 id: 4,
                 flowTitle: "energy flow",
                 slug: "energy-flow",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a04_shu-2.jpg",
+                image: "/Images/Flows/energy-flow.jpg",
                 desc: "Perfect for those who looking for a natural boost of energy",
             },
         ],
         followUs: [
-            { id: 1, image: "/Images/follow-us-1.jpg" },
-            { id: 2, image: "/Images/follow-us-2.jpg" },
-            { id: 3, image: "/Images/follow-us-3.jpg" },
-            { id: 4, image: "/Images/follow-us-4.jpg" },
+            { id: 1, image: "/Images/Follow/follow-us-1.jpg" },
+            { id: 2, image: "/Images/Follow/follow-us-2.jpg" },
+            { id: 3, image: "/Images/Follow/follow-us-3.jpg" },
+            { id: 4, image: "/Images/Follow/follow-us-4.jpg" },
         ],
         products: [
             {
                 id: 1,
                 title: "red tea #10",
                 param: "red-tea-10",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f7_red-10-min.jpg",
                 price: 25,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -106,12 +105,10 @@ const Data = () => {
                         price: 170,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068dd_%D0%95%20%D0%A8%D0%B5%D0%BD%20%D0%A5%D1%83%D0%BD%20%D0%A7%D0%B0%20%D1%81%20%D0%B4%D0%B8%D0%BA%D0%B8%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d1_%D0%95%20%D0%A8%D0%B5%D0%BD%20%D0%A5%D1%83%D0%BD%20%D0%A7%D0%B0%20%D1%81%20%D0%B4%D0%B8%D0%BA%D0%B8%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e5_%D0%95%20%D0%A8%D0%B5%D0%BD%20%D0%A5%D1%83%D0%BD%20%D0%A7%D0%B0%20%D1%81%20%D0%B4%D0%B8%D0%BA%D0%B8%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(3)-min.jpg",
+                image: "/Images/Products/red-tea-10-1.jpg",
+                minImg1: "/Images/Products/red-tea-10-2.jpg",
+                minImg2: "/Images/Products/red-tea-10-3.jpg",
+                minImg3: "/Images/Products/red-tea-10-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     'refined, bright, sweet, with fruit and berry sourness, "festive". Impact: powerful, warming intoxicating, meditative.',
@@ -131,7 +128,6 @@ const Data = () => {
                 id: 2,
                 title: "ginseng oolong",
                 param: "ginseng-oolong",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f5_ginseng-1200-min.jpg",
                 price: 9,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -167,12 +163,10 @@ const Data = () => {
                         price: 45,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806876_%D0%96%D0%B5%D0%BD%D1%8C%D1%88%D0%B5%D0%BD%D1%8C%20%D0%A3%D0%BB%D1%83%D0%BD%2C%20%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC%2C%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B8%CC%86%2C%202022%20%D0%B3-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80678d_%D0%96%D0%B5%D0%BD%D1%8C%D1%88%D0%B5%D0%BD%D1%8C%20%D0%A3%D0%BB%D1%83%D0%BD%2C%20%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC%2C%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B8%CC%86%2C%202022%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068aa_%D0%96%D0%B5%D0%BD%D1%8C%D1%88%D0%B5%D0%BD%D1%8C%20%D0%A3%D0%BB%D1%83%D0%BD%2C%20%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC%2C%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B8%CC%86%2C%202022%20%D0%B3(3)-min.jpg",
+                image: "/Images/Products/ginseng-oolong-1.jpg",
+                minImg1: "/Images/Products/ginseng-oolong-2.jpg",
+                minImg2: "/Images/Products/ginseng-oolong-3.jpg",
+                minImg3: "/Images/Products/ginseng-oolong-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "refreshing, floral. Ginseng and licorice give the drink a pleasant sweet-tart taste and a long sweet aftertaste. Impact: refreshing, noticeably toning effect.",
@@ -191,7 +185,6 @@ const Data = () => {
                 id: 3,
                 title: "shu pu-erh #10",
                 param: "shu-pu-erh-10",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806697_%D0%94%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
                 price: 16,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -227,12 +220,10 @@ const Data = () => {
                         price: 120,
                     },
                 ],
-                minImg1:
-                    " https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806751_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%C2%AB%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%20%D0%B2%20%D0%91%D0%B0%D0%BC%D0%B1%D1%83%D0%BA%D0%B5%C2%BB%2C%202021%20%D0%B3(2)-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8066f5_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%C2%AB%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%20%D0%B2%20%D0%91%D0%B0%D0%BC%D0%B1%D1%83%D0%BA%D0%B5%C2%BB%2C%202021%20%D0%B3(3)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806753_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%C2%AB%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%20%D0%B2%20%D0%91%D0%B0%D0%BC%D0%B1%D1%83%D0%BA%D0%B5%C2%BB%2C%202021%20%D0%B3(4)-min.jpg",
+                image: "/Images/Products/shu-pu-erh-10-1.jpg",
+                minImg1: "/Images/Products/shu-pu-erh-10-2.jpg",
+                minImg2: "/Images/Products/shu-pu-erh-10-3.jpg",
+                minImg3: "/Images/Products/shu-pu-erh-10-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "thick and soft with caramel-fruity shades and pleasant woody. Impact: pronounced, strong, maintains the overall tone, givesstrength.",
@@ -274,7 +265,7 @@ const Data = () => {
                 id: 4,
                 title: "shu pu-erh #14",
                 param: "shu-pu-erh-14",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b5_shu-14-min.jpg",
+                image: "/Images/Products/shu-pu-erh-14-1.jpg",
                 price: 9,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -310,12 +301,9 @@ const Data = () => {
                         price: 45,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80672e_%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%A7%D0%B5%CC%88%D1%80%D0%BD%D1%8B%D0%B8%CC%86%20%D0%96%D0%B5%D0%BC%D1%87%D1%83%D0%B3%2C%202018%20%D0%B3(2)-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806829_%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%A7%D0%B5%CC%88%D1%80%D0%BD%D1%8B%D0%B8%CC%86%20%D0%96%D0%B5%D0%BC%D1%87%D1%83%D0%B3%2C%202018%20%D0%B3(3)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806775_%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%A7%D0%B5%CC%88%D1%80%D0%BD%D1%8B%D0%B8%CC%86%20%D0%96%D0%B5%D0%BC%D1%87%D1%83%D0%B3%2C%202018%20%D0%B3(4)-min.jpg",
+                minImg1: "/Images/Products/shu-pu-erh-14-2.jpg",
+                minImg2: "/Images/Products/shu-pu-erh-14-3.jpg",
+                minImg3: "/Images/Products/shu-pu-erh-14-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "berry with nutty chocolate. Impact: gently and permanently invigorates and tones, a wonderful energizer. Helps on the road. An interesting substitute for coffee is that coffee cheerfulness lasts longer and ends smoothly, unlike coffee, when strength disappears suddenly.",
@@ -378,7 +366,7 @@ const Data = () => {
                 id: 5,
                 title: "red tea #4",
                 param: "red-tea-4",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a1c_red-4-1-min.jpg",
+                image: "/Images/Products/red-tea-4-1.jpg",
                 price: 8,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -402,12 +390,9 @@ const Data = () => {
                         price: 35,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d7_%D0%A1%D1%8F%D0%BE%20%D0%A7%D0%B6%D1%83%D0%BD%20%D0%A5%D1%83%D0%B0%20%D0%A1%D1%8F%D0%BD%20%C2%AB%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20%D0%B0%D1%80%D0%BE%D0%BC%D0%B0%D1%82%C2%BB%2C%202021%20%D0%B3-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068bf_%D0%A1%D1%8F%D0%BE%20%D0%A7%D0%B6%D1%83%D0%BD%20%D0%A5%D1%83%D0%B0%20%D0%A1%D1%8F%D0%BD%20%C2%AB%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20%D0%B0%D1%80%D0%BE%D0%BC%D0%B0%D1%82%C2%BB%2C%202021%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ce_%D0%A1%D1%8F%D0%BE%20%D0%A7%D0%B6%D1%83%D0%BD%20%D0%A5%D1%83%D0%B0%20%D0%A1%D1%8F%D0%BD%20%C2%AB%D0%A6%D0%B2%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20%D0%B0%D1%80%D0%BE%D0%BC%D0%B0%D1%82%C2%BB%2C%202021%20%D0%B3(3)-min.jpg",
+                minImg1: "/Images/Products/red-tea-4-2.jpg",
+                minImg2: "/Images/Products/red-tea-4-3.jpg",
+                minImg3: "/Images/Products/red-tea-4-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "rich, clear, with pronounced sweetness, rich, sparkling, with a slight tart. Pleasant enveloping aftertaste. Impact: warming, toning.",
@@ -464,7 +449,7 @@ const Data = () => {
                 id: 6,
                 title: "black tea #3",
                 param: "black-tea-3",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b2_black-3-min.jpg",
+                image: "/Images/Products/black-tea-3-1.jpg",
                 price: 10,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -488,10 +473,10 @@ const Data = () => {
                         price: 55,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ef_%D0%9B%D1%8E%D0%B0%D0%BD%D1%8C%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%20%D0%B2%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%BA%D0%B5%2C%202021%20%D0%B3(3)-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e1_%D0%9B%D1%8E%D0%B0%D0%BD%D1%8C%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%20%D0%B2%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%BA%D0%B5%2C%202021%20%D0%B3(2)-min.jpg",
+                minImg1: "/Images/Products/black-tea-3-2.jpg",
+                minImg2: "/Images/Products/black-tea-3-3.jpg",
+                minImg3: "/Images/Products/black-tea-3-4.jpg",
+                minImg3: null,
                 availability: "in stock",
                 TastingNotes:
                     "spicy, sweet, with a pleasant bitterness. It looks like both Wishan oolong and Shu Pu'er. Impact: gently tones, and smoothes.",
@@ -533,12 +518,11 @@ const Data = () => {
                 id: 7,
                 title: "shu pu-erh #27",
                 param: "shu-pu-erh-27",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069c0_shu-27-1-min.jpg",
+                image: "/Images/Products/shu-pu-erh-27-1.jpg",
                 price: 10,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
                 flow: null,
-
                 slug: ["new-arrivals", "products", "black-tea"],
                 teaSizeAndPrice: [
                     {
@@ -558,12 +542,9 @@ const Data = () => {
                         price: 45,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806987_%D0%9C%D1%8D%D0%BD%D1%85%D0%B0%D0%B8%CC%86%20%D0%92%D1%8D%D0%B8%CC%86%20%C2%AB%D0%A7%D0%B8%D1%81%D1%82%D1%8B%D0%B8%CC%86%20%D0%92%D0%BA%D1%83%D1%81%20%D0%9C%D1%8D%D0%BD%D1%85%D0%B0%D1%8F%C2%BB%2C%202021%20%D0%B3(2)-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806992_%D0%9C%D1%8D%D0%BD%D1%85%D0%B0%D0%B8%CC%86%20%D0%92%D1%8D%D0%B8%CC%86%20%C2%AB%D0%A7%D0%B8%D1%81%D1%82%D1%8B%D0%B8%CC%86%20%D0%92%D0%BA%D1%83%D1%81%20%D0%9C%D1%8D%D0%BD%D1%85%D0%B0%D1%8F%C2%BB%2C%202021%20%D0%B3(3)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80698a_%D0%9C%D1%8D%D0%BD%D1%85%D0%B0%D0%B8%CC%86%20%D0%92%D1%8D%D0%B8%CC%86%20%C2%AB%D0%A7%D0%B8%D1%81%D1%82%D1%8B%D0%B8%CC%86%20%D0%92%D0%BA%D1%83%D1%81%20%D0%9C%D1%8D%D0%BD%D1%85%D0%B0%D1%8F%C2%BB%2C%202021%20%D0%B3(4)-min.jpg",
+                minImg1: "/Images/Products/shu-pu-erh-27-2.jpg",
+                minImg2: "/Images/Products/shu-pu-erh-27-3.jpg",
+                minImg3: "/Images/Products/shu-pu-erh-27-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "dense, rich, pastry-like, woody-creamy, soft, and juicy. Impact: Invigorating, warming, and inspiring.",
@@ -619,7 +600,7 @@ const Data = () => {
                 id: 8,
                 title: "sheng pu-erh #3",
                 param: "sheng-pu-erh-3",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80671c_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
+                image: "/Images/Products/sheng-pu-erh-3-1.jpg",
                 price: 14,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -664,10 +645,8 @@ const Data = () => {
                         price: 45,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806784_%20%D0%98%20%D0%A3%20%2522%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D0%BE%D0%B5%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%2522%2C%202008%20%D0%B3(4)-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806756_%20%D0%98%20%D0%A3%20%2522%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D0%BE%D0%B5%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%2522%2C%202008%20%D0%B3(3)-min.jpg",
+                minImg1: "/Images/Products/sheng-pu-erh-3-2.jpg",
+                minImg2: "/Images/Products/sheng-pu-erh-3-3.jpg",
                 minImg3: null,
                 availability: "in stock",
                 TastingNotes:
@@ -731,7 +710,7 @@ const Data = () => {
                 id: 9,
                 title: "red tea #3",
                 param: "red-tea-3",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069af_red-3-min.jpg",
+                image: "/Images/Products/red-tea-3-1.jpg",
                 price: 14,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -755,12 +734,9 @@ const Data = () => {
                         price: 80,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c2_%D0%A6%D0%B7%D0%B8%D0%BD%D1%8C%20%D0%A6%D0%B7%D1%8E%D0%BD%D1%8C%20%D0%9C%D1%8D%D0%B8%CC%86%20%C2%AB%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5%20%D0%91%D1%80%D0%BE%D0%B2%D0%B8%C2%BB%2C%202022%20%D0%B3-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c3_%D0%A6%D0%B7%D0%B8%D0%BD%D1%8C%20%D0%A6%D0%B7%D1%8E%D0%BD%D1%8C%20%D0%9C%D1%8D%D0%B8%CC%86%20%C2%AB%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5%20%D0%91%D1%80%D0%BE%D0%B2%D0%B8%C2%BB%2C%202022%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c7_%D0%A6%D0%B7%D0%B8%D0%BD%D1%8C%20%D0%A6%D0%B7%D1%8E%D0%BD%D1%8C%20%D0%9C%D1%8D%D0%B8%CC%86%20%C2%AB%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5%20%D0%91%D1%80%D0%BE%D0%B2%D0%B8%C2%BB%2C%202022%20%D0%B3(3)-min.jpg",
+                minImg1: "/Images/Products/red-tea-3-2.jpg",
+                minImg2: "/Images/Products/red-tea-3-3.jpg",
+                minImg3: "/Images/Products/red-tea-3-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "sweet, pure, rich jam, caramel. A long, pleasant aftertaste with a sweet and sour background (sweet and sour apples). Impact: the classic warming effect of red tea, but at the same time relaxing andsoothing.",
@@ -824,7 +800,7 @@ const Data = () => {
                 id: 10,
                 title: "red tea #6",
                 param: "red-tea-6",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ef_red-1200-min.jpg",
+                image: "/Images/Products/red-tea-6-1.jpg",
                 price: 16,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -848,12 +824,9 @@ const Data = () => {
                         price: 115,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c8_%D0%94%D0%B0%20%D0%A6%D0%B7%D0%B8%D0%BD%D1%8C%20%D0%A7%D0%B6%D1%8D%D0%BD%D1%8C%20%D0%92%D0%B0%D0%BD%20%C2%AB%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5%20%D0%98%D0%B3%D0%BB%D1%8B%C2%BB%2C%202022%20%D0%B3-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ca_%D0%94%D0%B0%20%D0%A6%D0%B7%D0%B8%D0%BD%D1%8C%20%D0%A7%D0%B6%D1%8D%D0%BD%D1%8C%20%D0%92%D0%B0%D0%BD%20%C2%AB%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5%20%D0%98%D0%B3%D0%BB%D1%8B%C2%BB%2C%202022%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d3_%D0%94%D0%B0%20%D0%A6%D0%B7%D0%B8%D0%BD%D1%8C%20%D0%A7%D0%B6%D1%8D%D0%BD%D1%8C%20%D0%92%D0%B0%D0%BD%20%C2%AB%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5%20%D0%98%D0%B3%D0%BB%D1%8B%C2%BB%2C%202022%20%D0%B3(3)-min.jpg",
+                minImg1: "/Images/Products/red-tea-6-2.jpg",
+                minImg2: "/Images/Products/red-tea-6-3.jpg",
+                minImg3: "/Images/Products/red-tea-6-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "juicy, sweet and strong. Velvety, fruity-berry aftertaste. Impact: refreshes and warms, gives strength and energy.",
@@ -868,7 +841,7 @@ const Data = () => {
                 id: 11,
                 title: "white tea #1",
                 param: "white-tea-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bd_white-min.jpg",
+                image: "/Images/Products/white-tea-1-1.jpg",
                 price: 14,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -892,12 +865,9 @@ const Data = () => {
                         price: 80,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d4_%D0%91%D0%B0%D0%B8%CC%86%20%D0%A5%D0%B0%D0%BE%20%D0%98%D0%BD%D1%8C%20%D0%A7%D0%B6%D1%8D%D0%BD%D1%8C%2C%20%D0%AE%D0%BD%D1%8C%D0%BD%D0%B0%D0%BD%D1%8C%2C%202022%20%D0%B3-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d9_%D0%91%D0%B0%D0%B8%CC%86%20%D0%A5%D0%B0%D0%BE%20%D0%98%D0%BD%D1%8C%20%D0%A7%D0%B6%D1%8D%D0%BD%D1%8C%2C%20%D0%AE%D0%BD%D1%8C%D0%BD%D0%B0%D0%BD%D1%8C%2C%202022%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d8_%D0%91%D0%B0%D0%B8%CC%86%20%D0%A5%D0%B0%D0%BE%20%D0%98%D0%BD%D1%8C%20%D0%A7%D0%B6%D1%8D%D0%BD%D1%8C%2C%20%D0%AE%D0%BD%D1%8C%D0%BD%D0%B0%D0%BD%D1%8C%2C%202022%20%D0%B3(3)-min.jpg",
+                minImg1: "/Images/Products/white-tea-1-2.jpg",
+                minImg2: "/Images/Products/white-tea-1-3.jpg",
+                minImg3: "/Images/Products/white-tea-1-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "soft and silky. The aftertaste is pleasant, long-lasting. Impact: relaxing and harmonizing.",
@@ -954,7 +924,7 @@ const Data = () => {
                 id: 12,
                 title: "gaba oolong #1",
                 param: "gaba-oolong-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f4_gaba-oolong1-1200-min.jpg",
+                image: "/Images/Products/gaba-oolong-1-1.jpg",
                 price: 14,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -978,12 +948,9 @@ const Data = () => {
                         price: 80,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068af_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%93%D0%B0%D0%B1%D0%B0%20%D0%9D%D0%B0%D0%BD%D1%8C%D1%82%D0%BE%D1%83-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068a7_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%93%D0%B0%D0%B1%D0%B0%20%D0%9D%D0%B0%D0%BD%D1%8C%D1%82%D0%BE%D1%83(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ac_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%93%D0%B0%D0%B1%D0%B0%20%D0%9D%D0%B0%D0%BD%D1%8C%D1%82%D0%BE%D1%83(3)-min.jpg",
+                minImg1: "/Images/Products/gaba-oolong-1-2.jpg",
+                minImg2: "/Images/Products/gaba-oolong-1-3.jpg",
+                minImg3: "/Images/Products/gaba-oolong-1-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "soft, thick, warm with notes of baked fruits. Easy to drink, bright, but balanced bouquet. Impact: relaxing, meditative, but at the same time gentlycollecting and concentrating.",
@@ -1032,7 +999,7 @@ const Data = () => {
                 id: 13,
                 title: "gaba oolong #5",
                 param: "gaba-oolong-5",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f1_gaba5-1200-min.jpg",
+                image: "/Images/Products/gaba-oolong-5-1.jpg",
                 price: 18,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -1057,12 +1024,9 @@ const Data = () => {
                         price: 134,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ad_%D0%93%D0%B0%D0%B1%D0%B0%20%D0%90%D0%BB%D0%B8%20%D0%A8%D0%B0%D0%BD%D1%8C%2C%20%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068a8_%D0%93%D0%B0%D0%B1%D0%B0%20%D0%90%D0%BB%D0%B8%20%D0%A8%D0%B0%D0%BD%D1%8C%2C%20%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b2_%D0%93%D0%B0%D0%B1%D0%B0%20%D0%90%D0%BB%D0%B8%20%D0%A8%D0%B0%D0%BD%D1%8C%2C%20%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC(3)-min.jpg",
+                minImg1: "/Images/Products/gaba-oolong-5-2.jpg",
+                minImg2: "/Images/Products/gaba-oolong-5-3.jpg",
+                minImg3: "/Images/Products/gaba-oolong-5-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "pleasant, with a slight sourness. Impact: relaxing, meditative.",
@@ -1118,7 +1082,7 @@ Repeat several times until the flavor and aroma of the tea dissipates. As the br
                 id: 14,
                 title: "black tea #1",
                 param: "black-tea-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b1_black-1-min.jpg",
+                image: "/Images/Products/black-tea-1-1.jpg",
                 price: 14,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -1143,12 +1107,9 @@ Repeat several times until the flavor and aroma of the tea dissipates. As the br
                         price: 80,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068da_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B02-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068db_%D0%9B%D1%8E%20%D0%91%D0%B0%D0%BE%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%206166%2C%202020%20%D0%B3(3)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e6_%D0%9B%D1%8E%20%D0%91%D0%B0%D0%BE%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%206166%2C%202020%20%D0%B3(4)-min.jpg",
+                minImg1: "/Images/Products/black-tea-1-2.jpg",
+                minImg2: "/Images/Products/black-tea-1-3.jpg",
+                minImg3: "/Images/Products/black-tea-1-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "soft, nutty, with fresh notes. Impact: leveling, concentrating. This is tea for attentive work and cheerful morning.",
@@ -1220,7 +1181,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 id: 15,
                 title: "gaba oolong #4",
                 param: "gaba-oolong-4",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f0_gaba4-1200-min.jpg",
+                image: "/Images/Products/gaba-oolong-4-1.jpg",
                 price: 20,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -1250,12 +1211,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                         price: 156,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ae_%D0%93%D0%B0%D0%B1%D0%B0%20%D0%A0%D1%83%D0%B1%D0%B8%D0%BD%20%D0%A2%D0%B5%CC%88%D0%BC%D0%BD%D0%B0%D1%8F-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068a9_%D0%93%D0%B0%D0%B1%D0%B0%20%D0%A0%D1%83%D0%B1%D0%B8%D0%BD%20%D0%A2%D0%B5%CC%88%D0%BC%D0%BD%D0%B0%D1%8F(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ab_%D0%93%D0%B0%D0%B1%D0%B0%20%D0%A0%D1%83%D0%B1%D0%B8%D0%BD%20%D0%A2%D0%B5%CC%88%D0%BC%D0%BD%D0%B0%D1%8F(3)-min.jpg",
+                minImg1: "/Images/Products/gaba-oolong-4-2.jpg",
+                minImg2: "/Images/Products/gaba-oolong-4-3.jpg",
+                minImg3: "/Images/Products/gaba-oolong-4-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "deep, bright, warm, spicy, with notes of bread and cocoa beans. The aftertaste has a bitterness of coffee and a pleasant astringency. Impact: meditative, but at the same time collecting and concentrating.",
@@ -1325,7 +1283,7 @@ Repeat several times until the flavor and aroma of the tea dissipates. As the br
                 id: 16,
                 title: "shu pu-erh #9",
                 param: "shu-pu-erh-9",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b4_shu-9-min.jpg",
+                image: "/Images/Products/shu-pu-erh-9-1.jpg",
                 price: 9,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -1349,12 +1307,9 @@ Repeat several times until the flavor and aroma of the tea dissipates. As the br
                         price: 45,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80664a_%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%20%D0%AE%D0%B8%CC%86%20%D0%98%D0%BD%D1%8C%2C%202013%20%D0%B3(2)-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80667a_%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%20%D0%AE%D0%B8%CC%86%20%D0%98%D0%BD%D1%8C%2C%202013%20%D0%B3(1)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806707_%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%20%D0%AE%D0%B8%CC%86%20%D0%98%D0%BD%D1%8C%2C%202013%20%D0%B3(3)-min.jpg",
+                minImg1: "/Images/Products/shu-pu-erh-9-2.jpg",
+                minImg2: "/Images/Products/shu-pu-erh-9-3.jpg",
+                minImg3: "/Images/Products/shu-pu-erh-9-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "balanced, woody-creamy, soft, but at the same time dense and quite expressive. Impact: moderately tones, gives energy, balances.",
@@ -1432,7 +1387,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 id: 17,
                 title: "green tea #1",
                 param: "green-tea-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bc_green-1-min.jpg",
+                image: "/Images/Products/green-tea-1-1.jpg",
                 price: 8,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -1457,12 +1412,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                         price: 35,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806787_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D0%91%D0%B8%D0%BB%D0%BE%D1%87%D1%83%D0%BD%D1%8C%20%C2%AB%D0%98%D0%B7%D1%83%D0%BC%D1%80%D1%83%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%A1%D0%BF%D0%B8%D1%80%D0%B0%D0%BB%D0%B8%20%D0%92%D0%B5%D1%81%D0%BD%D1%8B%C2%BB%2C%20%D0%AE%D0%BD%D1%8C%D0%BD%D0%B0%D0%BD%D1%8C%2C%202022%20%D0%B3-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806755_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D0%91%D0%B8%D0%BB%D0%BE%D1%87%D1%83%D0%BD%D1%8C%20%C2%AB%D0%98%D0%B7%D1%83%D0%BC%D1%80%D1%83%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%A1%D0%BF%D0%B8%D1%80%D0%B0%D0%BB%D0%B8%20%D0%92%D0%B5%D1%81%D0%BD%D1%8B%C2%BB%2C%20%D0%AE%D0%BD%D1%8C%D0%BD%D0%B0%D0%BD%D1%8C%2C%202022%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806757_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D0%91%D0%B8%D0%BB%D0%BE%D1%87%D1%83%D0%BD%D1%8C%20%C2%AB%D0%98%D0%B7%D1%83%D0%BC%D1%80%D1%83%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%A1%D0%BF%D0%B8%D1%80%D0%B0%D0%BB%D0%B8%20%D0%92%D0%B5%D1%81%D0%BD%D1%8B%C2%BB%2C%20%D0%AE%D0%BD%D1%8C%D0%BD%D0%B0%D0%BD%D1%8C%2C%202022%20%D0%B3(3)-min.jpg",
+                minImg1: "/Images/Products/green-tea-1-2.jpg",
+                minImg2: "/Images/Products/green-tea-1-3.jpg",
+                minImg3: "/Images/Products/green-tea-1-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "dense, rich, and long, with notes of fresh cucumbers, young shoots, and porcini mushrooms. Impact: refreshing, invigorating, and toning. Excellent 'morning' tea.",
@@ -1483,7 +1435,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 id: 18,
                 title: "osmanthus oolong",
                 param: "osmanthus-oolong",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fe_Osman-Thus%20Oolong-1200-1-min.jpg",
+                image: "/Images/Products/osmanthus-oolong-1.jpg",
                 price: 15,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -1508,12 +1460,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                         price: 100,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b1_%D0%A3%D0%BB%D1%83%D0%BD%20%D1%81%20%D0%BE%D1%81%D0%BC%D0%B0%D0%BD%D1%82%D1%83%D1%81%D0%BE%D0%BC%20%D1%81%20%D0%BE.%20%D0%A2%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%2C%20%D0%BD%D0%B0%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b6_%D0%A3%D0%BB%D1%83%D0%BD%20%D1%81%20%D0%BE%D1%81%D0%BC%D0%B0%D0%BD%D1%82%D1%83%D1%81%D0%BE%D0%BC%20%D1%81%20%D0%BE.%20%D0%A2%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%2C%20%D0%BD%D0%B0%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b7_%D0%A3%D0%BB%D1%83%D0%BD%20%D1%81%20%D0%BE%D1%81%D0%BC%D0%B0%D0%BD%D1%82%D1%83%D1%81%D0%BE%D0%BC%20%D1%81%20%D0%BE.%20%D0%A2%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%2C%20%D0%BD%D0%B0%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8%CC%86(3)-min.jpg",
+                minImg1: "/Images/Products/osmanthus-oolong-2.jpg",
+                minImg2: "/Images/Products/osmanthus-oolong-3.jpg",
+                minImg3: "/Images/Products/osmanthus-oolong-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "fresh, bright taste, dried fruit with berry sweetness. Shades of peaches and apricots. Impact: it refreshes well and gives strength, evens out the condition.",
@@ -1571,7 +1520,7 @@ Infuse the brew for 2-3 minutes.
                 id: 19,
                 title: "wishan oolong #2",
                 param: "wishan-oolong-2",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fa_Wishan-2-1200-min.jpg",
+                image: "/Images/Products/wishan-oolong-2-1.jpg",
                 price: 15,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -1596,12 +1545,9 @@ Infuse the brew for 2-3 minutes.
                         price: 100,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ba_%D0%A8%D1%83%D0%B8%CC%86%20%D0%A1%D1%8F%D0%BD%D1%8C%20%D0%93%D0%B0%D0%BE%20%D0%A8%D0%B0%D0%BD%D1%8C%20%D0%A2%D0%B0%D0%BD%20%D0%91%D1%8D%D0%B8%CC%86%20%C2%AB%E2%80%8E%D0%92%D1%8B%D1%81%D0%BE%D0%BA%D0%BE%D0%B3%D0%BE%D1%80%D0%BD%D1%8B%D0%B8%CC%86%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%C2%BB-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068bc_%D0%A8%D1%83%D0%B8%CC%86%20%D0%A1%D1%8F%D0%BD%D1%8C%20%D0%93%D0%B0%D0%BE%20%D0%A8%D0%B0%D0%BD%D1%8C%20%D0%A2%D0%B0%D0%BD%20%D0%91%D1%8D%D0%B8%CC%86%20%C2%AB%E2%80%8E%D0%92%D1%8B%D1%81%D0%BE%D0%BA%D0%BE%D0%B3%D0%BE%D1%80%D0%BD%D1%8B%D0%B8%CC%86%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%C2%BB(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b8_%D0%A8%D1%83%D0%B8%CC%86%20%D0%A1%D1%8F%D0%BD%D1%8C%20%D0%93%D0%B0%D0%BE%20%D0%A8%D0%B0%D0%BD%D1%8C%20%D0%A2%D0%B0%D0%BD%20%D0%91%D1%8D%D0%B8%CC%86%20%C2%AB%E2%80%8E%D0%92%D1%8B%D1%81%D0%BE%D0%BA%D0%BE%D0%B3%D0%BE%D1%80%D0%BD%D1%8B%D0%B8%CC%86%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%C2%BB(3)-min.jpg",
+                minImg1: "/Images/Products/wishan-oolong-2-2.jpg",
+                minImg2: "/Images/Products/wishan-oolong-2-3.jpg",
+                minImg3: "/Images/Products/wishan-oolong-2-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "clean and strong, oily and dense, but at the same time delicate. Smoothly turns into a long, refreshing, sweet aftertaste. Impact: it will warm,cheer up and inspire.",
@@ -1680,7 +1626,7 @@ Infuse 2nd and subsequent brews for 5-15 seconds.
                 id: 20,
                 title: `dong ding lao shi`,
                 param: `dong-ding-lao-shi`,
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fc_dong-1200-min.jpg",
+                image: "/Images/Products/dong-ding-lao-shi-1.jpg",
                 price: 16,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -1705,16 +1651,14 @@ Infuse 2nd and subsequent brews for 5-15 seconds.
                         price: 115,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b5_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%94%D1%83%D0%BD%20%D0%94%D0%B8%D0%BD%20%D0%9B%D0%B0%D0%BE%20%D0%A8%D0%B8%2C%20%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b3_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%94%D1%83%D0%BD%20%D0%94%D0%B8%D0%BD%20%D0%9B%D0%B0%D0%BE%20%D0%A8%D0%B8%2C%20%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B8%CC%86(2)-min.jpg",
+                minImg1: "/Images/Products/dong-ding-lao-shi-2.jpg",
+                minImg2: "/Images/Products/dong-ding-lao-shi-3.jpg",
                 minImg3: null,
                 availability: "in stock",
                 TastingNotes: `soft, sweet, multi-faceted, spicy-caramel, nutty and
 woody-dried fruit, with smoky coffee notes in the
 aftertaste and menthol freshness. Impact:
-intoxicating, relaxing, meditative.`,
+                intoxicating, relaxing, meditative.`,
                 aboutProduct: `<p>
                 Medium-fermented highly roasted hemispherical twisted oolong. It
                 is grown and made on the tea farm of the Lu Gu region.
@@ -1778,7 +1722,7 @@ intoxicating, relaxing, meditative.`,
                 id: 21,
                 title: "wishan oolong #1",
                 param: "wishan-oolong-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fb_wishan-1200-min.jpg",
+                image: "/Images/Products/wishan-oolong-1-1.jpg",
                 price: 15,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -1802,12 +1746,9 @@ intoxicating, relaxing, meditative.`,
                         price: 100,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068be_%D0%9C%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B6%D0%B0%D0%BD%D1%8C%20%C2%AB%D0%94%D0%B8%D0%BA%D0%B0%D1%8F%20%D0%A1%D0%BB%D0%B8%D0%B2%D0%B0%C2%BB-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b0_%D0%9C%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B6%D0%B0%D0%BD%D1%8C%20%C2%AB%D0%94%D0%B8%D0%BA%D0%B0%D1%8F%20%D0%A1%D0%BB%D0%B8%D0%B2%D0%B0%C2%BB(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b9_%D0%9C%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B6%D0%B0%D0%BD%D1%8C%20%C2%AB%D0%94%D0%B8%D0%BA%D0%B0%D1%8F%20%D0%A1%D0%BB%D0%B8%D0%B2%D0%B0%C2%BB(3)-min.jpg",
+                minImg1: "/Images/Products/wishan-oolong-1-2.jpg",
+                minImg2: "/Images/Products/wishan-oolong-1-3.jpg",
+                minImg3: "/Images/Products/wishan-oolong-1-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "pure and strong, enveloping and soft, but at the same time delicate. Voluminous, sweet and fruity, with baked notes. Impact: leveling, relaxing-meditative, collecting.",
@@ -1886,7 +1827,7 @@ Infuse 2nd and subsequent brews for 5-15 seconds.
                 id: 22,
                 title: "tie-guan yin #3",
                 param: "tie-guan-yin-3",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a1b_Tie-Guan%203%201200%20copy-min.jpg",
+                image: "/Images/Products/tie-guan-yin-3-1.jpg",
                 price: 10,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -1915,12 +1856,9 @@ Infuse 2nd and subsequent brews for 5-15 seconds.
                         price: 30,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8067cc_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%A2%D0%B5%D0%B3%D1%83%D0%B0%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C%20%D0%B2%20%D0%9A%D1%83%D0%B3%D1%83%D0%B0%2C%20%D0%BF%D1%80%D0%BE%D0%B6%D0%B0%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8%CC%86%20%D0%B8%20%D0%B2%D1%8B%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%BD%D1%8B%D0%B8%CC%86%2C%202019%20%D0%B3-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80678a_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%A2%D0%B5%D0%B3%D1%83%D0%B0%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C%20%D0%B2%20%D0%9A%D1%83%D0%B3%D1%83%D0%B0%2C%20%D0%BF%D1%80%D0%BE%D0%B6%D0%B0%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8%CC%86%20%D0%B8%20%D0%B2%D1%8B%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%BD%D1%8B%D0%B8%CC%86%2C%202019%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8067f6_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%A2%D0%B5%D0%B3%D1%83%D0%B0%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C%20%D0%B2%20%D0%9A%D1%83%D0%B3%D1%83%D0%B0%2C%20%D0%BF%D1%80%D0%BE%D0%B6%D0%B0%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8%CC%86%20%D0%B8%20%D0%B2%D1%8B%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%BD%D1%8B%D0%B8%CC%86%2C%202019%20%D0%B3(3)-min.jpg",
+                minImg1: "/Images/Products/tie-guan-yin-3-2.jpg",
+                minImg2: "/Images/Products/tie-guan-yin-3-3.jpg",
+                minImg3: "/Images/Products/tie-guan-yin-3-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "chocolate, nutty tones. The taste of the raw material itself is felt, the weak bitterness of cougar smoothly turns into sweetness and remains in the aftertaste. Impact: keeps the body in good shape, and the spirit in peace.",
@@ -1988,7 +1926,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 id: 23,
                 title: "milk oolong",
                 param: "milk-oolong",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f2_milk-oolong-1200-min.jpg",
+                image: "/Images/Products/milk-oolong-1.jpg",
                 price: 8,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -2013,12 +1951,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                         price: 35,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806899_%D0%9C%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20%D0%A3%D0%BB%D1%83%D0%BD%20%C2%AB%D0%9D%D0%B0%D0%B8%CC%86%20%D0%A1%D1%8F%D0%BD%C2%BB%2C%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B8%CC%86%2C%202022%20%D0%B3-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068a6_%D0%9C%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20%D0%A3%D0%BB%D1%83%D0%BD%20%C2%AB%D0%9D%D0%B0%D0%B8%CC%86%20%D0%A1%D1%8F%D0%BD%C2%BB%2C%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B8%CC%86%2C%202022%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80683e_%D0%9C%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20%D0%A3%D0%BB%D1%83%D0%BD%20%C2%AB%D0%9D%D0%B0%D0%B8%CC%86%20%D0%A1%D1%8F%D0%BD%C2%BB%2C%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B8%CC%86%2C%202022%20%D0%B3(3)-min.jpg",
+                minImg1: "/Images/Products/milk-oolong-2.jpg",
+                minImg2: "/Images/Products/milk-oolong-3.jpg",
+                minImg3: "/Images/Products/milk-oolong-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "sweet, floral, creamy. Without bitterness and astringency. Impact: refreshing, relaxing, and harmonizing.",
@@ -2069,106 +2004,86 @@ Infuse the brew for 3 minutes.
             },
             {
                 id: 24,
-                title: "black tea #3",
-                param: "black-tea-3",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b2_black-3-min.jpg",
-                price: 10,
+                title: "shu pu-erh #2",
+                param: "shu-pu-erh-2",
+                image: "/Images/Products/shu-pu-erh-2-1.jpg",
+                price: 7,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
-                flow: 3,
+                flow: 4,
 
-                slug: ["premium tea", "black-tea"],
+                slug: ["top-sales", "products", "energy-flow", "black-tea"],
                 teaSizeAndPrice: [
                     {
                         size: "0.78 oz (22 G) zip pouch",
+                        price: 7,
+                    },
+                    {
+                        size: "1.5 oz (43 G) zip pouch",
                         price: 10,
                     },
                     {
-                        size: "1.5 oz (43 G) tin",
+                        size: "3 oz (86 G) tin",
                         price: 15,
                     },
                     {
-                        size: "3 oz (86 G) zip pouch",
-                        price: 25,
-                    },
-                    {
-                        size: "7.5 oz (215 G) zip pouch",
-                        price: 55,
+                        size: "8.8 oz (250 G) brick",
+                        price: 30,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ef_%D0%9B%D1%8E%D0%B0%D0%BD%D1%8C%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%20%D0%B2%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%BA%D0%B5%2C%202021%20%D0%B3(3)-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e1_%D0%9B%D1%8E%D0%B0%D0%BD%D1%8C%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%20%D0%B2%20%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%BA%D0%B5%2C%202021%20%D0%B3(2)-min.jpg",
-                minImg3: null,
+                minImg1: "/Images/Products/shu-pu-erh-2-2.jpg",
+                minImg2: "/Images/Products/shu-pu-erh-2-3.jpg",
+                minImg3: "/Images/Products/shu-pu-erh-2-4.jpg",
                 availability: "in stock",
-                TastingNotes:
-                    "spicy, sweet, with a pleasant bitterness. It looks like both Wishan oolong and Shu Pu'er. Impact: gently tones, and smoothes.",
+                TastingNotes: `fruity and nut-chocolate with a pleasant bitterness. Impact:
+    invigorates and tones`,
                 aboutProduct: `<p>
-                        Black fermented tea Hei Cha from Anhui province. Packed in a traditional bamboo basket of 500 grams. 
-
-
-                    </p>
-                    <p>
-                    Aroma: sweet, woody-spicy, chocolate, with notes of dead leaves.
-
-
-                    </p>
-                    <p>
-Taste: spicy, sweet, with a pleasant bitterness. It looks like both Wishan oolong and Shu Pu'er.
-
-
-                    </p>
-                    <p>
-Effect: gently tones, and smoothes.
-
-
-                    </p>
-                    `,
-                SteepingInstructions: `<p>
-                        Traditional Preparation
-
-
-                    </p>
-                    <p>
-                    Add 10-12 grams to a Gaiwan or Gongfu Teapot (150ml-200ml). 
-
-
-                    </p>
-                    <p>
-Use 212°F boiling water.
-
-
-                    </p>
-                    <p>
-Briefly rinse the leaves. Decant and discard this infusion.
-
-
-                    </p>
-                    <p>
-Infuse the first brew for 10 seconds.  
-
-
-                    </p>
-                    <p>
-Infuse 2nd and subsequent brews for 10-30 seconds. 
-
-
-                    </p>
-                    <p>
-                       Repeat several times until the flavor and aroma of the tea dissipates. As the brewing session ensues, increase infusion time to coax out the body and strength of the final infusions.
-
- 
-                    </p>
-                    `,
-                flavor: "Flavor: spicy, sweet, pleasant bitterness",
-                Ingredients: "Organic black tea",
+    Invigorating pu-erh from Xin Wen factory. It is known for its
+    combination of price and quality.
+</p>
+<p>
+    The word Guntin (kit. 宫廷) in the name of the brick translates
+    as Palace and indicates the category of raw materials. Palace or
+    Imperial Pu-erh are small leaves containing large buds and a
+    complete or almost complete absence of cuttings. This tea
+    invigorates well, it is brewed quickly and deliciously.
+</p>
+<p>
+    Aroma: sweet, woody, and nutty with notes of bitter chocolate.
+</p>
+<p>
+    Taste: bright, rich, and thick with a pleasant bitterness,
+    fruity, and nutty chocolate shades.
+</p>
+<p>
+    Effect: invigorates and tones, a wonderful energizer. Helps on
+    the road. An interesting substitute for coffee; is Pu-erh
+    cheerfulness lasts longer and ends smoothly, unlike coffee, when
+    strength disappears suddenly.
+</p>
+<p>
+    Production: 2016, Xin Wen Factory, Yongde County, Lincang
+    County, Yunnan Province, China.
+        </p>`,
+                SteepingInstructions: `<p>Traditional Preparation</p>
+<p>Add 7-10 grams to a Gaiwan or Gongfu Teapot (150ml-200ml).</p>
+<p>Use 212°F boiling water.</p>
+<p>Briefly rinse the leaves. Decant and discard this infusion.</p>
+<p>Infuse the first brew for 10 seconds.</p>
+<p>Infuse 2nd and subsequent brews for 10-30 seconds.</p>
+<p>
+    Repeat several times until the flavor and aroma of the tea
+    dissipates. As the brewing session ensues, increase infusion
+    time to coax out the body and strength of the final infusions.
+        </p>`,
+                flavor: "Flavor: sweet, woody, nutty, chocolate",
+                Ingredients: "Organic Shu Pu’er",
             },
             {
                 id: 25,
                 title: "aged oolong #1",
                 param: "aged-oolong-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f9_Aged%20Oolong-1200-min.jpg",
+                image: "/Images/Products/aged-oolong-1-1.jpg",
                 price: 16,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -2193,12 +2108,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                         price: 115,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068cb_%D0%9B%D1%83%20%D0%93%D1%83%20%D0%9B%D0%B0%D0%BE%20%D0%A7%D0%B0%20%D0%92%D0%B0%D0%BD%2012-%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D0%B8%CC%86-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068b4_%D0%9B%D1%83%20%D0%93%D1%83%20%D0%9B%D0%B0%D0%BE%20%D0%A7%D0%B0%20%D0%92%D0%B0%D0%BD%2012-%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D0%B8%CC%86(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068bd_%D0%9B%D1%83%20%D0%93%D1%83%20%D0%9B%D0%B0%D0%BE%20%D0%A7%D0%B0%20%D0%92%D0%B0%D0%BD%2012-%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D0%B8%CC%86(3)-min.jpg",
+                minImg1: "/Images/Products/aged-oolong-1-2.jpg",
+                minImg2: "/Images/Products/aged-oolong-1-3.jpg",
+                minImg3: "/Images/Products/aged-oolong-1-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "deep, spicy caramel, nutty, with chocolate and smoky coffee notes in the aftertaste. Impact: harmonizing, relaxing, meditative. Suitable for an attentive tea ceremony.",
@@ -2281,7 +2193,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 id: 26,
                 title: "tie-guan yin #1",
                 param: "tie-guan-yin-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f3_1200-Tie-Guan%20Yin%201-min.jpg",
+                image: "/Images/Products/tie-guan-yin-1-1.jpg",
                 price: 9,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -2310,12 +2222,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                         price: 45,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80678c_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%A2%D0%B5%D0%B3%D1%83%D0%B0%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806789_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%A2%D0%B5%D0%B3%D1%83%D0%B0%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806818_%D0%A3%D0%BB%D1%83%D0%BD%20%D0%A2%D0%B5%D0%B3%D1%83%D0%B0%D0%BD%D1%8C%D0%B8%D0%BD%D1%8C%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(3)-min.jpg",
+                minImg1: "/Images/Products/tie-guan-yin-1-2.jpg",
+                minImg2: "/Images/Products/tie-guan-yin-1-3.jpg",
+                minImg3: "/Images/Products/tie-guan-yin-1-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "fresh and fruity. Over time, a berry sourness and a small, pleasant astringency appear. Fresh and light aftertaste. Impact: refreshing, relaxing.",
@@ -2368,7 +2277,7 @@ Infuse the brew for 2-3 minutes.
                 id: 27,
                 title: "dan tsung #1",
                 param: "dan-tsung-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ee_dan-1200-min.jpg",
+                image: "/Images/Products/dan-tsung-1-1.jpg",
                 price: 19,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -2405,12 +2314,9 @@ Infuse the brew for 2-3 minutes.
                         price: 145,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c1_%D0%9C%D0%B8%20%D0%9B%D0%B0%D0%BD%D1%8C%20%D0%A1%D1%8F%D0%BD%20%D0%93%D0%B0%D0%BE%D1%88%D0%B0%D0%BD%D1%8C%20%D0%94%D0%B0%D0%BD%D1%8C%20%D0%A6%D1%83%D0%BD%20%C2%AB%D0%9C%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D1%85%D0%B8%D0%B4%D0%B5%D1%8F%C2%BB%20-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c4_%D0%9C%D0%B8%20%D0%9B%D0%B0%D0%BD%D1%8C%20%D0%A1%D1%8F%D0%BD%20%D0%93%D0%B0%D0%BE%D1%88%D0%B0%D0%BD%D1%8C%20%D0%94%D0%B0%D0%BD%D1%8C%20%D0%A6%D1%83%D0%BD%20%C2%AB%D0%9C%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D1%85%D0%B8%D0%B4%D0%B5%D1%8F%C2%BB(2)%20-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c6_%D0%9C%D0%B8%20%D0%9B%D0%B0%D0%BD%D1%8C%20%D0%A1%D1%8F%D0%BD%20%D0%93%D0%B0%D0%BE%D1%88%D0%B0%D0%BD%D1%8C%20%D0%94%D0%B0%D0%BD%D1%8C%20%D0%A6%D1%83%D0%BD%20%C2%AB%D0%9C%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D1%85%D0%B8%D0%B4%D0%B5%D1%8F%C2%BB(3)%20-min.jpg",
+                minImg1: "/Images/Products/dan-tsung-1-2.jpg",
+                minImg2: "/Images/Products/dan-tsung-1-3.jpg",
+                minImg3: "/Images/Products/dan-tsung-1-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "rich, thick, with obvious citrus-honey notes and pleasant, expressive astringency. Impact: fills with energy and cheerfulness, lifts the mood.",
@@ -2473,7 +2379,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 id: 28,
                 title: "shu pu-erh #18",
                 param: "shu-pu-erh-18",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b6_shu-18-min.jpg",
+                image: "/Images/Products/shu-pu-erh-18-1.jpg",
                 price: 10,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -2514,12 +2420,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                         price: 60,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806752_%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%20%D0%92%D0%B0%D0%BD%2C%202012%20%D0%B3(3)-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8066c8_%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%20%D0%92%D0%B0%D0%BD%2C%202012%20%D0%B3(4)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806750_%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%20%D0%92%D0%B0%D0%BD%2C%202012%20%D0%B3(2)-min.jpg",
+                minImg1: "/Images/Products/shu-pu-erh-18-2.jpg",
+                minImg2: "/Images/Products/shu-pu-erh-18-3.jpg",
+                minImg3: "/Images/Products/shu-pu-erh-18-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "sweet-woody, sleeper and dense with hints of bitter chocolate and prunes. Impact: powerful, actively toning. Impact: powerful, actively toning.",
@@ -2573,7 +2476,7 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                 id: 29,
                 title: "green tea #2",
                 param: "green-tea-2",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bb_green-2-min.jpg",
+                image: "/Images/Products/green-tea-2-1.jpg",
                 price: 17,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -2602,12 +2505,9 @@ Infuse 2nd and subsequent brews for 10-30 seconds.
                         price: 115,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806788_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D0%A1%D0%B8%20%D0%A5%D1%83%20%D0%9B%D1%83%D0%BD%D1%86%D0%B7%D0%B8%D0%BD%20%C2%AB%D0%9A%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D1%86%20%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0%C2%BB%2C%20%D0%B2%D1%8B%D1%81%D1%88%D0%B8%D0%B8%CC%86%20%D1%81%D0%BE%D1%80%D1%82%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(3)-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806785_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D0%A1%D0%B8%20%D0%A5%D1%83%20%D0%9B%D1%83%D0%BD%D1%86%D0%B7%D0%B8%D0%BD%20%C2%AB%D0%9A%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D1%86%20%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0%C2%BB%2C%20%D0%B2%D1%8B%D1%81%D1%88%D0%B8%D0%B8%CC%86%20%D1%81%D0%BE%D1%80%D1%82%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806786_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D0%A1%D0%B8%20%D0%A5%D1%83%20%D0%9B%D1%83%D0%BD%D1%86%D0%B7%D0%B8%D0%BD%20%C2%AB%D0%9A%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D1%86%20%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0%C2%BB%2C%20%D0%B2%D1%8B%D1%81%D1%88%D0%B8%D0%B8%CC%86%20%D1%81%D0%BE%D1%80%D1%82%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(2)-min.jpg",
+                minImg1: "/Images/Products/green-tea-2-2.jpg",
+                minImg2: "/Images/Products/green-tea-2-3.jpg",
+                minImg3: "/Images/Products/green-tea-2-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "thick, oily and rich. Sweet, floral notes with a slight bitterness. Impact: refreshes, invigorates, and improves mindfulness and efficiency.",
@@ -2665,7 +2565,7 @@ Infuse the brew for 2.5 minutes.
                 id: 30,
                 title: "green tea flow",
                 param: "green-tea_flow",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b9_green%20flow%20combo-min.jpg",
+                image: "/Images/Products/green-tea_flow-1.jpg",
                 price: 50,
                 size: null,
                 amount: 1,
@@ -2733,7 +2633,7 @@ Have a nice tea party.
                 id: 31,
                 title: "pu-erh flow",
                 param: "pu-erh-flow",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b8_pu-erh%20flow%20combo-min.jpg",
+                image: "/Images/Products/pu-erh-flow-1.jpg",
                 price: 55,
                 size: null,
                 amount: 1,
@@ -2788,7 +2688,7 @@ Have a nice tea party.
                 id: 32,
                 title: "teaFlow",
                 param: "tea-flow",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806924_Slide7-min.jpg",
+                image: "/Images/Products/tea-flow-1.jpg",
                 price: null,
                 size: null,
                 amount: 1,
@@ -2841,7 +2741,7 @@ Have a nice tea party.
                 id: 33,
                 title: "black tea #2",
                 param: "black-tea-2",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e8_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
+                image: "/Images/Products/black-tea-2-1.jpg",
                 price: 17,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -2865,12 +2765,9 @@ Have a nice tea party.
                         price: 115,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068de_%D0%9B%D1%8E%20%D0%91%D0%B0%D0%BE%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%208005%2C%202018%20%D0%B3(2)-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068dc_%D0%9B%D1%8E%20%D0%91%D0%B0%D0%BE%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%208005%2C%202018%20%D0%B3(3)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e3_%D0%9B%D1%8E%20%D0%91%D0%B0%D0%BE%20%D0%A5%D1%8D%D0%B8%CC%86%20%D0%A7%D0%B0%208005%2C%202018%20%D0%B3(4)-min.jpg",
+                minImg1: "/Images/Products/black-tea-2-2.jpg",
+                minImg2: "/Images/Products/black-tea-2-3.jpg",
+                minImg3: "/Images/Products/black-tea-2-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "soft, woody-chocolate, with vegetable shades. Impact: leveling, concentrating. This is tea for attentive work and cheerful morning.",
@@ -2919,7 +2816,7 @@ Have a nice tea party.
                 id: 34,
                 title: "red tea #15",
                 param: "red-tea-15",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f6_red-15-1200-min.jpg",
+                image: "/Images/Products/red-tea-15-1.jpg",
                 price: 19,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -2943,12 +2840,9 @@ Have a nice tea party.
                         price: 145,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d0_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B02-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d5_%D0%A8%D0%B0%D0%B8%CC%86%D1%85%D1%83%D0%BD%20%D1%81%D0%BE%20%D1%81%D1%82%D0%B0%D1%80%D1%8B%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%20%D0%B8%D0%B7%20%D0%A6%D0%B7%D0%B8%D0%BD%D0%BE%D1%88%D0%B0%D0%BD%D1%8C-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068d2_%D0%A8%D0%B0%D0%B8%CC%86%D1%85%D1%83%D0%BD%20%D1%81%D0%BE%20%D1%81%D1%82%D0%B0%D1%80%D1%8B%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%20%D0%B8%D0%B7%20%D0%A6%D0%B7%D0%B8%D0%BD%D0%BE%D1%88%D0%B0%D0%BD%D1%8C(3)-min.jpg",
+                minImg1: "/Images/Products/red-tea-15-2.jpg",
+                minImg2: "/Images/Products/red-tea-15-3.jpg",
+                minImg3: "/Images/Products/red-tea-15-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "sweet, balanced, and dense. Notes of baked fruits and chocolate. The aftertaste is enveloping, and fresh. Impact: warming, gently toning, concentrating.",
@@ -3010,12 +2904,11 @@ Have a nice tea party.
                 id: 35,
                 title: "green tea #4",
                 param: "green-tea-4",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069bf_green-4-min.jpg",
+                image: "/Images/Products/green-tea-4-1.jpg",
                 price: 8,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
                 flow: 2,
-
                 slug: ["top-sales", "products", "life-flow", "green-tea"],
                 teaSizeAndPrice: [
                     {
@@ -3039,12 +2932,9 @@ Have a nice tea party.
                         price: 35,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806807_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D1%81%20%D0%B6%D0%B0%D1%81%D0%BC%D0%B8%D0%BD%D0%BE%D0%BC%20%D0%9C%D0%BE%D0%BB%D0%B8%20%D0%A5%D1%83%D0%B0%20%D0%9B%D1%8E%D0%B8%CC%86%20%D0%A7%D0%B0%2C%202021%20%D0%B3-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8067e1_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D1%81%20%D0%B6%D0%B0%D1%81%D0%BC%D0%B8%D0%BD%D0%BE%D0%BC%20%D0%9C%D0%BE%D0%BB%D0%B8%20%D0%A5%D1%83%D0%B0%20%D0%9B%D1%8E%D0%B8%CC%86%20%D0%A7%D0%B0%2C%202021%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80678b_%D0%97%D0%B5%D0%BB%D0%B5%CC%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%87%D0%B0%D0%B8%CC%86%20%D1%81%20%D0%B6%D0%B0%D1%81%D0%BC%D0%B8%D0%BD%D0%BE%D0%BC%20%D0%9C%D0%BE%D0%BB%D0%B8%20%D0%A5%D1%83%D0%B0%20%D0%9B%D1%8E%D0%B8%CC%86%20%D0%A7%D0%B0%2C%202021%20%D0%B3(3)-min.jpg",
+                minImg1: "/Images/Products/green-tea-4-2.jpg",
+                minImg2: "/Images/Products/green-tea-4-3.jpg",
+                minImg3: "/Images/Products/green-tea-4-4.jpg",
                 availability: "in stock",
                 TastingNotes: `mild taste without astringency or bitterness, with a slight sourness of green apples. The aftertaste is long, juicy, refreshing. Impact: perfectly refreshes, and gently tones. A good option for morning or afternoon tea.`,
                 aboutProduct: `
@@ -3064,7 +2954,7 @@ Have a nice tea party.
                 id: 36,
                 title: "shu pu-erh #16",
                 param: "shu-pu-erh-16",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069fd_shu-16-1200-min.jpg",
+                image: "/Images/Products/shu-pu-erh-16-1.jpg",
                 price: 18,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -3089,12 +2979,9 @@ Have a nice tea party.
                         price: 120,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80674f_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%D1%81%D0%BE%20%D1%81%D1%82%D0%B0%D1%80%D1%8B%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%202021%20%D0%B3-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8066aa_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%D1%81%D0%BE%20%D1%81%D1%82%D0%B0%D1%80%D1%8B%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%202021%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806864_%D0%9C%D1%8D%D0%BD%D0%BA%D1%83%20%D0%93%D1%83%20%D0%A8%D1%83%20%D1%81%D0%BE%20%D1%81%D1%82%D0%B0%D1%80%D1%8B%D1%85%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2%2C%202021%20%D0%B3(3)-min.jpg",
+                minImg1: "/Images/Products/shu-pu-erh-16-2.jpg",
+                minImg2: "/Images/Products/shu-pu-erh-16-3.jpg",
+                minImg3: "/Images/Products/shu-pu-erh-16-4.jpg",
                 availability: "in stock",
                 TastingNotes:
                     "soft, balanced, enveloping. The profile is woody, with notes of nuts, cream and caramel. Impact:delicately invigorating, concentrating.",
@@ -3151,7 +3038,7 @@ Have a nice tea party.
                 id: 37,
                 title: "red tea #5",
                 param: "red-tea-5",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069f8_red-5-min.jpg",
+                image: "/Images/Products/red-tea-5-1.jpg",
                 price: 21,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
@@ -3181,16 +3068,13 @@ Have a nice tea party.
                         price: 170,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e2_%D0%93%D1%83%D0%BD%D1%84%D1%83%20%D0%A5%D1%83%D0%BD%20%D0%B8%D0%B7%20%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%20%D0%A2%D1%83%D0%BD%20%D0%9C%D1%83-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068c9_%D0%93%D1%83%D0%BD%D1%84%D1%83%20%D0%A5%D1%83%D0%BD%20%D0%B8%D0%B7%20%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%20%D0%A2%D1%83%D0%BD%20%D0%9C%D1%83(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068cd_%D0%93%D1%83%D0%BD%D1%84%D1%83%20%D0%A5%D1%83%D0%BD%20%D0%B8%D0%B7%20%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%20%D0%A2%D1%83%D0%BD%20%D0%9C%D1%83(3)-min.jpg",
+                minImg1: "/Images/Products/red-tea-5-2.jpg",
+                minImg2: "/Images/Products/red-tea-5-3.jpg",
+                minImg3: "/Images/Products/red-tea-5-4.jpg",
                 availability: "in stock",
                 TastingNotes: `balanced, thick, and rich with light Assamese and spicy-caramel
 notes in the aftertaste. Impact: tonic, warming and slightly
-relaxing.`,
+                relaxing.`,
                 aboutProduct: `
                             <p>
                 Gongfu Hong from the Tong Mu Reserve (桐木工夫红, "Red tea of
@@ -3230,12 +3114,11 @@ relaxing.`,
                 id: 38,
                 title: "green tea #3",
                 param: "green-tea-3",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ba_green-3-min.jpg",
+                image: "/Images/Products/green-tea-3-1.jpg",
                 price: 9,
                 size: "0.78 oz (22 G) zip pouch",
                 amount: 1,
                 flow: 2,
-
                 slug: ["top-sales", "products", "life-flow", "green-tea"],
                 teaSizeAndPrice: [
                     {
@@ -3255,17 +3138,14 @@ relaxing.`,
                         price: 45,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806759_%D0%9C%D0%B0%D0%BE%D1%86%D0%B7%D1%8F%D0%BD%D1%8C%20%D0%95%20%D0%A8%D1%8D%D0%BD%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806758_%D0%9C%D0%B0%D0%BE%D1%86%D0%B7%D1%8F%D0%BD%D1%8C%20%D0%95%20%D0%A8%D1%8D%D0%BD%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80675a_%D0%9C%D0%B0%D0%BE%D1%86%D0%B7%D1%8F%D0%BD%D1%8C%20%D0%95%20%D0%A8%D1%8D%D0%BD%2C%20%D0%B2%D0%B5%D1%81%D0%BD%D0%B0%202022%20%D0%B3(3)-min.jpg",
+                minImg1: "/Images/Products/green-tea-3-2.jpg",
+                minImg2: "/Images/Products/green-tea-3-3.jpg",
+                minImg3: "/Images/Products/green-tea-3-4.jpg",
                 availability: "in stock",
                 TastingNotes: `sweet, herbaceous, refreshing taste with a smooth transition to
 astringent, slightly minty and spicy aftertaste. The taste of fresh
 grass and flowers. Light sourness of wild berries. Impact:
-invigorating and toning, refreshing.`,
+                    invigorating and toning, refreshing.`,
                 aboutProduct: `<p>
                 Green Chinese tea from Fujian province. The name Mao Jian Ye
                 Sheng (Chinese: 毛尖野生, Wild Fleecy Peaks) speaks of the wild
@@ -3294,89 +3174,37 @@ invigorating and toning, refreshing.`,
             },
             {
                 id: 39,
-                title: "shu pu-erh #2",
-                param: "shu-pu-erh-2",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069b3_shu-2-min.jpg",
-                price: 7,
-                size: "0.78 oz (22 G) zip pouch",
+                title: "cha hai #4",
+                param: "cha-hai-4",
+                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069cd_cha-hai-4-new-min.jpg",
+                price: 22,
+                size: null,
                 amount: 1,
-                flow: 4,
-
-                slug: ["top-sales", "products", "energy-flow", "black-tea"],
+                flow: null,
+                slug: "accessories",
                 teaSizeAndPrice: [
                     {
-                        size: "0.78 oz (22 G) zip pouch",
-                        price: 7,
-                    },
-                    {
-                        size: "1.5 oz (43 G) zip pouch",
-                        price: 10,
-                    },
-                    {
-                        size: "3 oz (86 G) tin",
-                        price: 15,
-                    },
-                    {
-                        size: "8.8 oz (250 G) brick",
-                        price: 30,
+                        size: null,
+                        price: 22,
                     },
                 ],
                 minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806630_%D0%A8%D1%83%20%D0%BF%D1%83%D1%8D%D1%80%20%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%2C%202016%20%D0%B3-min.jpg",
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694e_img_3493-1000x1000-min.jpg",
                 minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80665e_%D0%A8%D1%83%20%D0%BF%D1%83%D1%8D%D1%80%20%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%2C%202016%20%D0%B3(2)-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80674e_%D0%A8%D1%83%20%D0%BF%D1%83%D1%8D%D1%80%20%D0%AE%D0%BD%20%D0%A7%D0%B6%D0%B5%D0%BD%D1%8C%20%D0%93%D1%83%D0%BD%D1%82%D0%B8%D0%BD%2C%202016%20%D0%B3(3)-min.jpg",
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806950_img_3492-1000x1000-min.jpg",
+                minImg3: null,
                 availability: "in stock",
-                TastingNotes: `fruity and nut-chocolate with a pleasant bitterness. Impact:
-invigorates and tones`,
-                aboutProduct: `<p>
-                Invigorating pu-erh from Xin Wen factory. It is known for its
-                combination of price and quality.
-            </p>
-            <p>
-                The word Guntin (kit. 宫廷) in the name of the brick translates
-                as Palace and indicates the category of raw materials. Palace or
-                Imperial Pu-erh are small leaves containing large buds and a
-                complete or almost complete absence of cuttings. This tea
-                invigorates well, it is brewed quickly and deliciously.
-            </p>
-            <p>
-                Aroma: sweet, woody, and nutty with notes of bitter chocolate.
-            </p>
-            <p>
-                Taste: bright, rich, and thick with a pleasant bitterness,
-                fruity, and nutty chocolate shades.
-            </p>
-            <p>
-                Effect: invigorates and tones, a wonderful energizer. Helps on
-                the road. An interesting substitute for coffee; is Pu-erh
-                cheerfulness lasts longer and ends smoothly, unlike coffee, when
-                strength disappears suddenly.
-            </p>
-            <p>
-                Production: 2016, Xin Wen Factory, Yongde County, Lincang
-                County, Yunnan Province, China.
-            </p>`,
-                SteepingInstructions: `<p>Traditional Preparation</p>
-            <p>Add 7-10 grams to a Gaiwan or Gongfu Teapot (150ml-200ml).</p>
-            <p>Use 212°F boiling water.</p>
-            <p>Briefly rinse the leaves. Decant and discard this infusion.</p>
-            <p>Infuse the first brew for 10 seconds.</p>
-            <p>Infuse 2nd and subsequent brews for 10-30 seconds.</p>
-            <p>
-                Repeat several times until the flavor and aroma of the tea
-                dissipates. As the brewing session ensues, increase infusion
-                time to coax out the body and strength of the final infusions.
-            </p>`,
-                flavor: "Flavor: sweet, woody, nutty, chocolate",
-                Ingredients: "Organic Shu Pu’er",
+                TastingNotes: null,
+                aboutProduct: null,
+                SteepingInstructions: null,
+                flavor: "Cha hai Sama Doyo, glass, 300 ml",
+                Ingredients: null,
             },
             {
                 id: 40,
                 title: "teapot #1",
                 param: "teapot-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ec_teapot-1-min.jpg",
+                image: "/Images/Products/teapot-1-1.jpg",
                 price: 85,
                 size: null,
                 amount: 1,
@@ -3388,12 +3216,9 @@ invigorates and tones`,
                         price: 85,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690f_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%203-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806905_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%204-min.jpeg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690c_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%205-min.jpeg",
+                minImg1: "/Images/Products/teapot-1-2.jpeg",
+                minImg2: "/Images/Products/teapot-1-3.jpeg",
+                minImg3: "/Images/Products/teapot-1-4.jpeg",
                 availability: "in stock",
                 TastingNotes: null,
                 aboutProduct: null,
@@ -3405,7 +3230,7 @@ invigorates and tones`,
                 id: 41,
                 title: "teapot #2",
                 param: "teapot-2",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069e9_teapot-2-min.jpg",
+                image: "/Images/Products/teapot-2-1.jpg",
                 price: 70,
                 size: null,
                 amount: 1,
@@ -3417,12 +3242,9 @@ invigorates and tones`,
                         price: 70,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691c_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%203-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806919_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%204-min.jpeg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80691b_%D0%A7%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%205-min.jpeg",
+                minImg1: "/Images/Products/teapot-2-2.jpeg",
+                minImg2: "/Images/Products/teapot-2-3.jpeg",
+                minImg3: "/Images/Products/teapot-2-4.jpeg",
                 availability: "in stock",
                 TastingNotes: null,
                 aboutProduct: null,
@@ -3434,7 +3256,7 @@ invigorates and tones`,
                 id: 42,
                 title: "teapot #5",
                 param: "teapot-5",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ed_teapot-5-min.jpg",
+                image: "/Images/Products/teapot-5-1.jpg",
                 price: 100,
                 size: null,
                 amount: 1,
@@ -3446,12 +3268,9 @@ invigorates and tones`,
                         price: 100,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80692e_img_9146-1000x1000-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806931_img_9148-1000x1000-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806936_img_9149-1000x1000-min.jpg",
+                minImg1: "/Images/Products/teapot-5-2.jpg",
+                minImg2: "/Images/Products/teapot-5-3.jpg",
+                minImg3: "/Images/Products/teapot-5-4.jpg",
                 availability: "in stock",
                 TastingNotes: null,
                 aboutProduct: null,
@@ -3463,7 +3282,7 @@ invigorates and tones`,
                 id: 43,
                 title: "gaiwan #1",
                 param: "gaiwan-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d5_gaiwan-1-new-1-min.jpg",
+                image: "/Images/Products/gaiwan-1-1.jpg",
                 price: 18,
                 size: null,
                 amount: 1,
@@ -3475,10 +3294,8 @@ invigorates and tones`,
                         price: 18,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ea_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%20%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D1%81%202-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068f0_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%20%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D1%81%203-min.jpg",
+                minImg1: "/Images/Products/gaiwan-1-2.jpg",
+                minImg2: "/Images/Products/gaiwan-1-3.jpg",
                 minImg3: null,
                 availability: "in stock",
                 TastingNotes: null,
@@ -3491,7 +3308,7 @@ invigorates and tones`,
                 id: 44,
                 title: "teacup #7",
                 param: "teacup-7",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069df_teacup-7-new-min.jpg",
+                image: "/Images/Products/teacup-7-1.jpg",
                 price: 5,
                 size: null,
                 amount: 1,
@@ -3503,10 +3320,8 @@ invigorates and tones`,
                         price: 5,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806948_img_5224-1000x1000-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694c_img_5223-1000x1000-min.jpg",
+                minImg1: "/Images/Products/teacup-7-2.jpg",
+                minImg2: "/Images/Products/teacup-7-3.jpg",
                 minImg3: null,
                 availability: "in stock",
                 TastingNotes: null,
@@ -3519,7 +3334,7 @@ invigorates and tones`,
                 id: 45,
                 title: "teacup #1",
                 param: "teacup-1",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d9_tea-cup-1-new-1-min.jpg",
+                image: "/Images/Products/teacup-1-1.jpg",
                 price: 8,
                 size: null,
                 amount: 1,
@@ -3531,10 +3346,8 @@ invigorates and tones`,
                         price: 8,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ff_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%20%D0%A1%D0%B0%D0%BA%D1%83%D1%80%D0%B0%203-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068fd_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%20%D0%A1%D0%B0%D0%BA%D1%83%D1%80%D0%B0%202-min.jpeg",
+                minImg1: "/Images/Products/teacup-1-2.jpeg",
+                minImg2: "/Images/Products/teacup-1-3.jpeg",
                 minImg3: null,
                 availability: "in stock",
                 TastingNotes: null,
@@ -3547,7 +3360,7 @@ invigorates and tones`,
                 id: 46,
                 title: "teacup #2",
                 param: "teacup-2",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069da_tea-cup-2-new-1-min.jpg",
+                image: "/Images/Products/teacup-2-1.jpg",
                 price: 5,
                 size: null,
                 amount: 1,
@@ -3559,10 +3372,8 @@ invigorates and tones`,
                         price: 5,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806911_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%202-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806912_%D0%9F%D0%B8%D0%B0%D0%BB%D0%B0%203-min.jpeg",
+                minImg1: "/Images/Products/teacup-2-2.jpeg",
+                minImg2: "/Images/Products/teacup-2-3.jpeg",
                 minImg3: null,
                 availability: "in stock",
                 TastingNotes: null,
@@ -3575,7 +3386,7 @@ invigorates and tones`,
                 id: 47,
                 title: "gaiwan #4",
                 param: "gaiwan-4",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d7_gaiwan-4-new-1-min.jpeg",
+                image: "/Images/Products/gaiwan-4-1.jpeg",
                 price: 36,
                 size: null,
                 amount: 1,
@@ -3587,10 +3398,8 @@ invigorates and tones`,
                         price: 36,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806937_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80693c_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%202-min.jpeg",
+                minImg1: "/Images/Products/gaiwan-4-2.jpeg",
+                minImg2: "/Images/Products/gaiwan-4-3.jpeg",
                 minImg3: null,
                 availability: "in stock",
                 TastingNotes: null,
@@ -3603,7 +3412,7 @@ invigorates and tones`,
                 id: 48,
                 title: "teapot #4",
                 param: "teapot-4",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069eb_teapot-4-min.jpg",
+                image: "/Images/Products/teapot-4-1.jpg",
                 price: 70,
                 size: null,
                 amount: 1,
@@ -3615,12 +3424,9 @@ invigorates and tones`,
                         price: 70,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806932_img_8523-1000x1000.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806930_img_8525-1000x1000.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80692d_img_8526-1000x1000.jpg",
+                minImg1: "/Images/Products/teapot-4-2.jpg",
+                minImg2: "/Images/Products/teapot-4-3.jpg",
+                minImg3: "/Images/Products/teapot-4-4.jpg",
                 availability: "in stock",
                 TastingNotes: null,
                 aboutProduct: null,
@@ -3632,7 +3438,7 @@ invigorates and tones`,
                 id: 49,
                 title: "teapot #3",
                 param: "teapot-3",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ea_teapot-3-min.jpg",
+                image: "/Images/Products/teapot-3-1.jpg",
                 price: 80,
                 size: null,
                 amount: 1,
@@ -3644,12 +3450,9 @@ invigorates and tones`,
                         price: 80,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806929_img_8464-1000x1000-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80692f_img_8460-1000x1000-min.jpg",
-                minImg3:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806927_img_8463-1000x1000-min.jpg",
+                minImg1: "/Images/Products/teapot-3-2.jpg",
+                minImg2: "/Images/Products/teapot-3-3.jpg",
+                minImg3: "/Images/Products/teapot-3-4.jpg",
                 availability: "in stock",
                 TastingNotes: null,
                 aboutProduct: null,
@@ -3661,7 +3464,7 @@ invigorates and tones`,
                 id: 50,
                 title: "gaiwan #5",
                 param: "gaiwan-5",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d8_gaiwan-5-new-min.jpeg",
+                image: "/Images/Products/gaiwan-5-1.jpeg",
                 price: 30,
                 size: null,
                 amount: 1,
@@ -3673,10 +3476,8 @@ invigorates and tones`,
                         price: 30,
                     },
                 ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806941_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%203-min.jpeg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806940_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%202-min.jpeg",
+                minImg1: "/Images/Products/gaiwan-5-2.jpeg",
+                minImg2: "/Images/Products/gaiwan-5-3.jpeg",
                 minImg3: null,
                 availability: "in stock",
                 TastingNotes: null,
@@ -4571,7 +4372,7 @@ invigorates and tones`,
                 size: null,
                 amount: 1,
                 flow: null,
-                slug: ["accessories","teaware","new-arrivals"],
+                slug: ["accessories", "teaware", "new-arrivals"],
                 teaSizeAndPrice: [
                     {
                         size: null,
@@ -4599,7 +4400,7 @@ invigorates and tones`,
                 size: null,
                 amount: 1,
                 flow: null,
-                slug: ["accessories","new-arrivals"],
+                slug: ["accessories", "new-arrivals"],
                 teaSizeAndPrice: [
                     {
                         size: null,
@@ -4610,7 +4411,8 @@ invigorates and tones`,
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806959_img_8298-1000x1000-min.jpg",
                 minImg2:
                     "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80695a_img_8299-1000x1000-min.jpg",
-                minImg3: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806958_img_8300-1000x1000-min.jpg",
+                minImg3:
+                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806958_img_8300-1000x1000-min.jpg",
                 availability: "in stock",
                 TastingNotes: null,
                 aboutProduct: null,
@@ -4646,34 +4448,6 @@ invigorates and tones`,
                 flavor: "Figure of Mini Cat, porcelain",
                 Ingredients: null,
             },
-            {
-                id: 85,
-                title: "cha hai #4",
-                param: "cha-hai-4",
-                image: "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069cd_cha-hai-4-new-min.jpg",
-                price: 22,
-                size: null,
-                amount: 1,
-                flow: null,
-                slug: "accessories",
-                teaSizeAndPrice: [
-                    {
-                        size: null,
-                        price: 22,
-                    },
-                ],
-                minImg1:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80694e_img_3493-1000x1000-min.jpg",
-                minImg2:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806950_img_3492-1000x1000-min.jpg",
-                minImg3: null,
-                availability: "in stock",
-                TastingNotes: null,
-                aboutProduct: null,
-                SteepingInstructions: null,
-                flavor: "Cha hai Sama Doyo, glass, 300 ml",
-                Ingredients: null,
-            },
         ],
         journals: [
             {
@@ -4681,8 +4455,7 @@ invigorates and tones`,
                 date: "Jun 8,2023",
                 title: "What is matcha?",
                 param: "what-is-matcha",
-                mainImgSrc:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069a0_000.jpeg",
+                mainImgSrc: "/Images/Journal/journal-1.jpeg",
                 artiest: "Paul White",
                 pageContent: `
                 <p>
@@ -4724,7 +4497,7 @@ invigorates and tones`,
                     </p>
                     <img
                         className="rounded-[5vw] w-[80%]"
-                        src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069a7_8947b1a2.png"
+                        src="/Images/Journal/journal-1-1.png"
                         alt=""
                     />
                     <p className="font-bold">
@@ -4741,7 +4514,7 @@ invigorates and tones`,
                     </p>
                     <img
                         className="rounded-[5vw] w-[80%]"
-                        src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069a6_28677928.png"
+                        src="/Images/Journal/journal-1-2.png"
                         alt=""
                     />
                     <p>
@@ -4764,7 +4537,7 @@ invigorates and tones`,
                     </p>
                     <img
                         className="rounded-[5vw] w-[80%]"
-                        src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ad_b8eac917.png"
+                        src="/Images/Journal/journal-1-3.png"
                         alt=""
                     />
                     <p>
@@ -4794,8 +4567,7 @@ invigorates and tones`,
                 date: "May 4,2023",
                 title: "How to make tea on fire, lazy cooking",
                 param: "how-to-make-tea-on-fire-lazy-cooking",
-                mainImgSrc:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069ff_teapot-is-fireproof-glass-1-new.jpeg",
+                mainImgSrc: "/Images/Journal/journal-2.jpeg",
                 artiest: "Paul White",
 
                 pageContent: `
@@ -4810,7 +4582,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a01_6740ab803c7e45b220e98124_64530626489d4c8bda4739a6_00.jpeg"
+                            src="/Images/Journal/journal-2-1.jpeg"
                             alt=""
                         />
                     <p className="text-[#9494A2] mt-5 sm:mt-[2vw]">
@@ -4953,7 +4725,7 @@ invigorates and tones`,
                     </p>
                     <img
                         className="rounded-[5vw] w-[80%]"
-                        src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a00_6740ab7f3c7e45b220e98120_64899c647bc07ddd2ccf11d2_01.jpeg"
+                        src="/Images/Journal/journal-2-2.jpeg"
                         alt=""
                     />
                     <p className="my-5 sm:my-[2vw] text-[#9494A2]">
@@ -5051,8 +4823,7 @@ invigorates and tones`,
                 date: "May 6,2023",
                 title: "Chaban (Tea Tray), hucheng, chachuan, and other variants of tea trays",
                 param: "chaban-tea-tray-hucheng-chachuan-and-other-variants-of-tea-trays",
-                mainImgSrc:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a06_Chaban%20%231-new-1.jpeg",
+                mainImgSrc: "/Images/Journal/journal-3.jpeg",
                 artiest: "Paul White",
 
                 pageContent: `
@@ -5098,7 +4869,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a07_64899c647bc07ddd2ccf10c7_00.jpeg"
+                            src="/Images/Journal/journal-3-1.jpeg"
                             alt=""
                         /> 
                         <p className="text-[#9499A2]">
@@ -5195,7 +4966,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a08_64899c647bc07ddd2ccf10f9_01.jpeg"
+                            src="/Images/Journal/journal-3-2.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5232,7 +5003,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="w-[80%] rounded-[5vw]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a0a_64899c647bc07ddd2ccf10e6_02.jpeg"
+                            src="/Images/Journal/journal-3-3.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5273,7 +5044,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="w-[80%] rounded-[5vw]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a09_64899c647bc07ddd2ccf10e5_03.jpeg"
+                            src="/Images/Journal/journal-3-4.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5330,8 +5101,7 @@ invigorates and tones`,
                 date: "Jan 16, 2023",
                 title: "How to brew Shu (ripe) Pu-erh tea correctly",
                 param: "how-to-brew-shu-ripe-pu-erh-tea-correctly",
-                mainImgSrc:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a0b_pu-erh%20flow%20combo.jpg",
+                mainImgSrc: "/Images/Journal/journal-4.jpg",
                 artiest: "Paul White",
 
                 pageContent: `
@@ -5345,7 +5115,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a0c_64899c647bc07ddd2ccf1053_aot_article_5p_image_1.jpeg"
+                            src="/Images/Journal/journal-4-1.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5398,7 +5168,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a0e_64899c647bc07ddd2ccf1055_aot_article_5p_image_2.jpeg"
+                            src="/Images/Journal/journal-4-2.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5452,7 +5222,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a0f_64899c647bc07ddd2ccf107b_aot_article_5p_image_3.jpeg"
+                            src="/Images/Journal/journal-4-3.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5500,7 +5270,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a0d_64899c647bc07ddd2ccf1079_aot_article_5p_image_4.jpeg"
+                            src="/Images/Journal/journal-4-4.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5521,8 +5291,7 @@ invigorates and tones`,
                 date: "Feb 6, 2023",
                 title: "How to brew Sheng (raw) Pu-erh tea correctly",
                 param: "how-to-brew-sheng-raw-pu-erh-tea-correctly",
-                mainImgSrc:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80671c_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B8%CC%86%D1%82%D0%B0-min.jpg",
+                mainImgSrc: "/Images/Journal/journal-5.jpg",
                 artiest: "Paul White",
 
                 pageContent: `
@@ -5542,7 +5311,7 @@ invigorates and tones`,
                     </p>
                                             <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ec_0.jpeg"
+                            src="/Images/Journal/journal-5-1.jpeg"
                             alt=""
                         />
                     <p className= font-bold">
@@ -5603,7 +5372,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e7_1.jpeg"
+                            src="/Images/Journal/journal-5-2.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5681,7 +5450,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e9_2.jpeg"
+                            src="/Images/Journal/journal-5-3.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5702,8 +5471,7 @@ invigorates and tones`,
                 date: "Feb 14, 2023",
                 title: "Types and varieties of Chinese tea",
                 param: "types-and-varieties-of-chinese-tea",
-                mainImgSrc:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a10_combo-min.jpg",
+                mainImgSrc: "/Images/Journal/journal-6.jpg",
                 artiest: "Paul White",
 
                 pageContent: `
@@ -5753,7 +5521,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a11_64899c647bc07ddd2ccf1076_aot_article_ctg_image_2.jpeg"
+                            src="/Images/Journal/journal-6-1.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5773,7 +5541,7 @@ invigorates and tones`,
                     </p>
                                             <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a13_64899c647bc07ddd2ccf1078_aot_article_ctg_image_3.png"
+                            src="/Images/Journal/journal-6-2.png"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5811,7 +5579,7 @@ invigorates and tones`,
                     </p>
                                             <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a12_64899c647bc07ddd2ccf1075_aot_article_ctg_image_5.png"
+                            src="/Images/Journal/journal-6-3.png"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5834,7 +5602,7 @@ invigorates and tones`,
                     </p>
                                             <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a14_64899c647bc07ddd2ccf1067_aot_article_ctg_image_6.png"
+                            src="/Images/Journal/journal-6-4.png"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5854,7 +5622,7 @@ invigorates and tones`,
                     </p>
                         <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a16_64899c647bc07ddd2ccf107f_aot_article_ctg_image_7.png"
+                            src="/Images/Journal/journal-6-5.png"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5891,7 +5659,7 @@ invigorates and tones`,
                     </p>
                         <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a15_64899c647bc07ddd2ccf107e_aot_article_ctg_image_8.png"
+                            src="/Images/Journal/journal-6-6.png"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5912,8 +5680,7 @@ invigorates and tones`,
                 date: "Feb 20, 2023",
                 title: "Gaiwan: instructions for use",
                 param: "gaiwan-instructions-for-use",
-                mainImgSrc:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068ea_%D0%93%D0%B0%D0%B8%CC%86%D0%B2%D0%B0%D0%BD%D1%8C%20%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D1%81%202-min.jpg",
+                mainImgSrc: "/Images/Journal/journal-7.jpg",
                 artiest: "Paul White",
 
                 pageContent: `
@@ -5929,7 +5696,7 @@ invigorates and tones`,
                     </p>
                                             <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806907_00.jpeg"
+                            src="/Images/Journal/journal-7-1.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -5953,7 +5720,7 @@ invigorates and tones`,
                     </p>
                                             <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690d_01.jpeg"
+                            src="/Images/Journal/journal-7-2.jpeg"
                             alt=""
                         />
                     <p className="font-bold">
@@ -5984,7 +5751,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec80690b_02.jpeg"
+                            src="/Images/Journal/journal-7-3.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -6030,7 +5797,7 @@ invigorates and tones`,
                     </p>
                         <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806908_003.jpeg"
+                            src="/Images/Journal/journal-7-4.jpeg"
                             alt=""
                         />
                     <p className="font-bold">
@@ -6071,7 +5838,7 @@ invigorates and tones`,
                     </p>
                         <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8068e4_04.jpeg"
+                            src="/Images/Journal/journal-7-5.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -6105,7 +5872,7 @@ invigorates and tones`,
                     </p>
                                             <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806904_05.jpeg"
+                            src="/Images/Journal/journal-7-6.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -6124,8 +5891,7 @@ invigorates and tones`,
                 date: "Feb 27, 2023",
                 title: "Cha Hai (Gong Dao Bei): instructions for use",
                 param: "cha-hai-gong-dao-bei-instructions-for-use",
-                mainImgSrc:
-                    "https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec8069d0_cha-hai-1-new-min.jpeg",
+                mainImgSrc: "/Images/Journal/journal-8.jpeg",
                 artiest: "Paul White",
 
                 pageContent: `
@@ -6141,7 +5907,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a19_64899c647bc07ddd2ccf10da_00.jpeg"
+                            src="/Images/Journal/journal-8-1.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -6159,7 +5925,7 @@ invigorates and tones`,
                     </p>
                                             <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a18_64899c647bc07ddd2ccf10c1_01.jpeg"
+                            src="/Images/Journal/journal-8-2.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -6224,7 +5990,7 @@ invigorates and tones`,
                     </p>
                     <img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a1a_64899c647bc07ddd2ccf10e1_02.jpeg"
+                            src="/Images/Journal/journal-8-3.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
@@ -6249,7 +6015,7 @@ invigorates and tones`,
                         as:
                     </p><img
                             className="rounded-[5vw] w-[80%]"
-                            src="https://cdn.prod.website-files.com/6765d66f89f7f0b8ec80660c/6765d66f89f7f0b8ec806a17_64899c647bc07ddd2ccf10dd_03.jpeg"
+                            src="/Images/Journal/journal-8-4.jpeg"
                             alt=""
                         />
                         <p className="text-[#9499A2]">
