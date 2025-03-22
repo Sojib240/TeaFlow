@@ -479,7 +479,6 @@ const Context = (props) => {
                 minImg1: "/Images/Products/black-tea-3-2.jpg",
                 minImg2: "/Images/Products/black-tea-3-3.jpg",
                 minImg3: "/Images/Products/black-tea-3-4.jpg",
-                minImg3: null,
                 availability: "in stock",
                 TastingNotes:
                     "spicy, sweet, with a pleasant bitterness. It looks like both Wishan oolong and Shu Pu'er. Impact: gently tones, and smoothes.",
