@@ -129,7 +129,7 @@ const CartPage = ({ CartOpenClose, setCartOpenClose }) => {
                                         key={id}
                                         className="cart-card flex justify-between items-start gap-[2.5vw] card border-b border-[#F1F1F1] w-full p-4 sm:p-[1.5vw] h-auto"
                                     >
-                                        <Link
+                                        <Link onClick={()=>setCartOpenClose(false)}
                                             to={`/product/${param}`}
                                             className="w-40 sm:w-[10vw] overflow-hidden cart-image border border-[#F1F1F1]"
                                         >
